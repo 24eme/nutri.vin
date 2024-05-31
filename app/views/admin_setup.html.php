@@ -73,6 +73,34 @@
         <?php endif; ?>
     </td>
 </tr>
+<tr>
+    <th class="align-top">php max post size</th>
+    <td class="text-muted">post_max_size = <?php echo ini_get('post_max_size'); ?></td>
+    <td>
+        <?php if (intval(ini_get('post_max_size')) * 1 > 20): ?>
+        <i class="bi bi-check-square text-success"></i>
+        <?php else: ?>
+        <span class="text-warning">
+        <i class="bi bi-exclamation-circle"></i>
+        (change post_max_size in php.ini)
+        </span>
+        <?php endif; ?>
+    </td>
+</tr>
+<tr>
+    <th class="align-top">php max upload size</th>
+    <td class="text-muted">upload_max_filesize = <?php echo ini_get('upload_max_filesize'); ?></td>
+    <td>
+        <?php if (intval(ini_get('post_max_size')) * 1 > 20): ?>
+        <i class="bi bi-check-square text-success"></i>
+        <?php else: ?>
+        <span class="text-warning">
+        <i class="bi bi-exclamation-circle"></i>
+        (change upload_max_filesize in php.ini)
+        </span>
+        <?php endif; ?>
+    </td>
+</tr>
   </tbody>
 </table>
 <h2 class="my-4">Fichier de configuration</h2>
