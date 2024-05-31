@@ -38,8 +38,8 @@ class QRMarkupSVGLogo extends QRMarkupSVG
         // @todo: customize the <g> element to your liking (css class, style...)
         return sprintf(
             '%5$s<g transform="translate(%1$s %1$s) scale(%2$s)" class="%3$s">%5$s	%4$s%5$s</g>',
-            (($this->moduleCount - ($this->moduleCount * $this->options->svgLogoScale)) / 2),
-            (float) $this->options->svgLogoScale,
+            str_replace(',', '.', (($this->moduleCount - ($this->moduleCount * $this->options->svgLogoScale)) / 2)),
+            str_replace(',', '.', (float) $this->options->svgLogoScale),
             $this->options->svgLogoCssClass,
             file_get_contents($this->options->svgLogo),
             $this->options->eol
@@ -60,9 +60,10 @@ class QRMarkupSVGLogo extends QRMarkupSVG
             return '';
         }
         return sprintf(
-            '%3$s<text x="50%%" y="40" font-size="3" text-anchor="middle">E = %1$s KCal / %2$s KJ</text>%3$s',
+            '%4$s<text x="50%%" y="%3$s" font-size="3" text-anchor="middle">E = %1$s KCal / %2$s KJ</text>%4$s',
             (float) $this->options->svgEnergies[0],
             (float) $this->options->svgEnergies[1],
+            $this->options->version === 3 ? 36 : 40,
             $this->options->eol
         );
     }

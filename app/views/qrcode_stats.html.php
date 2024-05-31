@@ -10,7 +10,7 @@
     <h1 class="text-center">Stats d'un QRcode</h1>
     <h2 class="text-center text-muted">
     <?php echo $qrcode->cuvee_nom; ?>
-    <?php echo $qrcode->appellation; ?> <?php echo $qrcode->couleur; ?>
+    <?php echo $qrcode->denomination; ?> <?php echo $qrcode->couleur; ?>
     <?php echo $qrcode->millesime; ?>
     <?php echo ($qrcode->centilisation) ? ' - '.$qrcode->centilisation . ' cl' : ''; ?>
     </h2>

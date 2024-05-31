@@ -34,19 +34,17 @@
        </div>
 
        <div class="form-floating mb-3">
-           <input list="appellations_liste" type="text" class="form-control" id="appellation" name="appellation" value="<?php echo $qrcode->appellation; ?>" placeholder="Appellation"/>
-            <datalist id="appellations_liste">
+           <input list="denominations_liste" type="text" class="form-control" id="denomination" name="denomination" value="<?php echo $qrcode->denomination; ?>" placeholder="Dénomination"/>
+            <datalist id="denominations_liste">
             <?php
-              if (isset($config['appellations'])):
-                foreach ($config['appellations'] as $appellation):
+                foreach ($qrcode->getDenominations($config) as $denomination):
             ?>
-              <option value="<?php echo $appellation ?>"></option>
+              <option value="<?php echo $denomination ?>"></option>
             <?php
                 endforeach;
-              endif;
             ?>
             </datalist>
-            <label form="appellation">Appellation</label>
+            <label form="denomination">Dénomination</label>
        </div>
 
        <div class="d-flex justify-content-between">
@@ -60,13 +58,11 @@
            <input list="couleurs_liste" type="text" class="form-control" id="couleur" name="couleur" value="<?php echo $qrcode->couleur; ?>" placeholder="Rouge, Blanc, Rosé, ...."/>
             <datalist id="couleurs_liste">
             <?php
-              if (isset($config['couleurs'])):
-                foreach ($config['couleurs'] as $couleur):
+                foreach ($qrcode->getCouleurs() as $couleur):
             ?>
               <option value="<?php echo $couleur ?>"></option>
             <?php
                 endforeach;
-              endif;
             ?>
             </datalist>
            <label form="couleur">Couleur</label>
@@ -106,7 +102,9 @@
             </div>
         </div>
 
-        <h4 class="mt-4 mb-4"><i class="bi bi-card-list"></i> Liste des ingrédients</h4>
+        <h4 class="mt-4 mb-3"><i class="bi bi-card-list"></i> Liste des ingrédients</h4>
+
+        <p class="small text-muted mb-3">Les ingrédients doivent être affichés, dans l’ordre décroissant de leur importance pondérale au moment de leur mise en œuvre dans la fabrication. Les ingrédients intervenant pour moins de 2 % dans le produit fini peuvent être énumérés dans un ordre différent à la suite des autres ingrédients.</p>
 
         <ul class="nav nav-tabs" role="tablist">
           <li class="nav-item" role="presentation">

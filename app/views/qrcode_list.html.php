@@ -36,7 +36,7 @@
                         <td><?php echo $qr->domaine_nom; ?></td>
                         <td>
                             <?php echo $qr->cuvee_nom; ?>
-                            <?php echo $qr->appellation; ?> <?php echo $qr->couleur; ?>
+                            <?php echo $qr->denomination; ?> <?php echo $qr->couleur; ?>
                             <?php echo $qr->millesime; ?>
                             <?php echo ($qr->centilisation) ? ' - '.$qr->centilisation . ' cl' : ''; ?>
                         </td>
@@ -75,7 +75,7 @@
       </div>
       <div class="modal-body">
         <p>Ce service vous est mis à disposition par l'IVSO.</p>
-        <p>Vous ne serez facturé que si l'appellation de votre vin ne figure pas dans le catalogue de l'interprofession.</p>
+        <p>Vous ne serez facturé que si la dénomination de votre vin ne figure pas dans le catalogue de l'interprofession.</p>
 
         <p>Happy QRCoding !</p>
       </div>

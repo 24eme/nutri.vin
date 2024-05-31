@@ -15,10 +15,23 @@ class CtrlNutriVin {
 
     function adminSetup(Base $f3) {
         $qrcode = new QRCode();
-        if (!$qrcode->tableExists()) {
+        $f3->set('table_exists', $qrcode->tableExists());
+        if (!$qrcode->tableExists() && $f3->exists('GET.createtable')) {
             QRcode::createTable();
+            return $f3->reroute('/admin/setup', false);
         }
-        if (!$this->isAdmin($f3) && count(QRCode::findAll())) {
+        $qr = QRCode::find();
+        if (count($qr)) {
+            $qr = $qr[0];
+        }else{
+            $qr = null;
+        }
+        $f3->set('schema_error', false);
+        if ($qr && (count(array_keys($qr->toArray())) != (count(QRCode::$getFieldsAndType) + 1))) {
+            $f3->set('schema_error', count(array_keys($qr->toArray())).' champs en base contre '.(count(QRCode::$getFieldsAndType)) + 1).' attendus';
+        }
+
+        if (!$this->isAdmin($f3) && $qrcode->tableExists() && count(QRCode::findAll())) {
             die('Unauthorized');
         }
         $f3->set('content','admin_setup.html.php');
@@ -35,9 +48,9 @@ class CtrlNutriVin {
           if (isset($qrcode[$field])) unset($qrcode[$field]);
         }
         if (!$csv) {
-          $csv = 'appellation de l\'instance;'.implode(';', array_keys($qrcode))."\n";
+          $csv = 'denomination de l\'instance;'.implode(';', array_keys($qrcode))."\n";
         }
-        $csv .= (int)$this->isAppellationInConfig($qrcode['appellation']).';'.implode(';', array_values($qrcode))."\n";
+        $csv .= (int)$this->isDenominationInConfig($qrcode['denomination']).';'.implode(';', array_values($qrcode))."\n";
       }
       header('Content-Type: text/csv');
       header('Content-Disposition: attachment; filename="'.date('YmdHi').'_qrcodes.csv'.'"');
@@ -95,7 +108,7 @@ class CtrlNutriVin {
                     }
                 }
             }
-            $qrcode->appellation_instance = $this->isAppellationInConfig($qrcode->appellation);
+            $qrcode->denomination_instance = $this->isDenominationInConfig($qrcode->denomination);
             $qrcode->save();
             return $f3->reroute('/qrcode/'.$qrcode->user_id.'/parametrage/'.$qrcode->getId().'?from=create', false);
         }
@@ -132,6 +145,9 @@ class CtrlNutriVin {
         }
         if (!$qrcode->responsable_adresse && $qrcode->responsable_siret) {
             $qrcode->responsable_adresse = QRCode::siret2adresse($qrcode->responsable_siret);
+            if (!$qrcode->responsable_adresse) {
+                $qrcode->responsable_siret = '';
+            }
         }
     }
 
@@ -365,7 +381,7 @@ class CtrlNutriVin {
         }
         $f3->set('qrcode', $qrcode);
 
-        $f3->set('canSwitchLogo', $this->isAppellationInConfig($qrcode->appellation));
+        $f3->set('canSwitchLogo', $this->isDenominationInConfig($qrcode->denomination));
         $f3->set('content', 'qrcode_parametrage.html.php');
         echo View::instance()->render('layout.html.php');
     }
@@ -388,7 +404,7 @@ class CtrlNutriVin {
         $qrcode->mentions = (bool)$f3->get('POST.mentions');
 
         $config = $this->getConfig($f3);
-        if ($this->isAppellationInConfig($qrcode->appellation) === false) {
+        if ($this->isDenominationInConfig($qrcode->denomination) === false) {
             $qrcode->logo = false;
         }
 
@@ -448,7 +464,7 @@ class CtrlNutriVin {
 
         Exporter::getInstance()->setResponseHeaders($f3->get('PARAMS.format'));
 
-        echo $qrcode->getQRCodeContent($f3->get('PARAMS.format'), $f3->get('urlbase'), $f3->get('config')['qrcode']);
+        echo $qrcode->getQRCodeContent($f3->get('PARAMS.format'), $f3->get('urlbase'), $f3->get('config'));
     }
 
     public function adminUsers(Base $f3) {
@@ -464,10 +480,10 @@ class CtrlNutriVin {
         echo View::instance()->render('layout.html.php');
     }
 
-    public function isAppellationInConfig($appellation) {
+    public function isDenominationInConfig($denomination) {
         $c = Base::instance()->get('config');
-        $appellationsInstance = array_key_exists('appellations', $c) ? $c['appellations'] : [];
+        $denominationsInstance = array_key_exists('denominations', $c) ? $c['denominations'] : [];
 
-        return in_array($appellation, $appellationsInstance);
+        return in_array($denomination, $denominationsInstance);
     }
 }
