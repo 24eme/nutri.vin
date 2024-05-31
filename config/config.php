@@ -1,9 +1,7 @@
 <?php
 
 $config = [
-/*
-    'denominations' => [
-    ],
+//    'denominations' => [],
     'qrcode_logo'  => __DIR__.'/../web/images/ivso.svg',
     'theme' => getenv('THEME') ?: 'nutrivin',
 //    'db_pdo' => 'couchdb:http://admin:admin@127.0.0.1:5984/nutrivin_test',
