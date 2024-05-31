@@ -233,7 +233,7 @@
                     <li class="list-group-item"><i class="bi bi-patch-check text-success"></i> Aucune information à caractère personnel n'est collectée</li>
                     <li class="list-group-item"><i class="bi bi-patch-check text-success"></i> Les utilisateurs ne sont pas tracés</li>
                     <li class="list-group-item"><i class="bi bi-patch-check text-success"></i> Aucun cookie créé lors de la consultation d'une fiche</li>
-                    <li class="list-group-item"><i class="bi bi-patch-check text-success"></i> Consultation sans recours à un service tiers</li>
+                    <li class="list-group-item"><i class="bi bi-patch-check text-success"></i> Consultation sans recours à du contenu tiers</li>
                     <li class="list-group-item"><i class="bi bi-patch-check text-success"></i> Pas d'informations commerciales</li>
                 </div>
             </div>
