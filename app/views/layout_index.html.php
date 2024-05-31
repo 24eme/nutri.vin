@@ -33,7 +33,15 @@
                 </ul>
 
                 <div class="col-md-3 text-end">
-                    <button type="button" class="btn btn-primary">Créer un QR Code sur Nutri.Vin</button>
+                    <div class="dropdown">
+                      <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Créer un QR Code sur Nutri.Vin
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a href="/qrcode" class="dropdown-item" href="#">Créer un QR Code sur Nutri.Vin</a></li>
+                        <li><a href="" class="dropdown-item" href="#">Créer un QR Code sur Qr-So.fr</a></li>
+                      </ul>
+                    </div>
                 </div>
             </header>
         </div>
@@ -251,5 +259,6 @@
                 Logiciel libre sous licence AGPL-3.0 : <a href="https://github.com/24eme/nutri.vin">voir le code source</a>
             </footer>
         </div>
+        <script src="/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
