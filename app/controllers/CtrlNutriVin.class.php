@@ -30,9 +30,6 @@ class CtrlNutriVin {
         if ($qr && (count(array_keys($qr->toArray())) != (count(QRCode::$getFieldsAndType) + 1))) {
             $f3->set('schema_error', count(array_keys($qr->toArray())).' champs en base contre '.(count(QRCode::$getFieldsAndType)) + 1).' attendus';
         }
-        $f3->set('schema_ok', count(array_keys($qr->toArray())) == (count(QRCode::$getFieldsAndType)) + 1);
-        $f3->set('schema_real_nb', count(array_keys($qr->toArray())) . ' ' . implode(', ', $qr->toArray()) );
-        $f3->set('schema_theoritical_nb', count(QRCode::$getFieldsAndType) . ' ' . implode(', ', array_keys(QRCode::$getFieldsAndType)));
 
         if (!$this->isAdmin($f3) && $qrcode->tableExists() && count(QRCode::findAll())) {
             die('Unauthorized');
