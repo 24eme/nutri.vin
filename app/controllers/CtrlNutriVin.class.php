@@ -20,7 +20,7 @@ class CtrlNutriVin {
             QRcode::createTable();
             return $f3->reroute('/admin/setup', false);
         }
-        if (!$this->isAdmin($f3) && count(QRCode::findAll())) {
+        if (!$this->isAdmin($f3) && $qrcode->tableExists() && count(QRCode::findAll())) {
             die('Unauthorized');
         }
         $f3->set('content','admin_setup.html.php');
