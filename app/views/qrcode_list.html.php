@@ -134,7 +134,7 @@ document.querySelector('#list_qr').addEventListener('change', function (e) {
     }
 })
 
-<?php if (! $qrlist): ?>
+<?php if (! $qrlist && \app\config\Config::getInstance()->hasDenominations()): ?>
 document.addEventListener('DOMContentLoaded', function () {
     const modal = new bootstrap.Modal('#modal-info-list');
     modal.show();

@@ -236,7 +236,7 @@
         </div>
         <div class="bg-light" style="border-bottom: 1px solid #ddd">
             <div class="container pt-4 pb-5" style="max-width: 1050px;">
-                <a name="plateformeé"></a>
+                <a name="plateforme"></a>
                 <h2 class="mt-4">Les plateformes existantes</h2>
 
                 <p>Le QRCode généré va utiliser un nom de domaine, ce choix de nom de domaine est un choix important, pour que le QR Code dure dans le temps.<br /><br />
