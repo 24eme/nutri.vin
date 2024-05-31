@@ -15,7 +15,7 @@
       <?php endif; ?>
 
       <?php if (count($qrcode->getVisites())): ?>
-      <p class="alert alert-warning">Ce QRCode a déjà été consulté par au moins une personne extérieure. Par soucis de transparence, la modification que vous pourriez réaliser sera consultable publiquement</p>
+      <p class="alert alert-warning mt-2">Ce QRCode a déjà été consulté par au moins une personne extérieure. Par soucis de transparence, la modification que vous pourriez réaliser sera consultable publiquement</p>
       <?php endif; ?>
 
       <h4 class="mt-4 mb-4"><i class="bi bi-person-fill"></i> Identité du commercialisant</h4>
