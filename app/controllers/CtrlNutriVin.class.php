@@ -38,6 +38,7 @@ class CtrlNutriVin {
         if (!$this->isAdmin($f3) && $qrcode->tableExists() && count(QRCode::findAll())) {
             die('Unauthorized');
         }
+        $f3->set('config', $this->getConfig($f3));
         $f3->set('content','admin_setup.html.php');
         echo View::instance()->render('layout.html.php');
 
