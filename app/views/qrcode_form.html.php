@@ -126,7 +126,7 @@
                   <thead>
                     <tr>
                       <th class="" scope="col"></th>
-                      <th class="text-center" scope="col">Additif</th>
+                      <th class="text-center" scope="col">Catégorie</th>
                       <th class="text-center" scope="col">Bio</th>
                       <th class="text-center" scope="col">Allergène</th>
                     </tr>

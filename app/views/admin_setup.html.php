@@ -114,7 +114,7 @@
     </tr>
     <tr>
         <th class="align-top">Données brutes</th>
-        <td><textarea><?php echo file_get_contents(__DIR__.'/../../config/config.php'); ?></textarea></td>
+        <td><textarea readonly><?php echo file_get_contents(__DIR__.'/../../config/config.php'); ?></textarea></td>
     </tr>
   </tbody>
 </table>
