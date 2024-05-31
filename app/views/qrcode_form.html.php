@@ -559,10 +559,13 @@ const liveform = (function () {
                 document.getElementById(el.dataset.imageorigin).src = event.target.result;
             });
             reader.readAsDataURL(file);
+        } else if(el.type === 'checkbox') {
+          const realToUpdate = toUpdate.parentNode.querySelector("[data-liveform-template='{{"+el.value+"}}']");
+          realToUpdate.style.display = (el.checked) ? 'inline-block' : 'none';
         } else {
             let ingredientsListe = el.value.replace(/_(.*?)_/g, "<strong>$1</strong>");
             ingredientsListe = ingredientsListe.replace(/ ?([^,]* : [^;]* ; )/g, " <em>$1</em> ");
-            toUpdate.innerHTML = toUpdate.dataset.liveformTemplate.replace('{{%s}}', ingredientsListe)
+            toUpdate.innerHTML = toUpdate.dataset.liveformTemplate.replace('{{%s}}', ingredientsListe);
         }
         const blockAnchor = toUpdate.closest('.liveform_anchor')
         _template.scrollTop = blockAnchor.offsetTop - ((_template.offsetHeight - blockAnchor.offsetHeight) / 2)

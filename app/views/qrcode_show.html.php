@@ -228,8 +228,8 @@
     <?php endif; ?>
 
     <div class="py-4 bg-white text-center liveform_anchor">
-      <?php foreach ($qrcode->getLabels() as $label): ?>
-        <img class="bg-white px-1" style="height: 30px;" title="Vin labellisé <?php echo $label ?>" src="/images/labels/<?php echo strtolower($label) ?>.png" >
+      <?php foreach ($qrcode::$LABELS as $label): ?>
+        <img class="bg-white px-1" data-liveform-name="labels[]" data-liveform-template='{{<?php echo $label ?>}}' style="height: 30px;<?php if(!in_array($label, $qrcode->getLabels())): ?> display:none;<?php endif; ?>" title="Vin labellisé <?php echo $label ?>" src="/images/labels/<?php echo strtolower($label) ?>.png" >
       <?php endforeach; ?>
     </div>
 
