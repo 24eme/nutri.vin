@@ -47,7 +47,7 @@ class CtrlNutriVin {
         }
 
         $config = $this->getConfig($f3);
-        if (!$this->isAdmin($f3) && $isset($config['admin_user'])) {
+        if (!$this->isAdmin($f3) && isset($config['admin_user'])) {
             return $this->unauthorized($f3);
         }
 
