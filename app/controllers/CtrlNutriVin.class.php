@@ -18,6 +18,8 @@ class CtrlNutriVin {
     }
 
     function faq(Base $f3) {
+        $config = $this->getConfig($f3);
+        $f3->set('config', $config);
         $f3->set('content', 'qrcode_faq.html.php');
         echo View::instance()->render('layout.html.php');
     }
