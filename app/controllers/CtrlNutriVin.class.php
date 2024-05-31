@@ -304,6 +304,10 @@ class CtrlNutriVin {
                     $userid = $m[1];
                 }
             }
+            if ($origin == 'ivso' && ($f3->get('urlbase') != 'https://qr-so.fr')) {
+                header('Location: https://qr-so.fr/qrcode');
+                exit;
+            }
             if (!$userid && $origin && preg_match('/cas:user>([^<]*)<\/cas:user/', $validate, $m)) {
                 $userid = $origin.':'.$m[1];
             }
