@@ -25,6 +25,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="https://declaration.ivsopro.com/accueil">Déclarations ↗</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/faq">FAQ</a>
+                </li>
                 <?php if (isset($is_admin) && $is_admin): ?>
                     <li class="nav-item">
                       <a class="nav-link active" aria-current="page" href="/admin/setup">Admin</a>
