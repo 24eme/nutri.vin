@@ -449,7 +449,7 @@ class CtrlNutriVin {
 
         Exporter::getInstance()->setResponseHeaders($f3->get('PARAMS.format'));
 
-        echo $qrcode->getQRCodeContent($f3->get('PARAMS.format'), $f3->get('urlbase'), $f3->get('config')['qrcode']);
+        echo $qrcode->getQRCodeContent($f3->get('PARAMS.format'), $f3->get('urlbase'), $f3->get('config'));
     }
 
     public function adminUsers(Base $f3) {

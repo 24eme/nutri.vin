@@ -15,6 +15,10 @@
         <td><?php echo $config['theme']; ?></td>
     </tr>
     <tr>
+        <th class="align-top">base de données</th>
+        <td><?php echo $config['db_pdo']; ?></td>
+    </tr>
+    <tr>
         <th class="align-top">admin_user</th>
         <td><?php echo $config['admin_user']; ?></td>
     </tr>
@@ -35,12 +39,8 @@
         <td><?php echo $config['herbergeur_contact']; ?></td>
     </tr>
     <tr>
-        <th class="align-top">Couleur du QRCode</th>
-        <td><?php echo $config['qrcode']['color']; ?> (<span style="background-color: <?php echo $config['qrcode']['color']; ?>"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span>)</td>
-    </tr>
-    <tr>
         <th class="align-top">Logo associable au QRCode</th>
-        <td> <?php echo file_get_contents($config['qrcode']['logo']); ?> </td>
+        <td> <?php echo file_get_contents($config['qrcode_logo']); ?> </td>
     </tr>
     <tr>
         <th class="align-top">Appellations de l'instance</th>
