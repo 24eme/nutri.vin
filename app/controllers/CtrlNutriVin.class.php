@@ -20,15 +20,17 @@ class CtrlNutriVin {
             QRcode::createTable();
             return $f3->reroute('/admin/setup', false);
         }
-        $qr = QRCode::find();
-        if (count($qr)) {
-            $qr = $qr[0];
-        }else{
-            $qr = null;
-        }
         $f3->set('schema_error', false);
-        if ($qr && (count(array_keys($qr->toArray())) != (count(QRCode::$getFieldsAndType) + 1))) {
-            $f3->set('schema_error', count(array_keys($qr->toArray())).' champs en base contre '.(count(QRCode::$getFieldsAndType)) + 1).' attendus';
+        if ($qrcode->tableExists() ) {
+            $qr = QRCode::findAll(null, ['limit' => 1]);
+            if (count($qr)) {
+                $qr = $qr[0];
+            }else{
+                $qr = null;
+            }
+            if ($qr && (count(array_keys($qr->toArray())) != (count(QRCode::$getFieldsAndType) + 1))) {
+                $f3->set('schema_error', count(array_keys($qr->toArray())).' champs en base contre '.(count(QRCode::$getFieldsAndType)) + 1).' attendus';
+            }
         }
 
         if (!$this->isAdmin($f3) && $qrcode->tableExists() && count(QRCode::findAll())) {

@@ -130,6 +130,18 @@ class Couch {
         return $results->docs;
     }
 
+    public function findAll($selector = [], $limit = false)
+    {
+        $params = [];
+        if ($limit) {
+            $params['limit'] = $limit;
+        }
+        $results = $this->query('GET', '/'.urlencode($this->db).'/_all_docs', $params);
+
+        return $results->rows;
+    }
+
+
 	public function deleteAttachment ($doc, $attachmentName) {
 		if ( !is_object($doc)) {
 			throw new InvalidArgumentException ("Document should be an object");
@@ -159,7 +171,7 @@ class Couch {
 		}
 		$url = $this->dsn.$url;
 		if ($parameters) {
-			$url .= http_build_query($parameters);
+			$url .= '?'.http_build_query($parameters);
 		}
 		$http = curl_init($url);
 		$options = [

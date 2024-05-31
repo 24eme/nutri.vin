@@ -78,8 +78,16 @@ class Mapper extends \DB\Cursor {
 		return $obj->document;
 	}
 
-    function findAll() {
-        return [];
+    function findAll($selector = [], $limit = false) {
+        $pre_docs = $this->db->findAll($limit);
+        $docs = [];
+        foreach($pre_docs as $p) {
+            if (strpos($p->id, '_') !== 0) {
+                $p->_id = $p->id;
+                $docs[] = $p;
+            }
+        }
+        return $docs;
     }
 	function find($filter = null, array $options = null, $ttl = 0) {
         if (!$filter) {
