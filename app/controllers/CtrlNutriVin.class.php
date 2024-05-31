@@ -75,7 +75,7 @@ class CtrlNutriVin {
             } else {
                 $qrcode = new QRCode();
             }
-
+            $this->initDefaultOnQRCode($qrcode, $f3);
             if ($qrcode->user_id && $qrcode->user_id != $f3->get('PARAMS.userid')) {
                 return $f3->reroute('/qrcode/'.$f3->get('userid').'/create', false);
             }
@@ -129,6 +129,9 @@ class CtrlNutriVin {
         }
         if (!$qrcode->responsable_nom && $f3->get('SESSION.username')) {
             $qrcode->responsable_nom = $f3->get('SESSION.username');
+        }
+        if (!$qrcode->responsable_adresse && $qrcode->responsable_siret) {
+            $qrcode->responsable_adresse = QRCode::siret2adresse($qrcode->responsable_siret);
         }
     }
 

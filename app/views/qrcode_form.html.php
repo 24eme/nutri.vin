@@ -24,10 +24,6 @@
           <input type="text" class="form-control" id="domaine_nom" name="domaine_nom" placeholder="Mon domaine" value="<?php echo $qrcode->domaine_nom; ?>"/>
           <label for="domaine_nom">Nom du Domaine</label>
       </div>
-      <div class="form-floating mb-3">
-          <input type="text" class="form-control" id="adresse_domaine" name="adresse_domaine" placeholder="L'adresse de mon domaine" value="<?php echo $qrcode->adresse_domaine ;?>"/>
-          <label for="adresse_domaine">Adresse du Domaine</label>
-      </div>
 
       <h4 class="mt-4 mb-4"><i class="bi bi-droplet-fill"></i> Information relative au vin</h4>
 
@@ -460,7 +456,7 @@
             <label for="responsable_nom">Dénomination sociale et forme juridique du responsable</label>
         </div>
         <div class="form-floating mb-3">
-            <input type="text" class="form-control" id="responsable_adresse" name="responsable_adresse" placeholder="L'adresse du responsable" value="<?php echo $qrcode->responsable_adresse ;?>" required="required"/>
+            <input type="text" class="form-control" id="responsable_adresse" name="responsable_adresse" placeholder="L'adresse du responsable" value="<?php echo $qrcode->responsable_adresse ;?>"/>
             <label for="responsable_adresse">Adresse du responsable</label>
         </div>
         <div class="mb-3 form-check">

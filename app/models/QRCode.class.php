@@ -582,4 +582,29 @@ class QRCode extends Mapper
       imagedestroy($newImage);
       return $image;
     }
+
+    public static function siret2adresse($siret) {
+        if (strlen($siret) === 9) {
+            $url = "https://api-avis-situation-sirene.insee.fr/identification/siren/".$siret;
+        }else{
+            $url = "https://api-avis-situation-sirene.insee.fr/identification/siret/".$siret;
+        }
+        $json = json_decode(file_get_contents($url));
+        foreach($json->etablissements as $e) {
+            if (strpos($e->siret, $siret) === 0 ) {
+                $adresse = '';
+                $adresse .= ($e->adresseEtablissement->complementAdresseEtablissement) ? $e->adresseEtablissement->complementAdresseEtablissement.' ' : '';
+                $adresse .= ($e->adresseEtablissement->numeroVoieEtablissement) ? $e->adresseEtablissement->numeroVoieEtablissement.' ' : '';
+                $adresse .= ($e->adresseEtablissement->indiceRepetitionEtablissement) ? $e->adresseEtablissement->indiceRepetitionEtablissement.' ' : '';
+                $adresse .= ($e->adresseEtablissement->typeVoieEtablissement) ? $e->adresseEtablissement->typeVoieEtablissement.' ' : '';
+                $adresse .= ($e->adresseEtablissement->libelleVoieEtablissement) ? $e->adresseEtablissement->libelleVoieEtablissement.' ' : '';
+                $adresse .= ($e->adresseEtablissement->codePostalEtablissement) ? $e->adresseEtablissement->codePostalEtablissement.' ' : '';
+                $adresse .= ($e->adresseEtablissement->libelleCommuneEtablissement) ? $e->adresseEtablissement->libelleCommuneEtablissement.' ' : '';
+                $adresse .= ($e->adresseEtablissement->libelleCommuneEtrangerEtablissement) ? $e->adresseEtablissement->libelleCommuneEtrangerEtablissement.' ' : '';
+                $adresse = rtrim($adresse);
+                return strtolower($adresse);
+            }
+        }
+        return ;
+    }
 }
