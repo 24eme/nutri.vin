@@ -1,6 +1,68 @@
+<?php use app\exporters\utils\rsvgconvert; ?>
 <h1>Configuration</h1>
+<h2>Installation serveur</h2>
+<table class="table">
+  <tbody>
+    <tr>
+        <th class="align-top">Connexion à la base de données</th>
+        <td>
+            <?php if ($table_exists): ?>
+                <i class="bi bi-check-square"></i>
+            <?php else: ?>
+                <i class="bi bi-exclamation-octagon-fill"></i>
+                <a href="?createtable=true">(Créer la base)</a>
+            <?php endif; ?>
+        </td>
+    </tr>
+    <tr>
+        <th class="align-top">module php sqlite</th>
+        <td>
+            <?php if (method_exists('SQLite3', 'query')): ?>
+            <i class="bi bi-check-square"></i>
+            <?php else: ?>
+            <i class="bi bi-exclamation-octagon-fill"></i>
+            (php-sqlite3 neeeded)
+            <?php endif; ?>
+        </td>
+    </tr>
+    <tr>
+        <th class="align-top">module php curl</th>
+        <td>
+            <?php if (function_exists('curl_error')): ?>
+            <i class="bi bi-check-square"></i>
+            <?php else: ?>
+            <i class="bi bi-exclamation-octagon-fill"></i>
+            (php-curl neeeded)
+            <?php endif; ?>
+        </td>
+    </tr>
+    <tr>
+        <th class="align-top">module php zip</th>
+        <td>
+            <?php if (method_exists('ZipArchive', 'addFromString')): ?>
+            <i class="bi bi-check-square"></i>
+            <?php else: ?>
+            <i class="bi bi-exclamation-octagon-fill"></i>
+            (php-zip neeeded)
+            <?php endif; ?>
+        </td>
+    </tr>
+<tr>
+    <th class="align-top">rsvg (pour la conversion eps)</th>
+    <td>
+        <?php if (rsvgconvert::commandExists()): ?>
+        <i class="bi bi-check-square"></i>
+        <?php else: ?>
+        <i class="bi bi-exclamation-octagon-fill"></i>
+        (rsvg neeeded)
+        <?php endif; ?>
+    </td>
+</tr>
+  </tbody>
+</table>
+<h2>Fichier de configuration</h2>
 <div class="align-center">
-<table class="table-bordered">
+<table class="table">
   <tbody>
     <tr>
         <th class="align-top">URL de l'instance</th>
