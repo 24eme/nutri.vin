@@ -6,9 +6,18 @@ $f3 = require(__DIR__.'/vendor/fatfree-core/base.php');
 
 require __DIR__.'/vendor/autoload.php';
 
-require_once('config/config.php');
+if(file_exists('config/config.php')) {
+    require_once('config/config.php');
+}
 require_once('config/instances.php');
 
+if(!isset($config)) {
+    $config['theme'] = 'nutrivin';
+    $config['herbergeur_raison_sociale'] = null;
+    $config['herbergeur_siren'] = null;
+    $config['herbergeur_adresse'] = null;
+    $config['herbergeur_contact'] = null;
+}
 
 if(getenv("DEBUG")) {
     $f3->set('DEBUG', getenv("DEBUG"));
