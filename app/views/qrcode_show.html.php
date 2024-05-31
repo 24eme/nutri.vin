@@ -283,6 +283,15 @@
 
 </div>
 
+<?php if (! empty($publicview)): ?>
+    <script>
+        let ingredientsListe = document.querySelector("[data-liveform-name=ingredients]")
+
+        ingredientsListe.innerHTML = ingredientsListe.innerHTML.replace(/_(.*?)_/g, "<strong>$1</strong>");
+        ingredientsListe.innerHTML = ingredientsListe.innerHTML.replace(/ ?([^,]* : [^;]* ; )/g, " <em>$1</em> ");
+    </script>
+<?php endif ?>
+
 <script>
     const slide = ["image_bouteille", "image_etiquette", "image_contreetiquette"];
 
