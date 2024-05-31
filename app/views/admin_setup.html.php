@@ -54,7 +54,7 @@
         <i class="bi bi-check-square"></i>
         <?php else: ?>
         <i class="bi bi-exclamation-octagon-fill"></i>
-        (rsvg neeeded)
+        (librsvg2-bin neeeded)
         <?php endif; ?>
     </td>
 </tr>
