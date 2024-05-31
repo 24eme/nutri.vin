@@ -2,10 +2,15 @@
 
 use app\exporters\Exporter;
 use app\models\QRCode;
+use app\config\Config;
 use Web\Geo;
 
 class CtrlNutriVin {
     function index(Base $f3) {
+        $c = $this->getConfig($f3);
+        if (isset($c['denomination']) && count($c['denomination'])) {
+            return $f3->reroute('/qrcode');
+        }
         echo View::instance()->render('layout_index.html.php');
     }
 
@@ -31,10 +36,12 @@ class CtrlNutriVin {
             $qr = QRCode::findAll(null, ['limit' => 1]);
             if (count($qr)) {
                 $qr = $qr[0];
+                $a = $qr->toArray();
+                unset($a['_rev']);
             }else{
                 $qr = null;
             }
-            if ($qr && (count(array_keys($qr->toArray())) != (count(QRCode::$getFieldsAndType) + 1))) {
+            if ($qr && (count(array_keys($a)) != (count(QRCode::$getFieldsAndType) + 1))) {
                 $f3->set('schema_error', count(array_keys($qr->toArray())).' champs en base contre '.(count(QRCode::$getFieldsAndType)) + 1).' attendus';
             }
         }
@@ -42,6 +49,7 @@ class CtrlNutriVin {
         if (!$this->isAdmin($f3) && $qrcode->tableExists() && count(QRCode::findAll())) {
             die('Unauthorized');
         }
+        $f3->set('config', $this->getConfig($f3));
         $f3->set('content','admin_setup.html.php');
         echo View::instance()->render('layout.html.php');
 
@@ -58,7 +66,7 @@ class CtrlNutriVin {
         if (!$csv) {
           $csv = 'denomination de l\'instance;'.implode(';', array_keys($qrcode))."\n";
         }
-        $csv .= (int)$this->isDenominationInConfig($qrcode['denomination']).';'.implode(';', array_values($qrcode))."\n";
+        $csv .= (int)Config::getInstance()->isDenominationInConfig($qrcode['denomination']).';'.implode(';', array_values($qrcode))."\n";
       }
       header('Content-Type: text/csv');
       header('Content-Disposition: attachment; filename="'.date('YmdHi').'_qrcodes.csv'.'"');
@@ -66,6 +74,7 @@ class CtrlNutriVin {
     }
 
     private function isAdmin(Base $f3) {
+        $f3->set('is_admin', false);
         if ( !$f3->exists('SESSION.userid')) {
             return false;
         }
@@ -73,7 +82,8 @@ class CtrlNutriVin {
         if (!isset($config['admin_user'])) {
             return false;
         }
-        return $f3->get('SESSION.userid') == $config['admin_user'];
+        $f3->set('is_admin', $f3->get('SESSION.userid') == $config['admin_user']);
+        return $f3->get('is_admin');
     }
 
     private function authenticatedUserOnly(Base $f3) {
@@ -116,7 +126,7 @@ class CtrlNutriVin {
                     }
                 }
             }
-            $qrcode->denomination_instance = $this->isDenominationInConfig($qrcode->denomination);
+            $qrcode->denomination_instance = Config::getInstance()->isDenominationInConfig($qrcode->denomination);
             $qrcode->save();
             return $f3->reroute('/qrcode/'.$qrcode->user_id.'/parametrage/'.$qrcode->getId().'?from=create', false);
         }
@@ -389,7 +399,7 @@ class CtrlNutriVin {
         }
         $f3->set('qrcode', $qrcode);
 
-        $f3->set('canSwitchLogo', $this->isDenominationInConfig($qrcode->denomination));
+        $f3->set('canSwitchLogo', Config::getInstance()->isDenominationInConfig($qrcode->denomination));
         $f3->set('content', 'qrcode_parametrage.html.php');
         echo View::instance()->render('layout.html.php');
     }
@@ -412,7 +422,7 @@ class CtrlNutriVin {
         $qrcode->mentions = (bool)$f3->get('POST.mentions');
 
         $config = $this->getConfig($f3);
-        if ($this->isDenominationInConfig($qrcode->denomination) === false) {
+        if (Config::getInstance()->isDenominationInConfig($qrcode->denomination) === false) {
             $qrcode->logo = false;
         }
 
@@ -488,12 +498,5 @@ class CtrlNutriVin {
         $f3->set('users', $users);
         $f3->set('content', 'admin_users.html.php');
         echo View::instance()->render('layout.html.php');
-    }
-
-    public function isDenominationInConfig($denomination) {
-        $c = Base::instance()->get('config');
-        $denominationsInstance = array_key_exists('denominations', $c) ? $c['denominations'] : [];
-
-        return in_array($denomination, $denominationsInstance);
     }
 }

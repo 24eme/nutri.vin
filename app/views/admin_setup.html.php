@@ -18,7 +18,7 @@
         </td>
     </tr>
     <tr>
-        <th class="align-top">schéma de la base OK</th>
+        <th class="align-top">schéma de la base</th>
         <td class="text-muted"><?php echo ($schema_error) ? $schema_error : $config['db_pdo']; ?></td>
         <td>
             <?php if (!$schema_error): ?>
@@ -40,7 +40,7 @@
             <?php else: ?>
             <span class="text-danger">
             <i class="bi bi-exclamation-octagon-fill"></i>
-            (php-sqlite3 neeeded)
+            (php-sqlite3 needed)
             </span>
             <?php endif; ?>
         </td>
@@ -54,7 +54,7 @@
             <?php else: ?>
             <span class="text-danger">
             <i class="bi bi-exclamation-octagon-fill"></i>
-            (php-curl neeeded)
+            (php-curl needed)
             </span>
             <?php endif; ?>
         </td>
@@ -68,24 +68,38 @@
             <?php else: ?>
             <span class="text-danger">
             <i class="bi bi-exclamation-octagon-fill"></i>
-            (php-zip neeeded)
+            (php-zip needed)
             </span>
             <?php endif; ?>
         </td>
     </tr>
 <tr>
-    <th class="align-top">rsvg (pour la conversion eps)</th>
-    <td class="text-muted">librsvg2-bin</td>
+    <th class="align-top">module php gd</th>
+    <td class="text-muted">php-gd</td>
     <td>
-        <?php if (rsvgconvert::commandExists()): ?>
-        <i class="bi bi-check-square text-success"></i>
-        <?php else: ?>
-        <span class="text-warning">
-        <i class="bi bi-exclamation-circle"></i>
-        (librsvg2-bin neeeded)
-        </span>
-        <?php endif; ?>
+      <?php if (function_exists('imagecreatetruecolor')): ?>
+      <i class="bi bi-check-square text-success"></i>
+      <?php else: ?>
+      <span class="text-danger">
+      <i class="bi bi-exclamation-octagon-fill"></i>
+      (php-gd needed)
+      </span>
+      <?php endif; ?>
     </td>
+</tr>
+<tr>
+  <th class="align-top">rsvg (pour la conversion eps)</th>
+  <td class="text-muted">librsvg2-bin</td>
+  <td>
+      <?php if (rsvgconvert::commandExists()): ?>
+      <i class="bi bi-check-square text-success"></i>
+      <?php else: ?>
+      <span class="text-warning">
+      <i class="bi bi-exclamation-circle"></i>
+      (librsvg2-bin needed)
+      </span>
+      <?php endif; ?>
+  </td>
 </tr>
 <tr>
     <th class="align-top">php max upload size</th>
@@ -154,6 +168,11 @@
         <th class="align-top">base de données</th>
         <td class="text-muted">db_pdo</td>
         <td><?php echo (isset($config['db_pdo'])) ? $config['db_pdo'] : '<span class="text-danger">Non renseigné</span>'; ?></td>
+    </tr>
+    <tr>
+        <th class="align-top">type d'authentification</th>
+        <td class="text-muted">viticonnect_baseurl ou http_auth</td>
+        <td><?php echo (isset($config['http_auth'])) ? $config['http_auth'] : (isset($config['viticonnect_baseurl']) ? $config['viticonnect_baseurl'] : '<span class="text-danger">no auth</span>'); ?></td>
     </tr>
     <tr>
         <th class="align-top">admin_user</th>

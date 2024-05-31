@@ -9,6 +9,11 @@
       <li class="nav-item">
         <a class="nav-link active" aria-current="page" href="/qrcode">Mes QRCodes</a>
       </li>
+      <?php if ($is_admin): ?>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/admin/setup">Admin</a>
+          </li>
+      <?php endif; ?>
       <li class="nav-item">
         <a class="nav-link" href="<?php echo $urlbase; ?>/logout">Déconnexion</a>
       </li>
