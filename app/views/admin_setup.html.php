@@ -91,7 +91,7 @@
     <th class="align-top">php max post size</th>
     <td class="text-muted">post_max_size = <?php echo ini_get('post_max_size'); ?></td>
     <td>
-        <?php if (intval(ini_get('post_max_size')) > intval(ini_get('upload_max_filesize')) * 3 ): ?>
+        <?php if (intval(ini_get('post_max_size')) >= intval(ini_get('upload_max_filesize')) * 3 ): ?>
         <i class="bi bi-check-square text-success"></i>
         <?php else: ?>
         <span class="text-warning">
