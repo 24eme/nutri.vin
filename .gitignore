@@ -1,5 +1,6 @@
 nutrivin.sqlite
 web/uploads/
+config/config.php
 
 # fichiers vim
 *~
