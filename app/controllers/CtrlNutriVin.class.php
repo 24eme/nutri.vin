@@ -13,6 +13,12 @@ class CtrlNutriVin {
         echo View::instance()->render('layout_home.html.php');
     }
 
+    function faq(Base $f3) {
+        $f3->set('content', 'qrcode_faq.html.php');
+        echo View::instance()->render('layout.html.php');
+    }
+
+
     function adminSetup(Base $f3) {
         $qrcode = new QRCode();
         $f3->set('table_exists', $qrcode->tableExists());
