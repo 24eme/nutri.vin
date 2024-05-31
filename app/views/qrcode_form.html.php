@@ -1008,6 +1008,8 @@ function nutri_update_complet() {
         document.querySelector('#nutritionnel_glucides').value = alcool / 10;
         document.querySelector('#nutritionnel_sucres').value = alcool / 10;
         document.querySelector('#nutritionnel_energie_kj').dispatchEvent(new Event('change', {bubbles: true}));
+        document.querySelector('#nutritionnel_glucides').dispatchEvent(new Event('change', {bubbles: true}));
+        document.querySelector('#nutritionnel_sucres').dispatchEvent(new Event('change', {bubbles: true}));
     }
     return false;
 }
