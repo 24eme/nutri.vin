@@ -419,18 +419,20 @@ class CtrlNutriVin {
         $options = isset($config['qrcode']) ? $config['qrcode'] : [];
         $userid = null;
 
-
         foreach ($qrcodes as $qr) {
             $qr = QRCode::findById($qr);
             if ($qr === null) {
                 $f3->error(404, "QRCode non trouvé");
                 exit;
             }
-
             if ($qr->user_id != $f3->get('PARAMS.userid')) {
                 throw new Exception('not allowed');
             }
             $userid = $qr->user_id;
+            if ($qr->denomination_instance && $f3->get('GET.logo')) {
+                $qr->logo = $f3->get('GET.logo');
+            }
+            $qr->mentions = $f3->get('GET.mentions');
 
             foreach ($formats as $format) {
                 $files[$format][$qr->getId()] = $qr->getQRCodeContent($format, $f3->get('urlbase'), $options);
