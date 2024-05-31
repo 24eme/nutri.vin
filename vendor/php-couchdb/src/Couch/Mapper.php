@@ -78,7 +78,13 @@ class Mapper extends \DB\Cursor {
 		return $obj->document;
 	}
 
+    function findAll() {
+        return [];
+    }
 	function find($filter = null, array $options = null, $ttl = 0) {
+        if (!$filter) {
+            return $this->findAll();
+        }
 		return $this->select($this->fields, $filter, $options, $ttl);
 	}
 
