@@ -122,8 +122,8 @@
         <?php if ( (isset($config['db_pdo']) && isset($config['instance_id']) && isset($config['theme']) && isset($config['db_pdo']) && isset($config['admin_user']) && isset($config['herbergeur_raison_sociale']) && isset($config['herbergeur_adresse']) && isset($config['herbergeur_siren']) && isset($config['herbergeur_contact'])) ): ?>
         <i class="bi bi-check-square text-success"></i>
         <?php else: ?>
-        <span class="text-warning">
-        <i class="bi bi-exclamation-circle"></i>
+        <span class="text-danger">
+        <i class="bi bi-exclamation-octagon-fill"></i>
         (voir plus bas)
         </span>
         <?php endif; ?>
