@@ -94,8 +94,10 @@
     <div id="question_6" class="accordion-collapse collapse">
       <div class="accordion-body">
         Sur l'étiquette ou via un système de dématérialisation.
-        <div class="bg-warning-subtle text-warning-emphasis small mt-4">
+        <div class="small mt-4">
+            <span class="bg-warning-subtle text-warning-emphasis">
                 Les indications obligatoires (autres que la déclaration nutritionnelle et la liste d'ingrédients) doivent être mises sur l'étiquette lisiblement.
+            </span>
         </div>
         <div class="mt-3 text-end">
             <small>Article 40 paragraphe 1 Règlement délégué UE 2019/33</small>
@@ -114,8 +116,10 @@
     <div id="question_7" class="accordion-collapse collapse">
       <div class="accordion-body">
         Dans le même champ visuel du récipient que les autres indications obligatoires, sans qu'il soit nécessaire de tourner le récipient, avec des caractères indélébiles.
-        <div class="bg-warning-subtle text-warning-emphasis small mt-4">
+        <div class="small mt-4">
+            <span class="bg-warning-subtle text-warning-emphasis">
                 Les indications obligatoires (autres que la déclaration nutritionnelle et la liste d'ingrédients) doivent être mises sur l'étiquette lisiblement.
+            </span>
         </div>
         <div class="mt-3 text-end">
             <small>Article 40 paragraphe 1 Règlement délégué UE 2019/33</small>
