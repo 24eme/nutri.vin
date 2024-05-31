@@ -7,6 +7,10 @@ use Web\Geo;
 
 class CtrlNutriVin {
     function index(Base $f3) {
+        $c = $this->getConfig($f3);
+        if (isset($c['denomination']) && count($c['denomination'])) {
+            return $f3->reroute('/qrcode');
+        }
         echo View::instance()->render('layout_index.html.php');
     }
 
