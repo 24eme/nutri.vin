@@ -158,14 +158,9 @@
         <td> <?php echo file_get_contents($config['qrcode_logo']); ?> </td>
     </tr>
     <tr>
-        <th class="align-top">Appellations de l'instance</th>
-        <td class="text-muted">appellations</td>
-        <td><?php echo implode('<br/>', $config['appellations']); ?></td>
-    </tr>
-    <tr>
-        <th class="align-top">Couleurs de l'instance</th>
-        <td class="text-muted">couleurs</td>
-        <td><?php echo implode('<br/>', $config['couleurs']); ?></td>
+        <th class="align-top">Denominations de l'instance</th>
+        <td class="text-muted">denominations</td>
+        <td><?php echo (isset($config['denominations'])) ? implode('<br/>', $config['denominations']) : '<i>Pas de dénomination spécifique</i>'; ?></td>
     </tr>
     <tr>
         <th class="align-top">Données brutes</th>

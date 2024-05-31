@@ -37,13 +37,11 @@
            <input list="denominations_liste" type="text" class="form-control" id="denomination" name="denomination" value="<?php echo $qrcode->denomination; ?>" placeholder="Dénomination"/>
             <datalist id="denominations_liste">
             <?php
-              if (isset($config['appellations'])):
-                foreach ($config['appellations'] as $appellation):
+                foreach ($qrcode->getDenominations($config) as $denomination):
             ?>
               <option value="<?php echo $denomination ?>"></option>
             <?php
                 endforeach;
-              endif;
             ?>
             </datalist>
             <label form="denomination">Dénomination</label>
@@ -60,13 +58,11 @@
            <input list="couleurs_liste" type="text" class="form-control" id="couleur" name="couleur" value="<?php echo $qrcode->couleur; ?>" placeholder="Rouge, Blanc, Rosé, ...."/>
             <datalist id="couleurs_liste">
             <?php
-              if (isset($config['couleurs'])):
-                foreach ($config['couleurs'] as $couleur):
+                foreach ($qrcode->getCouleurs() as $couleur):
             ?>
               <option value="<?php echo $couleur ?>"></option>
             <?php
                 endforeach;
-              endif;
             ?>
             </datalist>
            <label form="couleur">Couleur</label>
