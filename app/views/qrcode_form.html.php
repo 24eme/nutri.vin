@@ -126,6 +126,7 @@
                       <th class="text-center" scope="col">Allergène</th>
                       <th class="text-center" scope="col">Bio</th>
                       <th class="text-center" scope="col">&nbsp;</th>
+                      <th></th>
                     </tr>
                   </thead>
                   <tbody></tbody>
@@ -151,8 +152,8 @@
                     <td class="ingredient_facultatif text-center align-middle">
                         <abbr title="Ingrédient facultatif">F</abbr>
                     </td>
-                    <td class="delrow" style="cursor: pointer">
-                        <span class="fs-2"><i class="bi bi-x"></i></span>
+                    <td class="delrow text-center align-middle" style="cursor: pointer">
+                        <i class="bi bi-x"></i>
                     </td>
                 </tr>
             </template>

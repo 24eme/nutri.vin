@@ -25,16 +25,10 @@ body {
     opacity: 0.4;
 }
 
-table tr td.delrow {
-    display: none;
-    position: absolute;
-    border: 0;
-    margin-top: -1px;
-    height: 100%;
-    flex-direction: column;
-    justify-content: center;
+table tr td.delrow i {
+    visibility: hidden;
 }
 
-table tr:hover td.delrow {
-    display: flex;
+table tr:hover td.delrow i {
+    visibility: visible;
 }
