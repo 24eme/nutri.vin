@@ -485,7 +485,7 @@ class QRCode extends Mapper
     public function exportToHttp()
     {
         $fields = $this->toArray();
-        $fields['visites'] = 0;
+        unset($fields['visites']);
         unset($fields['versions']);
         unset($fields['image_bouteille']);
         unset($fields['image_etiquette']);
