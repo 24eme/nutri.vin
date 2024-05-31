@@ -46,10 +46,15 @@ class CtrlNutriVin {
             }
         }
 
+        $config = $this->getConfig($f3);
+        if (!$this->isAdmin($f3) && $isset($config['admin_user'])) {
+            return $this->unauthorized($f3);
+        }
+
         if (!$this->isAdmin($f3) && $qrcode->tableExists() && count(QRCode::findAll())) {
             return $this->unauthorized($f3);
         }
-        $f3->set('config', $this->getConfig($f3));
+        $f3->set('config', $config);
         $f3->set('content','admin_setup.html.php');
         echo View::instance()->render('layout.html.php');
 
