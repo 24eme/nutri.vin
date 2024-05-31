@@ -15,8 +15,10 @@ class CtrlNutriVin {
 
     function adminSetup(Base $f3) {
         $qrcode = new QRCode();
-        if (!$qrcode->tableExists()) {
+        $f3->set('table_exists', $qrcode->tableExists());
+        if (!$qrcode->tableExists() && $f3->exists('GET.createtable')) {
             QRcode::createTable();
+            return $f3->reroute('/admin/setup', false);
         }
         if (!$this->isAdmin($f3) && count(QRCode::findAll())) {
             die('Unauthorized');
@@ -132,6 +134,9 @@ class CtrlNutriVin {
         }
         if (!$qrcode->responsable_adresse && $qrcode->responsable_siret) {
             $qrcode->responsable_adresse = QRCode::siret2adresse($qrcode->responsable_siret);
+            if (!$qrcode->responsable_adresse) {
+                $qrcode->responsable_siret = '';
+            }
         }
     }
 
@@ -448,7 +453,7 @@ class CtrlNutriVin {
 
         Exporter::getInstance()->setResponseHeaders($f3->get('PARAMS.format'));
 
-        echo $qrcode->getQRCodeContent($f3->get('PARAMS.format'), $f3->get('urlbase'), $f3->get('config')['qrcode']);
+        echo $qrcode->getQRCodeContent($f3->get('PARAMS.format'), $f3->get('urlbase'), $f3->get('config'));
     }
 
     public function adminUsers(Base $f3) {

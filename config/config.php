@@ -50,10 +50,7 @@ $config = [
       'Rouge',
       'Surmûris Blanc',
     ],
-    'qrcode' => [
-        'color' => "#000000",
-        'logo'  => __DIR__.'/../web/images/ivso.svg',
-    ],
+    'qrcode_logo'  => __DIR__.'/../web/images/ivso.svg',
     'theme' => getenv('THEME') ?: 'nutrivin',
 //    'db_pdo' => 'couchdb:http://admin:admin@127.0.0.1:5984/nutrivin_test',
 //    'admin_user' => 'userid',

@@ -72,11 +72,10 @@ if (!$instance_id) {
 putenv('INSTANCE_ID='.$instance_id);
 $config['instance_id'] = $instance_id;
 
-if (isset($config['db_pdo']) && $config['db_pdo']) {
-    DBManager::createDB($config['db_pdo']);
-}else{
-    DBManager::createDB('sqlite://'.__DIR__.'/db/nutrivin.sqlite');
+if (!isset($config['db_pdo']) || !$config['db_pdo']) {
+    $config['db_pdo'] = 'sqlite://'.__DIR__.'/db/nutrivin.sqlite';
 }
+DBManager::createDB($config['db_pdo']);
 
 $f3->set('config', $config);
 

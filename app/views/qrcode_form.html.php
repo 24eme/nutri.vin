@@ -106,7 +106,9 @@
             </div>
         </div>
 
-        <h4 class="mt-4 mb-4"><i class="bi bi-card-list"></i> Liste des ingrédients</h4>
+        <h4 class="mt-4 mb-3"><i class="bi bi-card-list"></i> Liste des ingrédients</h4>
+
+        <p class="small text-muted mb-3">Les ingrédients doivent être affichés, dans l’ordre décroissant de leur importance pondérale au moment de leur mise en œuvre dans la fabrication. Les ingrédients intervenant pour moins de 2 % dans le produit fini peuvent être énumérés dans un ordre différent à la suite des autres ingrédients.</p>
 
         <ul class="nav nav-tabs" role="tablist">
           <li class="nav-item" role="presentation">
