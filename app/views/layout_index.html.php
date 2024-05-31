@@ -19,13 +19,13 @@
         <div class="bg-white" style="border-bottom: 1px solid #ddd">
         <div class="container" style="max-width: 1050px;">
             <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3">
-                <div class="col-md-2 mb-2 mb-md-0">
+                <div class="col-md-1 mb-2 mb-md-0">
                     <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
                         <img src="/images/logo.svg" height="80" />
                     </a>
                 </div>
 
-                <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <ul class="nav col-md-9 col-md-auto mb-2 justify-content-center mb-md-0">
                     <li><a href="#accueil" class="nav-link px-2 link-secondary">Accueil</a></li>
                     <li><a href="#avantages" class="nav-link px-2">Les avantages</a></li>
                     <li><a href="#fonctionnalites" class="nav-link px-2">Les fonctionnalités</a></li>
@@ -61,8 +61,8 @@
                 <a name="avantages"></a>
                 <h2 class="mt-4">Les avantages</h2>
 
-                <div class="row mt-4">
-                    <div class="col-6">
+                <div class="row">
+                    <div class="col-sm-6 mt-4">
                         <div class="card shadow-sm">
                             <div class="card-header">
                                 <i class="bi bi-window-split"></i> Ergonomie
@@ -73,7 +73,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-sm-6 mt-4">
                         <div class="card shadow-sm">
                             <div class="card-header">
                                 <i class="bi bi-patch-check"></i> Conforme à la législation
@@ -84,7 +84,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 mt-4">
+                    <div class="col-sm-6 mt-4">
                         <div class="card shadow-sm">
                             <div class="card-header">
                                 <i class="bi bi-opencollective"></i> Open source et communautaire
@@ -95,7 +95,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 mt-4">
+                    <div class="col-sm-6 mt-4">
                         <div class="card shadow-sm">
                             <div class="card-header">
                                 <i class="bi bi-clock-history"></i> Pérénité
@@ -115,7 +115,7 @@
                 <h2 class="mt-4">Les fonctionnalités</h2>
                 <p>Découvrir le fonctionnement de la plateforme graçe à cette vidéo :</p>
                 <div class="row">
-                    <div class="col">
+                    <div class="col-md">
                         <video controls class="img-fluid border rounded">
                             <source src="/nutrivin.mp4" type="video/mp4" />
                             <source src="/nutrivin.webm" type="video/webm" />
@@ -125,7 +125,7 @@
                             </p>
                         </video>
                     </div>
-                    <div class="col">
+                    <div class="col-md">
                         <table class="table table-striped table-sm table-bordered">
                             <thead>
                                 <tr>
@@ -217,10 +217,10 @@
             </div>
         </div>
         <div class="bg-white shadow-lg" style="border-bottom: 1px solid #ddd">
-            <div class="container pt-4 pb-5" style="max-width: 1050px;">
+            <div class="container pt-4 pb-5" style="max-width: 992px;">
                 <a name="conformite"></a>
                 <h2 class="mb-4 text-center mt-4">Conforme aux legislations</h2>
-                <div class="card w-50 mx-auto">
+                <div class="card w-auto mx-auto">
                     <div class="card-header">
                         Conformité au règlement (UE) n° 1308/2013
                     </div>
@@ -245,46 +245,48 @@
 
                 Voici les organisations qui ont actuellement installé cette plateforme et que vous pouvez utiliser : </p>
 
-                <table class="table table-striped table-bordered mt-4">
-                    <thead>
-                        <tr>
-                            <th>Plateforme</th>
-                            <th>Gestionnaire</th>
-                            <th>Description</th>
-                            <th>Coût</th>
-                            <th class="text-center">Nom de domaine</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Nutri.Vin</td>
-                            <td><a href="https://24eme.fr">Société 24ème</a></td>
-                            <td>Accessible à tous les organismes compatible avec viticonnect</td>
-                            <td>Gratuit</td>
-                            <td><a href="https://nutri.vin/">nutri.vin</a></td>
-                        </tr>
-                        <tr>
-                            <td>Qr-So.fr</td>
-                            <td><a href="https://www.vignobles-sudouest.fr">L'interprofession des Vins du Sud Ouest</a></td>
-                            <td>L'accès est limité aux adhérents à l'interprofession</td>
-                            <td>Compris dans la cotisation pour les dénominations gérées par l'interprofession et payant pour les autres.</td>
-                            <td><a href="https://qr-so.fr/">qr-so.fr</a></td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered mt-4">
+                        <thead>
+                            <tr>
+                                <th>Plateforme</th>
+                                <th>Gestionnaire</th>
+                                <th>Description</th>
+                                <th>Coût</th>
+                                <th class="text-center">Nom de domaine</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Nutri.Vin</td>
+                                <td><a href="https://24eme.fr">Société 24ème</a></td>
+                                <td>Accessible à tous les organismes compatible avec viticonnect</td>
+                                <td>Gratuit</td>
+                                <td><a href="https://nutri.vin/">nutri.vin</a></td>
+                            </tr>
+                            <tr>
+                                <td>Qr-So.fr</td>
+                                <td><a href="https://www.vignobles-sudouest.fr">L'interprofession des Vins du Sud Ouest</a></td>
+                                <td>L'accès est limité aux adhérents à l'interprofession</td>
+                                <td>Compris dans la cotisation pour les dénominations gérées par l'interprofession et payant pour les autres.</td>
+                                <td><a href="https://qr-so.fr/">qr-so.fr</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
         <div>
             <div class="container pt-4 pb-5" style="max-width: 1050px;">
-                <a name="apropos"></a>
-                <h2 class="mt-4">À propos</h2>
-                <div class="row">
-                    <div class="col-2"><img height="160" src="https://www.24eme.fr/img/24eme.svg" />  </div>
-                    <div class="col">
-                        <p class="mt-4">Ce logiciel a été créé par le 24ème, une société coopérative spécialisée depuis 2010 dans le développement de logiciels libres pour des communautés de métiers et principalement dans le domaine viticole.</p>
-                        <a href="" class="btn btn-link float-end">En savoir plus sur le 24ème</a>
+                <h2 class="mt-4" id="apropos">À propos</h2>
+                <div class="row align-items-center">
+                    <div class="col-sm-2 text-center">
+                        <img style="max-height: 160px" class="img-fluid" src="https://www.24eme.fr/img/24eme.svg" />
                     </div>
-
+                    <div class="col-sm-10">
+                        <p class="mt-4">Ce logiciel a été créé par le 24ème, une société coopérative spécialisée depuis 2010 dans le développement de logiciels libres pour des communautés de métiers et principalement dans le domaine viticole.</p>
+                        <a href="/" class="btn btn-link float-end">En savoir plus sur le 24ème</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -295,6 +297,5 @@
                 <a href="/faq">Consulter la FAQ</a>
             </footer>
         </div>
-        <script src="/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
