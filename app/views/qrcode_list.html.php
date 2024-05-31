@@ -10,35 +10,6 @@
     <?php if ($qrlist): ?>
         <div class="col">
             <button type="button" id="multiExportBtn" class="btn btn-light mb-2" disabled>Télécharger la sélection</button>
-            <div class="modal" id="modal-export" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="modal-export-title">Paramètres de téléchargement</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <form id="multiExportForm" method="GET" action="/qrcode/<?php echo $userid ?>/multiexport" enctype="multipart/form-data">
-                            <div class="modal-body">
-                                <div class="form-check form-switch form-check-reverse text-start">
-                                    <p>
-                                        <input class="form-check-input" style="cursor: pointer" type="checkbox" role="switch" value="1" name="mentions" id="switch-mentions" checked>
-                                        <label class="form-check-label" style="cursor: pointer" for="switch-mentions">Intégrer les mentions obligatoires</label>
-                                    </p>
-                                </div>
-                                <div class="form-check form-switch form-check-reverse text-start">
-                                    <p>
-                                        <input class="form-check-input" style="cursor: pointer" type="checkbox" role="switch" value="1" name="logo" id="switch-logo" checked>
-                                        <label class="form-check-label" style="cursor: pointer" for="switch-logo">Intégrer les logo (pour les appellations compatibles)</label>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="submit" class="btn btn-secondary" data-bs-dismiss="modal">Télécharger</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
         </div>
     <?php endif; ?>
     <table id="list_qr" class="table table-bordered table-striped text-center">
@@ -91,6 +62,41 @@
         <a href="/qrcode/<?php echo $userid ?>/create" class="btn btn-primary pull-end">Créer un nouveau QRCode</a>
     </div>
 </div>
+
+<?php if ($qrlist) : ?>
+<div class="modal" id="modal-export" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="modal-export-title">Paramètres de téléchargement</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form id="multiExportForm" method="GET" action="/qrcode/<?php echo $userid ?>/multiexport" enctype="multipart/form-data">
+                <div class="modal-body">
+                    <p>Pour plus de simplicité, vous allez télécharger les QRCodes que vous avez sélectionné dans tous les formats gérés par la plateforme, dans une archive compressée.</p>
+                    <p>Vous avez le choix d'afficher ou non les valeurs nutritionnelles et le logo de la plateforme (pour les dénominations concernées) pour tous les QRCodes sélectionnés via les deux options suivantes :</p>
+                    <hr>
+                    <div class="form-check form-switch form-check-reverse text-start">
+                        <p>
+                            <input class="form-check-input" style="cursor: pointer" type="checkbox" role="switch" value="1" name="mentions" id="switch-mentions" checked>
+                            <label class="form-check-label" style="cursor: pointer" for="switch-mentions">Intégrer les mentions obligatoires</label>
+                        </p>
+                    </div>
+                    <div class="form-check form-switch form-check-reverse text-start">
+                        <p>
+                            <input class="form-check-input" style="cursor: pointer" type="checkbox" role="switch" value="1" name="logo" id="switch-logo" checked>
+                            <label class="form-check-label" style="cursor: pointer" for="switch-logo">Intégrer le logo (pour les dénominations compatibles)</label>
+                        </p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-secondary" data-bs-dismiss="modal">Télécharger</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<?php endif ?>
 
 <?php if (!$qrlist): ?>
 <div class="modal" id="modal-info-list" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
