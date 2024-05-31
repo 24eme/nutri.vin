@@ -34,19 +34,19 @@
        </div>
 
        <div class="form-floating mb-3">
-           <input list="appellations_liste" type="text" class="form-control" id="appellation" name="appellation" value="<?php echo $qrcode->appellation; ?>" placeholder="Appellation"/>
-            <datalist id="appellations_liste">
+           <input list="denominations_liste" type="text" class="form-control" id="denomination" name="denomination" value="<?php echo $qrcode->denomination; ?>" placeholder="Dénomination"/>
+            <datalist id="denominations_liste">
             <?php
               if (isset($config['appellations'])):
                 foreach ($config['appellations'] as $appellation):
             ?>
-              <option value="<?php echo $appellation ?>"></option>
+              <option value="<?php echo $denomination ?>"></option>
             <?php
                 endforeach;
               endif;
             ?>
             </datalist>
-            <label form="appellation">Appellation</label>
+            <label form="denomination">Dénomination</label>
        </div>
 
        <div class="d-flex justify-content-between">

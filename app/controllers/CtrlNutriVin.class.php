@@ -37,9 +37,9 @@ class CtrlNutriVin {
           if (isset($qrcode[$field])) unset($qrcode[$field]);
         }
         if (!$csv) {
-          $csv = 'appellation de l\'instance;'.implode(';', array_keys($qrcode))."\n";
+          $csv = 'denomination de l\'instance;'.implode(';', array_keys($qrcode))."\n";
         }
-        $csv .= (int)$this->isAppellationInConfig($qrcode['appellation']).';'.implode(';', array_values($qrcode))."\n";
+        $csv .= (int)$this->isDenominationInConfig($qrcode['denomination']).';'.implode(';', array_values($qrcode))."\n";
       }
       header('Content-Type: text/csv');
       header('Content-Disposition: attachment; filename="'.date('YmdHi').'_qrcodes.csv'.'"');
@@ -97,7 +97,7 @@ class CtrlNutriVin {
                     }
                 }
             }
-            $qrcode->appellation_instance = $this->isAppellationInConfig($qrcode->appellation);
+            $qrcode->denomination_instance = $this->isDenominationInConfig($qrcode->denomination);
             $qrcode->save();
             return $f3->reroute('/qrcode/'.$qrcode->user_id.'/parametrage/'.$qrcode->getId().'?from=create', false);
         }
@@ -370,7 +370,7 @@ class CtrlNutriVin {
         }
         $f3->set('qrcode', $qrcode);
 
-        $f3->set('canSwitchLogo', $this->isAppellationInConfig($qrcode->appellation));
+        $f3->set('canSwitchLogo', $this->isDenominationInConfig($qrcode->denomination));
         $f3->set('content', 'qrcode_parametrage.html.php');
         echo View::instance()->render('layout.html.php');
     }
@@ -393,7 +393,7 @@ class CtrlNutriVin {
         $qrcode->mentions = (bool)$f3->get('POST.mentions');
 
         $config = $this->getConfig($f3);
-        if ($this->isAppellationInConfig($qrcode->appellation) === false) {
+        if ($this->isDenominationInConfig($qrcode->denomination) === false) {
             $qrcode->logo = false;
         }
 
@@ -469,10 +469,10 @@ class CtrlNutriVin {
         echo View::instance()->render('layout.html.php');
     }
 
-    public function isAppellationInConfig($appellation) {
+    public function isDenominationInConfig($denomination) {
         $c = Base::instance()->get('config');
-        $appellationsInstance = array_key_exists('appellations', $c) ? $c['appellations'] : [];
+        $denominationsInstance = array_key_exists('denominations', $c) ? $c['denominations'] : [];
 
-        return in_array($appellation, $appellationsInstance);
+        return in_array($denomination, $denominationsInstance);
     }
 }

@@ -30,7 +30,7 @@ class QRCode extends Mapper
 		"domaine_nom" => 1,
 		"adresse_domaine" => 1,
 		"cuvee_nom" => 1,
-		"appellation" => 1,
+		"denomination" => 1,
 		"couleur" => 1,
 		"millesime" => 1,
 		"alcool_degre" => 1,
@@ -62,7 +62,7 @@ class QRCode extends Mapper
         'user_id' => 'VARCHAR(255)',
         'domaine_nom' => 'VARCHAR(255)',
         'adresse_domaine' => 'VARCHAR(255)',
-        'appellation' => 'VARCHAR(255)',
+        'denomination' => 'VARCHAR(255)',
         'couleur' => 'VARCHAR(255)',
         'cuvee_nom' => 'VARCHAR(255)',
         'alcool_degre' => 'FLOAT',
@@ -92,7 +92,7 @@ class QRCode extends Mapper
         'date_version' => 'VARCHAR(26)',
         'logo' => 'BOOL',
         'mentions' => 'BOOL',
-        'appellation_instance' => 'BOOL',
+        'denomination_instance' => 'BOOL',
         'visites' => 'TEXT',
         'labels' => 'TEXT',
         'versions' => 'TEXT',
@@ -329,7 +329,7 @@ class QRCode extends Mapper
 			$this->logo = true;
 			$this->mentions = true;
 		}
-        if (!$this->appellation_instance) {
+        if (!$this->denomination_instance) {
             $this->logo = false;
         }
 
