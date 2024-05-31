@@ -77,7 +77,7 @@
     <th class="align-top">php max upload size</th>
     <td class="text-muted">upload_max_filesize = <?php echo ini_get('upload_max_filesize'); ?></td>
     <td>
-        <?php if (intval(ini_get('upload_max_filesize')) > 20): ?>
+        <?php if (intval(ini_get('upload_max_filesize')) >= 20): ?>
         <i class="bi bi-check-square text-success"></i>
         <?php else: ?>
         <span class="text-warning">
