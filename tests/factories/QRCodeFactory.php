@@ -14,7 +14,7 @@ class QRCodeFactory
         $qrcode->user_id = $userid;
         $qrcode->domaine_nom = $web->filler(1, 3, false); // sentences, words, lorem ipsum
         $qrcode->adresse_domaine = $web->filler(1, 4, false);
-        $qrcode->appellation = "AOP ".$web->filler(1, 3, false);
+        $qrcode->denomination = "AOP ".$web->filler(1, 3, false);
         $qrcode->couleur = array_rand(array_flip(['Rouge', 'Rosé', 'Blanc']));
         $qrcode->cuvee_nom = $web->filler(1, 3, false);
         $qrcode->alcool_degre = floatval(rand(9, 17));

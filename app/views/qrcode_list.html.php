@@ -7,13 +7,40 @@
 <h2 class="text-center mb-5"><?php echo htmlspecialchars($_SESSION["username"]);?> QR Codes</h2>
 
 <div class="text-end">
-    <form id="multiExportForm" method="GET" action="/qrcode/<?php echo $userid ?>/multiexport" enctype="multipart/form-data">
+    <?php if ($qrlist): ?>
         <div class="col">
-            <?php if ($qrlist): ?>
-                <button type="submit" id="multiExportBtn" class="btn btn-light mb-2" disabled>Télécharger la sélection</button>
-            <?php endif; ?>
+            <button type="button" id="multiExportBtn" class="btn btn-light mb-2" disabled>Télécharger la sélection</button>
+            <div class="modal" id="modal-export" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="modal-export-title">Paramètres de téléchargement</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <form id="multiExportForm" method="GET" action="/qrcode/<?php echo $userid ?>/multiexport" enctype="multipart/form-data">
+                            <div class="modal-body">
+                                <div class="form-check form-switch form-check-reverse text-start">
+                                    <p>
+                                        <input class="form-check-input" style="cursor: pointer" type="checkbox" role="switch" value="1" name="mentions" id="switch-mentions" checked>
+                                        <label class="form-check-label" style="cursor: pointer" for="switch-mentions">Intégrer les mentions obligatoires</label>
+                                    </p>
+                                </div>
+                                <div class="form-check form-switch form-check-reverse text-start">
+                                    <p>
+                                        <input class="form-check-input" style="cursor: pointer" type="checkbox" role="switch" value="1" name="logo" id="switch-logo" checked>
+                                        <label class="form-check-label" style="cursor: pointer" for="switch-logo">Intégrer les logo (pour les appellations compatibles)</label>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="submit" class="btn btn-secondary" data-bs-dismiss="modal">Télécharger</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
-    </form>
+    <?php endif; ?>
     <table id="list_qr" class="table table-bordered table-striped text-center">
         <thead>
             <tr>
@@ -36,7 +63,7 @@
                         <td><?php echo $qr->domaine_nom; ?></td>
                         <td>
                             <?php echo $qr->cuvee_nom; ?>
-                            <?php echo $qr->appellation; ?> <?php echo $qr->couleur; ?>
+                            <?php echo $qr->denomination; ?> <?php echo $qr->couleur; ?>
                             <?php echo $qr->millesime; ?>
                             <?php echo ($qr->centilisation) ? ' - '.$qr->centilisation . ' cl' : ''; ?>
                         </td>
@@ -75,7 +102,7 @@
       </div>
       <div class="modal-body">
         <p>Ce service vous est mis à disposition par l'IVSO.</p>
-        <p>Vous ne serez facturé que si l'appellation de votre vin ne figure pas dans le catalogue de l'interprofession.</p>
+        <p>Vous ne serez facturé que si la dénomination de votre vin ne figure pas dans le catalogue de l'interprofession.</p>
 
         <p>Happy QRCoding !</p>
       </div>
@@ -107,4 +134,10 @@ document.addEventListener('DOMContentLoaded', function () {
     modal.show();
 });
 <?php endif ?>
+
+
+document.getElementById('multiExportBtn').addEventListener("click", function() {
+    const modalExport = new bootstrap.Modal('#modal-export');
+    modalExport.show();
+})
 </script>
