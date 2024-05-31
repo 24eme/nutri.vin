@@ -27,7 +27,7 @@
           <?php echo $qrcode->domaine_nom ?>
         </p>
         <?php endif; ?>
-        <?php if (empty($publicview) || (!empty($publicview) && ($qrcode->cuvee_nom || $qrcode->appellation || $qrcode->couleur))): ?>
+        <?php if (empty($publicview) || (!empty($publicview) && ($qrcode->cuvee_nom || $qrcode->denomination || $qrcode->couleur))): ?>
         <p class="fs-3">
             <?php if (empty($publicview) || $qrcode->cuvee_nom): ?>
             <span data-liveform-name="cuvee_nom" data-liveform-template='{{%s}}'>
@@ -35,12 +35,12 @@
             </span>
             <br/>
             <?php endif; ?>
-            <?php if (empty($publicview) || $qrcode->appellation): ?>
-            <small class="fw-light text-muted" data-liveform-name="appellation" data-liveform-template='{{%s}}'>
-                <?php echo $qrcode->appellation ?>
+            <?php if (empty($publicview) || $qrcode->denomination): ?>
+            <small class="fw-light text-muted" data-liveform-name="denomination" data-liveform-template='{{%s}}'>
+                <?php echo $qrcode->denomination ?>
             </small>
             <?php endif; ?>
-            <?php if (empty($publicview) || $qrcode->appellation): ?>
+            <?php if (empty($publicview) || $qrcode->denomination): ?>
             <small class="fw-light text-muted" data-liveform-name="couleur" data-liveform-template='{{%s}}'>
                 <?php echo $qrcode->couleur ?>
             </small>
@@ -228,8 +228,8 @@
     <?php endif; ?>
 
     <div class="py-4 bg-white text-center liveform_anchor">
-      <?php foreach ($qrcode->getLabels() as $label): ?>
-        <img class="bg-white px-1" style="height: 30px;" title="Vin labellisé <?php echo $label ?>" src="/images/labels/<?php echo strtolower($label) ?>.png" >
+      <?php foreach ($qrcode::$LABELS as $label): ?>
+        <img class="bg-white px-1" data-liveform-name="labels[]" data-liveform-template='{{<?php echo $label ?>}}' style="height: 30px;<?php if(!in_array($label, $qrcode->getLabels())): ?> display:none;<?php endif; ?>" title="Vin labellisé <?php echo $label ?>" src="/images/labels/<?php echo strtolower($label) ?>.png" >
       <?php endforeach; ?>
     </div>
 

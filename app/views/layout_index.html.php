@@ -16,8 +16,9 @@
         <?php include($THEME.'css.php'); ?>
     </head>
     <body>
+        <div class="bg-white shadow">
         <div class="container" style="max-width: 1050px;">
-            <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
+            <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3">
                 <div class="col-md-2 mb-2 mb-md-0">
                     <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
                         <img src="/images/logo.svg" height="80" />
@@ -28,34 +29,46 @@
                     <li><a href="#" class="nav-link px-2 link-secondary">Accueil</a></li>
                     <li><a href="#" class="nav-link px-2">Les avantages</a></li>
                     <li><a href="#" class="nav-link px-2">Les fonctionnalités</a></li>
+                    <li><a href="#" class="nav-link px-2">Conformité UE</a></li>
                     <li><a href="#" class="nav-link px-2">Les instances</a></li>
                     <li><a href="#" class="nav-link px-2">À propos</a></li>
                 </ul>
 
-                <div class="col-md-3 text-end">
-                    <button type="button" class="btn btn-primary">Créer un QR Code sur Nutri.Vin</button>
+                <div class="col-md-2 text-end">
+                    <div class="dropdown">
+                      <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Créer un QR Code sur Nutri.Vin
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a href="/qrcode" class="dropdown-item" href="#">Créer un QR Code sur Nutri.Vin</a></li>
+                        <li><a href="" class="dropdown-item" href="#">Créer un QR Code sur Qr-So.fr</a></li>
+                      </ul>
+                    </div>
                 </div>
             </header>
         </div>
+        </div>
+        <div class="bg-light">
         <div class="container" style="max-width: 1050px;">
             <div class="row">
                 <div class="col"></div>
-                <div class="col-8 justify-content-center text-center mt-4">
+                <div class="col-8 justify-content-center text-center mt-5">
                     <h1>QR Code et Vins</h1>
                     <p class="lead mb-4">Une plateforme open source et communautaire de génération de QR Code pour la déclaration nutritionnelle de bouteilles vins.</p>
                 </div>
                 <div class="col"></div>
             </div>
-            <div class="text-center mt-5">
-                <img src="/images/capture.jpg" class="img-fluid">
+            <div class="text-center mt-2">
+                <img src="/images/capture_browser.png" class="img-fluid">
             </div>
         </div>
-        <div class="bg-light">
+        </div>
+        <div class="bg-white">
             <div class="container pt-4 pb-5" style="max-width: 1050px;">
                 <h2>Les avantages</h2>
 
                 <div class="row mt-4">
-                    <div class="col">
+                    <div class="col-6">
                         <div class="card shadow-sm">
                             <div class="card-header">
                                 <i class="bi bi-window-split"></i> Ergonomie
@@ -66,7 +79,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-6">
                         <div class="card shadow-sm">
                             <div class="card-header">
                                 <i class="bi bi-patch-check"></i> Conforme à la législation
@@ -77,10 +90,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-6 mt-4">
                         <div class="card shadow-sm">
                             <div class="card-header">
-                                <i class="bi bi-opencollective"></i>  Open source et communautaire
+                                <i class="bi bi-opencollective"></i> Open source et communautaire
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">L'open source au service de la durabilité</h5>
@@ -88,10 +101,21 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-6 mt-4">
+                        <div class="card shadow-sm">
+                            <div class="card-header">
+                                <i class="bi bi-clock-history"></i> Pérénité
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Pérénité</h5>
+                                <p class="card-text">Le projet peut être utilisé sur nutri.vin directement, sur une instance mis à disposition par une interprofession ou librement installé sur son propre serveur avec votre nom de domaine, pour avoir la maitrîse du QR Code dans le temps.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div>
+        <div class="bg-light">
             <div class="container pt-4 pb-5" style="max-width: 1050px;">
                 <h2>Les fonctionnalités</h2>
                 <p>Découvrir le fonctionnement de la plateforme graçe à cette vidéo :</p>
@@ -194,6 +218,19 @@
                 </div>
             </div>
         </div>
+        <div class="bg-white">
+            <div class="container pt-4 pb-5" style="max-width: 1050px;">
+                <h2 class="mb-4">Conforme aux legislations</h2>
+                <div class="card w-50">
+                    <div class="card-header">
+                        Conformité au règlement (UE) n° 1308/2013
+                    </div>
+                    <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><i class="bi bi-patch-check text-success"></i> Pas d'informations commerciales</li>
+                    <li class="list-group-item"><i class="bi bi-patch-check text-success"></i> Les utilisateurs ne sont pas tracés</li>
+                </div>
+            </div>
+        </div>
         <div class="bg-light">
             <div class="container pt-4 pb-5" style="max-width: 1050px;">
                 <h2>Les instances existantes</h2>
@@ -220,14 +257,14 @@
                             <td><a href="https://24eme.fr">Société 24ème</a></td>
                             <td>Accessible à tous les organismes compatible avec viticonnect.</td>
                             <td>Gratuit</td>
-                            <td><a href="https://nutri.vin/">https://nutri.vin/</a></td>
+                            <td><a href="https://nutri.vin/">nutri.vin</a></td>
                         </tr>
                         <tr>
                             <td>Qr-So.fr</td>
                             <td><a href="https://www.vignobles-sudouest.fr">L'interprofession des Vins du Sud Ouest</a></td>
                             <td>L'accès est limité aux adhérents à l'interprofession.</td>
                             <td>Compris dans la cotisation pour les AOC géré par l'interprofession et payant pour les autres AOC.</td>
-                            <td><a href="https://qr-so.fr/">https://qr-so.fr/</a></td>
+                            <td><a href="https://qr-so.fr/">qr-so.fr</a></td>
                         </tr>
                     </tbody>
                 </table>
@@ -247,9 +284,10 @@
             </div>
         </div>
         <div class="container" style="max-width: 1050px;">
-            <footer class="text-center text-muted border-top pt-2">
+            <footer class="text-center text-muted pt-2">
                 Logiciel libre sous licence AGPL-3.0 : <a href="https://github.com/24eme/nutri.vin">voir le code source</a>
             </footer>
         </div>
+        <script src="/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

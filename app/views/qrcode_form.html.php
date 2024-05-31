@@ -34,19 +34,17 @@
        </div>
 
        <div class="form-floating mb-3">
-           <input list="appellations_liste" type="text" class="form-control" id="appellation" name="appellation" value="<?php echo $qrcode->appellation; ?>" placeholder="Appellation"/>
-            <datalist id="appellations_liste">
+           <input list="denominations_liste" type="text" class="form-control" id="denomination" name="denomination" value="<?php echo $qrcode->denomination; ?>" placeholder="Dénomination"/>
+            <datalist id="denominations_liste">
             <?php
-              if (isset($config['appellations'])):
-                foreach ($config['appellations'] as $appellation):
+                foreach ($qrcode->getDenominations($config) as $denomination):
             ?>
-              <option value="<?php echo $appellation ?>"></option>
+              <option value="<?php echo $denomination ?>"></option>
             <?php
                 endforeach;
-              endif;
             ?>
             </datalist>
-            <label form="appellation">Appellation</label>
+            <label form="denomination">Dénomination</label>
        </div>
 
        <div class="d-flex justify-content-between">
@@ -60,13 +58,11 @@
            <input list="couleurs_liste" type="text" class="form-control" id="couleur" name="couleur" value="<?php echo $qrcode->couleur; ?>" placeholder="Rouge, Blanc, Rosé, ...."/>
             <datalist id="couleurs_liste">
             <?php
-              if (isset($config['couleurs'])):
-                foreach ($config['couleurs'] as $couleur):
+                foreach ($qrcode->getCouleurs() as $couleur):
             ?>
               <option value="<?php echo $couleur ?>"></option>
             <?php
                 endforeach;
-              endif;
             ?>
             </datalist>
            <label form="couleur">Couleur</label>
@@ -564,10 +560,13 @@ const liveform = (function () {
                 document.getElementById(el.dataset.imageorigin).src = event.target.result;
             });
             reader.readAsDataURL(file);
+        } else if(el.type === 'checkbox') {
+          const realToUpdate = toUpdate.parentNode.querySelector("[data-liveform-template='{{"+el.value+"}}']");
+          realToUpdate.style.display = (el.checked) ? 'inline-block' : 'none';
         } else {
             let ingredientsListe = el.value.replace(/_(.*?)_/g, "<strong>$1</strong>");
             ingredientsListe = ingredientsListe.replace(/ ?([^,]* : [^;]* ; )/g, " <em>$1</em> ");
-            toUpdate.innerHTML = toUpdate.dataset.liveformTemplate.replace('{{%s}}', ingredientsListe)
+            toUpdate.innerHTML = toUpdate.dataset.liveformTemplate.replace('{{%s}}', ingredientsListe);
         }
         const blockAnchor = toUpdate.closest('.liveform_anchor')
         _template.scrollTop = blockAnchor.offsetTop - ((_template.offsetHeight - blockAnchor.offsetHeight) / 2)
