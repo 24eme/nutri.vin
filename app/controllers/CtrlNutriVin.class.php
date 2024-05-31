@@ -25,11 +25,11 @@ class CtrlNutriVin {
             $qr = QRCode::findAll(null, ['limit' => 1]);
             if (count($qr)) {
                 $qr = $qr[0];
+                $a = $qr->toArray();
+                unset($a['_rev']);
             }else{
                 $qr = null;
             }
-            $a = $qr->toArray();
-            unset($a['_rev']);
             if ($qr && (count(array_keys($a)) != (count(QRCode::$getFieldsAndType) + 1))) {
                 $f3->set('schema_error', count(array_keys($qr->toArray())).' champs en base contre '.(count(QRCode::$getFieldsAndType)) + 1).' attendus';
             }
