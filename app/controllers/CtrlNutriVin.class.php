@@ -34,7 +34,7 @@ class CtrlNutriVin {
         $f3->set('schema_real_nb', count(array_keys($qr->toArray())) . ' ' . implode(', ', $qr->toArray()) );
         $f3->set('schema_theoritical_nb', count(QRCode::$getFieldsAndType) . ' ' . implode(', ', array_keys(QRCode::$getFieldsAndType)));
 
-        if (!$this->isAdmin($f3) && count(QRCode::findAll())) {
+        if (!$this->isAdmin($f3) && $qrcode->tableExists() && count(QRCode::findAll())) {
             die('Unauthorized');
         }
         $f3->set('content','admin_setup.html.php');
