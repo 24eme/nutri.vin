@@ -67,6 +67,7 @@ class CtrlNutriVin {
     }
 
     private function isAdmin(Base $f3) {
+        $f3->set('is_admin', false);
         if ( !$f3->exists('SESSION.userid')) {
             return false;
         }
@@ -74,7 +75,8 @@ class CtrlNutriVin {
         if (!isset($config['admin_user'])) {
             return false;
         }
-        return $f3->get('SESSION.userid') == $config['admin_user'];
+        $f3->set('is_admin', $f3->get('SESSION.userid') == $config['admin_user']);
+        return $f3->get('is_admin');
     }
 
     private function authenticatedUserOnly(Base $f3) {
