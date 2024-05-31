@@ -104,7 +104,7 @@
 
         <h4 class="mt-4 mb-3"><i class="bi bi-card-list"></i> Liste des ingrédients</h4>
 
-        <p class="small text-muted mb-3">Les ingrédients doivent être affichés, dans l’ordre décroissant de leur importance pondérale au moment de leur mise en œuvre dans la fabrication. Les ingrédients intervenant pour moins de 2 % dans le produit fini peuvent être énumérés dans un ordre différent à la suite des autres ingrédients.</p>
+        <p class="small text-muted mb-3"><i class="bi bi-exclamation-triangle"></i> Les ingrédients doivent être affichés, dans l’ordre décroissant de leur importance pondérale au moment de leur mise en œuvre dans la fabrication. Les ingrédients intervenant pour moins de 2 % dans le produit fini peuvent être énumérés dans un ordre différent à la suite des autres ingrédients.</p>
 
         <ul class="nav nav-tabs" role="tablist">
           <li class="nav-item" role="presentation">
@@ -123,8 +123,9 @@
                     <tr>
                       <th class="" scope="col"></th>
                       <th class="text-center" scope="col">Catégorie</th>
-                      <th class="text-center" scope="col">Bio</th>
                       <th class="text-center" scope="col">Allergène</th>
+                      <th class="text-center" scope="col">Bio</th>
+                      <th class="text-center" scope="col"></th>
                     </tr>
                   </thead>
                   <tbody></tbody>
@@ -141,14 +142,17 @@
                             <input form="form_add_ingredients" type="text" class="form-control input_additif" list="categories_additif_list" placeholder="Catégorie">
                         </div>
                     </td>
-                    <td class="ingredient_ab text-center align-middle">
-                        <input form="form_add_ingredients" class="form-check-input" type="checkbox" value="" aria-label="case à cocher pour déclarer un ingrédient bio">
-                    </td>
                     <td class="ingredient_allergene text-center align-middle">
                         <input form="form_add_ingredients" class="form-check-input" type="checkbox" value="" aria-label="case à cocher pour déclarer un ingrédient allergène">
                     </td>
+                    <td class="ingredient_ab text-center align-middle">
+                        <input form="form_add_ingredients" class="form-check-input" type="checkbox" value="" aria-label="case à cocher pour déclarer un ingrédient bio">
+                    </td>
+                    <td class="ingredient_facultatif text-center align-middle">
+                        <abbr title="Ingrédient facultatif" class="invisible mx-2">F</abbr>
+                    </td>
                     <td class="delrow" style="cursor: pointer">
-                        <span class="text-danger fs-2"><i class="bi bi-x"></i></span>
+                        <span class="fs-2"><i class="bi bi-x"></i></span>
                     </td>
                 </tr>
             </template>
@@ -623,6 +627,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
                 e.target.closest('tr').querySelector('.input_additif').value = additif
             }
+            e.target.closest('tr').querySelector('td.ingredient_facultatif abbr').classList.toggle('invisible', !autoDetectFacultatif(e.target.value))
         }
 
         if (e.target.closest('#table_ingredients')) {
@@ -788,6 +793,16 @@ function autoDetectAdditif(ingredient) {
     return null
 }
 
+function autoDetectFacultatif(ingredient) {
+    const dataOption = document.querySelector(`#ingredients_list option[value="${ingredient}"`)
+
+    if(dataOption && dataOption.dataset && dataOption.dataset.facultatif) {
+        return dataOption.dataset.facultatif
+    }
+
+    return null
+}
+
 function ingredientsTextToTable() {
     let ingredientsText = document.getElementById('ingredients').value
     const ingredientsTableBody = document.querySelector('table#table_ingredients tbody')
@@ -825,6 +840,7 @@ function ingredientsTextToTable() {
             templateClone.querySelector('td.ingredient_additif > input[type=checkbox]').classList.add('d-none');
             templateClone.querySelector('.input_additif').value = additif
         }
+        templateClone.querySelector('td.ingredient_facultatif abbr').classList.toggle('invisible', !autoDetectFacultatif(ingredient))
         templateClone.querySelector('td.ingredient_libelle input.input_ingredient').value = ingredient.replace(/[_\*]/g, '');
         if(ingredient.match(/\*$/)) {
             templateClone.querySelector('td.ingredient_ab input').checked = true
