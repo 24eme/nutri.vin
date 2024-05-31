@@ -40,7 +40,7 @@
             <?php else: ?>
             <span class="text-danger">
             <i class="bi bi-exclamation-octagon-fill"></i>
-            (php-sqlite3 neeeded)
+            (php-sqlite3 needed)
             </span>
             <?php endif; ?>
         </td>
@@ -54,7 +54,7 @@
             <?php else: ?>
             <span class="text-danger">
             <i class="bi bi-exclamation-octagon-fill"></i>
-            (php-curl neeeded)
+            (php-curl needed)
             </span>
             <?php endif; ?>
         </td>
