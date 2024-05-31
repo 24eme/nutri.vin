@@ -117,7 +117,7 @@ class QRCode extends Mapper
             };
             return $items;
         }
-        return $e->mapper->find($criteria);
+        return self::find($criteria);
     }
 
   public static function find($criteria = null, $instance_only = true) {
