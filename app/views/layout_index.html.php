@@ -291,6 +291,8 @@
         <div class="container" style="max-width: 1050px;">
             <footer class="text-center text-muted pt-2">
                 Logiciel libre sous licence AGPL-3.0 : <a href="https://github.com/24eme/nutri.vin">voir le code source</a>
+                <br/>
+                <a href="/faq">Consulter la FAQ</a>
             </footer>
         </div>
         <script src="/js/bootstrap.bundle.min.js"></script>
