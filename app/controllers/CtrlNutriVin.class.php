@@ -47,7 +47,7 @@ class CtrlNutriVin {
         }
 
         if (!$this->isAdmin($f3) && $qrcode->tableExists() && count(QRCode::findAll())) {
-            die('Unauthorized');
+            return $this->unauthorized($f3);
         }
         $f3->set('config', $this->getConfig($f3));
         $f3->set('content','admin_setup.html.php');
@@ -93,7 +93,7 @@ class CtrlNutriVin {
         if ( !$f3->exists('SESSION.userid') || !$f3->exists('PARAMS.userid') ||
              ($f3->get('PARAMS.userid') != $f3->get('SESSION.userid')))
         {
-            die('Unauthorized');
+            return $this->unauthorized($f3);
         }
         return true;
     }
@@ -250,14 +250,18 @@ class CtrlNutriVin {
                 $f3->set('SESSION.authtype', 'default');
                 return $f3->reroute('/qrcode');
             }
-            if ($f3->exists('SESSION.unauthorized') && $f3->get('SESSION.unauthorized')) {
-                $f3->clear('SESSION.unauthorized');
-                die ("Not authorized");
-            }
-            $f3->set('SESSION.unauthorized', 'Unauthorized');
-            return $f3->reroute('/qrcode', false);
+            return $this->unauthorized($f3);
         }
         return $f3->reroute('/qrcode/'.$f3->get('SESSION.userid').'/list', false);
+    }
+
+    private function unauthorized($f3) {
+        if ($f3->exists('SESSION.unauthorized') && $f3->get('SESSION.unauthorized')) {
+            $f3->clear('SESSION.unauthorized');
+            die ("Not authorized");
+        }
+        $f3->set('SESSION.unauthorized', 'Unauthorized');
+        return $f3->reroute('/qrcode', false);
     }
 
     function qrcodeViticonnect(Base $f3) {
@@ -494,7 +498,7 @@ class CtrlNutriVin {
 
     public function adminUsers(Base $f3) {
         if (!$this->isAdmin($f3)) {
-            die('Unauthorized');
+            return $this->unauthorized($f3);
         }
         $users = [];
         foreach (QRCode::findAll() as $d) {
