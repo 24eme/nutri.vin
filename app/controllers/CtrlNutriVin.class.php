@@ -255,7 +255,7 @@ class CtrlNutriVin {
         return $f3->reroute('/qrcode/'.$f3->get('SESSION.userid').'/list', false);
     }
 
-    public private unauthorized($f3) {
+    private function unauthorized($f3) {
         if ($f3->exists('SESSION.unauthorized') && $f3->get('SESSION.unauthorized')) {
             $f3->clear('SESSION.unauthorized');
             die ("Not authorized");
