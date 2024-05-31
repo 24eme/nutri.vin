@@ -68,24 +68,38 @@
             <?php else: ?>
             <span class="text-danger">
             <i class="bi bi-exclamation-octagon-fill"></i>
-            (php-zip neeeded)
+            (php-zip needed)
             </span>
             <?php endif; ?>
         </td>
     </tr>
 <tr>
-    <th class="align-top">rsvg (pour la conversion eps)</th>
-    <td class="text-muted">librsvg2-bin</td>
+    <th class="align-top">module php gd</th>
+    <td class="text-muted">php-gd</td>
     <td>
-        <?php if (rsvgconvert::commandExists()): ?>
-        <i class="bi bi-check-square text-success"></i>
-        <?php else: ?>
-        <span class="text-warning">
-        <i class="bi bi-exclamation-circle"></i>
-        (librsvg2-bin neeeded)
-        </span>
-        <?php endif; ?>
+      <?php if (function_exists('imagecreatetruecolor')): ?>
+      <i class="bi bi-check-square text-success"></i>
+      <?php else: ?>
+      <span class="text-danger">
+      <i class="bi bi-exclamation-octagon-fill"></i>
+      (php-gd needed)
+      </span>
+      <?php endif; ?>
     </td>
+</tr>
+<tr>
+  <th class="align-top">rsvg (pour la conversion eps)</th>
+  <td class="text-muted">librsvg2-bin</td>
+  <td>
+      <?php if (rsvgconvert::commandExists()): ?>
+      <i class="bi bi-check-square text-success"></i>
+      <?php else: ?>
+      <span class="text-warning">
+      <i class="bi bi-exclamation-circle"></i>
+      (librsvg2-bin needed)
+      </span>
+      <?php endif; ?>
+  </td>
 </tr>
 <tr>
     <th class="align-top">php max upload size</th>
