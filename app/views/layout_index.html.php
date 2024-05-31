@@ -26,30 +26,23 @@
                 </div>
 
                 <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                    <li><a href="#" class="nav-link px-2 link-secondary">Accueil</a></li>
-                    <li><a href="#" class="nav-link px-2">Les avantages</a></li>
-                    <li><a href="#" class="nav-link px-2">Les fonctionnalités</a></li>
-                    <li><a href="#" class="nav-link px-2">Conformité UE</a></li>
-                    <li><a href="#" class="nav-link px-2">Les plateforme</a></li>
-                    <li><a href="#" class="nav-link px-2">À propos</a></li>
+                    <li><a href="#accueil" class="nav-link px-2 link-secondary">Accueil</a></li>
+                    <li><a href="#avantages" class="nav-link px-2">Les avantages</a></li>
+                    <li><a href="#fonctionnalites" class="nav-link px-2">Les fonctionnalités</a></li>
+                    <li><a href="#conformite" class="nav-link px-2">Conformité UE</a></li>
+                    <li><a href="#plateforme" class="nav-link px-2">Les plateformes</a></li>
+                    <li><a href="#apropos" class="nav-link px-2">À propos</a></li>
                 </ul>
 
                 <div class="col-md-2 text-end">
-                    <div class="dropdown">
-                      <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Créer un QR Code sur Nutri.Vin
-                      </button>
-                      <ul class="dropdown-menu">
-                        <li><a href="/qrcode" class="dropdown-item" href="#">Créer un QR Code sur Nutri.Vin</a></li>
-                        <li><a href="" class="dropdown-item" href="#">Créer un QR Code sur Qr-So.fr</a></li>
-                      </ul>
-                    </div>
+                    <a href="/qrcode" class="btn btn-primary">Créer un QR Code</a>
                 </div>
             </header>
         </div>
         </div>
         <div class="bg-light">
         <div class="container" style="max-width: 1050px;">
+            <a name="accueil"></a>
             <div class="row">
                 <div class="col"></div>
                 <div class="col-8 justify-content-center text-center mt-5">
@@ -65,6 +58,7 @@
         </div>
         <div class="bg-white shadow-lg" style="border-bottom: 1px solid #ddd">
             <div class="container pt-4 pb-5" style="max-width: 1050px;">
+                <a name="avantages"></a>
                 <h2 class="mt-4">Les avantages</h2>
 
                 <div class="row mt-4">
@@ -117,6 +111,7 @@
         </div>
         <div class="bg-light">
             <div class="container pt-4 pb-5" style="max-width: 1050px;">
+                <a name="fonctionnalites"></a>
                 <h2 class="mt-4">Les fonctionnalités</h2>
                 <p>Découvrir le fonctionnement de la plateforme graçe à cette vidéo :</p>
                 <div class="row">
@@ -223,6 +218,7 @@
         </div>
         <div class="bg-white shadow-lg" style="border-bottom: 1px solid #ddd">
             <div class="container pt-4 pb-5" style="max-width: 1050px;">
+                <a name="conformite"></a>
                 <h2 class="mb-4 text-center mt-4">Conforme aux legislations</h2>
                 <div class="card w-50 mx-auto">
                     <div class="card-header">
@@ -240,6 +236,7 @@
         </div>
         <div class="bg-light" style="border-bottom: 1px solid #ddd">
             <div class="container pt-4 pb-5" style="max-width: 1050px;">
+                <a name="plateformeé"></a>
                 <h2 class="mt-4">Les plateformes existantes</h2>
 
                 <p>Le QRCode généré va utiliser un nom de domaine, ce choix de nom de domaine est un choix important, pour que le QR Code dure dans le temps.<br /><br />
@@ -262,14 +259,14 @@
                         <tr>
                             <td>Nutri.Vin</td>
                             <td><a href="https://24eme.fr">Société 24ème</a></td>
-                            <td>Accessible à tous les organismes compatible avec viticonnect.</td>
+                            <td>Accessible à tous les organismes compatible avec viticonnect</td>
                             <td>Gratuit</td>
                             <td><a href="https://nutri.vin/">nutri.vin</a></td>
                         </tr>
                         <tr>
                             <td>Qr-So.fr</td>
                             <td><a href="https://www.vignobles-sudouest.fr">L'interprofession des Vins du Sud Ouest</a></td>
-                            <td>L'accès est limité aux adhérents à l'interprofession.</td>
+                            <td>L'accès est limité aux adhérents à l'interprofession</td>
                             <td>Compris dans la cotisation pour les dénominations gérées par l'interprofession et payant pour les autres.</td>
                             <td><a href="https://qr-so.fr/">qr-so.fr</a></td>
                         </tr>
@@ -279,6 +276,7 @@
         </div>
         <div>
             <div class="container pt-4 pb-5" style="max-width: 1050px;">
+                <a name="apropos"></a>
                 <h2 class="mt-4">À propos</h2>
                 <div class="row">
                     <div class="col-2"><img height="160" src="https://www.24eme.fr/img/24eme.svg" />  </div>
