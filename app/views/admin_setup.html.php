@@ -4,7 +4,7 @@
 <table class="table">
   <tbody>
     <tr>
-        <th class="align-top">Connexion à la base de données</th>
+        <th class="align-top">connexion à la base de données</th>
             <td class="text-muted"><?php echo (isset($config['db_pdo'])) ? $config['db_pdo'] : '<span class="text-danger">Non renseigné</span>'; ?></td>
         <td>
             <?php if ($table_exists): ?>
@@ -14,6 +14,20 @@
                 <i class="bi bi-exclamation-octagon-fill"></i>
                 <a href="?createtable=true">(Créer la base)</a>
                         </span>
+            <?php endif; ?>
+        </td>
+    </tr>
+    <tr>
+        <th class="align-top">schéma de la base OK</th>
+        <td class="text-muted"><?php echo ($schema_error) ? $schema_error : $config['db_pdo']; ?></td>
+        <td>
+            <?php if (!$schema_error): ?>
+                <i class="bi bi-check-square text-success"></i>
+            <?php else: ?>
+                    <span class="text-danger">
+                    <i class="bi bi-exclamation-octagon-fill"></i>
+                    (Il faut recréer la base)
+                    </span>
             <?php endif; ?>
         </td>
     </tr>
@@ -101,7 +115,21 @@
         <?php endif; ?>
     </td>
 </tr>
-  </tbody>
+<tr>
+    <th class="align-top">configuration complète</th>
+    <td class="text-muted">config/config.php</td>
+    <td>
+        <?php if ( (isset($config['db_pdo']) && isset($config['instance_id']) && isset($config['theme']) && isset($config['db_pdo']) && isset($config['admin_user']) && isset($config['herbergeur_raison_sociale']) && isset($config['herbergeur_adresse']) && isset($config['herbergeur_siren']) && isset($config['herbergeur_contact'])) ): ?>
+        <i class="bi bi-check-square text-success"></i>
+        <?php else: ?>
+        <span class="text-warning">
+        <i class="bi bi-exclamation-circle"></i>
+        (voir plus bas)
+        </span>
+        <?php endif; ?>
+    </td>
+</tr>
+</tbody>
 </table>
 <h2 class="my-4">Fichier de configuration</h2>
 <div class="align-center">
@@ -155,7 +183,7 @@
     <tr>
         <th class="align-top">Logo associable au QRCode</th>
         <td class="text-muted">qrcode_logo</td>
-        <td> <?php echo (isset($config['qrcode_logo'])) ? file_get_contents($config['qrcode_logo']) : '<span class="text-danger">Non renseigné</span>'; ?> </td>
+        <td> <?php echo (isset($config['qrcode_logo'])) ? file_get_contents($config['qrcode_logo']) : '<i>Non renseigné</i>'; ?> </td>
     </tr>
     <tr>
         <th class="align-top">Denominations de l'instance</th>
