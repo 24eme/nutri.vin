@@ -5,7 +5,7 @@
   <tbody>
     <tr>
         <th class="align-top">Connexion à la base de données</th>
-            <td class="text-muted"><?php echo $config['db_pdo']; ?></td>
+            <td class="text-muted"><?php echo (isset($config['db_pdo'])) ? $config['db_pdo'] : '<span class="text-danger">Non renseigné</span>'; ?></td>
         <td>
             <?php if ($table_exists): ?>
                 <i class="bi bi-check-square text-success"></i>
@@ -115,47 +115,47 @@
     <tr>
         <th class="align-top">instance_id</th>
         <td class="text-muted">instance_id</td>
-        <td><?php echo $config['instance_id']; ?></td>
+        <td><?php echo (isset($config['instance_id'])) ? $config['instance_id'] : '<span class="text-danger">Non renseigné</span>'; ?></td>
     </tr>
     <tr>
         <th class="align-top">theme</th>
         <td class="text-muted">theme</td>
-        <td><?php echo $config['theme']; ?></td>
+        <td><?php echo (isset($config['theme'])) ? $config['theme'] : '<span class="text-danger">Non renseigné</span>'; ?></td>
     </tr>
     <tr>
         <th class="align-top">base de données</th>
         <td class="text-muted">db_pdo</td>
-        <td><?php echo $config['db_pdo']; ?></td>
+        <td><?php echo (isset($config['db_pdo'])) ? $config['db_pdo'] : '<span class="text-danger">Non renseigné</span>'; ?></td>
     </tr>
     <tr>
         <th class="align-top">admin_user</th>
         <td class="text-muted">admin_user</td>
-        <td><?php echo $config['admin_user']; ?></td>
+        <td><?php echo (isset($config['admin_user'])) ? $config['admin_user'] : '<span class="text-danger">Non renseigné</span>'; ?></td>
     </tr>
     <tr>
         <th class="align-top">herbergeur_raison_sociale</th>
         <td class="text-muted">herbergeur_raison_sociale</td>
-        <td><?php echo $config['herbergeur_raison_sociale']; ?></td>
+        <td><?php echo (isset($config['herbergeur_raison_sociale'])) ? $config['herbergeur_raison_sociale'] : '<span class="text-danger">Non renseigné</span>'; ?></td>
     </tr>
     <tr>
         <th class="align-top">herbergeur_adresse</th>
         <td class="text-muted">herbergeur_adresse</td>
-        <td><?php echo $config['herbergeur_adresse']; ?></td>
+        <td><?php echo (isset($config['herbergeur_adresse'])) ? $config['herbergeur_adresse'] : '<span class="text-danger">Non renseigné</span>'; ?></td>
     </tr>
     <tr>
         <th class="align-top">herbergeur_siren</th>
         <td class="text-muted">herbergeur_siren</td>
-        <td><?php echo $config['herbergeur_siren']; ?></td>
+        <td><?php echo (isset($config['herbergeur_siren'])) ? $config['herbergeur_siren'] : '<span class="text-danger">Non renseigné</span>'; ?></td>
     </tr>
     <tr>
         <th class="align-top">herbergeur_contact</th>
         <td class="text-muted">herbergeur_contact</td>
-        <td><?php echo $config['herbergeur_contact']; ?></td>
+        <td><?php echo (isset($config['herbergeur_contact'])) ? $config['herbergeur_contact'] : '<span class="text-danger">Non renseigné</span>'; ?></td>
     </tr>
     <tr>
         <th class="align-top">Logo associable au QRCode</th>
         <td class="text-muted">qrcode_logo</td>
-        <td> <?php echo file_get_contents($config['qrcode_logo']); ?> </td>
+        <td> <?php echo (isset($config['qrcode_logo'])) ? file_get_contents($config['qrcode_logo']) : '<span class="text-danger">Non renseigné</span>'; ?> </td>
     </tr>
     <tr>
         <th class="align-top">Denominations de l'instance</th>
