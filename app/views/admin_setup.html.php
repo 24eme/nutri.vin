@@ -18,7 +18,7 @@
         </td>
     </tr>
     <tr>
-        <th class="align-top">schéma de la base OK</th>
+        <th class="align-top">schéma de la base</th>
         <td class="text-muted"><?php echo ($schema_error) ? $schema_error : $config['db_pdo']; ?></td>
         <td>
             <?php if (!$schema_error): ?>
