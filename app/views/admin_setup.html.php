@@ -170,6 +170,11 @@
         <td><?php echo (isset($config['db_pdo'])) ? $config['db_pdo'] : '<span class="text-danger">Non renseigné</span>'; ?></td>
     </tr>
     <tr>
+        <th class="align-top">type d'authentification</th>
+        <td class="text-muted">viticonnect_baseurl ou http_auth</td>
+        <td><?php echo (isset($config['http_auth'])) ? $config['http_auth'] : (isset($config['viticonnect_baseurl']) ? $config['viticonnect_baseurl'] : '<span class="text-danger">no auth</span>'); ?></td>
+    </tr>
+    <tr>
         <th class="align-top">admin_user</th>
         <td class="text-muted">admin_user</td>
         <td><?php echo (isset($config['admin_user'])) ? $config['admin_user'] : '<span class="text-danger">Non renseigné</span>'; ?></td>
