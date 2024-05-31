@@ -6,7 +6,7 @@ $f3 = require(__DIR__.'/vendor/fatfree-core/base.php');
 
 require __DIR__.'/vendor/autoload.php';
 
-if(file_exists('config/config.php')) {
+if(file_exists(__DIR__.'/config/config.php')) {
     require_once('config/config.php');
 }
 require_once('config/instances.php');
