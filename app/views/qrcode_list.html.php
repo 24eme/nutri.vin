@@ -136,8 +136,10 @@ document.addEventListener('DOMContentLoaded', function () {
 <?php endif ?>
 
 
+<?php if ($qrlist): ?>
 document.getElementById('multiExportBtn').addEventListener("click", function() {
     const modalExport = new bootstrap.Modal('#modal-export');
     modalExport.show();
 })
+<?php endif; ?>
 </script>
