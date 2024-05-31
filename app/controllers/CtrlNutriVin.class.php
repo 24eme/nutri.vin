@@ -18,8 +18,6 @@ class CtrlNutriVin {
     }
 
     function faq(Base $f3) {
-        $config = $this->getConfig($f3);
-        $f3->set('config', $config);
         $f3->set('content', 'qrcode_faq.html.php');
         echo View::instance()->render('layout.html.php');
     }
@@ -47,15 +45,14 @@ class CtrlNutriVin {
             }
         }
 
-        $config = $this->getConfig($f3);
-        if (!$this->isAdmin($f3) && isset($config['admin_user'])) {
+        if (!$this->isAdmin($f3) && Config::getInstance()->get('admin_user')) {
             return $this->unauthorized($f3);
         }
 
         if (!$this->isAdmin($f3) && $qrcode->tableExists() && count(QRCode::findAll())) {
             return $this->unauthorized($f3);
         }
-        $f3->set('config', $config);
+        $f3->set('config', Config::getInstance()->getConfig());
         $f3->set('content','admin_setup.html.php');
         echo View::instance()->render('layout.html.php');
 
@@ -84,11 +81,10 @@ class CtrlNutriVin {
         if ( !$f3->exists('SESSION.userid')) {
             return false;
         }
-        $config = $this->getConfig($f3);
-        if (!isset($config['admin_user'])) {
+        if (!Config::getInstance()->get('admin_user')) {
             return false;
         }
-        $f3->set('is_admin', $f3->get('SESSION.userid') == $config['admin_user']);
+        $f3->set('is_admin', $f3->get('SESSION.userid') == Config::getInstance()->get('admin_user'));
         return $f3->get('is_admin');
     }
 
@@ -215,14 +211,6 @@ class CtrlNutriVin {
         echo View::instance()->render('layout.html.php');
     }
 
-    private function getConfig(Base $f3) {
-        $config = $f3->get('config');
-        if (!in_array($_SERVER['SERVER_NAME'], ['127.0.0.1', 'localhost']) && !isset($config['viticonnect_baseurl'])) {
-            $config['viticonnect_baseurl'] = 'https://viticonnect.net/cas';
-        }
-        return $config;
-    }
-
     function qrcodeAuthentication(Base $f3) {
         $qrcode = new QRCode();
         if (!$qrcode->tableExists()) {
@@ -232,8 +220,7 @@ class CtrlNutriVin {
             if ($f3->exists('SESSION.authtype')) {
                 return $f3->reroute('/logout');
             }
-            $config = $this->getConfig($f3);
-            if (isset($config['http_auth']) && $config['http_auth']) {
+            if (Config::getInstance()->get('http_auth')) {
                 if (isset($_SERVER['PHP_AUTH_USER'])) {
                     $f3->set('SESSION.userid', $_SERVER['PHP_AUTH_USER']);
                     $f3->set('SESSION.username', $_SERVER['PHP_AUTH_USER']);
@@ -244,15 +231,12 @@ class CtrlNutriVin {
                 header('HTTP/1.0 401 Unauthorized');
                 die ("Not authorized qrcodeAuthentication");
             }
-            if (isset($config['viticonnect_baseurl']) && $config['viticonnect_baseurl']) {
-                return $f3->reroute($config['viticonnect_baseurl'].'/login?service='.$f3->get('urlbase').'/login/viticonnect');
+            if (Config::getInstance()->get('viticonnect_baseurl')) {
+                return $f3->reroute(Config::getInstance()->get('viticonnect_baseurl').'/login?service='.$f3->get('urlbase').'/login/viticonnect');
             }
             if (in_array($_SERVER['SERVER_NAME'], ['127.0.0.1', 'localhost'])) {
-                if (!isset($config['default_user'])) {
-                    $config['default_user'] = 'userid';
-                }
-                $f3->set('SESSION.userid', $config['default_user']);
-                $f3->set('SESSION.username', $config['default_user']);
+                $f3->set('SESSION.userid', Config::getInstance()->get('default_user', 'userid'));
+                $f3->set('SESSION.username', Config::getInstance()->get('default_user', 'userid'));
                 $f3->set('SESSION.authtype', 'default');
                 return $f3->reroute('/qrcode');
             }
@@ -272,14 +256,13 @@ class CtrlNutriVin {
 
     function qrcodeViticonnect(Base $f3) {
         $ticket = $f3->get('GET.ticket');
-        $config = $this->getConfig($f3);
         if (!$ticket) {
             return $f3->reroute('/qrcode');
         }
-        if (!isset($config['viticonnect_baseurl']) || !$config['viticonnect_baseurl']) {
+        if (!Config::getInstance()->get('viticonnect_baseurl')) {
             return $f3->reroute('/');
         }
-        $validate = file_get_contents($config['viticonnect_baseurl'].'/serviceValidate?service='.$f3->get('urlbase').'/login/viticonnect&ticket='.$ticket);
+        $validate = file_get_contents(Config::getInstance()->get('viticonnect_baseurl').'/serviceValidate?service='.$f3->get('urlbase').'/login/viticonnect&ticket='.$ticket);
         if ($validate) {
             if(strpos($validate, 'INVALID_TICKET') !== false) {
                 return $f3->reroute('/qrcode');
@@ -328,8 +311,7 @@ class CtrlNutriVin {
         $f3->clear('SESSION.username');
         if ($f3->get('SESSION.authtype') == 'viticonnect') {
             $f3->clear('SESSION.authtype');
-            $config = $this->getConfig($f3);
-            return $f3->reroute($config['viticonnect_baseurl'].'/logout?service='.$f3->get('urlbase').'/');
+            return $f3->reroute(Config::getInstance()->get('viticonnect_baseurl').'/logout?service='.$f3->get('urlbase').'/');
         } elseif ($f3->get('SESSION.authtype') == 'http') {
             if ($f3->exists('SESSION.disconnection')) {
                 $f3->clear('SESSION.authtype');
@@ -440,7 +422,6 @@ class CtrlNutriVin {
         $qrcode->logo = (bool)$f3->get('POST.logo');
         $qrcode->mentions = (bool)$f3->get('POST.mentions');
 
-        $config = $this->getConfig($f3);
         if (Config::getInstance()->isDenominationInConfig($qrcode->denomination) === false) {
             $qrcode->logo = false;
         }
@@ -452,8 +433,7 @@ class CtrlNutriVin {
     public function qrcodeMultiExport(Base $f3) {
         $qrcodes = $f3->get('GET.qrcodes');
         $formats = ['svg', 'pdf', 'eps'];
-        $config = $this->getConfig($f3);
-        $options = isset($config['qrcode']) ? $config['qrcode'] : [];
+        $options = Config::getInstance()->get('qrcode', []);
         $userid = null;
 
         foreach ($qrcodes as $qr) {

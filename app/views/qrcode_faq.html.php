@@ -193,23 +193,20 @@
     </div>
   </div>
 
-  <?php if (isset($config)): ?>
-      <?php $num_question = 11; foreach ($config['faq_extra'] as $question => $reponse): ?>
-          <?php $num_question += 1 ; ?>
-          <div class="accordion-item mt-4">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question_<?php echo $num_question; ?>" aria-expanded="false" aria-controls="question_<?php echo $num_question; ?>">
-                <?php echo $question; ?>
-              </button>
-            </h2>
-            <div id="question_<?php echo $num_question; ?>" class="accordion-collapse collapse">
-              <div class="accordion-body">
-                <?php echo $reponse; ?>
-              </div>
-            </div>
+  <?php $num_question = 11; foreach (\app\config\Config::getInstance()->get('faq_extra', []) as $question => $reponse): ?>
+      <?php $num_question += 1 ; ?>
+      <div class="accordion-item mt-4">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question_<?php echo $num_question; ?>" aria-expanded="false" aria-controls="question_<?php echo $num_question; ?>">
+            <?php echo $question; ?>
+          </button>
+        </h2>
+        <div id="question_<?php echo $num_question; ?>" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <?php echo $reponse; ?>
           </div>
-      <?php endforeach; ?>
-  <?php endif; ?>
-
+        </div>
+      </div>
+  <?php endforeach; ?>
 
 </div>
