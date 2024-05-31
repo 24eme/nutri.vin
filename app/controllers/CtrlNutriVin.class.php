@@ -132,6 +132,9 @@ class CtrlNutriVin {
         }
         if (!$qrcode->responsable_adresse && $qrcode->responsable_siret) {
             $qrcode->responsable_adresse = QRCode::siret2adresse($qrcode->responsable_siret);
+            if (!$qrcode->responsable_adresse) {
+                $qrcode->responsable_siret = '';
+            }
         }
     }
 
