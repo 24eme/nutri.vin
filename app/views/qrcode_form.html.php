@@ -134,7 +134,7 @@
                   <tbody></tbody>
             </table>
             <template id="ingredient_row">
-                <tr draggable="true">
+                <tr draggable="true" style="transform: scale(1)">
                     <td class="ingredient_libelle" scope="row"><div class="input-group"><span class="input-group-text" style="cursor: grab;"><i class="bi bi-grip-vertical"></i></span><input form="form_add_ingredients" type="text" class="form-control input_ingredient" list="ingredients_list"></div></td>
                     <td class="ingredient_additif text-center align-middle">
                         <input form="form_add_ingredients" class="form-check-input checkbox_additif" type="checkbox" value="" label="case à cocher pour déclarer un additif">
@@ -150,6 +150,9 @@
                     </td>
                     <td class="ingredient_allergene text-center align-middle">
                         <input form="form_add_ingredients" class="form-check-input" type="checkbox" value="" aria-label="case à cocher pour déclarer un ingrédient allergène">
+                    </td>
+                    <td class="delrow" style="cursor: pointer">
+                        <span class="text-danger fs-2"><i class="bi bi-x"></i></span>
                     </td>
                 </tr>
             </template>
@@ -669,6 +672,13 @@ document.addEventListener('DOMContentLoaded', function () {
             valeur = parseFloat(valeur).toFixed(2);
             this.value = valeur;
         })
+    });
+
+    document.querySelector('#table_ingredients').addEventListener('click', function (e) {
+        if (e.target.closest('td.delrow')) {
+            e.target.closest('tr').remove()
+            ingredientsTableToText()
+        }
     });
 
     (function () {
