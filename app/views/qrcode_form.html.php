@@ -125,7 +125,7 @@
                       <th class="text-center" scope="col">Catégorie</th>
                       <th class="text-center" scope="col">Allergène</th>
                       <th class="text-center" scope="col">Bio</th>
-                      <th class="text-center" scope="col">&nbsp;</th>
+                      <th class="text-center" scope="col"></th>
                     </tr>
                   </thead>
                   <tbody></tbody>
@@ -149,7 +149,7 @@
                         <input form="form_add_ingredients" class="form-check-input" type="checkbox" value="" aria-label="case à cocher pour déclarer un ingrédient bio">
                     </td>
                     <td class="ingredient_facultatif text-center align-middle">
-                        <abbr title="Ingrédient facultatif">F</abbr>
+                        <abbr title="Ingrédient facultatif" class="invisible mx-2">F</abbr>
                     </td>
                     <td class="delrow" style="cursor: pointer">
                         <span class="fs-2"><i class="bi bi-x"></i></span>
