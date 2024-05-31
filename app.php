@@ -31,9 +31,7 @@ $f3->set('SUPPORTED_LANGUAGES',
         'fr_FR.utf8' => 'Français',
     ]);
 if ($f3->get('GET.lang')) {
-    selectLanguage($f3->get('GET.lang'), $f3, true);
-} elseif (isset($_COOKIE['LANGUAGE'])) {
-    selectLanguage($_COOKIE['LANGUAGE'], $f3, true);
+    selectLanguage($f3->get('GET.lang'), $f3);
 } else {
     selectLanguage($f3->get('LANGUAGE'), $f3);
 }
@@ -82,7 +80,7 @@ $f3->set('config', $config);
 include('app/routes.php');
 
 
-function selectLanguage($lang, $f3, $putCookie = false) {
+function selectLanguage($lang, $f3) {
     $langSupported = null;
     foreach(explode(',', $lang) as $l) {
         if(array_key_exists($l, $f3->get('SUPPORTED_LANGUAGES'))) {
@@ -92,10 +90,6 @@ function selectLanguage($lang, $f3, $putCookie = false) {
     }
     if(!$langSupported) {
         return null;
-    }
-    if($putCookie) {
-        $cookieDate = strtotime('+1 year');
-        setcookie("LANGUAGE", $langSupported, ['expires' => $cookieDate, 'samesite' => 'Strict', 'path' => "/"]);
     }
     $f3->set('current_language', $langSupported);
     putenv("LANGUAGE=$langSupported");
