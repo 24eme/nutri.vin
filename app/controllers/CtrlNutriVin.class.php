@@ -2,6 +2,7 @@
 
 use app\exporters\Exporter;
 use app\models\QRCode;
+use app\config\Config;
 use Web\Geo;
 
 class CtrlNutriVin {
@@ -59,7 +60,7 @@ class CtrlNutriVin {
         if (!$csv) {
           $csv = 'denomination de l\'instance;'.implode(';', array_keys($qrcode))."\n";
         }
-        $csv .= (int)$this->isDenominationInConfig($qrcode['denomination']).';'.implode(';', array_values($qrcode))."\n";
+        $csv .= (int)Config::getInstance()->isDenominationInConfig($qrcode['denomination']).';'.implode(';', array_values($qrcode))."\n";
       }
       header('Content-Type: text/csv');
       header('Content-Disposition: attachment; filename="'.date('YmdHi').'_qrcodes.csv'.'"');
@@ -119,7 +120,7 @@ class CtrlNutriVin {
                     }
                 }
             }
-            $qrcode->denomination_instance = $this->isDenominationInConfig($qrcode->denomination);
+            $qrcode->denomination_instance = Config::getInstance()->isDenominationInConfig($qrcode->denomination);
             $qrcode->save();
             return $f3->reroute('/qrcode/'.$qrcode->user_id.'/parametrage/'.$qrcode->getId().'?from=create', false);
         }
@@ -392,7 +393,7 @@ class CtrlNutriVin {
         }
         $f3->set('qrcode', $qrcode);
 
-        $f3->set('canSwitchLogo', $this->isDenominationInConfig($qrcode->denomination));
+        $f3->set('canSwitchLogo', Config::getInstance()->isDenominationInConfig($qrcode->denomination));
         $f3->set('content', 'qrcode_parametrage.html.php');
         echo View::instance()->render('layout.html.php');
     }
@@ -415,7 +416,7 @@ class CtrlNutriVin {
         $qrcode->mentions = (bool)$f3->get('POST.mentions');
 
         $config = $this->getConfig($f3);
-        if ($this->isDenominationInConfig($qrcode->denomination) === false) {
+        if (Config::getInstance()->isDenominationInConfig($qrcode->denomination) === false) {
             $qrcode->logo = false;
         }
 
@@ -491,12 +492,5 @@ class CtrlNutriVin {
         $f3->set('users', $users);
         $f3->set('content', 'admin_users.html.php');
         echo View::instance()->render('layout.html.php');
-    }
-
-    public function isDenominationInConfig($denomination) {
-        $c = Base::instance()->get('config');
-        $denominationsInstance = array_key_exists('denominations', $c) ? $c['denominations'] : [];
-
-        return in_array($denomination, $denominationsInstance);
     }
 }
