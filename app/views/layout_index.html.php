@@ -80,7 +80,7 @@
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">Respect du réglement européens</h5>
-                                <p class="card-text">Le logiciel est adapté et conçu pour respecter la mise en oeuvre prévu par la commission européenes dans le règlement (UE) <a href="https://eur-lex.europa.eu/legal-content/FR/TXT/PDF/?uri=OJ:C_202301190">n° 1308/2013</a>.<br /></p>
+                                <p class="card-text">Le logiciel est adapté et conçu pour respecter la mise en oeuvre prévu par la commission européenes dans le règlement (UE) <a href="https://eur-lex.europa.eu/legal-content/FR/TXT/PDF/?uri=OJ:C_202301190">n° 2023/1190</a>.<br /></p>
                             </div>
                         </div>
                     </div>
@@ -175,7 +175,7 @@
                                     <td class="text-success text-center"><i class="bi bi-check-circle-fill"></i></td>
                                 </tr>
                                 <tr>
-                                    <td>Respect du réglement européen n° 1308/2013</td>
+                                    <td>Respect du réglement européen n° 2023/1190</td>
                                     <td class="text-success text-center"><i class="bi bi-check-circle-fill"></i></td>
                                 </tr>
                                 <tr>
@@ -222,7 +222,7 @@
                 <h2 class="mb-4 text-center mt-4">Conforme aux legislations</h2>
                 <div class="card w-auto mx-auto">
                     <div class="card-header">
-                        Conformité au règlement (UE) n° 1308/2013
+                        Conformité au règlement (UE) n° 2023/1190
                     </div>
                     <ul class="list-group list-group-flush">
                     <li class="list-group-item"><i class="bi bi-patch-check text-success"></i> Le QRCode renvoie directement vers l'url de la fiche</li>
