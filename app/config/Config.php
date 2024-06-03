@@ -104,8 +104,6 @@ class Config
             $instance_id = '0';
         }
         $this->config['instance_id'] = $instance_id;
-
-        $this->getUrlbase();
     }
 
     public function getInstanceId() {
