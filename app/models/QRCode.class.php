@@ -396,7 +396,7 @@ class QRCode extends Mapper
 		for($x = 0 ; $x < 10 ; $x++) {
 			$id = Config::getInstance()->getInstanceId();
 			$id = ($id) ? $id : "0";
-			$max_size = Config::getInstance()->getQRCodeUriSize();
+			$max_size = Config::getInstance()->getQRCodeUriSize() - 1; // -1 pour le "/" avant l'identifiant
 			for($i = strlen($id) ; $i < $max_size ; $i++) {
 				$id .= substr(self::$CHARID, rand(0, strlen(self::$CHARID)), 1);
 			}
