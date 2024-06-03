@@ -91,6 +91,7 @@ class Config
         $instance_id = null;
         if ($this->getUrlbase()) {
             $site = preg_replace('/https?:../', '', $this->getUrlbase());
+            include(__DIR__.'/../../config/instances.php');
             if (isset($instances[$site])) {
                 $instance_id = $instances[$site];
             }
