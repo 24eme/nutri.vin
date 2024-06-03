@@ -1,23 +1,13 @@
 <?php
 
 use app\models\DBManager;
+use app\config\Config;
 
 $f3 = require(__DIR__.'/vendor/fatfree-core/base.php');
 
 require __DIR__.'/vendor/autoload.php';
 
-if(file_exists(__DIR__.'/config/config.php')) {
-    require_once('config/config.php');
-}
 require_once('config/instances.php');
-
-if(!isset($config)) {
-    $config['theme'] = 'nutrivin';
-    $config['herbergeur_raison_sociale'] = null;
-    $config['herbergeur_siren'] = null;
-    $config['herbergeur_adresse'] = null;
-    $config['herbergeur_contact'] = null;
-}
 
 if(getenv("DEBUG")) {
     $f3->set('DEBUG', getenv("DEBUG"));
@@ -25,7 +15,7 @@ if(getenv("DEBUG")) {
 
 $f3->set('ROOT', __DIR__);
 $f3->set('UI', $f3->get('ROOT')."/app/views/");
-$f3->set('THEME', implode(DIRECTORY_SEPARATOR, [$f3->get('ROOT'), "themes", $config['theme'], '']));
+$f3->set('THEME', implode(DIRECTORY_SEPARATOR, [$f3->get('ROOT'), "themes", Config::getInstance()->get('theme'), '']));
 
 if (is_dir($f3->get('THEME')) === false) {
     $f3->set('THEME', implode(DIRECTORY_SEPARATOR, [$f3->get('ROOT'), "themes", 'nutrivin', '']));
@@ -54,37 +44,9 @@ $domain = basename(glob($f3->get('ROOT')."/locale/application.pot")[0], '.pot');
 bindtextdomain($domain, $f3->get('ROOT')."/locale");
 textdomain($domain);
 
-if (isset($config['urlbase'])) {
-    $f3->set('urlbase', $config['urlbase']);
-}else{
-    $port = $f3->get('PORT');
-    $f3->set('urlbase', $f3->get('SCHEME').'://'.$_SERVER['SERVER_NAME'].(!in_array($port,[80,443])?(':'.$port):'').$f3->get('BASE'));
-}
+$f3->set('urlbase', Config::getInstance()->getUrlbase());
 
-$instance_id = null;
-if ($f3->get('urlbase')) {
-    $site = preg_replace('/https?:../', '', $f3->get('urlbase'));
-    if (isset($instances[$site])) {
-        $instance_id = $instances[$site];
-    }
-}
-if (!$instance_id) {
-    if (isset($config['instance_id'])) {
-        $instance_id = $config['instance_id'];
-    }
-}
-if (!$instance_id) {
-    $instance_id = '0';
-}
-putenv('INSTANCE_ID='.$instance_id);
-$config['instance_id'] = $instance_id;
-
-if (!isset($config['db_pdo']) || !$config['db_pdo']) {
-    $config['db_pdo'] = 'sqlite://'.__DIR__.'/db/nutrivin.sqlite';
-}
-DBManager::createDB($config['db_pdo']);
-
-$f3->set('config', $config);
+DBManager::createDB(Config::getInstance()->get('db_pdo'));
 
 include('app/routes.php');
 

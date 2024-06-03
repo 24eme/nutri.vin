@@ -52,7 +52,6 @@ class CtrlNutriVin {
         if (!$this->isAdmin($f3) && $qrcode->tableExists() && count(QRCode::findAll())) {
             return $this->unauthorized($f3);
         }
-        $f3->set('config', Config::getInstance()->getConfig());
         $f3->set('content','admin_setup.html.php');
         echo View::instance()->render('layout.html.php');
 
@@ -81,7 +80,7 @@ class CtrlNutriVin {
         if ( !$f3->exists('SESSION.userid')) {
             return false;
         }
-        if (!Config::getInstance()->get('admin_user')) {
+        if (!Config::getInstance()->exists('admin_user')) {
             return false;
         }
         $f3->set('is_admin', $f3->get('SESSION.userid') == Config::getInstance()->get('admin_user'));
@@ -433,7 +432,7 @@ class CtrlNutriVin {
     public function qrcodeMultiExport(Base $f3) {
         $qrcodes = $f3->get('GET.qrcodes');
         $formats = ['svg', 'pdf', 'eps'];
-        $options = Config::getInstance()->get('qrcode', []);
+        $options = [];
         $userid = null;
 
         foreach ($qrcodes as $qr) {

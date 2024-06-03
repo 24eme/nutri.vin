@@ -37,7 +37,7 @@
            <input list="denominations_liste" type="text" class="form-control" id="denomination" name="denomination" value="<?php echo $qrcode->denomination; ?>" placeholder="Dénomination"/>
             <datalist id="denominations_liste">
             <?php
-                foreach ($qrcode->getDenominations($config) as $denomination):
+                foreach ($qrcode->getDenominations() as $denomination):
             ?>
               <option value="<?php echo $denomination ?>"></option>
             <?php

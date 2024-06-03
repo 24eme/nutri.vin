@@ -1,3 +1,4 @@
+<?php use app\config\Config; ?>
 <?php if (!empty($publicview) && $qrcode->date_version != $lastVersion): ?>
     <div class="p-1 mt-2 bg-warning-subtle text-warning-emphasis small">
         Vous consultez la version du QRCode en date du <?php echo date('d/m/Y H:i', strtotime($qrcode->date_version)) ?>.<br />
@@ -253,11 +254,11 @@
                 <span data-liveform-name="responsable_adresse" data-liveform-template='{{%s}}' ><?php echo $qrcode->responsable_adresse; ?></span>.
 
             Elle est hébergée par :
-                <?php echo \app\config\Config::getInstance()->get('herbergeur_raison_sociale'); ?>
-                (<a target="_blank" href="https://annuaire-entreprises.data.gouv.fr/entreprise/<?php echo \app\config\Config::getInstance()->get('herbergeur_siren'); ?>" class="link-secondary"><?php echo \app\config\Config::getInstance()->get('herbergeur_siren'); ?></a>),
-                <?php echo \app\config\Config::getInstance()->get('herbergeur_adresse'); ?>, <?php echo \app\config\Config::getInstance()->get('herbergeur_contact'); ?>.
+                <?php echo Config::getInstance()->get('herbergeur_raison_sociale'); ?>
+                (<a target="_blank" href="https://annuaire-entreprises.data.gouv.fr/entreprise/<?php echo Config::getInstance()->get('herbergeur_siren'); ?>" class="link-secondary"><?php echo Config::getInstance()->get('herbergeur_siren'); ?></a>),
+                <?php echo Config::getInstance()->get('herbergeur_adresse'); ?>, <?php echo Config::getInstance()->get('herbergeur_contact'); ?>.
 
-            <?php echo \app\config\Config::getInstance()->get('herbergeur_raison_sociale'); ?>,
+            <?php echo Config::getInstance()->get('herbergeur_raison_sociale'); ?>,
             sa plateforme <?php echo preg_replace('/https?:../', '', $urlbase); ?>
             et le projet libre <a target="_blank" href="https://github.com/24eme/nutri.vin/" class="link-secondary">NutriVin</a>
             ne peuvent être tenus responsables des informations publiées. Un historique de chaque modification est conservée et consultable publiquement
