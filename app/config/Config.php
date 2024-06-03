@@ -2,10 +2,6 @@
 
 namespace app\config;
 
-if(file_exists(__DIR__.'/../../config/config.php')) {
-    require_once(__DIR__.'/../../config/config.php');
-}
-
 class Config
 {
     private static $_instance = null;
@@ -20,9 +16,13 @@ class Config
     }
 
     public function __construct() {
-        global $config;
+        $config = null;
         $this->f3 = \Base::instance();
-        if (isset($config)) {
+        if(file_exists(__DIR__.'/../../config/config.php')) {
+            include(__DIR__.'/../../config/config.php');
+        }
+
+        if (!$config) {
             $this->config = [];
         }else{
             $this->config = $config;
