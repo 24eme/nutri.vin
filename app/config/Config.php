@@ -85,7 +85,7 @@ class Config
         }
 
         if (!isset($this->config['db_pdo']) || !$this->config['db_pdo']) {
-            $this->config['db_pdo'] = 'sqlite://'.$this->f3('ROOT').'/db/nutrivin.sqlite';
+            $this->config['db_pdo'] = 'sqlite://'.$this->f3->get('ROOT').'/db/nutrivin.sqlite';
         }
 
         $instance_id = null;
