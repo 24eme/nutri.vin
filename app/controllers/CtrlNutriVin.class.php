@@ -452,7 +452,7 @@ class CtrlNutriVin {
             $qr->mentions = $f3->get('GET.mentions');
 
             foreach ($formats as $format) {
-                $files[$format][$qr->getId()] = $qr->getQRCodeContent($format, $f3->get('urlbase'), $options);
+                $files[$format][$qr->getId().".".$format] = $qr->getQRCodeContent($format, $f3->get('urlbase'), $options);
             }
         }
 
