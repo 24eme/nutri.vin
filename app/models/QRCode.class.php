@@ -394,9 +394,10 @@ class QRCode extends Mapper
 
 	public static function generateId() {
 		for($x = 0 ; $x < 10 ; $x++) {
-			$id = getenv('INSTANCE_ID');
+			$id = Config::getInstance()->getInstanceId();
 			$id = ($id) ? $id : "0";
-			for($i = strlen($id) ; $i < 7 ; $i++) {
+			$max_size = Config::getInstance()->getQRCodeUriSize();
+			for($i = strlen($id) ; $i < $max_size ; $i++) {
 				$id .= substr(self::$CHARID, rand(0, strlen(self::$CHARID)), 1);
 			}
 			$qr = self::findById($id);

@@ -58,6 +58,13 @@ class Config
         return in_array($denomination, $denominationsInstance);
     }
 
+    public function getQRCodeUriSize() {
+        if ($this->get('qrcode_force_minimal_size')) {
+            return 24 - strlen($this->config['urlbase']);
+        }
+        return 7;
+    }
+
     public function getUrlbase() {
         if (!isset($this->config['urlbase'])) {
             $port = $this->f3->get('PORT');

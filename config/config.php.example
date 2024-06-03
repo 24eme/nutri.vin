@@ -2,6 +2,7 @@
 
 $config = [
    // 'denominations' => [],
+   //'qrcode_force_minimal_size' => false, //force une taille de qrcode à 29 carrés
     'qrcode_logo'  => __DIR__.'/../web/images/ivso.svg',
     'theme' => getenv('THEME') ?: 'nutrivin',
    // 'db_pdo' => 'couchdb:http://10.20.31.2:5984/nutrivin_test',
