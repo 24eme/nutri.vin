@@ -74,7 +74,7 @@ class Config
     }
 
     private function setDefaults() {
-        if (!in_array($_SERVER['SERVER_NAME'], ['127.0.0.1', 'localhost']) && $this->exists('viticonnect_baseurl')) {
+        if (!in_array($_SERVER['SERVER_NAME'], ['127.0.0.1', 'localhost']) && !$this->exists('viticonnect_baseurl')) {
             $this->config['viticonnect_baseurl'] = 'https://viticonnect.net/cas';
         }
         if (!isset($this->config['default_user'])) {
