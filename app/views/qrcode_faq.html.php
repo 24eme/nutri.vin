@@ -11,6 +11,7 @@
     <div id="question_1" class="accordion-collapse collapse">
       <div class="accordion-body">
         Vins tranquilles, vins mousseux, vins de liqueur, vins doux naturels produits après le 8 décembre 2023 et vendus dans l'Union Européenne.
+        Les vins produits avant cette date peuvent continuer à être mis sur le marché jusqu’à épuisement des stocks.  
       </div>
     </div>
   </div>
