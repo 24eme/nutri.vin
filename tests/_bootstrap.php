@@ -22,14 +22,19 @@ $test = new Test();
 Config::getInstance()->set('db_pdo', $argv[1]);
 $f3->set('config', Config::getInstance()->getConfig());
 
-/* $dbtype = DBManager::getDB(); */
-$db = new \DB\Couch(Config::getInstance()->get('db_pdo'));
-try {
-    $db->getDBInfos();
-    $db->deleteDB();
-} catch (\Exception $e) {
+DBManager::createDB(Config::getInstance()->get('db_pdo'));
+$db = DBManager::getDB();
+
+if (method_exists($db, 'schema')) {
     try {
         unlink(str_replace('sqlite:', '', Config::getInstance()->get('db_pdo')));
+    } catch (\Exception $e) {
+        $test->message('Pas de base existante');
+    }
+} else {
+    try {
+        $db->getDBInfos();
+        $db->deleteDB();
     } catch (\Exception $e) {
         $test->message('Pas de base existante');
     }

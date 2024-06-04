@@ -9,10 +9,13 @@ class DBManager {
     static function setDB($db) {
         self::$db = $db;
     }
+
+    /** @return \DB\SQL|\DB\Couch|null Objet de connexion à la base */
     static function getDB() {
         return self::$db;
     }
 
+    /** @return string FQDN du mapper de la base */
     public static function getMapper()
     {
         return self::$mapper;
