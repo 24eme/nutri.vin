@@ -1,19 +1,15 @@
 <?php
+use app\models\QRCode;
+use tests\factories\QRCodeFactory;
 
-$f3 = require(__DIR__.'/../app.php');
+// INIT
+$test = require __DIR__.'/_bootstrap.php';
 
-$test = new Test();
 
-$qrTest = new QRCode();
-foreach (QRCode::getFieldsAndType() as $field => $type) {
-  if ($type == 'VARCHAR(255)') {
-    $qrTest->{$field} = 'TEST';
-  } elseif ($type == 'FLOAT') {
-    $qrTest->{$field} = '6';
-  }
-}
-$qrTest->ingredients = 'Raisins*,  Acide citrique - E330';
-$qrTest->date_creation = date('c');
+QRCode::createTable();
+$test->message('Création de la base');
+
+$qrTest = QRCodeFactory::create();
 
 $test->expect(
     !$qrTest->getId(),
@@ -84,36 +80,6 @@ $test->expect(
     !QRCode::findById($qrTest->getId()),
     "Le QRCode est supprimé en bdd"
 );
+
+include __DIR__.'/_print.php';
 ?>
-<!doctype html>
-<html lang="fr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Nutri.Vin - Test</title>
-    <meta name="robots" content="noindex, nofollow">
-    <link rel="icon" type="image/png" sizes="16x16" rel="noopener" target="_blank" href="/images/favicons/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" rel="noopener" target="_blank" href="/images/favicons/favicon-32x32.png">
-    <link rel="apple-touch-icon" sizes="180x180" rel="noopener" target="_blank" href="/images/favicons/apple-touch-icon.png">
-    <link rel="manifest" href="/images/favicons/site.webmanifest">
-    <link href="/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="/css/bootstrap-icons.min.css" rel="stylesheet" />
-  </head>
-  <body>
-    <div id="main_container" class="container-sm my-4 p-3">
-      <h1>Résultats des tests</h1>
-      <table class="table">
-        <?php $i=0; foreach ($test->results() as $result): $i++; ?>
-          <tr class="table-<?php if ($result['status']): ?>success<?php else: ?>danger<?php endif; ?>">
-            <td>#<?php echo $i ?></td>
-            <td>
-              <?php if ($result['status']): ?><i class="bi bi-check"></i><?php else: ?><i class="bi bi-x"></i><?php endif; ?>
-              <?php echo $result['text'] ?>
-            </td>
-            <td><?php if (!$result['status']) echo $result['source']; ?></td>
-          </tr>
-        <?php endforeach; ?>
-      </table>
-    </div>
-  </body>
-</html>
