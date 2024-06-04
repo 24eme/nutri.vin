@@ -1,3 +1,4 @@
+<?php use app\config\Config; ?>
 <?php if (!empty($publicview) && $qrcode->date_version != $lastVersion): ?>
     <div class="p-1 mt-2 bg-warning-subtle text-warning-emphasis small">
         Vous consultez la version du QRCode en date du <?php echo date('d/m/Y H:i', strtotime($qrcode->date_version)) ?>.<br />
@@ -132,25 +133,18 @@
                 </tr>
             </thead>
             <tbody>
-                <?php if (empty($publicview) || (!empty($publicview) && ($qrcode->nutritionnel_energie_kj || $qrcode->nutritionnel_energie_kj === 0)) || (!empty($publicview) && ($qrcode->nutritionnel_energie_kcal || $qrcode->nutritionnel_energie_kcal === 0))): ?>
                 <tr>
                     <td class="text-start"><?php echo _("Énergie"); ?></td>
                     <td class="text-end">
-                        <?php if (empty($publicview) || (!empty($publicview) && ($qrcode->nutritionnel_energie_kj || $qrcode->nutritionnel_energie_kj === 0))): ?>
                         <span data-liveform-name="nutritionnel_energie_kj" data-liveform-template='{{%s}} kJ'>
                             <?php echo $qrcode->nutritionnel_energie_kj ?: 0 ?> <?php echo _("kJ"); ?>
                         </span>
                         <br>
-                        <?php endif; ?>
-                        <?php if (empty($publicview) || (!empty($publicview) && ($qrcode->nutritionnel_energie_kcal || $qrcode->nutritionnel_energie_kcal === 0))): ?>
                         <span data-liveform-name="nutritionnel_energie_kcal" data-liveform-template='{{%s}} kCal'>
                             <?php echo $qrcode->nutritionnel_energie_kcal ?: 0 ?> <?php echo _("kCal"); ?>
                         </span><br>
-                        <?php endif; ?>
                     </td>
                 </tr>
-                <?php endif; ?>
-                <?php if (empty($publicview) || (!empty($publicview) && ($qrcode->nutritionnel_graisses || $qrcode->nutritionnel_graisses === 0))): ?>
                 <tr>
                     <td class="text-start"><?php echo _("Matières grasses"); ?><br><small class="ps-3"><?php echo _("dont acides gras saturés"); ?></small></td>
                     <td class="text-end">
@@ -165,8 +159,6 @@
                         </small>
                     </td>
                 </tr>
-                <?php endif; ?>
-                <?php if (empty($publicview) || (!empty($publicview) && ($qrcode->nutritionnel_glucides || $qrcode->nutritionnel_glucides === 0))): ?>
                 <tr>
                     <td class="text-start"><?php echo _("Glucides"); ?><br><small class="ps-3"><?php echo _("dont sucres"); ?></small></td>
                     <td class="text-end">
@@ -181,8 +173,6 @@
                         </small>
                     </td>
                 </tr>
-                <?php endif; ?>
-                <?php if (empty($publicview) || (!empty($publicview) && ($qrcode->nutritionnel_fibres || $qrcode->nutritionnel_fibres === 0))): ?>
                 <tr>
                     <td class="text-start"><?php echo _("Fibres alimentaires"); ?></td>
                     <td class="text-end">
@@ -191,8 +181,6 @@
                         </span>
                     </td>
                 </tr>
-                <?php endif; ?>
-                <?php if (empty($publicview) || (!empty($publicview) && ($qrcode->nutritionnel_proteines || $qrcode->nutritionnel_proteines === 0))): ?>
                 <tr>
                     <td class="text-start"><?php echo _("Protéines"); ?></td>
                     <td class="text-end">
@@ -201,8 +189,6 @@
                         </span>
                     </td>
                 </tr>
-                <?php endif; ?>
-                <?php if (empty($publicview) || (!empty($publicview) && ($qrcode->nutritionnel_sel || $qrcode->nutritionnel_sel === 0))): ?>
                 <tr>
                     <td class="text-start"><?php echo _("Sel"); ?></td>
                     <td class="text-end">
@@ -211,8 +197,6 @@
                         </span>
                     </td>
                 </tr>
-                <?php endif; ?>
-                <?php if (empty($publicview) || (!empty($publicview) && ($qrcode->nutritionnel_sodium || $qrcode->nutritionnel_sodium === 0))): ?>
                 <tr>
                     <td class="text-start"><?php echo _("Sodium"); ?></td>
                     <td class="text-end">
@@ -221,7 +205,6 @@
                         </span>
                     </td>
                 </tr>
-                <?php endif; ?>
             </tbody>
         </table>
     </div>
@@ -253,11 +236,11 @@
                 <span data-liveform-name="responsable_adresse" data-liveform-template='{{%s}}' ><?php echo $qrcode->responsable_adresse; ?></span>.
 
             Elle est hébergée par :
-                <?php echo $config['herbergeur_raison_sociale']; ?>
-                (<a target="_blank" href="https://annuaire-entreprises.data.gouv.fr/entreprise/<?php echo $config['herbergeur_siren']; ?>" class="link-secondary"><?php echo $config['herbergeur_siren']; ?></a>),
-                <?php echo $config['herbergeur_adresse']; ?>, <?php echo $config['herbergeur_contact']; ?>.
+                <?php echo Config::getInstance()->get('herbergeur_raison_sociale'); ?>
+                (<a target="_blank" href="https://annuaire-entreprises.data.gouv.fr/entreprise/<?php echo Config::getInstance()->get('herbergeur_siren'); ?>" class="link-secondary"><?php echo Config::getInstance()->get('herbergeur_siren'); ?></a>),
+                <?php echo Config::getInstance()->get('herbergeur_adresse'); ?>, <?php echo Config::getInstance()->get('herbergeur_contact'); ?>.
 
-            <?php echo $config['herbergeur_raison_sociale']; ?>,
+            <?php echo Config::getInstance()->get('herbergeur_raison_sociale'); ?>,
             sa plateforme <?php echo preg_replace('/https?:../', '', $urlbase); ?>
             et le projet libre <a target="_blank" href="https://github.com/24eme/nutri.vin/" class="link-secondary">NutriVin</a>
             ne peuvent être tenus responsables des informations publiées. Un historique de chaque modification est conservée et consultable publiquement

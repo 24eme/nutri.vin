@@ -23,14 +23,14 @@ class ExporterNatif
 
     public function getQRCodeContent($qrCodeData, $format, $logo = false, $energies = []) {
         $configuration = new $this->qroptions[$format];
-        if (strlen($qrCodeData) < 26) {
+        if (strlen($qrCodeData) < 25) {
             $configuration->version = 3;
         }
         if($logo) {
             $configuration->setLogo($logo);
         }
         if (count($energies)) {
-            $configuration->setTitle("  INGRÉDIENTS :");
+            $configuration->setTitle("  INGRÉDIENTS :");
             $configuration->setEnergies($energies);
         }
 

@@ -24,11 +24,11 @@ class QRMarkupSVGLogo extends QRMarkupSVG
     }
 
     /**
-     * returns a <g> element that contains the SVG logo and positions it properly within the QR Code
-     *
-     * @see https://developer.mozilla.org/en-US/docs/Web/SVG/Element/g
-     * @see https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/transform
-     */
+    * returns a <g> element that contains the SVG logo and positions it properly within the QR Code
+    *
+    * @see https://developer.mozilla.org/en-US/docs/Web/SVG/Element/g
+    * @see https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/transform
+    */
     protected function getLogo()
     {
         if (! $this->options->svgLogo) {
@@ -49,7 +49,7 @@ class QRMarkupSVGLogo extends QRMarkupSVG
     protected function getTitle()
     {
         return sprintf(
-            '%2$s<text x="50%%" y="3" font-size="3" text-anchor="middle">%1$s</text>%2$s',
+            '%2$s<text x="50%%" y="3" font-size="3" font-family="Verdana, Arial, Helvetica, sans-serif" text-anchor="middle">%1$s</text>%2$s',
             $this->options->svgTitle,
             $this->options->eol
         );
@@ -57,14 +57,14 @@ class QRMarkupSVGLogo extends QRMarkupSVG
 
     protected function getEnergies()
     {   if (!$this->options->svgEnergies || count($this->options->svgEnergies) != 2) {
-            return '';
-        }
-        return sprintf(
-            '%4$s<text x="50%%" y="%3$s" font-size="3" text-anchor="middle">E = %1$s KCal / %2$s KJ</text>%4$s',
-            (float) $this->options->svgEnergies[0],
-            (float) $this->options->svgEnergies[1],
-            $this->options->version === 3 ? 36 : 40,
-            $this->options->eol
-        );
+        return '';
     }
+    return sprintf(
+        '%4$s<text x="50%%" y="%3$s" font-size="3" font-family="Verdana, Arial, Helvetica, sans-serif" text-anchor="middle">E = %1$s KCal / %2$s KJ</text>%4$s',
+        (float) $this->options->svgEnergies[0],
+        (float) $this->options->svgEnergies[1],
+        $this->options->version === 3 ? 36 : 40,
+        $this->options->eol
+    );
+}
 }

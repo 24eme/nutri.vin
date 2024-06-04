@@ -16,12 +16,14 @@
     <div class="col-6 mt-5 offset-1 border-start">
         <form id="logoForm" method="POST" action="/qrcode/<?php echo $qrcode->user_id ?>/parametrage/<?php echo $qrcode->getId() ?>">
             <div class="d-flex justify-content-center align-items-center flex-column">
-                <img src="/<?php echo $qrcode->getId() ?>/svg" class="img-thumbnail" style="height: 350px; width: 350px;">
-                <div class="form-check form-switch">
+                <div class="shadow-sm p-3 bg-light border rounded">
+                <img src="/<?php echo $qrcode->getId() ?>/svg" class="img-thumbnail" style="height: 375px; width: 375px;">
+                </div>
+                <div class="form-check form-switch mt-3">
                     <input class="form-check-input" style="cursor: pointer" type="checkbox" role="switch" value="1" name="mentions" id="switch-mentions-qrcode"<?php echo $qrcode->mentions ? ' checked' : ''?>>
                     <label class="form-check-label" style="cursor: pointer" for="switch-mentions-qrcode">Intégrer les mentions obligatoires autour du QRCode</label>
                 </div>
-                <div class="form-check form-switch">
+                <div class="form-check form-switch mt-1">
                     <input class="form-check-input" style="cursor: pointer" type="checkbox" role="switch" value="1" name="logo" id="switch-logo-qrcode"<?php echo ($qrcode->logo && $canSwitchLogo) ? ' checked' : ''?> <?php echo $canSwitchLogo === false ? ' disabled' : '' ?>>
                     <label class="form-check-label" style="cursor: pointer" for="switch-logo-qrcode">Intégrer le logo au centre du QR Code<?php if (!$canSwitchLogo) { echo " (Dénomination non compatible)";} ?></label>
                 </div>

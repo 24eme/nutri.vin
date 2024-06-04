@@ -1,11 +1,16 @@
-<?php use app\exporters\utils\rsvgconvert; ?>
+<?php
+
+use app\exporters\utils\rsvgconvert;
+use app\config\Config;
+
+?>
 <h1>Configuration</h1>
 <h2 class="my-4">Installation serveur</h2>
 <table class="table">
   <tbody>
     <tr>
         <th class="align-top">connexion à la base de données</th>
-            <td class="text-muted"><?php echo (isset($config['db_pdo'])) ? $config['db_pdo'] : '<span class="text-danger">Non renseigné</span>'; ?></td>
+            <td class="text-muted"><?php echo Config::getInstance()->get('db_pdo', '<span class="text-danger">Non renseigné</span>'); ?></td>
         <td>
             <?php if ($table_exists): ?>
                 <i class="bi bi-check-square text-success"></i>
@@ -19,7 +24,7 @@
     </tr>
     <tr>
         <th class="align-top">schéma de la base</th>
-        <td class="text-muted"><?php echo ($schema_error) ? $schema_error : $config['db_pdo']; ?></td>
+        <td class="text-muted"><?php echo ($schema_error) ? $schema_error : Config::getInstance()->get('db_pdo'); ?></td>
         <td>
             <?php if (!$schema_error): ?>
                 <i class="bi bi-check-square text-success"></i>
@@ -133,7 +138,11 @@
     <th class="align-top">configuration complète</th>
     <td class="text-muted">config/config.php</td>
     <td>
-        <?php if ( (isset($config['db_pdo']) && isset($config['instance_id']) && isset($config['theme']) && isset($config['db_pdo']) && isset($config['admin_user']) && isset($config['herbergeur_raison_sociale']) && isset($config['herbergeur_adresse']) && isset($config['herbergeur_siren']) && isset($config['herbergeur_contact'])) ): ?>
+        <?php if (
+                   Config::getInstance()->exists('db_pdo') && Config::getInstance()->exists('instance_id') && Config::getInstance()->exists('theme') &&
+                   Config::getInstance()->exists('admin_user') && Config::getInstance()->exists('herbergeur_raison_sociale') &&
+                   Config::getInstance()->exists('herbergeur_adresse') && Config::getInstance()->exists('herbergeur_siren') && Config::getInstance()->exists('herbergeur_contact')
+                  ): ?>
         <i class="bi bi-check-square text-success"></i>
         <?php else: ?>
         <span class="text-danger">
@@ -157,52 +166,57 @@
     <tr>
         <th class="align-top">instance_id</th>
         <td class="text-muted">instance_id</td>
-        <td><?php echo (isset($config['instance_id'])) ? $config['instance_id'] : '<span class="text-danger">Non renseigné</span>'; ?></td>
+        <td><?php echo Config::getInstance()->get('instance_id', '<span class="text-danger">Non renseigné</span>'); ?></td>
     </tr>
     <tr>
         <th class="align-top">theme</th>
         <td class="text-muted">theme</td>
-        <td><?php echo (isset($config['theme'])) ? $config['theme'] : '<span class="text-danger">Non renseigné</span>'; ?></td>
+        <td><?php echo Config::getInstance()->get('theme', '<span class="text-danger">Non renseigné</span>'); ?></td>
     </tr>
     <tr>
         <th class="align-top">base de données</th>
         <td class="text-muted">db_pdo</td>
-        <td><?php echo (isset($config['db_pdo'])) ? $config['db_pdo'] : '<span class="text-danger">Non renseigné</span>'; ?></td>
+        <td><?php echo Config::getInstance()->get('db_pdo', '<span class="text-danger">Non renseigné</span>'); ?></td>
+    </tr>
+    <tr>
+        <th class="align-top">type d'authentification</th>
+        <td class="text-muted">viticonnect_baseurl ou http_auth</td>
+        <td><?php echo Config::getInstance()->get('http_auth', Config::getInstance()->get('viticonnect_baseurl', '<span class="text-danger">no auth</span>')); ?></td>
     </tr>
     <tr>
         <th class="align-top">admin_user</th>
         <td class="text-muted">admin_user</td>
-        <td><?php echo (isset($config['admin_user'])) ? $config['admin_user'] : '<span class="text-danger">Non renseigné</span>'; ?></td>
+        <td><?php echo Config::getInstance()->get('admin_user', '<span class="text-danger">Non renseigné</span>'); ?></td>
     </tr>
     <tr>
         <th class="align-top">herbergeur_raison_sociale</th>
         <td class="text-muted">herbergeur_raison_sociale</td>
-        <td><?php echo (isset($config['herbergeur_raison_sociale'])) ? $config['herbergeur_raison_sociale'] : '<span class="text-danger">Non renseigné</span>'; ?></td>
+        <td><?php echo Config::getInstance()->get('herbergeur_raison_sociale', '<span class="text-danger">Non renseigné</span>'); ?></td>
     </tr>
     <tr>
         <th class="align-top">herbergeur_adresse</th>
         <td class="text-muted">herbergeur_adresse</td>
-        <td><?php echo (isset($config['herbergeur_adresse'])) ? $config['herbergeur_adresse'] : '<span class="text-danger">Non renseigné</span>'; ?></td>
+        <td><?php echo Config::getInstance()->get('herbergeur_adresse', '<span class="text-danger">Non renseigné</span>'); ?></td>
     </tr>
     <tr>
         <th class="align-top">herbergeur_siren</th>
         <td class="text-muted">herbergeur_siren</td>
-        <td><?php echo (isset($config['herbergeur_siren'])) ? $config['herbergeur_siren'] : '<span class="text-danger">Non renseigné</span>'; ?></td>
+        <td><?php echo Config::getInstance()->get('herbergeur_siren', '<span class="text-danger">Non renseigné</span>'); ?></td>
     </tr>
     <tr>
         <th class="align-top">herbergeur_contact</th>
         <td class="text-muted">herbergeur_contact</td>
-        <td><?php echo (isset($config['herbergeur_contact'])) ? $config['herbergeur_contact'] : '<span class="text-danger">Non renseigné</span>'; ?></td>
+        <td><?php echo Config::getInstance()->get('herbergeur_contact', '<span class="text-danger">Non renseigné</span>'); ?></td>
     </tr>
     <tr>
         <th class="align-top">Logo associable au QRCode</th>
         <td class="text-muted">qrcode_logo</td>
-        <td> <?php echo (isset($config['qrcode_logo'])) ? file_get_contents($config['qrcode_logo']) : '<i>Non renseigné</i>'; ?> </td>
+        <td> <?php echo (Config::getInstance()->exists('qrcode_logo')) ? file_get_contents(Config::getInstance()->get('qrcode_logo')) : '<i>Non renseigné</i>'; ?> </td>
     </tr>
     <tr>
         <th class="align-top">Denominations de l'instance</th>
         <td class="text-muted">denominations</td>
-        <td><?php echo (isset($config['denominations'])) ? implode('<br/>', $config['denominations']) : '<i>Pas de dénomination spécifique</i>'; ?></td>
+        <td><?php echo (Config::getInstance()->exists('denominations')) ? implode('<br/>', Config::getInstance()->get('denominations')) : '<i>Pas de dénomination spécifique</i>'; ?></td>
     </tr>
     <tr>
         <th class="align-top">Données brutes</th>

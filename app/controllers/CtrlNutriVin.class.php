@@ -2,16 +2,26 @@
 
 use app\exporters\Exporter;
 use app\models\QRCode;
+use app\config\Config;
 use Web\Geo;
 
 class CtrlNutriVin {
     function index(Base $f3) {
+        if (Config::getInstance()->hasDenominations()) {
+            return $f3->reroute('/qrcode');
+        }
         echo View::instance()->render('layout_index.html.php');
     }
 
     function home(Base $f3) {
         echo View::instance()->render('layout_home.html.php');
     }
+
+    function faq(Base $f3) {
+        $f3->set('content', 'qrcode_faq.html.php');
+        echo View::instance()->render('layout.html.php');
+    }
+
 
     function adminSetup(Base $f3) {
         $qrcode = new QRCode();
@@ -35,8 +45,12 @@ class CtrlNutriVin {
             }
         }
 
+        if (!$this->isAdmin($f3) && Config::getInstance()->get('admin_user')) {
+            return $this->unauthorized($f3);
+        }
+
         if (!$this->isAdmin($f3) && $qrcode->tableExists() && count(QRCode::findAll())) {
-            die('Unauthorized');
+            return $this->unauthorized($f3);
         }
         $f3->set('content','admin_setup.html.php');
         echo View::instance()->render('layout.html.php');
@@ -44,32 +58,33 @@ class CtrlNutriVin {
     }
 
     function exportAll(Base $f3) {
-      $csv = null;
-      $rows = QRCode::findAll();
-      foreach ($rows as $row) {
-        $qrcode = $row->cast();
-        foreach (QRCode::$versionning_ignore_fields as $field) {
-          if (isset($qrcode[$field])) unset($qrcode[$field]);
+        $csv = null;
+        $rows = QRCode::findAll();
+        foreach ($rows as $row) {
+            $qrcode = $row->cast();
+            foreach (QRCode::$versionning_ignore_fields as $field) {
+                if (isset($qrcode[$field])) unset($qrcode[$field]);
+            }
+            if (!$csv) {
+                $csv = 'denomination de l\'instance;'.implode(';', array_keys($qrcode))."\n";
+            }
+            $csv .= (int)Config::getInstance()->isDenominationInConfig($qrcode['denomination']).';'.implode(';', array_values($qrcode))."\n";
         }
-        if (!$csv) {
-          $csv = 'denomination de l\'instance;'.implode(';', array_keys($qrcode))."\n";
-        }
-        $csv .= (int)$this->isDenominationInConfig($qrcode['denomination']).';'.implode(';', array_values($qrcode))."\n";
-      }
-      header('Content-Type: text/csv');
-      header('Content-Disposition: attachment; filename="'.date('YmdHi').'_qrcodes.csv'.'"');
-      echo $csv;
+        header('Content-Type: text/csv');
+        header('Content-Disposition: attachment; filename="'.date('YmdHi').'_qrcodes.csv'.'"');
+        echo $csv;
     }
 
     private function isAdmin(Base $f3) {
+        $f3->set('is_admin', false);
         if ( !$f3->exists('SESSION.userid')) {
             return false;
         }
-        $config = $this->getConfig($f3);
-        if (!isset($config['admin_user'])) {
+        if (!Config::getInstance()->exists('admin_user')) {
             return false;
         }
-        return $f3->get('SESSION.userid') == $config['admin_user'];
+        $f3->set('is_admin', $f3->get('SESSION.userid') == Config::getInstance()->get('admin_user'));
+        return $f3->get('is_admin');
     }
 
     private function authenticatedUserOnly(Base $f3) {
@@ -79,7 +94,7 @@ class CtrlNutriVin {
         if ( !$f3->exists('SESSION.userid') || !$f3->exists('PARAMS.userid') ||
              ($f3->get('PARAMS.userid') != $f3->get('SESSION.userid')))
         {
-            die('Unauthorized');
+            return $this->unauthorized($f3);
         }
         return true;
     }
@@ -97,9 +112,9 @@ class CtrlNutriVin {
                 return $f3->reroute('/qrcode/'.$f3->get('userid').'/create', false);
             }
             if ($f3->get('POST.labels')) {
-              $f3->set('POST.labels', json_encode($f3->get('POST.labels')));
+                $f3->set('POST.labels', json_encode($f3->get('POST.labels')));
             } else {
-              $f3->set('POST.labels', json_encode([]));
+                $f3->set('POST.labels', json_encode([]));
             }
             $qrcode->copyFrom('POST');
             if (!$qrcode->user_id) {
@@ -108,11 +123,11 @@ class CtrlNutriVin {
             foreach(['image_bouteille', 'image_etiquette', 'image_contreetiquette'] as $img) {
                 if(isset($_FILES[$img]) && in_array($_FILES[$img]['type'], array('image/jpeg', 'image/png'))) {
                     if ($imageResized = QRCode::resizeImage($_FILES[$img]['tmp_name'], QRCode::IMG_MAX_RESOLUTION)) {
-                      $qrcode->{$img} = 'data:'.$_FILES[$img]['type'].';base64,'.base64_encode(file_get_contents($imageResized));
+                        $qrcode->{$img} = 'data:'.$_FILES[$img]['type'].';base64,'.base64_encode(file_get_contents($imageResized));
                     }
                 }
             }
-            $qrcode->denomination_instance = $this->isDenominationInConfig($qrcode->denomination);
+            $qrcode->denomination_instance = Config::getInstance()->isDenominationInConfig($qrcode->denomination);
             $qrcode->save();
             return $f3->reroute('/qrcode/'.$qrcode->user_id.'/parametrage/'.$qrcode->getId().'?from=create', false);
         }
@@ -195,14 +210,6 @@ class CtrlNutriVin {
         echo View::instance()->render('layout.html.php');
     }
 
-    private function getConfig(Base $f3) {
-        $config = $f3->get('config');
-        if (!in_array($_SERVER['SERVER_NAME'], ['127.0.0.1', 'localhost']) && !isset($config['viticonnect_baseurl'])) {
-            $config['viticonnect_baseurl'] = 'https://viticonnect.net/cas';
-        }
-        return $config;
-    }
-
     function qrcodeAuthentication(Base $f3) {
         $qrcode = new QRCode();
         if (!$qrcode->tableExists()) {
@@ -212,8 +219,7 @@ class CtrlNutriVin {
             if ($f3->exists('SESSION.authtype')) {
                 return $f3->reroute('/logout');
             }
-            $config = $this->getConfig($f3);
-            if (isset($config['http_auth']) && $config['http_auth']) {
+            if (Config::getInstance()->get('http_auth')) {
                 if (isset($_SERVER['PHP_AUTH_USER'])) {
                     $f3->set('SESSION.userid', $_SERVER['PHP_AUTH_USER']);
                     $f3->set('SESSION.username', $_SERVER['PHP_AUTH_USER']);
@@ -224,33 +230,38 @@ class CtrlNutriVin {
                 header('HTTP/1.0 401 Unauthorized');
                 die ("Not authorized qrcodeAuthentication");
             }
-            if (isset($config['viticonnect_baseurl']) && $config['viticonnect_baseurl']) {
-                return $f3->reroute($config['viticonnect_baseurl'].'/login?service='.$f3->get('urlbase').'/login/viticonnect');
+            if (Config::getInstance()->get('viticonnect_baseurl')) {
+                return $f3->reroute(Config::getInstance()->get('viticonnect_baseurl').'/login?service='.$f3->get('urlbase').'/login/viticonnect');
             }
             if (in_array($_SERVER['SERVER_NAME'], ['127.0.0.1', 'localhost'])) {
-                if (!isset($config['default_user'])) {
-                    $config['default_user'] = 'userid';
-                }
-                $f3->set('SESSION.userid', $config['default_user']);
-                $f3->set('SESSION.username', $config['default_user']);
+                $f3->set('SESSION.userid', Config::getInstance()->get('default_user', 'userid'));
+                $f3->set('SESSION.username', Config::getInstance()->get('default_user', 'userid'));
                 $f3->set('SESSION.authtype', 'default');
                 return $f3->reroute('/qrcode');
             }
-            die ("Not authorized");
+            return $this->unauthorized($f3);
         }
         return $f3->reroute('/qrcode/'.$f3->get('SESSION.userid').'/list', false);
     }
 
+    private function unauthorized($f3) {
+        if ($f3->exists('SESSION.unauthorized') && $f3->get('SESSION.unauthorized')) {
+            $f3->clear('SESSION.unauthorized');
+            die ("Not authorized");
+        }
+        $f3->set('SESSION.unauthorized', 'Unauthorized');
+        return $f3->reroute('/qrcode', false);
+    }
+
     function qrcodeViticonnect(Base $f3) {
         $ticket = $f3->get('GET.ticket');
-        $config = $this->getConfig($f3);
         if (!$ticket) {
             return $f3->reroute('/qrcode');
         }
-        if (!isset($config['viticonnect_baseurl']) || !$config['viticonnect_baseurl']) {
+        if (!Config::getInstance()->get('viticonnect_baseurl')) {
             return $f3->reroute('/');
         }
-        $validate = file_get_contents($config['viticonnect_baseurl'].'/serviceValidate?service='.$f3->get('urlbase').'/login/viticonnect&ticket='.$ticket);
+        $validate = file_get_contents(Config::getInstance()->get('viticonnect_baseurl').'/serviceValidate?service='.$f3->get('urlbase').'/login/viticonnect&ticket='.$ticket);
         if ($validate) {
             if(strpos($validate, 'INVALID_TICKET') !== false) {
                 return $f3->reroute('/qrcode');
@@ -276,6 +287,10 @@ class CtrlNutriVin {
                     $userid = $m[1];
                 }
             }
+            if ($origin == 'ivso' && ($f3->get('urlbase') != 'https://qr-so.fr')) {
+                header('Location: https://qr-so.fr/qrcode');
+                exit;
+            }
             if (!$userid && $origin && preg_match('/cas:user>([^<]*)<\/cas:user/', $validate, $m)) {
                 $userid = $origin.':'.$m[1];
             }
@@ -295,8 +310,7 @@ class CtrlNutriVin {
         $f3->clear('SESSION.username');
         if ($f3->get('SESSION.authtype') == 'viticonnect') {
             $f3->clear('SESSION.authtype');
-            $config = $this->getConfig($f3);
-            return $f3->reroute($config['viticonnect_baseurl'].'/logout?service='.$f3->get('urlbase').'/');
+            return $f3->reroute(Config::getInstance()->get('viticonnect_baseurl').'/logout?service='.$f3->get('urlbase').'/');
         } elseif ($f3->get('SESSION.authtype') == 'http') {
             if ($f3->exists('SESSION.disconnection')) {
                 $f3->clear('SESSION.authtype');
@@ -313,13 +327,13 @@ class CtrlNutriVin {
     }
 
     function qrcodeList(Base $f3) {
-      $this->authenticatedUserOnly($f3);
-      if ($f3->exists('PARAMS.userid')) {
-        $f3->set('qrlist', QRCode::findByUserid($f3->get('PARAMS.userid')));
-        $f3->set('userid', $f3->get('PARAMS.userid'));
-        $f3->set('content', 'qrcode_list.html.php');
-        echo View::instance()->render('layout.html.php');
-      }
+        $this->authenticatedUserOnly($f3);
+        if ($f3->exists('PARAMS.userid')) {
+            $f3->set('qrlist', QRCode::findByUserid($f3->get('PARAMS.userid')));
+            $f3->set('userid', $f3->get('PARAMS.userid'));
+            $f3->set('content', 'qrcode_list.html.php');
+            echo View::instance()->render('layout.html.php');
+        }
     }
 
     public function qrcodeDuplicate(Base $f3) {
@@ -356,8 +370,8 @@ class CtrlNutriVin {
         $allVersions = array_merge([$lastVersion], array_keys($versions));
         $currentVersion = $qrcode->date_version;
         if ($f3->get('GET.version') && !empty($versions[$f3->get('GET.version')])) {
-          $qrcode->date_version = $f3->get('GET.version');
-          $qrcode->copyfrom($versions[$qrcode->date_version]);
+            $qrcode->date_version = $f3->get('GET.version');
+            $qrcode->copyfrom($versions[$qrcode->date_version]);
         }
 
         $this->initDefaultOnQRCode($qrcode, $f3);
@@ -385,7 +399,7 @@ class CtrlNutriVin {
         }
         $f3->set('qrcode', $qrcode);
 
-        $f3->set('canSwitchLogo', $this->isDenominationInConfig($qrcode->denomination));
+        $f3->set('canSwitchLogo', Config::getInstance()->isDenominationInConfig($qrcode->denomination));
         $f3->set('content', 'qrcode_parametrage.html.php');
         echo View::instance()->render('layout.html.php');
     }
@@ -407,8 +421,7 @@ class CtrlNutriVin {
         $qrcode->logo = (bool)$f3->get('POST.logo');
         $qrcode->mentions = (bool)$f3->get('POST.mentions');
 
-        $config = $this->getConfig($f3);
-        if ($this->isDenominationInConfig($qrcode->denomination) === false) {
+        if (Config::getInstance()->isDenominationInConfig($qrcode->denomination) === false) {
             $qrcode->logo = false;
         }
 
@@ -419,8 +432,7 @@ class CtrlNutriVin {
     public function qrcodeMultiExport(Base $f3) {
         $qrcodes = $f3->get('GET.qrcodes');
         $formats = ['svg', 'pdf', 'eps'];
-        $config = $this->getConfig($f3);
-        $options = isset($config['qrcode']) ? $config['qrcode'] : [];
+        $options = [];
         $userid = null;
 
         foreach ($qrcodes as $qr) {
@@ -439,20 +451,20 @@ class CtrlNutriVin {
             $qr->mentions = $f3->get('GET.mentions');
 
             foreach ($formats as $format) {
-                $files[$format][$qr->getId()] = $qr->getQRCodeContent($format, $f3->get('urlbase'), $options);
+                $files[$format][$qr->getId().".".$format] = $qr->getQRCodeContent($format, $f3->get('urlbase'), $options);
             }
         }
 
         $name = tempnam(sys_get_temp_dir(), "qrcodes");
         $zip = new ZipArchive;
         if ($zip->open($name, ZipArchive::OVERWRITE) === TRUE) {
-                foreach ($files as $format => $id) {
-                    foreach ($id as $id => $content) {
-                        $zip->addFromString($format.'/'.$id, $content);
-                    }
+            foreach ($files as $format => $id) {
+                foreach ($id as $id => $content) {
+                    $zip->addFromString($format.'/'.$id, $content);
                 }
-                $zip->close();
             }
+            $zip->close();
+        }
 
         header('Content-type: application/zip');
         header('Content-disposition: attachment; filename=qrcodes_'.$userid.'.zip');
@@ -475,7 +487,7 @@ class CtrlNutriVin {
 
     public function adminUsers(Base $f3) {
         if (!$this->isAdmin($f3)) {
-            die('Unauthorized');
+            return $this->unauthorized($f3);
         }
         $users = [];
         foreach (QRCode::findAll() as $d) {
@@ -484,12 +496,5 @@ class CtrlNutriVin {
         $f3->set('users', $users);
         $f3->set('content', 'admin_users.html.php');
         echo View::instance()->render('layout.html.php');
-    }
-
-    public function isDenominationInConfig($denomination) {
-        $c = Base::instance()->get('config');
-        $denominationsInstance = array_key_exists('denominations', $c) ? $c['denominations'] : [];
-
-        return in_array($denomination, $denominationsInstance);
     }
 }

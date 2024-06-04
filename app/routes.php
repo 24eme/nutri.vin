@@ -1,8 +1,9 @@
 <?php
 require_once('controllers/CtrlNutriVin.class.php');
 
-$f3->route('GET /', 'CtrlNutriVin->home');
+$f3->route('GET /', 'CtrlNutriVin->index');
 $f3->route('GET /index', 'CtrlNutriVin->index');
+$f3->route('GET /faq', 'CtrlNutriVin->faq');
 $f3->route('GET /admin/setup', 'CtrlNutriVin->adminSetup');
 $f3->route('GET /admin/users', 'CtrlNutriVin->adminUsers');
 $f3->route('GET @qrcodecreate: /qrcode/@userid/create', 'CtrlNutriVin->qrcodeCreate');

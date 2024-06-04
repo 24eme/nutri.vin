@@ -15,7 +15,7 @@
       <?php endif; ?>
 
       <?php if (count($qrcode->getVisites())): ?>
-      <p class="alert alert-warning">Ce QRCode a déjà été consulté par au moins une personne extérieure. Par soucis de transparence, la modification que vous pourriez réaliser sera consultable publiquement</p>
+      <p class="alert alert-warning mt-2">Ce QRCode a déjà été consulté par au moins une personne extérieure. Par soucis de transparence, la modification que vous pourriez réaliser sera consultable publiquement</p>
       <?php endif; ?>
 
       <h4 class="mt-4 mb-4"><i class="bi bi-person-fill"></i> Identité du commercialisant</h4>
@@ -37,7 +37,7 @@
            <input list="denominations_liste" type="text" class="form-control" id="denomination" name="denomination" value="<?php echo $qrcode->denomination; ?>" placeholder="Dénomination"/>
             <datalist id="denominations_liste">
             <?php
-                foreach ($qrcode->getDenominations($config) as $denomination):
+                foreach ($qrcode->getDenominations() as $denomination):
             ?>
               <option value="<?php echo $denomination ?>"></option>
             <?php
@@ -125,13 +125,14 @@
                       <th class="text-center" scope="col">Catégorie</th>
                       <th class="text-center" scope="col">Allergène</th>
                       <th class="text-center" scope="col">Bio</th>
-                      <th class="text-center" scope="col"></th>
+                      <th class="text-center" scope="col">&nbsp;</th>
+                      <th></th>
                     </tr>
                   </thead>
                   <tbody></tbody>
             </table>
             <template id="ingredient_row">
-                <tr draggable="true" style="transform: scale(1)">
+                <tr draggable="true">
                     <td class="ingredient_libelle" scope="row"><div class="input-group"><span class="input-group-text" style="cursor: grab;"><i class="bi bi-grip-vertical"></i></span><input form="form_add_ingredients" type="text" class="form-control input_ingredient" list="ingredients_list"></div></td>
                     <td class="ingredient_additif text-center align-middle">
                         <input form="form_add_ingredients" class="form-check-input checkbox_additif" type="checkbox" value="" label="case à cocher pour déclarer un additif">
@@ -151,8 +152,8 @@
                     <td class="ingredient_facultatif text-center align-middle">
                         <abbr title="Ingrédient facultatif" class="invisible mx-2">F</abbr>
                     </td>
-                    <td class="delrow" style="cursor: pointer">
-                        <span class="fs-2"><i class="bi bi-x"></i></span>
+                    <td class="delrow text-center align-middle" style="cursor: pointer">
+                        <i class="bi bi-x"></i>
                     </td>
                 </tr>
             </template>
@@ -1007,6 +1008,8 @@ function nutri_update_complet() {
         document.querySelector('#nutritionnel_glucides').value = alcool / 10;
         document.querySelector('#nutritionnel_sucres').value = alcool / 10;
         document.querySelector('#nutritionnel_energie_kj').dispatchEvent(new Event('change', {bubbles: true}));
+        document.querySelector('#nutritionnel_glucides').dispatchEvent(new Event('change', {bubbles: true}));
+        document.querySelector('#nutritionnel_sucres').dispatchEvent(new Event('change', {bubbles: true}));
     }
     return false;
 }
