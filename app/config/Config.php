@@ -7,6 +7,7 @@ class Config
     private static $_instance = null;
     protected $config = null;
     protected $f3 = null;
+    private $isEditable = false;
 
     public static function getInstance() {
         if (is_null(self::$_instance)) {
@@ -18,7 +19,10 @@ class Config
     public function __construct() {
         $config = null;
         $this->f3 = \Base::instance();
-        if(file_exists(__DIR__.'/../../config/config.php')) {
+
+        $this->isEditable = (bool) getenv("TEST");
+
+        if(! $this->isEditable && file_exists(__DIR__.'/../../config/config.php')) {
             include(__DIR__.'/../../config/config.php');
         }
 
@@ -41,6 +45,15 @@ class Config
 
     public function exists($v) {
         return isset($this->config[$v]);
+    }
+
+    public function set($k, $v)
+    {
+        if (! $this->isEditable) {
+            throw new \LogicException("Il n'est pas possible d'éditer la configuration hors test");
+        }
+
+        $this->config[$k] = $v;
     }
 
     public function getDenominations() {

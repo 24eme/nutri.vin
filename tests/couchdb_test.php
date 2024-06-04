@@ -1,35 +1,9 @@
 <?php
 
 use app\models\QRCode;
-use app\models\DBManager;
 
 // INIT
-$f3 = require(__DIR__.'/../vendor/fatfree-core/base.php');
-require __DIR__.'/../vendor/autoload.php';
-
-if (getenv('DEBUG')) {
-    $f3->set('DEBUG', getenv('DEBUG'));
-}
-
-$test = new Test();
-
-/** @return array $config */
-require_once __DIR__.'/../config/config.php';
-$f3->set('config', $config);
-
-$couch = new \DB\Couch('http://admin:admin@127.0.0.1:5984/nutrivin_test');
-try {
-    $couch->getDBInfos();
-    $couch->deleteDB();
-} catch (\Exception $e) {
-    $test->message('Pas de base existante');
-}
-
-DBManager::createDB('couchdb:http://admin:admin@127.0.0.1:5984/nutrivin_test');
-try {
-    /* unlink(__DIR__.'/../db/nutrivin_test.sqlite'); */
-    /* DBManager::createDB('sqlite:'.__DIR__.'/../db/nutrivin_test.sqlite'); */
-} catch (\Exception $e) {}
+$test = require __DIR__.'/_bootstrap.php';
 
 // TESTS
 QRCode::createTable();
@@ -87,13 +61,4 @@ $results = QRCode::findByUserid('undefined_userid');
 $test->expect(count($results) === 0, "Pas de résultats pour un utilisateur inexistant");
 
 // Affichage des résultats
-foreach ($test->results() as $result) {
-    $status = ($result['status']) ? 'PASS' : 'FAIL';
-    if (php_sapi_name() === 'cli') {
-        switch ($status) {
-            case 'PASS': $status = "\033[32m".$status."\033[0m"; break;
-            case 'FAIL': $status = "\033[31m".$status."\033[0m"; break;
-        }
-    }
-    echo sprintf("%s: %s (%s)".PHP_EOL, $status, $result['text'], $result['source']);
-}
+include __DIR__.'/_print.php';
