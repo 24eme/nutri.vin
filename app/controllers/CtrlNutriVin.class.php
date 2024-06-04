@@ -432,7 +432,6 @@ class CtrlNutriVin {
     public function qrcodeMultiExport(Base $f3) {
         $qrcodes = $f3->get('GET.qrcodes');
         $formats = ['svg', 'pdf', 'eps'];
-        $options = [];
         $userid = null;
 
         foreach ($qrcodes as $qr) {
@@ -451,7 +450,7 @@ class CtrlNutriVin {
             $qr->mentions = $f3->get('GET.mentions');
 
             foreach ($formats as $format) {
-                $files[$format][$qr->getId().".".$format] = $qr->getQRCodeContent($format, $f3->get('urlbase'), $options);
+                $files[$format][$qr->getId().".".$format] = $qr->getQRCodeContent($format, $f3->get('urlbase'));
             }
         }
 
@@ -482,7 +481,7 @@ class CtrlNutriVin {
 
         Exporter::getInstance()->setResponseHeaders($f3->get('PARAMS.format'));
 
-        echo $qrcode->getQRCodeContent($f3->get('PARAMS.format'), $f3->get('urlbase'), $f3->get('config'));
+        echo $qrcode->getQRCodeContent($f3->get('PARAMS.format'), $f3->get('urlbase'));
     }
 
     public function adminUsers(Base $f3) {
