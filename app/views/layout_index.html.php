@@ -102,7 +102,7 @@
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">Pérénité</h5>
-                                <p class="card-text">Le projet ne dépend pas d'une seule entreprise privée et de sa viabilité économique. Il est financé par une interprofession et une entreprise coopérative. Les QRCodes déjà créés peuvent être facilement migré sur une autre plateforme grace à la fédération.</p>
+                                <p class="card-text">Le projet ne dépend pas d'une seule entreprise privée et de sa viabilité économique. Il est financé par une interprofession et une entreprise coopérative. Les QRCodes déjà créés peuvent être facilement migrés sur une autre instance.</p>
                             </div>
                         </div>
                     </div>

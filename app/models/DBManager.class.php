@@ -28,16 +28,16 @@ class DBManager {
         $scheme = strtok($dsn, ':');
         switch ($scheme) {
             case 'couchdb':
-                self::$db = "DB\\Couch";
-                self::$mapper = "DB\\Couch\\Mapper";
-                break;
+            self::$db = "DB\\Couch";
+            self::$mapper = "DB\\Couch\\Mapper";
+            break;
             case 'sqlite':
-                self::$db = "DB\\SQL";
-                self::$mapper = "DB\\SQL\\Mapper";
-                break;
+            self::$db = "DB\\SQL";
+            self::$mapper = "DB\\SQL\\Mapper";
+            break;
             default:
-                throw new LogicException('Pas de config pour ce type de connexion');
-                break;
+            throw new LogicException('Pas de config pour ce type de connexion');
+            break;
         }
     }
 

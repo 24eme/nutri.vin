@@ -58,21 +58,21 @@ class CtrlNutriVin {
     }
 
     function exportAll(Base $f3) {
-      $csv = null;
-      $rows = QRCode::findAll();
-      foreach ($rows as $row) {
-        $qrcode = $row->cast();
-        foreach (QRCode::$versionning_ignore_fields as $field) {
-          if (isset($qrcode[$field])) unset($qrcode[$field]);
+        $csv = null;
+        $rows = QRCode::findAll();
+        foreach ($rows as $row) {
+            $qrcode = $row->cast();
+            foreach (QRCode::$versionning_ignore_fields as $field) {
+                if (isset($qrcode[$field])) unset($qrcode[$field]);
+            }
+            if (!$csv) {
+                $csv = 'denomination de l\'instance;'.implode(';', array_keys($qrcode))."\n";
+            }
+            $csv .= (int)Config::getInstance()->isDenominationInConfig($qrcode['denomination']).';'.implode(';', array_values($qrcode))."\n";
         }
-        if (!$csv) {
-          $csv = 'denomination de l\'instance;'.implode(';', array_keys($qrcode))."\n";
-        }
-        $csv .= (int)Config::getInstance()->isDenominationInConfig($qrcode['denomination']).';'.implode(';', array_values($qrcode))."\n";
-      }
-      header('Content-Type: text/csv');
-      header('Content-Disposition: attachment; filename="'.date('YmdHi').'_qrcodes.csv'.'"');
-      echo $csv;
+        header('Content-Type: text/csv');
+        header('Content-Disposition: attachment; filename="'.date('YmdHi').'_qrcodes.csv'.'"');
+        echo $csv;
     }
 
     private function isAdmin(Base $f3) {
@@ -112,9 +112,9 @@ class CtrlNutriVin {
                 return $f3->reroute('/qrcode/'.$f3->get('userid').'/create', false);
             }
             if ($f3->get('POST.labels')) {
-              $f3->set('POST.labels', json_encode($f3->get('POST.labels')));
+                $f3->set('POST.labels', json_encode($f3->get('POST.labels')));
             } else {
-              $f3->set('POST.labels', json_encode([]));
+                $f3->set('POST.labels', json_encode([]));
             }
             $qrcode->copyFrom('POST');
             if (!$qrcode->user_id) {
@@ -123,7 +123,7 @@ class CtrlNutriVin {
             foreach(['image_bouteille', 'image_etiquette', 'image_contreetiquette'] as $img) {
                 if(isset($_FILES[$img]) && in_array($_FILES[$img]['type'], array('image/jpeg', 'image/png'))) {
                     if ($imageResized = QRCode::resizeImage($_FILES[$img]['tmp_name'], QRCode::IMG_MAX_RESOLUTION)) {
-                      $qrcode->{$img} = 'data:'.$_FILES[$img]['type'].';base64,'.base64_encode(file_get_contents($imageResized));
+                        $qrcode->{$img} = 'data:'.$_FILES[$img]['type'].';base64,'.base64_encode(file_get_contents($imageResized));
                     }
                 }
             }
@@ -327,13 +327,13 @@ class CtrlNutriVin {
     }
 
     function qrcodeList(Base $f3) {
-      $this->authenticatedUserOnly($f3);
-      if ($f3->exists('PARAMS.userid')) {
-        $f3->set('qrlist', QRCode::findByUserid($f3->get('PARAMS.userid')));
-        $f3->set('userid', $f3->get('PARAMS.userid'));
-        $f3->set('content', 'qrcode_list.html.php');
-        echo View::instance()->render('layout.html.php');
-      }
+        $this->authenticatedUserOnly($f3);
+        if ($f3->exists('PARAMS.userid')) {
+            $f3->set('qrlist', QRCode::findByUserid($f3->get('PARAMS.userid')));
+            $f3->set('userid', $f3->get('PARAMS.userid'));
+            $f3->set('content', 'qrcode_list.html.php');
+            echo View::instance()->render('layout.html.php');
+        }
     }
 
     public function qrcodeDuplicate(Base $f3) {
@@ -370,8 +370,8 @@ class CtrlNutriVin {
         $allVersions = array_merge([$lastVersion], array_keys($versions));
         $currentVersion = $qrcode->date_version;
         if ($f3->get('GET.version') && !empty($versions[$f3->get('GET.version')])) {
-          $qrcode->date_version = $f3->get('GET.version');
-          $qrcode->copyfrom($versions[$qrcode->date_version]);
+            $qrcode->date_version = $f3->get('GET.version');
+            $qrcode->copyfrom($versions[$qrcode->date_version]);
         }
 
         $this->initDefaultOnQRCode($qrcode, $f3);
@@ -458,13 +458,13 @@ class CtrlNutriVin {
         $name = tempnam(sys_get_temp_dir(), "qrcodes");
         $zip = new ZipArchive;
         if ($zip->open($name, ZipArchive::OVERWRITE) === TRUE) {
-                foreach ($files as $format => $id) {
-                    foreach ($id as $id => $content) {
-                        $zip->addFromString($format.'/'.$id, $content);
-                    }
+            foreach ($files as $format => $id) {
+                foreach ($id as $id => $content) {
+                    $zip->addFromString($format.'/'.$id, $content);
                 }
-                $zip->close();
             }
+            $zip->close();
+        }
 
         header('Content-type: application/zip');
         header('Content-disposition: attachment; filename=qrcodes_'.$userid.'.zip');
