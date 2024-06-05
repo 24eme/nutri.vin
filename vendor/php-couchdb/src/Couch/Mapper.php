@@ -134,8 +134,23 @@ class Mapper extends \DB\Cursor {
         return $mapper;
     }
 
-    function count($filter = null, array $options = null, $ttl = 0) {
-        //a implementer
+    public function count($filter = null, array $options = null, $ttl = 0) {
+        $fw=\Base::instance();
+        $cache=\Cache::instance();
+        $tag='';
+        if (is_array($ttl)) {
+            list($ttl,$tag)=$ttl;
+        }
+        $hash = $fw->hash($fw->stringify([$filter])).($tag?'.'.$tag:'').'.mongo';
+        $cached = $cache->exists($hash, $result);
+        if (! $cached || ! $ttl || $cached[0] + $ttl < microtime(TRUE)) {
+            $result = count($this->select($this->fields, $filter));
+            if ($fw->CACHE && $ttl) {
+                // Save to cache backend
+                $cache->set($hash,$result,$ttl);
+            }
+        }
+        return $result;
     }
 
     /**
