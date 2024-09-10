@@ -164,6 +164,7 @@ class QRCode extends Mapper
             _("Raisins") => [],
             _("Moût de raisin concentré") => [],
             _("Liqueur de tirage et liqueur d'expédition") => [],
+            _("Saccharose") => [],
             _("Acide tartrique - E334") => ['additif' => "Régulateur d'acidité"],
             _("Acide malique - E296") => ['additif' => "Régulateur d'acidité"],
             _("Acide lactique - E270") => ['additif' => "Régulateur d'acidité"],
