@@ -694,15 +694,12 @@ document.addEventListener('DOMContentLoaded', function () {
         let elDragged
 
         table.addEventListener('dragstart', function (e) {
-            console.log('dragstart')
-
             elDragged = e.target.tag === 'TR' ? e.target : e.target.closest('tr');
             elDragged.classList.add('dragging')
             e.dataTransfer.effectAllowed = 'move'
         });
 
         table.addEventListener('dragover', function (e) {
-            console.log('drag');
             e.preventDefault();
 
             const row = e.target.tag === 'TR' ? e.target : e.target.closest('tr');
@@ -710,7 +707,6 @@ document.addEventListener('DOMContentLoaded', function () {
         })
 
         table.addEventListener('dragleave', function (e) {
-            console.log('drag');
             e.preventDefault();
 
             const row = e.target.tag === 'TR' ? e.target : e.target.closest('tr');
@@ -719,7 +715,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
         tbody.addEventListener('drop', function (e) {
             e.preventDefault();
-            console.log('drop');
 
             const hoveredRow = e.target.tag === 'TR' ? e.target : e.target.closest('tr');
                   hoveredRow.style = 'border-bottom: solid 0 inherit'
@@ -730,7 +725,6 @@ document.addEventListener('DOMContentLoaded', function () {
         thead.addEventListener('drop', function (e) {
             // pour mettre en premier élément
             e.preventDefault();
-            console.log('drop');
 
             const hoveredRow = e.target.tag === 'TR' ? e.target : e.target.closest('tr');
                   hoveredRow.style = 'border-bottom: solid 0 inherit'
@@ -738,8 +732,6 @@ document.addEventListener('DOMContentLoaded', function () {
         })
 
         table.addEventListener('dragend', function (e) {
-            console.log('dragend')
-
             elDragged.classList.remove('dragging')
             elDragged = null
             ingredientsTableToText()
