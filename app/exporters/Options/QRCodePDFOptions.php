@@ -10,7 +10,7 @@ class QRCodePDFOptions extends QRCodeGeneralOptions
 {
     protected string $outputType = QROutputInterface::FPDF;
     protected string $fpdfMeasureUnit = 'mm';
-ddd
+
     protected string $fpdfTitle = '';
     protected array $fpdfEnergies = [];
 
