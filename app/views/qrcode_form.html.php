@@ -1004,19 +1004,16 @@ function nutri_update_complet() {
         cat_alcool = 8;
     }
 
-    if(!cat_sucre) {
-        alert("La conversion n'est pas possible car le teneur en sucre est trop élevée.\n\nElle dépasse la limite qui est indiquée dans le tableau de conversion de le réglementation.");
+    if(cat_sucre === null) {
+        document.querySelector('#nutritionnel_energie_kj').value = parseInt((alcool * 0.79 * 29) + (sucre * 17 / 10) + (7 * 10 / 10) + (6 * 13 / 10));
+        document.querySelector('#nutritionnel_energie_kj').dispatchEvent(new Event('change', {bubbles: true}));
 
-        return false;
+        return true;
     }
 
     if (convert_valeur_energetique_kj[type] && convert_valeur_energetique_kj[type][cat_sucre] && convert_valeur_energetique_kj[type][cat_sucre][cat_alcool] && convert_valeur_energetique_kj[type][cat_sucre][cat_alcool] > 0) {
         document.querySelector('#nutritionnel_energie_kj').value = convert_valeur_energetique_kj[type][cat_sucre][cat_alcool];
-        document.querySelector('#nutritionnel_glucides').value = alcool / 10;
-        document.querySelector('#nutritionnel_sucres').value = alcool / 10;
         document.querySelector('#nutritionnel_energie_kj').dispatchEvent(new Event('change', {bubbles: true}));
-        document.querySelector('#nutritionnel_glucides').dispatchEvent(new Event('change', {bubbles: true}));
-        document.querySelector('#nutritionnel_sucres').dispatchEvent(new Event('change', {bubbles: true}));
     }
     return true;
 }
