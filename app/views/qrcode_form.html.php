@@ -1005,7 +1005,7 @@ function nutri_update_complet() {
     }
 
     if(!cat_sucre) {
-        alert("La conversion n'est pas possible car le teneur en sucre est trop élevée.\n\nElle dépasse la limite qui est indiquée dans le tableau de conversion de le réglementation.");
+        alert("La conversion n'est pas possible car la teneur en sucre est trop élevée.\n\nElle dépasse la limite qui est indiquée dans le tableau de conversion de la réglementation.");
 
         return false;
     }
