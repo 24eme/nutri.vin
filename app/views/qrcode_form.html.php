@@ -601,7 +601,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const toUpdate = updated.id.includes('kcal') ? ne_j : ne_kcal;
 
             toUpdate.value = updated.id.includes('kcal') ? updated.value * conversion : updated.value / conversion;
-            toUpdate.value = parseInt(toUpdate.value)
+            toUpdate.value = Math.round(toUpdate.value)
             liveform.update(toUpdate)
             e.stopPropagation()
         }
@@ -997,7 +997,7 @@ function nutri_update_complet() {
     }
 
     if(cat_sucre === null) {
-        document.querySelector('#nutritionnel_energie_kj').value = parseInt((alcool * 0.79 * 29) + (sucre * 17 / 10) + (7 * 10 / 10) + (6 * 13 / 10));
+        document.querySelector('#nutritionnel_energie_kj').value = Math.round((alcool * 0.79 * 29) + (sucre * 17 / 10) + (7 * 10 / 10) + (6 * 13 / 10));
         document.querySelector('#nutritionnel_energie_kj').dispatchEvent(new Event('change', {bubbles: true}));
 
         return true;
