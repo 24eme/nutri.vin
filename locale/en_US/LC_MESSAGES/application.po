@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-05 17:31+0100\n"
+"POT-Creation-Date: 2024-11-05 19:10+0100\n"
 "PO-Revision-Date: 2024-05-29 12:42+0200\n"
 "Last-Translator: tale-fau <tale-fau@24eme.fr>\n"
 "Language-Team: English\n"
@@ -84,6 +84,28 @@ msgstr "Sodium"
 
 msgid "Autres informations"
 msgstr "Other Information"
+
+msgid "Mentions légales"
+msgstr "Legal notices"
+
+msgid "Cette fiche nutritionnelle est éditée sous la seule responsablité de"
+msgstr "This nutritional information sheet is published under the sole responsibility of"
+
+msgid "Elle est hébergée par"
+msgstr "It is hosted by"
+
+msgid "sa plateforme"
+msgstr "its platform"
+
+msgid "et le projet libre"
+msgstr "and the free project"
+
+msgid ""
+"ne peuvent être tenus responsables des informations publiées. Un historique "
+"de chaque modification est conservée et consultable publiquement"
+msgstr ""
+"cannot be held responsible for the information published."
+"A history of each modification is kept and publicly available."
 
 msgid "Créé le "
 msgstr "Created on "
