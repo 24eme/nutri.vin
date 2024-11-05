@@ -258,7 +258,7 @@
         </ul>
       <?php endif; ?>
       <?php $nbVue = count($qrcode->getVisites()); ?>
-      <span class="ps-3" title="<?php echo _("Seules l'heure de la première visite de la session et une évaluation géographique de la connexion sont conservées pour réaliser cette statistique. Conformément à la législation, aucune données à caractère personnel n'est conservé et aucuun suivi des visiteurs de cette fiche n'est réalisé. La consultation de la page ne nécessite pas de cookie."); ?>">
+      <span class="ps-3" title="<?php echo _("Seules l'heure de la première visite de la session et une évaluation géographique de la connexion sont conservées pour réaliser cette statistique. Conformément à la législation, aucune données à caractère personnel n'est conservé et aucun suivi des visiteurs de cette fiche n'est réalisé. La consultation de la page ne nécessite pas de cookie."); ?>">
           <i class="bi bi-eye"  style="cursor: pointer;"></i> <?php echo $nbVue; ?> <?php echo _("vue"); ?><?php if ($nbVue > 1): ?>s<?php endif; ?>
       </span>
     </div>
