@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-05 18:06+0100\n"
+"POT-Creation-Date: 2024-11-05 19:10+0100\n"
 "Language-Team: Spanish\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
@@ -82,6 +82,28 @@ msgstr "Sodio"
 
 msgid "Autres informations"
 msgstr "Otra información"
+
+msgid "Mentions légales"
+msgstr "Avisos legales"
+
+msgid "Cette fiche nutritionnelle est éditée sous la seule responsablité de"
+msgstr "Esta ficha nutricional se publica bajo la exclusiva responsabilidad de"
+
+msgid "Elle est hébergée par"
+msgstr "Está alojado por"
+
+msgid "sa plateforme"
+msgstr "su plataforma"
+
+msgid "et le projet libre"
+msgstr "y el proyecto libre"
+
+msgid ""
+"ne peuvent être tenus responsables des informations publiées. Un historique "
+"de chaque modification est conservée et consultable publiquement"
+msgstr ""
+"no se hace responsable de la información publicada."
+"Se mantiene un historial de cada modificación y se puede ver públicamente."
 
 msgid "Créé le "
 msgstr "Creado el "
