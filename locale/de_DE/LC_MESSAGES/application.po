@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-05 17:31+0100\n"
+"POT-Creation-Date: 2024-11-05 19:10+0100\n"
 "Language-Team: German\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
@@ -82,6 +82,28 @@ msgstr "Natrium"
 
 msgid "Autres informations"
 msgstr "Weitere Informationen"
+
+msgid "Mentions légales"
+msgstr "Rechtliche Hinweise"
+
+msgid "Cette fiche nutritionnelle est éditée sous la seule responsablité de"
+msgstr "Dieses Nährwertblatt wird unter der alleinigen Verantwortung von veröffentlicht"
+
+msgid "Elle est hébergée par"
+msgstr "Gastgeber ist"
+
+msgid "sa plateforme"
+msgstr "seine Plattform"
+
+msgid "et le projet libre"
+msgstr "und das kostenlose Projekt"
+
+msgid ""
+"ne peuvent être tenus responsables des informations publiées. Un historique "
+"de chaque modification est conservée et consultable publiquement"
+msgstr ""
+"übernimmt keine Haftung für die veröffentlichten Informationen"
+"Ein Verlauf jeder Änderung wird gespeichert und ist öffentlich einsehbar"
 
 msgid "Créé le "
 msgstr "Erstellt am "
