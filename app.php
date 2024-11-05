@@ -26,8 +26,11 @@ $f3->language(isset($f3->get('HEADERS')['Accept-Language']) ? $f3->get('HEADERS'
 
 $f3->set('SUPPORTED_LANGUAGES',
     [
+        'de_DE.utf8' => 'Deutsch',
         'en_US.utf8' => 'English',
+        'es_ES.utf8' => 'Español',
         'fr_FR.utf8' => 'Français',
+        'it_IT.utf8' => 'Italiano'
     ]);
 if ($f3->get('GET.lang')) {
     selectLanguage($f3->get('GET.lang'), $f3);
