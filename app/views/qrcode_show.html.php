@@ -228,22 +228,22 @@
     <?php endif; ?>
 
     <div class="mt-2 pt-2 small text-secondary text-center border-top liveform_anchor">
-            <strong>Mentions légales :</strong>
+            <strong><?php echo _("Mentions légales") ?> :</strong>
 
-            Cette fiche nutritionnelle est éditée sous la seule responsablité de :
+            <?php echo _("Cette fiche nutritionnelle est éditée sous la seule responsablité de") ?> :
                 <span data-liveform-name="responsable_nom" data-liveform-template='{{%s}}' ><?php echo $qrcode->responsable_nom; ?></span>
                 (<a target="_blank" href="https://annuaire-entreprises.data.gouv.fr/entreprise/<?php echo $qrcode->getResponsableSIREN(); ?>" class="link-secondary"><span data-liveform-name="responsable_siret" data-liveform-template='{{%s}}' ><?php echo $qrcode->getResponsableSIREN(); ?></span></a>),
                 <span data-liveform-name="responsable_adresse" data-liveform-template='{{%s}}' ><?php echo $qrcode->responsable_adresse; ?></span>.
 
-            Elle est hébergée par :
+            <?php echo _("Elle est hébergée par") ?> :
                 <?php echo Config::getInstance()->get('herbergeur_raison_sociale'); ?>
                 (<a target="_blank" href="https://annuaire-entreprises.data.gouv.fr/entreprise/<?php echo Config::getInstance()->get('herbergeur_siren'); ?>" class="link-secondary"><?php echo Config::getInstance()->get('herbergeur_siren'); ?></a>),
                 <?php echo Config::getInstance()->get('herbergeur_adresse'); ?>, <?php echo Config::getInstance()->get('herbergeur_contact'); ?>.
 
             <?php echo Config::getInstance()->get('herbergeur_raison_sociale'); ?>,
-            sa plateforme <?php echo preg_replace('/https?:../', '', $urlbase); ?>
-            et le projet libre <a target="_blank" href="https://github.com/24eme/nutri.vin/" class="link-secondary">NutriVin</a>
-            ne peuvent être tenus responsables des informations publiées. Un historique de chaque modification est conservée et consultable publiquement
+            <?php echo _("sa plateforme") ?> <?php echo preg_replace('/https?:../', '', $urlbase); ?>
+            <?php echo _("et le projet libre") ?> <a target="_blank" href="https://github.com/24eme/nutri.vin/" class="link-secondary">NutriVin</a>
+            <?php echo _("ne peuvent être tenus responsables des informations publiées. Un historique de chaque modification est conservée et consultable publiquement") ?>
         </p>
     </div>
     <?php if (!empty($publicview)): ?>
