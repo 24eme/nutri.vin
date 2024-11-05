@@ -289,7 +289,7 @@ msgid "Autolysats de levures"
 msgstr "Autolisi di lieviti"
 
 msgid "Levures inactivées ayant des niveaux garantis de glutathion"
-msgstr "Lieviti inattivi con livelli garantiti di glutatione
+msgstr "Lieviti inattivi con livelli garantiti di glutatione"
 
 msgid "Gélatine alimentaire"
 msgstr "Gelatina alimentare"
