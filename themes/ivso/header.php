@@ -23,7 +23,7 @@
                     <a class="nav-link active" aria-current="page" href="/qrcode">Mes QRCodes</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/faq">FAQ</a>
+                    <a class="nav-link active" aria-current="page" href="/faq">Aide/FAQ</a>
                 </li>
                 <?php if (isset($is_admin) && $is_admin): ?>
                     <li class="nav-item">

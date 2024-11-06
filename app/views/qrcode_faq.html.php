@@ -1,7 +1,7 @@
 <h2 class="text-center mb-5">Foire aux questions</h2>
 
-
-<div class="accordion" id="accordionQuestions">
+<div class="row">
+<div class="accordion col-8" id="accordionQuestions">
   <div class="accordion-item">
     <h2 class="accordion-header">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question_1" aria-expanded="false" aria-controls="question_1">
@@ -210,4 +210,21 @@
       </div>
   <?php endforeach; ?>
 
+</div>
+
+    <div class="col-4">
+        <div class="card">
+          <div class="card-header">
+            Documents
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Liste des ingrédients</h5>
+            <a href="/static/doc/liste_ingredients_fr.pdf" class="btn btn-primary">Télécharger le document</a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Guide DGCCRF</h5>
+            <a href="/static/doc/guide_dgccrf_fr.pdf" class="btn btn-primary">Télécharger le document</a>
+          </div>
+        </div>
+    </div>
 </div>
