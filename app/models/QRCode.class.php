@@ -16,7 +16,7 @@ class QRCode extends Mapper
     public static $CHARID = 'azertyuiopqsdfghjklmwxcvbn'.
     'AZERTYUIOPQSDFGHJKLMWXCVBN'.
     '0123456789';
-    public static $LABELS = ["HVE", "Demeter", "Biodyvin"];
+    public static $LABELS = ["Bio", "HVE", "Demeter", "Biodyvin"];
 
     public static $versionning_ignore_fields = [
         'authorization_key',
