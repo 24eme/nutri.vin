@@ -169,7 +169,7 @@
                 </div>
                 <datalist id="ingredients_list">
                     <?php foreach($qrcode::getFullListeIngredients() as $ingredient => $extra): ?>
-                    <option value="<?php echo $ingredient ?>"<?php
+                    <option value="<?php echo $ingredient ?><?php if (array_key_exists('facultatif', $extra) === true): ?> (facultatif)<?php endif ?>"<?php
                         foreach($extra as $k => $v) {
                             echo ' data-'.$k.'="'.$v.'"';
                         } ?>></option>
@@ -894,7 +894,7 @@ document.querySelector('#form_add_ingredients').addEventListener('submit', funct
         return;
     }
 
-    ingredient_to_add = text_add_ingredient.value;
+    ingredient_to_add = text_add_ingredient.value.replaceAll(' (facultatif)', '');
 
     if(input_ingredients.value) {
         input_ingredients.value += '; '
