@@ -256,7 +256,7 @@
                       <td>
                         <div class="col-6 offset-6">
                         <div class="input-group">
-                          <input type="text" class="form-control text-sm-end" id="nutritionnel_energie_kj" name="nutritionnel_energie_kj" value="<?php echo $qrcode->nutritionnel_energie_kj; ?>"/>
+                          <input type="text" placeholder="0" class="form-control text-sm-end" id="nutritionnel_energie_kj" name="nutritionnel_energie_kj" value="<?php echo $qrcode->nutritionnel_energie_kj; ?>"/>
                           <span class="input-group-text" id="basic-addon-cal" style="width:50px">kJ</span>
                         </div>
                       </div>
@@ -267,7 +267,7 @@
                       <td>
                         <div class="col-6 offset-6">
                         <div class="input-group">
-                          <input type="text" class="form-control text-sm-end" id="nutritionnel_energie_kcal" name="nutritionnel_energie_kcal" value="<?php echo $qrcode->nutritionnel_energie_kcal; ?>"/>
+                          <input type="text" placeholder="0" class="form-control text-sm-end" id="nutritionnel_energie_kcal" name="nutritionnel_energie_kcal" value="<?php echo $qrcode->nutritionnel_energie_kcal; ?>"/>
                           <span class="input-group-text" id="basic-addon-cal" style="width:50px">kcal</span>
                         </div>
                       </div>
@@ -280,7 +280,7 @@
                       <td class="text-sm-start">
                         <div class="col-6 offset-6">
                           <div class="input-group">
-                            <input type="text" class="form-control text-sm-end" id="nutritionnel_graisses" name="nutritionnel_graisses" value="<?php echo $qrcode->nutritionnel_graisses; ?>"/>
+                            <input type="text" placeholder="0" class="form-control text-sm-end" id="nutritionnel_graisses" name="nutritionnel_graisses" value="<?php echo $qrcode->nutritionnel_graisses; ?>"/>
                             <span class="input-group-text" id="basic-addon-graisses">g</span>
                           </div>
                         </div>
@@ -293,7 +293,7 @@
                     <td class="text-sm-start">
                       <div class="col-6 offset-6">
                         <div class="input-group">
-                          <input type="text" class="form-control text-sm-end" id="nutritionnel_acides_gras" name="nutritionnel_acides_gras" value="<?php echo $qrcode->nutritionnel_acides_gras; ?>"/>
+                          <input type="text" placeholder="0" class="form-control text-sm-end" id="nutritionnel_acides_gras" name="nutritionnel_acides_gras" value="<?php echo $qrcode->nutritionnel_acides_gras; ?>"/>
                           <span class="input-group-text" id="basic-addon-gras">g</span>
                         </div>
                       </div>
@@ -306,7 +306,7 @@
                     <td class="text-sm-start">
                       <div class="col-6 offset-6">
                         <div class="input-group">
-                          <input type="text" class="form-control text-sm-end" id="nutritionnel_glucides" name="nutritionnel_glucides" value="<?php echo $qrcode->nutritionnel_glucides; ?>"/>
+                          <input type="text" placeholder="0" class="form-control text-sm-end" id="nutritionnel_glucides" name="nutritionnel_glucides" value="<?php echo $qrcode->nutritionnel_glucides; ?>"/>
                           <span class="input-group-text" id="basic-addon-glucides">g</span>
                         </div>
                       </div>
@@ -319,7 +319,7 @@
                     <td class="text-sm-start">
                       <div class="col-6 offset-6">
                         <div class="input-group">
-                          <input type="text" class="form-control text-sm-end" id="nutritionnel_sucres" name="nutritionnel_sucres" value="<?php echo $qrcode->nutritionnel_sucres; ?>"/>
+                          <input type="text" placeholder="0" class="form-control text-sm-end" id="nutritionnel_sucres" name="nutritionnel_sucres" value="<?php echo $qrcode->nutritionnel_sucres; ?>"/>
                           <span class="input-group-text" id="basic-addon-sucres">g</span>
                         </div>
                       </div>
@@ -331,7 +331,7 @@
                       <td class="text-sm-start">
                           <div class="col-6 offset-6">
                               <div class="input-group">
-                                  <input type="text" class="form-control text-sm-end" id="nutritionnel_fibres" name="nutritionnel_fibres" value="<?php echo $qrcode->nutritionnel_fibres; ?>"/>
+                                  <input type="text" placeholder="0" class="form-control text-sm-end" id="nutritionnel_fibres" name="nutritionnel_fibres" value="<?php echo $qrcode->nutritionnel_fibres; ?>"/>
                                   <span class="input-group-text" id="basic-addon-fibres">g</span>
                               </div>
                           </div>
@@ -343,7 +343,7 @@
                     <td class="text-sm-start">
                       <div class="col-6 offset-6">
                         <div class="input-group">
-                          <input type="text" class="form-control text-sm-end" id="nutritionnel_proteines" name="nutritionnel_proteines" value="<?php echo $qrcode->nutritionnel_proteines; ?>"/>
+                          <input type="text" placeholder="0" class="form-control text-sm-end" id="nutritionnel_proteines" name="nutritionnel_proteines" value="<?php echo $qrcode->nutritionnel_proteines; ?>"/>
                           <span class="input-group-text" id="basic-addon-proteines">g</span>
                         </div>
                       </div>
@@ -356,7 +356,7 @@
                     <td class="text-sm-start">
                       <div class="col-6 offset-6">
                         <div class="input-group">
-                          <input type="text" class="form-control text-sm-end" id="nutritionnel_sel" name="nutritionnel_sel" value="<?php echo $qrcode->nutritionnel_sel; ?>"/>
+                          <input type="text" placeholder="0" class="form-control text-sm-end" id="nutritionnel_sel" name="nutritionnel_sel" value="<?php echo $qrcode->nutritionnel_sel; ?>"/>
                           <span class="input-group-text" id="basic-addon-sel">g</span>
                         </div>
                       </div>
@@ -368,7 +368,7 @@
                     <td class="text-sm-start">
                       <div class="col-6 offset-6">
                         <div class="input-group">
-                          <input type="text" class="form-control text-sm-end" id="nutritionnel_sodium" name="nutritionnel_sodium" value="<?php echo $qrcode->nutritionnel_sodium; ?>"/>
+                          <input type="text" placeholder="0" class="form-control text-sm-end" id="nutritionnel_sodium" name="nutritionnel_sodium" value="<?php echo $qrcode->nutritionnel_sodium; ?>"/>
                           <span class="input-group-text" id="basic-addon-sodium">g</span>
                         </div>
                       </div>
