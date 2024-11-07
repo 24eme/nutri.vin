@@ -948,13 +948,35 @@ document.querySelector('#form_convertir_nutritionnelle').addEventListener('submi
 });
 
 function nutri_update_complet() {
-    sucre = document.querySelector('#teneur_sucre').value;
-    cat_sucre = null;
-    type =  document.querySelector('#vin_type').value.replace(',', '.');
-    alcool =  document.querySelector('#nutri_simple_tav').value.replace(',', '.');
-    if (!alcool || !type || !sucre) {
-        return;
+    const types = ['tranquille', 'liqueur', 'mousseux']
+    const inputTAV = document.querySelector('#nutri_simple_tav')
+    const alcool =  inputTAV.value.replace(',', '.')
+    const inputSucre = document.querySelector('#teneur_sucre')
+    const sucre = inputSucre.value
+    const inputType = document.querySelector('#vin_type')
+    const type = inputType.value.replace(',', '.');
+
+    [inputType, inputSucre, inputTAV].forEach((el) => el.classList.remove('is-invalid'))
+    let valid = true
+
+    if (isNaN(parseInt(alcool))) {
+        inputTAV.classList.add('is-invalid')
+        valid = false;
     }
+    if (types.includes(type) === false) {
+        inputType.classList.add('is-invalid')
+        valid = false;
+    }
+    if (isNaN(parseInt(sucre))) {
+        inputSucre.classList.add('is-invalid')
+        valid = false;
+    }
+
+    if (valid === false) {
+        return false
+    }
+
+    cat_sucre = null;
     cat_alcool = 10;
     if ((type == 'tranquille') || (type == 'liqueur')) {
         if (sucre <= 4) {
@@ -1004,6 +1026,8 @@ function nutri_update_complet() {
     } else if (alcool <= 22) {
         cat_alcool = 8;
     }
+
+    [inputType, inputSucre, inputTAV].forEach((el) => el.classList.remove('is-invalid'))
 
     if(cat_sucre === null) {
         document.querySelector('#nutritionnel_energie_kj').value = Math.round((alcool * 0.79 * 29) + (sucre * 17 / 10) + (7 * 10 / 10) + (6 * 13 / 10));
