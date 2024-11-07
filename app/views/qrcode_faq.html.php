@@ -215,7 +215,7 @@
     <div class="col-4">
         <div class="card">
           <div class="card-header">
-            Documents
+            Documents d'aide
           </div>
           <div class="card-body">
             <h5 class="card-title">Liste des ingrédients</h5>
