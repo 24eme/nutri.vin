@@ -588,6 +588,15 @@ document.addEventListener('DOMContentLoaded', function () {
     const ne_j    = document.querySelector('#nutritionnel_energie_kj')
     const conversion = 4.184
 
+    const input = document.querySelector('#text_add_ingredient');
+    const datalist = document.querySelector('#ingredients_list');
+
+    input.addEventListener('click', function () {
+        datalist.style.display = 'block';
+        datalist.style.display = 'none';
+    })
+
+
     const rebuildCarousel = function () {
         (document.querySelectorAll('.imgs-list img') || []).forEach(function (i) {
             const imgCarousel = document.querySelector('#'+i.id.replace('img_', 'slide_'))
