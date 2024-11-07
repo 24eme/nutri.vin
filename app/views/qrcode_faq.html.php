@@ -217,13 +217,13 @@
           <div class="card-header">
             Documents d'aide
           </div>
-          <div class="card-body">
-            <h5 class="card-title">Liste des ingrédients</h5>
-            <a href="/static/doc/liste_ingredients_fr.pdf" class="btn btn-primary">Télécharger le document</a>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Guide DGCCRF</h5>
-            <a href="/static/doc/guide_dgccrf_fr.pdf" class="btn btn-primary">Télécharger le document</a>
+          <div class="list-group list-group-flush">
+            <a href="/static/doc/liste_ingredients_fr.pdf" class="list-group-item list-group-item-action">
+              <i class="bi bi-filetype-pdf"></i> Liste des ingrédients
+            </a>
+            <a href="/static/doc/guide_dgccrf_fr.pdf" class="list-group-item list-group-item-action">
+              <i class="bi bi-filetype-pdf"></i> Guide DGCCRF
+            </a>
           </div>
         </div>
     </div>
