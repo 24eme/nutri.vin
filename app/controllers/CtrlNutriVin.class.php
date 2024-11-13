@@ -496,4 +496,35 @@ class CtrlNutriVin {
         $f3->set('content', 'admin_users.html.php');
         echo View::instance()->render('layout.html.php');
     }
+
+    public function qrcodePresentationPdf(Base $f3) {
+        $qrcode = QRCode::findById($f3->get('PARAMS.qrcodeid'));
+
+        $f3->set('qrcode', $qrcode);
+
+        $content = View::instance()->render('qrcode_presentation_pdf.html.php');
+
+        $pdf = new TCPDF('P', 'mm', 'A4');
+        $pdf->SetFont('helvetica', '', 10, '', 'default', true );
+        $pdf->SetMargins(10, 10, 0, true);
+        $pdf->SetAutoPageBreak(true, 0);
+        $pdf->SetPrintHeader(false);
+        $pdf->SetPrintFooter(false);
+        $pdf->AddPage('P', 'A4', false);
+        $imgTmp = Exporter::getInstance()->getQRCodeContent($f3->get('urlbase').'/'.$qrcode->getId(), 'svg');
+        $pdf->ImageSVG('@'.$imgTmp, $x=160, $y=10, $w='40', $h='40', $link='', $align='', $palign='', $border=1, $fitonpage=false);
+
+        $pdf->writeHTML($content, true, 0, true, false, 'L');
+        $pdf->SetFont('helvetica', '', 8, '', 'default', true );
+        $pdf->SetY(280);
+        $pdf->MultiCell(190, 0, "Cette fiche nutritionnelle est éditée sous la seule responsablité de " . $qrcode->responsable_nom . ' (' . $qrcode->getResponsableSIREN() . ')' . ', ' . $qrcode->responsable_adresse . ' grâce à sa plateforme ' . preg_replace('/https?:../', '', $f3->get('urlbase')) . " et le projet libre Nutrivin.", 0, 'L', 0, 1);
+        if ($qrcode->date_creation == $qrcode->date_version) {
+            $pdf->MultiCell(190, 0, "Créé le " . date('d/m/Y H:i', strtotime($qrcode->date_creation)), 0, 'C', 0, 1);
+        } else {
+            $pdf->MultiCell(190, 0, "Créé le " . date('d/m/Y H:i', strtotime($qrcode->date_creation)) . ', et modifié pour la dernière fois le ' . date('d/m/Y H:i', strtotime($qrcode->date_version)), 0, 'C', 0, 1);
+        }
+
+        $pdf->Output();
+    }
+
 }

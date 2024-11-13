@@ -23,3 +23,4 @@ $f3->route('GET @qrcodeexport: /@qrcodeid/@format', 'CtrlNutriVin->export');
 $f3->route('GET /qrcode/@userid/parametrage/@qrcodeid', 'CtrlNutriVin->qrcodeParametrage');
 $f3->route('POST /qrcode/@userid/parametrage/@qrcodeid', 'CtrlNutriVin->qrcodeDisplay');
 $f3->route('GET /qrcode/@userid/stats/@qrcodeid/@type', 'CtrlNutriVin->qrcodeStats');
+$f3->route('GET /presentationpdf/@qrcodeid', 'CtrlNutriVin->qrcodePresentationPdf');
