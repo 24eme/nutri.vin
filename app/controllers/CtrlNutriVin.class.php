@@ -497,7 +497,7 @@ class CtrlNutriVin {
         echo View::instance()->render('layout.html.php');
     }
 
-    public function qrcodePresentationPdf(Base $f3) {
+    public function qrcodeFiche(Base $f3) {
         $qrcode = QRCode::findById($f3->get('PARAMS.qrcodeid'));
 
         $f3->set('qrcode', $qrcode);
