@@ -42,6 +42,9 @@
                 </ul>
             </div>
         </div>
+        <div class="mt-4 text-center">
+            <a target="_blank" href="/<?php echo $qrcode->getId(); ?>/fiche">Télécharger la fiche d'accompagnement (DAE)</a>
+        </div>
     </div>
 </div>
 

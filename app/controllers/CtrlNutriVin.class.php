@@ -524,7 +524,7 @@ class CtrlNutriVin {
             $pdf->MultiCell(190, 0, "Créé le " . date('d/m/Y H:i', strtotime($qrcode->date_creation)) . ', et modifié pour la dernière fois le ' . date('d/m/Y H:i', strtotime($qrcode->date_version)), 0, 'C', 0, 1);
         }
 
-        $pdf->Output();
+        $pdf->Output('fiche_accompagnement_' . $qrcode->domaine_nom . '_' . $qrcode->cuvee_nom . '_' . $qrcode->denomination . '_' . $qrcode->couleur . '_' . substr($qrcode->date_version, '0', '19'));
     }
 
 }
