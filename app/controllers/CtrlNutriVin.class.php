@@ -502,7 +502,7 @@ class CtrlNutriVin {
 
         $f3->set('qrcode', $qrcode);
 
-        $content = View::instance()->render('qrcode_presentation_pdf.html.php');
+        $content = View::instance()->render('qrcode_fiche.html.php');
 
         $pdf = new TCPDF('P', 'mm', 'A4');
         $pdf->SetFont('helvetica', '', 10, '', 'default', true );
@@ -519,9 +519,9 @@ class CtrlNutriVin {
         $pdf->SetY(280);
         $pdf->MultiCell(190, 0, "Cette fiche nutritionnelle est éditée sous la seule responsablité de " . $qrcode->responsable_nom . ' (' . $qrcode->getResponsableSIREN() . ')' . ', ' . $qrcode->responsable_adresse . ' grâce à sa plateforme ' . preg_replace('/https?:../', '', $f3->get('urlbase')) . " et le projet libre Nutrivin.", 0, 'L', 0, 1);
         if ($qrcode->date_creation == $qrcode->date_version) {
-            $pdf->MultiCell(190, 0, "Créé le " . date('d/m/Y H:i', strtotime($qrcode->date_creation)), 0, 'C', 0, 1);
+            $pdf->MultiCell(190, 0, "Créée le " . date('d/m/Y H:i', strtotime($qrcode->date_creation)) . '.', 0, 'C', 0, 1);
         } else {
-            $pdf->MultiCell(190, 0, "Créé le " . date('d/m/Y H:i', strtotime($qrcode->date_creation)) . ', et modifié pour la dernière fois le ' . date('d/m/Y H:i', strtotime($qrcode->date_version)), 0, 'C', 0, 1);
+            $pdf->MultiCell(190, 0, "Créée le " . date('d/m/Y H:i', strtotime($qrcode->date_creation)) . ' et modifiée pour la dernière fois le ' . date('d/m/Y H:i', strtotime($qrcode->date_version)) . '.', 0, 'C', 0, 1);
         }
 
         $pdf->Output('fiche_accompagnement_' . $qrcode->domaine_nom . '_' . $qrcode->cuvee_nom . '_' . $qrcode->denomination . '_' . $qrcode->couleur . '_' . substr($qrcode->date_version, '0', '19'));

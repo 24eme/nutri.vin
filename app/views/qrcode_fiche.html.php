@@ -84,12 +84,16 @@
             </tr>
         </tbody>
     </table>
-<h3>Labels</h3>
-<?php foreach ($qrcode::$LABELS as $label): ?>
-    <?php if (in_array($label, $qrcode->getLabels())): ?>
-        <?php echo $label . ' '; ?>
-    <?php endif; ?>
-<?php endforeach; ?>
+
+<?php if (!empty($qrcode->getLabels())): ?>
+    <h3>Labels</h3>
+    <?php foreach ($qrcode::$LABELS as $label): ?>
+        <?php if (in_array($label, $qrcode->getLabels())): ?>
+            <?php echo $label . ' '; ?>
+        <?php endif; ?>
+    <?php endforeach; ?>
+<?php endif; ?>
+
 <?php if (!empty($qrcode->autres_infos)): ?>
 <h3>Autres informations</h3>
     <p><?php echo $qrcode->autres_infos; ?></p>
