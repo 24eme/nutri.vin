@@ -27,7 +27,7 @@
 
     <h3>Ingrédients</h3>
             <?php echo $qrcode->ingredients = preg_replace(['/_(.*?)_/','/ ?([^,]* : [^;]* ; )/'], ['<strong>$1</strong>', ' <em>$1</em> '], $qrcode->ingredients); ?>
-<br><small>Les ingrédients allergènes indiqués en <strong>gras</strong>. Les ingrédients issus de l'agriculture biologique indiqué avec une <em>*</em></small>
+<br><small>Les ingrédients allergènes sont indiqués en <strong>gras</strong>. Les ingrédients issus de l'agriculture biologique sont indiqués avec une <em>*</em></small>
     <h3>Informations nutritionnelles <small>pour 100 mL</small></h3>
     <table>
         <tbody>
