@@ -70,6 +70,19 @@
 
        </div>
 
+       <h4 class="mt-4 mb-4"><i class="bi bi-upc-scan"></i> Code barre EAN</h4>
+       <div class="d-flex justify-content-between">
+           <div class="col-sm-3">
+               <div class="input-group mb-3">
+                 <div class="form-floating">
+                     <input type="text" class="form-control" id="code_barre" name="code_barre" value="<?php echo $qrcode->code_barre; ?>" placeholder="Code barre">
+                     <label form="code_barre">Code barre</label>
+                 </div>
+               </div>
+           </div>
+       </div>
+
+
         <h4 class="mt-4 mb-4"><i class="bi bi-info-circle"></i> Informations complémentaires</h4>
         <div class="d-flex justify-content-between">
             <div class="col-sm-3">
