@@ -29,6 +29,7 @@ class QRCode extends Mapper
 
     public static $copy_field_filter = [
         "domaine_nom" => 1,
+        "code_barre" => 1,
         "adresse_domaine" => 1,
         "cuvee_nom" => 1,
         "denomination" => 1,
@@ -61,6 +62,7 @@ class QRCode extends Mapper
     public static $getFieldsAndType = [
         /* $fields[$id] => 'VARCHAR(255) PRIMARY KEY', */
         'user_id' => 'VARCHAR(255)',
+        'code_barre' => 'VARCHAR(255)',
         'domaine_nom' => 'VARCHAR(255)',
         'adresse_domaine' => 'VARCHAR(255)',
         'denomination' => 'VARCHAR(255)',
