@@ -75,8 +75,8 @@
            <div class="col-sm-3">
                <div class="input-group mb-3">
                  <div class="form-floating">
-                     <input type="text" class="form-control" id="code_barre" name="code_barre" value="<?php echo $qrcode->code_barre; ?>" placeholder="Code barre">
-                     <label form="code_barre">Code barre</label>
+                     <input type="text" class="form-control" id="ean" name="ean" value="<?php echo $qrcode->ean; ?>" placeholder="Code barre">
+                     <label form="ean">Code barre</label>
                  </div>
                </div>
            </div>

@@ -29,7 +29,7 @@ class QRCode extends Mapper
 
     public static $copy_field_filter = [
         "domaine_nom" => 1,
-        "code_barre" => 1,
+        "ean" => 1,
         "adresse_domaine" => 1,
         "cuvee_nom" => 1,
         "denomination" => 1,
@@ -62,7 +62,7 @@ class QRCode extends Mapper
     public static $getFieldsAndType = [
         /* $fields[$id] => 'VARCHAR(255) PRIMARY KEY', */
         'user_id' => 'VARCHAR(255)',
-        'code_barre' => 'VARCHAR(255)',
+        'ean' => 'VARCHAR(255)',
         'domaine_nom' => 'VARCHAR(255)',
         'adresse_domaine' => 'VARCHAR(255)',
         'denomination' => 'VARCHAR(255)',
@@ -372,7 +372,19 @@ class QRCode extends Mapper
 
         $this->saveVersion();
 
-        return $this->mapper->save();
+        $mapper_save = parent::save();
+
+        if ($this->ean) {
+            $redirect = new Redirect();
+            $redirect->setId("REDIRECT-01-" . $this->ean);
+            $redirect->redirect_to = '/' . $this->getId();
+            $redirect->doc_origine = $this->getId();
+            $redirect->version_origine = $this->date_version;
+            $redirect->date_creation = date('c');
+            $redirect->save();
+        }
+
+        return $mapper_save;
     }
 
     private function saveVersion() {

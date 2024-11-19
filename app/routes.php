@@ -24,3 +24,4 @@ $f3->route('GET /qrcode/@userid/parametrage/@qrcodeid', 'CtrlNutriVin->qrcodePar
 $f3->route('POST /qrcode/@userid/parametrage/@qrcodeid', 'CtrlNutriVin->qrcodeDisplay');
 $f3->route('GET /qrcode/@userid/stats/@qrcodeid/@type', 'CtrlNutriVin->qrcodeStats');
 $f3->route('GET /@qrcodeid/fiche', 'CtrlNutriVin->qrcodeFiche');
+$f3->route('GET @eanview: /ean/01/@ean', 'CtrlNutriVin->qrcodeEANView');

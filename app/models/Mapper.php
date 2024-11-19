@@ -17,6 +17,10 @@ abstract class Mapper
         self::$primaryKey = (method_exists($this->mapper, 'getPrimaryKey')) ? $this->mapper::getPrimaryKey() : 'id';
     }
 
+    public function save() {
+        $this->mapper->save();
+    }
+
     public static function getTableName()
     {
         return (new \ReflectionClass(get_called_class()))->getShortName();

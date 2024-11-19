@@ -2,6 +2,7 @@
 
 use app\exporters\Exporter;
 use app\models\QRCode;
+use app\models\Redirect;
 use app\config\Config;
 use Web\Geo;
 
@@ -383,6 +384,16 @@ class CtrlNutriVin {
         $f3->set('allVersions', $allVersions);
 
         echo View::instance()->render('layout_public.html.php');
+    }
+
+    public function qrcodeEANView(Base $f3) {
+        $ean_id = "REDIRECT-01-" . $f3->get('PARAMS.ean');
+        $ean = Redirect::findById($ean_id);
+        if ($ean === null) {
+            $f3->error(404, "Code barre non trouvé");
+            exit;
+        }
+        $f3->reroute($ean->redirect_to);
     }
 
     public function qrcodeParametrage(Base $f3) {
