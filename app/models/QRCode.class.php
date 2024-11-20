@@ -425,7 +425,7 @@ class QRCode extends Mapper
 
     public function getQRCodeContent($format, $urlbase) {
         return Exporter::getInstance()->getQRCodeContent(
-            $urlbase.'/'.$this->getId(),
+            $urlbase.'/'.($this->ean? '01/' . $this->ean: $this->getId()),
             $format,
             ($this->logo) ? Config::getInstance()->get('qrcode_logo') : false,
             ($this->mentions) ? [$this->nutritionnel_energie_kcal, $this->nutritionnel_energie_kj]: []
