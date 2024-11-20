@@ -63,7 +63,7 @@ class QRMarkupSVGLogo extends QRMarkupSVG
         '%4$s<text x="50%%" y="%3$s" font-size="3" font-family="Verdana, Arial, Helvetica, sans-serif" text-anchor="middle">E = %1$s KCal / %2$s KJ</text>%4$s',
         (float) $this->options->svgEnergies[0],
         (float) $this->options->svgEnergies[1],
-        $this->options->version === 3 ? 36 : 40,
+        24 + (4 * $this->matrix->getVersion()->getVersionNumber()),
         $this->options->eol
     );
 }
