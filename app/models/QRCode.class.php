@@ -374,7 +374,7 @@ class QRCode extends Mapper
 
         $mapper_save = parent::save();
 
-        if ($this->ean) {
+        if ($this->ean && !Redirect::findById("REDIRECT-01-" . $this->ean)) {
             $redirect = new Redirect();
             $redirect->setId("REDIRECT-01-" . $this->ean);
             $redirect->redirect_to = '/' . $this->getId();
