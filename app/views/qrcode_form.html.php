@@ -430,11 +430,13 @@
         </div>
 
         <h4 class="mt-4 mb-4"><i class="bi bi-upc-scan"></i> Code barre EAN</h4>
+        <p>Renseignez ici votre numéro de code barre</p>
         <div class="mb-3">
             <div class="form-floating">
                 <input type="text" class="form-control" id="ean" name="ean" value="<?php echo $qrcode->ean; ?>" placeholder="Code barre">
                 <label form="ean">Code barre</label>
             </div>
+            <p id="message-validation" style="color: red; display: none;"></p>
         </div>
 
         <h4 class="mt-4 mb-4"><i class="bi bi-tag"></i> Labels complémentaires</h4>
@@ -1059,5 +1061,47 @@ document.querySelector('#alcool_degre').addEventListener('change', function(e) {
 });
 
 ingredientsTextToTable();
+
+const eanInput = document.getElementById("ean");
+const messageValidation = document.getElementById("message-validation");
+
+eanInput.addEventListener("change", () => {
+    const eanValue = eanInput.value.trim();
+
+    eanInput.setCustomValidity("");
+
+    if (verifierEAN13(eanValue)) {
+        messageValidation.style.display = "none";
+    } else {
+        messageValidation.style.display = "block";
+        eanInput.setCustomValidity("Veuillez saisir un code EAN valide.");
+    }
+});
+
+function verifierEAN13(code) {
+    if (code.length != 13) {
+        messageValidation.textContent = "Le code EAN doit comporter exactement 13 chiffres.";
+        return false;
+    }
+    if (/^\d+$/.test(code)) {
+        messageValidation.textContent = "Le code EAN ne doit comporter que des chiffres.";
+        return false;
+    }
+    const base = code.slice(0, 12);
+    const cleControle = parseInt(code[12]);
+
+    let somme = 0;
+    for (let i = 0; i < base.length; i++) {
+        const chiffre = parseInt(base[i]);
+        const poids = (i % 2 === 0) ? 1 : 3;
+        somme += chiffre * poids;
+    }
+
+    const reste = somme % 10;
+    const cleAttendue = (reste === 0) ? 0 : 10 - reste;
+
+    return cleControle === cleAttendue;
+}
+
 
 </script>
