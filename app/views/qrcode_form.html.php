@@ -70,19 +70,6 @@
 
        </div>
 
-       <h4 class="mt-4 mb-4"><i class="bi bi-upc-scan"></i> Code barre EAN</h4>
-       <div class="d-flex justify-content-between">
-           <div class="col-sm-3">
-               <div class="input-group mb-3">
-                 <div class="form-floating">
-                     <input type="text" class="form-control" id="ean" name="ean" value="<?php echo $qrcode->ean; ?>" placeholder="Code barre">
-                     <label form="ean">Code barre</label>
-                 </div>
-               </div>
-           </div>
-       </div>
-
-
         <h4 class="mt-4 mb-4"><i class="bi bi-info-circle"></i> Informations complémentaires</h4>
         <div class="d-flex justify-content-between">
             <div class="col-sm-3">
@@ -439,6 +426,14 @@
                     </span>
                     <input type="file" accept="image/png, image/jpeg" class="d-none form-control" id="image_contreetiquette" name="image_contreetiquette" data-imageorigin="img_image_contreetiquette" defaultvalue="<?php echo $qrcode->image_contreetiquette; ?>"/>
                 </div>
+            </div>
+        </div>
+
+        <h4 class="mt-4 mb-4"><i class="bi bi-upc-scan"></i> Code barre EAN</h4>
+        <div class="mb-3">
+            <div class="form-floating">
+                <input type="text" class="form-control" id="ean" name="ean" value="<?php echo $qrcode->ean; ?>" placeholder="Code barre">
+                <label form="ean">Code barre</label>
             </div>
         </div>
 
