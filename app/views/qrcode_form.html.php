@@ -1062,46 +1062,50 @@ document.querySelector('#alcool_degre').addEventListener('change', function(e) {
 
 ingredientsTextToTable();
 
-const eanInput = document.getElementById("ean");
-const messageValidation = document.getElementById("message-validation");
+    const eanInput = document.querySelector("#ean");
+    const messageValidation = document.querySelector("#message-validation");
 
-eanInput.addEventListener("change", () => {
-    const eanValue = eanInput.value.trim();
+    eanInput.addEventListener("input", (event) => {
+        const eanValue = event.target.value.trim();
+        eanInput.setCustomValidity("");
 
-    eanInput.setCustomValidity("");
+        if (verifierEAN13(eanValue)) {
+            messageValidation.style.display = "none";
+        } else {
+            messageValidation.style.display = "block";
+            eanInput.setCustomValidity("Veuillez saisir un code EAN valide.");
+        }
+    });
 
-    if (verifierEAN13(eanValue)) {
-        messageValidation.style.display = "none";
-    } else {
-        messageValidation.style.display = "block";
-        eanInput.setCustomValidity("Veuillez saisir un code EAN valide.");
+    function verifierEAN13(code) {
+        if (code.length === 0) {
+            messageValidation.textContent = "";
+            return true;
+        }
+        if (code.length !== 13) {
+            messageValidation.textContent = "Le code EAN doit comporter exactement 13 chiffres.";
+            return false;
+        } else if (! /^\d+$/.test(code)) {
+            messageValidation.textContent = "Le code EAN ne doit comporter que des chiffres.";
+            return false;
+        } else {
+            messageValidation.textContent = "";
+        }
+        const base = code.slice(0, 12);
+        const cleControle = parseInt(code[12]);
+
+        let somme = 0;
+        for (let i = 0; i < base.length; i++) {
+            const chiffre = parseInt(base[i]);
+            const poids = (i % 2 === 0) ? 1 : 3;
+            somme += chiffre * poids;
+        }
+
+        const reste = somme % 10;
+        const cleAttendue = (reste === 0) ? 0 : 10 - reste;
+
+        return cleControle === cleAttendue;
     }
-});
-
-function verifierEAN13(code) {
-    if (code.length != 13) {
-        messageValidation.textContent = "Le code EAN doit comporter exactement 13 chiffres.";
-        return false;
-    }
-    if (/^\d+$/.test(code)) {
-        messageValidation.textContent = "Le code EAN ne doit comporter que des chiffres.";
-        return false;
-    }
-    const base = code.slice(0, 12);
-    const cleControle = parseInt(code[12]);
-
-    let somme = 0;
-    for (let i = 0; i < base.length; i++) {
-        const chiffre = parseInt(base[i]);
-        const poids = (i % 2 === 0) ? 1 : 3;
-        somme += chiffre * poids;
-    }
-
-    const reste = somme % 10;
-    const cleAttendue = (reste === 0) ? 0 : 10 - reste;
-
-    return cleControle === cleAttendue;
-}
 
 
 </script>
