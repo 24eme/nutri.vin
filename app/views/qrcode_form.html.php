@@ -429,12 +429,12 @@
             </div>
         </div>
 
-        <h4 class="mt-4 mb-4"><i class="bi bi-upc-scan"></i> Code barre EAN</h4>
-        <p>Renseignez ici votre numéro de code barre</p>
+        <h4 class="mt-4 mb-4"><i class="bi bi-upc-scan"></i> Code EAN</h4>
+        <p>Renseignez ici votre numéro de code EAN</p>
         <div class="mb-3">
             <div class="form-floating">
-                <input type="text" class="form-control" id="ean" name="ean" value="<?php echo $qrcode->ean; ?>" placeholder="Code barre">
-                <label form="ean">Code barre</label>
+                <input type="text" class="form-control" id="ean" name="ean" value="<?php echo $qrcode->ean; ?>" placeholder="Code EAN" data-liveform-ignore>
+                <label form="ean">Code EAN</label>
             </div>
             <p id="message-validation" style="color: red; display: none;"></p>
         </div>
