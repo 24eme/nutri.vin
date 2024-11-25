@@ -9,17 +9,25 @@
 <div class="p-3 py-4 bg-white text-center liveform_anchor">
 
     <div id="carrousel" class="bg-white border rounded rounded-bottom-0 shadow-sm d-flex justify-content-center">
-        <img id="slide_image_bouteille" class="mt-3 bg-white border-bottom" style="height: 200px;"
+        <?php if ($userImages['image_bouteille']): ?>
+            <img id="slide_image_bouteille" class="mt-3 bg-white border-bottom" style="height: 200px;"
             data-liveform-name="image_bouteille" data-liveform-template="{{%s}}"
             src="<?php echo $qrcode->image_bouteille ?>" >
-        <img id="slide_image_etiquette" class="mt-3 bg-white border-bottom" style="display: none; height: 200px;"
+        <?php endif; ?>
+        <?php if ($userImages['image_etiquette']): ?>
+            <img id="slide_image_etiquette" class="mt-3 bg-white border-bottom" style="display: none; height: 200px;"
             data-liveform-name="image_etiquette" data-liveform-template="{{%s}}"
             src="<?php echo $qrcode->image_etiquette ?>" >
-        <img id="slide_image_contreetiquette" class="mt-3 bg-white border-bottom" style="display: none; height: 200px;"
+        <?php endif; ?>
+        <?php if ($userImages['image_contreetiquette']): ?>
+            <img id="slide_image_contreetiquette" class="mt-3 bg-white border-bottom" style="display: none; height: 200px;"
             data-liveform-name="image_contreetiquette" data-liveform-template="{{%s}}"
             src="<?php echo $qrcode->image_contreetiquette ?>" >
-        <button class="position-absolute top-50 start-0 translate-middle-y text-secondary btn btn-lg px-1 fs-2" id="precedent" href="" onClick="changeSlide(-1); return false;"><i class="bi bi-chevron-compact-left"></i></button>
-        <a class="position-absolute top-50 end-0 translate-middle-y text-secondary btn btn-lg px-1 fs-2" id="suivant" onClick="changeSlide(1)"><i class="bi bi-chevron-compact-right"></i></a>
+        <?php endif;?>
+        <?php if ($userImages['count'] > 1): ?>
+            <button class="position-absolute top-50 start-0 translate-middle-y text-secondary btn btn-lg px-1 fs-2" id="precedent" href="" onClick="changeSlide(-1); return false;"><i class="bi bi-chevron-compact-left"></i></button>
+            <a class="position-absolute top-50 end-0 translate-middle-y text-secondary btn btn-lg px-1 fs-2" id="suivant" onClick="changeSlide(1)"><i class="bi bi-chevron-compact-right"></i></a>
+        <?php endif; ?>
     </div>
 
     <div class="bg-light-subtle border border-top-0 rounded rounded-top-0 pt-3 shadow-sm">

@@ -186,6 +186,7 @@ class CtrlNutriVin {
 
         $f3->set('qrcode', $qrcode);
         $f3->set('create', true);
+        $f3->set('userImages', $this->getUserImages($qrcode, false));
         $f3->set('content','qrcode_form.html.php');
         echo View::instance()->render('layout.html.php');
     }
@@ -207,6 +208,7 @@ class CtrlNutriVin {
         $this->initDefaultOnQRCode($qrcode, $f3);
 
         $f3->set('qrcode', $qrcode);
+        $f3->set('userImages', $this->getUserImages($qrcode, false));
         $f3->set('content','qrcode_form.html.php');
         echo View::instance()->render('layout.html.php');
     }
@@ -377,8 +379,11 @@ class CtrlNutriVin {
 
         $this->initDefaultOnQRCode($qrcode, $f3);
 
+
+
         $f3->set('content', 'qrcode_show.html.php');
         $f3->set('qrcode', $qrcode);
+        $f3->set('userImages', $this->getUserImages($qrcode));
         $f3->set('publicview', true);
         $f3->set('lastVersion', $lastVersion);
         $f3->set('allVersions', $allVersions);
@@ -394,6 +399,40 @@ class CtrlNutriVin {
             exit;
         }
         $f3->reroute($ean->redirect_to);
+    }
+
+    public function getUserImages($qrcode, $fromView = true) {
+        $userImages = [];
+        if ($fromView === false) {
+            $userImages['image_bouteille'] = 1;
+            $userImages['image_etiquette'] = 1;
+            $userImages['image_contreetiquette'] = 1;
+            $userImages['count'] = 3;
+
+            return $userImages;
+        }
+        if ($qrcode->image_bouteille == '/images/default_bouteille.jpg') {
+            $userImages['image_bouteille'] = 0;
+        } else {
+            $userImages['image_bouteille'] = 1;
+        }
+        if ($qrcode->image_etiquette == '/images/default_etiquette.jpg') {
+            $userImages['image_etiquette'] = 0;
+        } else {
+            $userImages['image_etiquette'] = 1;
+        }
+        if ($qrcode->image_contreetiquette == '/images/default_contreetiquette.jpg') {
+            $userImages['image_contreetiquette'] = 0;
+        } else {
+            $userImages['image_contreetiquette'] = 1;
+        }
+        $userImages['count'] = 0;
+        foreach ($userImages as $img) {
+            if ($img == 1) {
+                $userImages['count'] += 1;
+            }
+        }
+        return $userImages;
     }
 
     public function qrcodeParametrage(Base $f3) {
