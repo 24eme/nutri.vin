@@ -24,7 +24,7 @@
             data-liveform-name="image_contreetiquette" data-liveform-template="{{%s}}"
             src="<?php echo $qrcode->image_contreetiquette ?>" >
         <?php endif;?>
-        <?php if ($userImages['count'] > 1): ?>
+        <?php if ($userImages['count'] >= 1): ?>
             <button class="position-absolute top-50 start-0 translate-middle-y text-secondary btn btn-lg px-1 fs-2" id="precedent" href="" onClick="changeSlide(-1); return false;"><i class="bi bi-chevron-compact-left"></i></button>
             <a class="position-absolute top-50 end-0 translate-middle-y text-secondary btn btn-lg px-1 fs-2" id="suivant" onClick="changeSlide(1)"><i class="bi bi-chevron-compact-right"></i></a>
         <?php endif; ?>
@@ -282,7 +282,21 @@
 </script>
 
 <script>
-    const slide = ["image_bouteille", "image_etiquette", "image_contreetiquette"];
+
+    var slide = [
+        <?php if ($userImages['image_bouteille'] == 1): ?>
+            "image_bouteille",
+        <?php endif; ?>
+        <?php if ($userImages['image_etiquette'] == 1): ?>
+            "image_etiquette",
+        <?php endif; ?>
+        <?php if ($userImages['image_contreetiquette'] == 1): ?>
+            "image_contreetiquette"
+        <?php endif;?>
+    ];
+    if (slide.length == 0) {
+        slide = ["image_bouteille", "image_etiquette", "image_contreetiquette"];
+    }
 
     let numero = 0;
 

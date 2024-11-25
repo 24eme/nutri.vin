@@ -411,27 +411,27 @@ class CtrlNutriVin {
 
             return $userImages;
         }
-        if ($qrcode->image_bouteille == '/images/default_bouteille.jpg') {
-            $userImages['image_bouteille'] = 0;
-        } else {
-            $userImages['image_bouteille'] = 1;
-        }
-        if ($qrcode->image_etiquette == '/images/default_etiquette.jpg') {
-            $userImages['image_etiquette'] = 0;
-        } else {
-            $userImages['image_etiquette'] = 1;
-        }
-        if ($qrcode->image_contreetiquette == '/images/default_contreetiquette.jpg') {
-            $userImages['image_contreetiquette'] = 0;
-        } else {
-            $userImages['image_contreetiquette'] = 1;
-        }
+        $qrcode->image_bouteille == '/images/default_bouteille.jpg' ?
+            $userImages['image_bouteille'] = 0 : $userImages['image_bouteille'] = 1;
+        $qrcode->image_etiquette == '/images/default_etiquette.jpg' ?
+            $userImages['image_etiquette'] = 0 : $userImages['image_etiquette'] = 1;
+        $qrcode->image_contreetiquette == '/images/default_contreetiquette.jpg' ?
+            $userImages['image_contreetiquette'] = 0 : $userImages['image_contreetiquette'] = 1;
+
         $userImages['count'] = 0;
         foreach ($userImages as $img) {
             if ($img == 1) {
                 $userImages['count'] += 1;
             }
         }
+
+        //si le compte est a 0 alors il n'y a que des images par défaut,
+        //donc on peut renvoyer en récursion avec le parametre false pour
+        //sortir dans le premier if de la fonction et afficher les images par défaut
+        if ($userImages['count'] == 0) {
+            $userImages = $this->getUserImages($qrcode, false);
+        }
+
         return $userImages;
     }
 
