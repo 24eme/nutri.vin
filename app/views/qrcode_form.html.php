@@ -388,40 +388,40 @@
                     Bouteille
                     <img id="img_image_bouteille" src="<?php echo $qrcode->image_bouteille ?>" class="mb-2 mx-auto img-preview img-thumbnail"/>
                     <span class="img-add btn btn-link btn-sm">
-                        <?php if ($qrcode->isImageOriginale($qrcode->image_bouteille)): ?>Ajouter<?php else: ?>Modifier<?php endif; ?>
+                        <?php if ($qrcode->isImageDefault($qrcode->image_bouteille)): ?>Ajouter<?php else: ?>Modifier<?php endif; ?>
                     </span>
                     <span class="img-reset btn btn-link btn-sm d-none">
                         Réinitialiser
                     </span>
-                    <span style="<?php if ($qrcode->isImageOriginale($qrcode->image_bouteille) || isset($create)) { echo 'display: none;'; }?>">
+                    <span style="<?php if ($qrcode->isImageDefault($qrcode->image_bouteille) || isset($create)) { echo 'display: none;'; }?>">
                         <a class="btn btn-link btn-sm" href="/qrcode/<?php echo $qrcode->user_id ?>/edit/<?php echo $qrcode->getId(); ?>/img/0/delete">Supprimer</a>
                     </span>
                     <input type="file" accept="image/png, image/jpeg" class="d-none form-control" id="image_bouteille" name="image_bouteille" data-imageorigin="img_image_bouteille" defaultvalue="<?php echo $qrcode->image_bouteille; ?>"/>
                 </div>
                 <div class="text-center col-sm-4 img_selector">
                     Étiquette<br/>
-                    <img id="img_image_etiquette" src="<?php echo $qrcode->image_etiquette ?>" class="mb-2 mx-auto img-preview img-thumbnail" style="opacity:<?php if ($qrcode->isImageOriginale($qrcode->image_etiquette)): ?>0.55<?php else: ?>1<?php endif; ?>"/>
+                    <img id="img_image_etiquette" src="<?php echo $qrcode->image_etiquette ?>" class="mb-2 mx-auto img-preview img-thumbnail" style="opacity:<?php if ($qrcode->isImageDefault($qrcode->image_etiquette)): ?>0.55<?php else: ?>1<?php endif; ?>"/>
                     <span class="img-add btn btn-link btn-sm">
-                        <?php if ($qrcode->isImageOriginale($qrcode->image_etiquette)): ?>Ajouter<?php else: ?>Modifier<?php endif; ?>
+                        <?php if ($qrcode->isImageDefault($qrcode->image_etiquette)): ?>Ajouter<?php else: ?>Modifier<?php endif; ?>
                     </span>
                     <span class="img-reset btn btn-link btn-sm d-none">
                         Réinitialiser
                     </span>
-                    <span style="<?php if ($qrcode->isImageOriginale($qrcode->image_etiquette) || isset($create)) { echo 'display: none;'; }?>">
+                    <span style="<?php if ($qrcode->isImageDefault($qrcode->image_etiquette) || isset($create)) { echo 'display: none;'; }?>">
                         <a class="btn btn-link btn-sm" href="/qrcode/<?php echo $qrcode->user_id ?>/edit/<?php echo $qrcode->getId(); ?>/img/1/delete">Supprimer</a>
                     </span>
                     <input type="file" accept="image/png, image/jpeg" class="d-none form-control" id="image_etiquette" name="image_etiquette" data-imageorigin="img_image_etiquette" defaultvalue="<?php echo $qrcode->image_etiquette; ?>"/>
                 </div>
                 <div class="text-center col-sm-4 img_selector">
                     Contre-étiquette<br/>
-                    <img id="img_image_contreetiquette" src="<?php echo $qrcode->image_contreetiquette ?>" class="mb-2 mx-auto img-preview img-thumbnail" style="opacity:<?php if ($qrcode->isImageOriginale($qrcode->image_contreetiquette)): ?>0.55<?php else: ?>1<?php endif; ?>"/>
+                    <img id="img_image_contreetiquette" src="<?php echo $qrcode->image_contreetiquette ?>" class="mb-2 mx-auto img-preview img-thumbnail" style="opacity:<?php if ($qrcode->isImageDefault($qrcode->image_contreetiquette)): ?>0.55<?php else: ?>1<?php endif; ?>"/>
                     <span class="img-add btn btn-link btn-sm">
-                        <?php if ($qrcode->isImageOriginale($qrcode->image_contreetiquette)): ?>Ajouter<?php else: ?>Modifier<?php endif; ?>
+                        <?php if ($qrcode->isImageDefault($qrcode->image_contreetiquette)): ?>Ajouter<?php else: ?>Modifier<?php endif; ?>
                     </span>
                     <span class="img-reset btn btn-link btn-sm d-none">
                         Réinitialiser
                     </span>
-                    <span style="<?php if ($qrcode->isImageOriginale($qrcode->image_contreetiquette) || isset($create)) { echo 'display: none;'; }?>">
+                    <span style="<?php if ($qrcode->isImageDefault($qrcode->image_contreetiquette) || isset($create)) { echo 'display: none;'; }?>">
                         <a class="btn btn-link btn-sm" href="/qrcode/<?php echo $qrcode->user_id ?>/edit/<?php echo $qrcode->getId(); ?>/img/2/delete">Supprimer</a>
                     </span>
                     <input type="file" accept="image/png, image/jpeg" class="d-none form-control" id="image_contreetiquette" name="image_contreetiquette" data-imageorigin="img_image_contreetiquette" defaultvalue="<?php echo $qrcode->image_contreetiquette; ?>"/>

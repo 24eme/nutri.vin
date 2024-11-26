@@ -686,8 +686,22 @@ class QRCode extends Mapper
         return $cleControle == $cleAttendue;
     }
 
-    public function isImageOriginale($id_img) {
+    public function isImageDefault($id_img) {
         return strpos($id_img ?? '', 'data:') === false;
+    }
+
+    public function getShowImages($fromView = false) {
+        if (! $fromView) {
+            return $this->getImages();
+        }
+        $images = [];
+        foreach ($this->getImages() as $imgNom => $imgPath) {
+            if (! $this->isImageDefault($imgPath)) {
+                $images[$imgNom] = $imgPath;
+            }
+        }
+
+        return $images;
     }
 
 }
