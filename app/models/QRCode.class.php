@@ -658,4 +658,32 @@ class QRCode extends Mapper
     public function isPartOfInstance() {
         return strpos($this->getId(), Config::getInstance()->getInstanceId()) === 0;
     }
+
+    public function isEanValide() {
+        if (! $this->ean) {
+            return true;
+        }
+        if (strlen($this->ean) != 13) {
+            return false;
+        }
+        if (! preg_match('/^\d+$/', $this->ean)) {
+            return false;
+        }
+
+        $base = substr($this->ean, 0, 12);
+        $cleControle = substr($this->ean, -1);
+
+        $somme = 0;
+        for ($i = 0; $i < strlen($base); $i++) {
+            $chiffre = intval($base[$i]);
+            $poids = ($i % 2 === 0) ? 1 : 3;
+            $somme += $chiffre * $poids;
+        }
+
+        $reste = $somme % 10;
+        $cleAttendue = ($reste === 0) ? 0 : 10 - $reste;
+
+        print_r([$cleControle, $cleAttendue]);exit;
+        return $cleControle == $cleAttendue;
+    }
 }
