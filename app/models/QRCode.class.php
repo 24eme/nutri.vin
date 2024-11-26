@@ -683,7 +683,6 @@ class QRCode extends Mapper
         $reste = $somme % 10;
         $cleAttendue = ($reste === 0) ? 0 : 10 - $reste;
 
-        print_r([$cleControle, $cleAttendue]);exit;
         return $cleControle == $cleAttendue;
     }
 }
