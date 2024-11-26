@@ -685,4 +685,9 @@ class QRCode extends Mapper
 
         return $cleControle == $cleAttendue;
     }
+
+    public function isImageOriginale($id_img) {
+        return strpos($id_img ?? '', 'data:') === false;
+    }
+
 }
