@@ -436,7 +436,7 @@
                 <input type="text" class="form-control" id="ean" name="ean" value="<?php echo $qrcode->ean; ?>" placeholder="Code EAN" data-liveform-ignore>
                 <label form="ean">Code EAN</label>
             </div>
-            <p id="message-validation" style="color: red; display: none;"></p>
+            <p id="message-validation" class="form-text"></p>
         </div>
 
         <h4 class="mt-4 mb-4"><i class="bi bi-tag"></i> Labels complémentaires</h4>
@@ -1065,7 +1065,10 @@ ingredientsTextToTable();
     const eanInput = document.querySelector("#ean");
     const messageValidation = document.querySelector("#message-validation");
 
-    eanInput.addEventListener("input", (event) => {
+    eanInput.addEventListener("input", eanEventHandler);
+    eanInput.addEventListener("blur", eanEventHandler);
+
+    function eanEventHandler(event) {
         const eanValue = event.target.value.trim();
         eanInput.setCustomValidity("");
 
@@ -1075,7 +1078,7 @@ ingredientsTextToTable();
             messageValidation.style.display = "block";
             eanInput.setCustomValidity("Veuillez saisir un code EAN valide.");
         }
-    });
+    }
 
     function verifierEAN13(code) {
         if (code.length === 0) {
@@ -1104,7 +1107,14 @@ ingredientsTextToTable();
         const reste = somme % 10;
         const cleAttendue = (reste === 0) ? 0 : 10 - reste;
 
-        return cleControle === cleAttendue;
+        ret = cleControle === cleAttendue;
+
+        if (! ret) {
+            messageValidation.textContent = "Code EAN invalide.";
+            return false;
+        }
+
+        return ret;
     }
 
 
