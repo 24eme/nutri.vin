@@ -6,7 +6,6 @@
     </div>
 <?php endif; ?>
 <div class="p-3 py-4 bg-white text-center liveform_anchor">
-    <?php if (! empty($userImages)): ?>
         <div id="carrousel" class="bg-white border rounded rounded-bottom-0 shadow-sm d-flex justify-content-center">
             <?php if (array_key_exists('image_bouteille', $userImages)): ?>
                 <img id="slide_image_bouteille" class="mt-3 bg-white border-bottom" style="height: 200px;"
@@ -28,7 +27,6 @@
                 <a class="position-absolute top-50 end-0 translate-middle-y text-secondary btn btn-lg px-1 fs-2" id="suivant" onClick="changeSlide(1)"><i class="bi bi-chevron-compact-right"></i></a>
             <?php endif; ?>
         </div>
-    <?php endif; ?>
 
     <div class="bg-light-subtle border border-top-0 rounded rounded-top-0 pt-3 shadow-sm">
         <?php if (empty($publicview) || (!empty($publicview) && $qrcode->domaine_nom)): ?>
