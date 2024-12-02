@@ -429,11 +429,12 @@
             </div>
         </div>
 
-        <h4 class="mt-4 mb-4"><i class="bi bi-upc-scan"></i> Code EAN</h4>
-        <p>Renseignez ici votre numéro de code EAN</p>
+        <h4 id="ean" class="mt-4 mb-4"><i class="bi bi-upc-scan"></i> Code EAN</h4>
+        <p>Renseignez ici votre numéro de code-barre EAN-13 afin d'être compatible GS1.<br><small>La compatilité GS1 ajoute des informations supplémentaires, ce qui entraînera une légère augmentation de la taille du QR Code final. L'option est désactivable dans les paramètres.</small>
+        </p>
         <div class="mb-3">
             <div class="form-floating">
-                <input type="text" class="form-control" id="ean" name="ean" value="<?php echo $qrcode->ean; ?>" placeholder="Code EAN" data-liveform-ignore>
+                <input type="text" class="form-control" name="ean" value="<?php echo $qrcode->ean; ?>" placeholder="Code EAN" data-liveform-ignore>
                 <label form="ean">Code EAN</label>
             </div>
             <p id="message-validation" class="form-text"></p>

@@ -440,6 +440,7 @@ class CtrlNutriVin {
         $qrcode = QRCode::findById($f3->get('PARAMS.qrcodeid'));
         $qrcode->logo = (bool)$f3->get('POST.logo');
         $qrcode->mentions = (bool)$f3->get('POST.mentions');
+        $qrcode->gs1 = (bool)$f3->get('POST.gs1');
 
         if (Config::getInstance()->isDenominationInConfig($qrcode->denomination) === false) {
             $qrcode->logo = false;

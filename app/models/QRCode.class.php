@@ -30,6 +30,7 @@ class QRCode extends Mapper
     public static $copy_field_filter = [
         "domaine_nom" => 1,
         "ean" => 1,
+        "gs1" => 1,
         "adresse_domaine" => 1,
         "cuvee_nom" => 1,
         "denomination" => 1,
@@ -95,6 +96,7 @@ class QRCode extends Mapper
         'date_version' => 'VARCHAR(26)',
         'logo' => 'BOOL',
         'mentions' => 'BOOL',
+        'gs1' => 'BOOL',
         'denomination_instance' => 'BOOL',
         'visites' => 'TEXT',
         'labels' => 'TEXT',
@@ -382,6 +384,8 @@ class QRCode extends Mapper
             $redirect->version_origine = $this->date_version;
             $redirect->date_creation = date('c');
             $redirect->save();
+
+            $this->gs1 = 1;
         }
 
         return $mapper_save;
