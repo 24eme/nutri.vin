@@ -130,7 +130,7 @@ class CtrlNutriVin {
             }
             $qrcode->denomination_instance = Config::getInstance()->isDenominationInConfig($qrcode->denomination);
             if (! $qrcode->isEanValide()) {
-                $f3->error(404, "Code EAN invalide");
+                $f3->error(500, "Code EAN invalide");
                 exit;
             }
             $qrcode->save();
@@ -399,7 +399,7 @@ class CtrlNutriVin {
         $ean_id = "REDIRECT-01-" . $f3->get('PARAMS.ean');
         $ean = Redirect::findById($ean_id);
         if ($ean === null) {
-            $f3->error(404, "Code EAN non trouvé");
+            $f3->error(500, "Code EAN non trouvé");
             exit;
         }
         $f3->reroute($ean->redirect_to);
