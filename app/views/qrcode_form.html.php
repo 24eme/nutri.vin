@@ -1106,7 +1106,13 @@ ingredientsTextToTable();
         const reste = somme % 10;
         const cleAttendue = (reste === 0) ? 0 : 10 - reste;
 
-        return cleControle === cleAttendue;
+        ret = cleControle === cleAttendue;
+        if (! ret) {
+            messageValidation.textContent = "Code EAN invalide.";
+            return false;
+        }
+
+        return ret;
     }
 
 
