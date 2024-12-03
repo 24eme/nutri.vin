@@ -434,7 +434,7 @@
         </p>
         <div class="mb-3">
             <div class="form-floating">
-                <input type="text" class="form-control" name="ean" value="<?php echo $qrcode->ean; ?>" placeholder="Code EAN" data-liveform-ignore>
+                <input type="text" class="form-control" name="ean" id="input_ean" value="<?php echo $qrcode->ean; ?>" placeholder="Code EAN" data-liveform-ignore>
                 <label form="ean">Code EAN</label>
             </div>
             <p id="message-validation" style="color: red; display: none;"></p>
@@ -1063,10 +1063,11 @@ document.querySelector('#alcool_degre').addEventListener('change', function(e) {
 
 ingredientsTextToTable();
 
-    const eanInput = document.querySelector("#ean");
+    const eanInput = document.querySelector("#input_ean");
     const messageValidation = document.querySelector("#message-validation");
 
-    eanInput.addEventListener("input", (event) => {
+    eanInput.addEventListener("input", function (event) {
+
         const eanValue = event.target.value.trim();
         eanInput.setCustomValidity("");
 
