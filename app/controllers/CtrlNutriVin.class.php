@@ -29,6 +29,7 @@ class CtrlNutriVin {
         $f3->set('table_exists', $qrcode->tableExists());
         if (!$qrcode->tableExists() && $f3->exists('GET.createtable')) {
             QRcode::createTable();
+            Redirect::createTable();
             return $f3->reroute('/admin/setup', false);
         }
         $f3->set('schema_error', false);
