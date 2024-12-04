@@ -30,7 +30,7 @@
                     </div>
                     <div class="form-check form-switch mt-1">
                         <input class="form-check-input" style="cursor: pointer" type="checkbox" role="switch" value="1" name="gs1" id="switch-gs1" <?php if (!$qrcode->ean): ?> data-bs-toggle="modal" data-bs-target="#gs1"<?php endif; ?><?php if ($qrcode->gs1): ?>checked<?php endif; ?>></input>
-                        <label class="form-check-label" style="cursor: pointer" for="switch-gs1">Compatilité GS1</label>
+                        <label class="form-check-label" style="cursor: pointer" for="switch-gs1">Compatible avec la norme GS1 <small>(augmente légèrement la taille du QR Code)</small></label>
                     </div>
                 </div>
             </div>
@@ -40,17 +40,20 @@
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="gs1-Label">Compatilité GS1</h1>
+                    <h1 class="modal-title fs-5" id="gs1-Label">Compatibilité avec la norme GS1</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
-                    Pour que votre QR Code soit compatible GS1, vous devez ajouter un code-barre EAN-13 à votre produit.
-                    <br>
-                    Retournez à la modification du produit afin d'ajouter le code-barre.
+                    <p class="text-align-justify">
+                        La norme GS1 permettra au QR Code d'être scanné au même titre que le code barre par les lecteurs nouvelles génération afin d'éviter la confusion entre le QR Code et le code barre.
+                        <br>
+                        <br>
+                        Pour que votre QR Code soit compatible avec cette norme, vous devez ajouter un code-barre EAN-13 dans sa fiche produit.
+                    </p>
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
-                    <a type="button" class="btn btn-light" href="/qrcode/<?php echo $qrcode->user_id ?>/edit/<?php echo $qrcode->getId() ?>#ean">Aller à la modification</a>
+                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Annuler</button>
+                    <a type="button" class="btn btn-secondary" href="/qrcode/<?php echo $qrcode->user_id ?>/edit/<?php echo $qrcode->getId() ?>#ean">Aller à la modification</a>
                   </div>
                 </div>
               </div>
@@ -89,6 +92,12 @@
 
     checkboxes.forEach((item, i) => {
         item.addEventListener('change', function() {
+            if (item.id == "switch-gs1") {
+                <?php if (! $qrcode->ean): ?>
+                item.checked = false;
+                    return;
+                <?php endif;?>
+            }
             document.getElementById('logoForm').submit();
         });
     });
