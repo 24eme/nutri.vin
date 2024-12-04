@@ -60,7 +60,7 @@ class QRMarkupSVGLogo extends QRMarkupSVG
         return '';
     }
     return sprintf(
-        '%4$s<text x="50%%" y="%3$s" font-size="3" font-family="Verdana, Arial, Helvetica, sans-serif" text-anchor="middle">E = %1$s KCal / %2$s KJ</text>%4$s',
+        '%4$s<text x="50%%" y="%3$s" font-size="3" font-family="Verdana, Arial, Helvetica, sans-serif" text-anchor="middle">E (100ml) = %1$s KCal / %2$s KJ</text>%4$s',
         (float) $this->options->svgEnergies[0],
         (float) $this->options->svgEnergies[1],
         24 + (4 * $this->matrix->getVersion()->getVersionNumber()),

@@ -39,6 +39,6 @@ class QRFpdfCustom extends QRFpdf
 
     protected function getEnergies()
     {
-        return sprintf("E = %s KCal / %s KJ", $this->options->fpdfEnergies[0], $this->options->fpdfEnergies[1]);
+        return sprintf("E (100 ml) = %s KCal / %s KJ", $this->options->fpdfEnergies[0], $this->options->fpdfEnergies[1]);
     }
 }
