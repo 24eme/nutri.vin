@@ -23,8 +23,8 @@
                 src="<?php echo $qrcode->image_contreetiquette ?>" >
             <?php endif;?>
             <?php if (count($userImages) > 1): ?>
-                <button class="position-absolute top-50 start-0 translate-middle-y text-secondary btn btn-lg px-1 fs-2 ms-2" id="precedent" href="" onClick="changeSlide(-1); return false;"><i class="bi bi-chevron-compact-left" style="text-shadow: #fff -2px 0 0px;";></i></button>
-                <a class="position-absolute top-50 end-0 translate-middle-y text-secondary btn btn-lg px-1 fs-2 me-2" id="suivant" onClick="changeSlide(1)"><i class="bi bi-chevron-compact-right" style="text-shadow: #fff 2px 0px 0px;"></i></a>
+                <button class="position-absolute top-50 start-0 translate-middle-y text-secondary btn btn-lg px-1 fs-2" id="precedent" href="" onClick="changeSlide(-1); return false;"><i class="bi bi-chevron-compact-left" style="text-shadow: #fff -2px 0 0px;";></i></button>
+                <a class="position-absolute top-50 end-0 translate-middle-y text-secondary btn btn-lg px-1 fs-2" id="suivant" onClick="changeSlide(1)"><i class="bi bi-chevron-compact-right" style="text-shadow: #fff 2px 0px 0px;"></i></a>
             <?php endif; ?>
         </div>
 
