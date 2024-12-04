@@ -1,1 +1,1 @@
-ALTER TABLE organismes ADD COLUMN ean varchar;
+ALTER TABLE qrcode ADD COLUMN ean varchar;
