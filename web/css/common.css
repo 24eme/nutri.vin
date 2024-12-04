@@ -2,6 +2,14 @@ body {
   padding-bottom: 40px;
 }
 
+body#body_public {
+    padding: 0;
+}
+
+body#body_public .container-sm {
+    padding: 0;
+}
+
 #main_container {
     background-color: white;
 }

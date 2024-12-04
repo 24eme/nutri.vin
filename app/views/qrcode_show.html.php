@@ -5,26 +5,26 @@
         Pour consulter la dernière version à jour, veuillez suivre ce lien : <a href="<?php echo $urlbase."/".$qrcode->getId() ?>"><?php echo $urlbase."/".$qrcode->getId() ?></a>
     </div>
 <?php endif; ?>
-<div class="p-3 py-4 bg-white text-center liveform_anchor">
+<div class="p-4 bg-white text-center liveform_anchor">
         <div id="carrousel" class="bg-white border rounded rounded-bottom-0 shadow-sm d-flex justify-content-center">
             <?php if (array_key_exists('image_bouteille', $userImages)): ?>
-                <img id="slide_image_bouteille" class="mt-3 bg-white border-bottom" style="height: 200px;"
+                <img id="slide_image_bouteille" class="mt-3 bg-white border-bottom" style="height: 200px; max-width: 100%;"
                 data-liveform-name="image_bouteille" data-liveform-template="{{%s}}"
                 src="<?php echo $qrcode->image_bouteille ?>" >
             <?php endif; ?>
             <?php if (array_key_exists('image_etiquette', $userImages)): ?>
-                <img id="slide_image_etiquette" class="mt-3 bg-white border-bottom" style="display: none; height: 200px;"
+                <img id="slide_image_etiquette" class="mt-3 bg-white border-bottom" style="display: none; height: 200px; max-width: 100%;"
                 data-liveform-name="image_etiquette" data-liveform-template="{{%s}}"
                 src="<?php echo $qrcode->image_etiquette ?>" >
             <?php endif; ?>
             <?php if (array_key_exists('image_contreetiquette', $userImages)): ?>
-                <img id="slide_image_contreetiquette" class="mt-3 bg-white border-bottom" style="display: none; height: 200px;"
+                <img id="slide_image_contreetiquette" class="mt-3 bg-white border-bottom" style="display: none; height: 200px; max-width: 100%;"
                 data-liveform-name="image_contreetiquette" data-liveform-template="{{%s}}"
                 src="<?php echo $qrcode->image_contreetiquette ?>" >
             <?php endif;?>
             <?php if (count($userImages) > 1): ?>
-                <button class="position-absolute top-50 start-0 translate-middle-y text-secondary btn btn-lg px-1 fs-2" id="precedent" href="" onClick="changeSlide(-1); return false;"><i class="bi bi-chevron-compact-left"></i></button>
-                <a class="position-absolute top-50 end-0 translate-middle-y text-secondary btn btn-lg px-1 fs-2" id="suivant" onClick="changeSlide(1)"><i class="bi bi-chevron-compact-right"></i></a>
+                <button class="position-absolute top-50 start-0 translate-middle-y text-secondary btn btn-lg px-1 fs-2" id="precedent" href="" onClick="changeSlide(-1); return false;"><i class="bi bi-chevron-compact-left" style="text-shadow: #fff -2px 0 0px;";></i></button>
+                <a class="position-absolute top-50 end-0 translate-middle-y text-secondary btn btn-lg px-1 fs-2" id="suivant" onClick="changeSlide(1)"><i class="bi bi-chevron-compact-right" style="text-shadow: #fff 2px 0px 0px;"></i></a>
             <?php endif; ?>
         </div>
 
@@ -37,18 +37,18 @@
         <?php if (empty($publicview) || (!empty($publicview) && ($qrcode->cuvee_nom || $qrcode->denomination || $qrcode->couleur))): ?>
         <p class="fs-3">
             <?php if (empty($publicview) || $qrcode->cuvee_nom): ?>
-            <span data-liveform-name="cuvee_nom" data-liveform-template='{{%s}}'>
+            <strong data-liveform-name="cuvee_nom" data-liveform-template='{{%s}}'>
                 <?php echo $qrcode->cuvee_nom ?>
-            </span>
+            </strong>
             <br/>
             <?php endif; ?>
             <?php if (empty($publicview) || $qrcode->denomination): ?>
-            <small class="fw-light text-muted" data-liveform-name="denomination" data-liveform-template='{{%s}}'>
+            <small class="opacity-75" data-liveform-name="denomination" data-liveform-template='{{%s}}'>
                 <?php echo $qrcode->denomination ?>
             </small>
             <?php endif; ?>
             <?php if (empty($publicview) || $qrcode->denomination): ?>
-            <small class="fw-light text-muted" data-liveform-name="couleur" data-liveform-template='{{%s}}'>
+            <small class="opacity-75" data-liveform-name="couleur" data-liveform-template='{{%s}}'>
                 <?php echo $qrcode->couleur ?>
             </small>
             <?php endif; ?>
@@ -62,10 +62,10 @@
     </div>
 </div>
 
-<div class="px-3 pt-3 bg-light-subtle border-top ">
+<div class="px-4 pt-3 pb-4 bg-light-subtle border-top">
     <?php if(empty($publicview) || (!empty($publicview) && ($qrcode->alcool_degre || $qrcode->centilisation || $qrcode->lot))): ?>
     <div class="card text-bg-light mt-2 mb-4 shadow-sm liveform_anchor">
-        <div class="card-header text-center"><i class="bi bi-info-circle float-start"></i> <?php echo _("Informations complémentaires"); ?></div>
+        <div class="card-header text-center fw-bold"><i class="bi bi-info-circle float-start"></i> <?php echo _("Informations complémentaires"); ?></div>
         <table class="table table-sm table-striped-columns mb-0">
             <tbody>
                 <?php if (empty($publicview) || $qrcode->alcool_degre): ?>
@@ -98,7 +98,7 @@
     <?php endif; ?>
     <?php if (empty($publicview) || (!empty($publicview) && $qrcode->ingredients)): ?>
     <div class="card text-bg-secondary mt-4 mb-3 shadow-sm liveform_anchor">
-        <div class="card-header text-center"><i class="bi bi-card-list float-start"></i> <?php echo _("Ingrédients"); ?></div>
+        <div class="card-header text-center fw-bold"><i class="bi bi-card-list float-start"></i> <?php echo _("Ingrédients"); ?></div>
         <div class="card-body text-dark bg-white">
             <p data-liveform-name="ingredients" data-liveform-template='{{%s}}'
                 class="card-text">
@@ -129,8 +129,8 @@
             (!empty($publicview) && ($qrcode->nutritionnel_sodium || $qrcode->nutritionnel_sodium === 0))
           ):
     ?>
-    <div class="card text-bg-primary mt-4 mb-2 shadow-sm liveform_anchor">
-        <div class="card-header text-center"><i class="bi bi-clipboard-data float-start"></i> Informations nutritionnelles</div>
+    <div class="card text-bg-primary mt-4 shadow-sm liveform_anchor">
+        <div class="card-header text-center fw-bold"><i class="bi bi-clipboard-data float-start"></i> Informations nutritionnelles</div>
         <table class="table table-sm table-striped-columns mb-0">
             <thead>
                 <tr>
@@ -216,15 +216,15 @@
     </div>
     <?php endif; ?>
 
-    <div class="py-4 bg-white text-center liveform_anchor">
+    <div class="my-4 text-center liveform_anchor">
       <?php foreach ($qrcode::$LABELS as $label): ?>
-        <img class="bg-white px-1" data-liveform-name="labels[]" data-liveform-template='{{<?php echo $label ?>}}' style="height: 30px;<?php if(!in_array($label, $qrcode->getLabels())): ?> display:none;<?php endif; ?>" title="Vin labellisé <?php echo $label ?>" src="/images/labels/<?php echo strtolower($label) ?>.png" >
+        <img class="px-1" data-liveform-name="labels[]" data-liveform-template='{{<?php echo $label ?>}}' style="height: 40px;<?php if(!in_array($label, $qrcode->getLabels())): ?> display:none;<?php endif; ?>" title="Vin labellisé <?php echo $label ?>" src="/images/labels/<?php echo strtolower($label) ?>.png" >
       <?php endforeach; ?>
     </div>
 
     <?php if (!empty($qrcode->autres_infos)): ?>
-    <div class="card text-bg-Light my-4 shadow-sm liveform_anchor">
-        <div class="card-header text-center"><i class="bi bi-clipboard-data float-start"></i><?php echo _("Autres informations"); ?></div>
+    <div class="card text-bg-Light shadow-sm liveform_anchor">
+        <div class="card-header text-center fw-bold"><i class="bi bi-clipboard-data float-start"></i><?php echo _("Autres informations"); ?></div>
         <p class="pt-2 px-2"
            data-liveform-name="autres_infos" data-liveform-template='{{%s}}'
         >
@@ -232,10 +232,11 @@
         </p>
     </div>
     <?php endif; ?>
-
-    <div class="mt-2 pt-2 small text-secondary text-center border-top liveform_anchor">
+</div>
+<div class="px-4 pt-3 pb-4 bg-light-subtle border-top ">
+    <div class="small text-secondary text-center liveform_anchor">
+            <p>
             <strong><?php echo _("Mentions légales") ?> :</strong>
-
             <?php echo _("Cette fiche nutritionnelle est éditée sous la seule responsablité de") ?> :
                 <span data-liveform-name="responsable_nom" data-liveform-template='{{%s}}' ><?php echo $qrcode->responsable_nom; ?></span>
                 (<a target="_blank" href="https://annuaire-entreprises.data.gouv.fr/entreprise/<?php echo $qrcode->getResponsableSIREN(); ?>" class="link-secondary"><span data-liveform-name="responsable_siret" data-liveform-template='{{%s}}' ><?php echo $qrcode->getResponsableSIREN(); ?></span></a>),
