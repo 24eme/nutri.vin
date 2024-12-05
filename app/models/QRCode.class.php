@@ -704,6 +704,9 @@ class QRCode extends Mapper
                 $images[$imgNom] = $imgPath;
             }
         }
+        if (! $images) {
+            return $this->getImages();
+        }
 
         return $images;
     }
