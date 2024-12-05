@@ -8,17 +8,17 @@
 <div class="p-4 bg-white text-center liveform_anchor">
         <div id="carrousel" class="bg-white border rounded rounded-bottom-0 shadow-sm d-flex justify-content-center">
             <?php if (array_key_exists('image_bouteille', $userImages)): ?>
-                <img id="slide_image_bouteille" class="mt-3 bg-white border-bottom" style="height: 200px; max-width: 100%;"
+                <img id="slide_image_bouteille" class="mt-3 bg-white" style="height: 200px; max-width: 100%;"
                 data-liveform-name="image_bouteille" data-liveform-template="{{%s}}"
                 src="<?php echo $qrcode->image_bouteille ?>" >
             <?php endif; ?>
             <?php if (array_key_exists('image_etiquette', $userImages)): ?>
-                <img id="slide_image_etiquette" class="mt-3 bg-white border-bottom" style="display: none; height: 200px; max-width: 100%;"
+                <img id="slide_image_etiquette" class="mt-3 bg-white" style="display: none; height: 200px; max-width: 100%;"
                 data-liveform-name="image_etiquette" data-liveform-template="{{%s}}"
                 src="<?php echo $qrcode->image_etiquette ?>" >
             <?php endif; ?>
             <?php if (array_key_exists('image_contreetiquette', $userImages)): ?>
-                <img id="slide_image_contreetiquette" class="mt-3 bg-white border-bottom" style="display: none; height: 200px; max-width: 100%;"
+                <img id="slide_image_contreetiquette" class="mt-3 bg-white" style="display: none; height: 200px; max-width: 100%;"
                 data-liveform-name="image_contreetiquette" data-liveform-template="{{%s}}"
                 src="<?php echo $qrcode->image_contreetiquette ?>" >
             <?php endif;?>
