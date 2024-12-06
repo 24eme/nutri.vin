@@ -1,1 +1,1 @@
-ALTER TABLE qrcode ADD COLUMN ean boolean;
+ALTER TABLE qrcode ADD COLUMN gs1 boolean;
