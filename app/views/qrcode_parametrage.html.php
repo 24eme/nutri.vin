@@ -51,9 +51,9 @@
                         Pour que votre QR Code soit compatible avec cette norme, vous devez ajouter un code-barre EAN-13 dans sa fiche produit.
                     </p>
                   </div>
-                  <div class="modal-footer">
+                  <div class="modal-footer d-flex justify-content-between">
                     <button type="button" class="btn btn-light" data-bs-dismiss="modal">Annuler</button>
-                    <a type="button" class="btn btn-secondary" href="/qrcode/<?php echo $qrcode->user_id ?>/edit/<?php echo $qrcode->getId() ?>#ean">Aller à la modification</a>
+                    <a type="button" class="btn btn-secondary" href="/qrcode/<?php echo $qrcode->user_id ?>/edit/<?php echo $qrcode->getId() ?>#ean">Saisir un code-barre</a>
                   </div>
                 </div>
               </div>
