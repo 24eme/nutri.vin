@@ -14,9 +14,8 @@ abstract class QRCodeGeneralOptions extends QROptions
     protected string $svgLogo = '';
     protected float $svgLogoScale = 0.20;
     protected string $svgLogoCssClass = '';
-    protected array $svgTitle = [];
+    protected string $svgTitle = '';
     protected array $svgEnergies = [];
-    protected int $quietzoneSize = 8;
 
     public function __construct()
     {

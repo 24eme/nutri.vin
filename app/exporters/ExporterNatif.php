@@ -30,7 +30,7 @@ class ExporterNatif
             $configuration->setLogo($logo);
         }
         if (count($energies)) {
-            $configuration->setTitle(['INGRÉDIENTS', '&amp; NUTRITION']);
+            $configuration->setTitle("INGRÉDIENTS &amp; NUTRITION");
             $configuration->setEnergies($energies);
         }
 
