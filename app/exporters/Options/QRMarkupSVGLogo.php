@@ -49,8 +49,9 @@ class QRMarkupSVGLogo extends QRMarkupSVG
     protected function getTitle()
     {
         return sprintf(
-            '%2$s<text x="50%%" y="3" font-size="2" font-kerning="normal" font-stretch="200%%" font-family="Liberation Mono, Verdana, Arial, Helvetica, sans-serif" text-anchor="middle">%1$s</text>%2$s',
-            $this->options->svgTitle,
+            '%3$s<text x="50%%" y="2" font-size="' . ($this->matrix->getVersion()->getVersionNumber() == 4 ? 3 : 3.5) .'" font-kerning="normal" font-stretch="200%%" font-family="Liberation Mono, Verdana, Arial, Helvetica, sans-serif" text-anchor="middle"><tspan x="50%%" dy="' . ($this->matrix->getVersion()->getVersionNumber() == 4 ? 0.5 : 0.9) .'">%1$s</tspan><tspan x="50%%" dy="' . ($this->matrix->getVersion()->getVersionNumber() == 4 ? 3 : 3.4) .'">%2$s</tspan></text>%3$s',
+            $this->options->svgTitle[0],
+            $this->options->svgTitle[1],
             $this->options->eol
         );
     }
@@ -60,10 +61,11 @@ class QRMarkupSVGLogo extends QRMarkupSVG
         return '';
     }
     return sprintf(
-        '%4$s<text x="50%%" y="%3$s" font-size="2" font-kerning="normal" font-stretch="200%%" font-family="Liberation Mono, Verdana, Arial, Helvetica, sans-serif" text-anchor="middle">E (100ml) = %1$s KCal / %2$s KJ</text>%4$s',
+
+        '%4$s<text x="50%%" y="%3$s" font-size="' . ($this->matrix->getVersion()->getVersionNumber() == 4 ? 3 : 3.3) .'" font-kerning="normal" font-stretch="200%%" font-family="Liberation Mono, Verdana, Arial, Helvetica, sans-serif" text-anchor="middle"><tspan x="50%%" dy="' . ($this->matrix->getVersion()->getVersionNumber() == 4 ? 1.8 : 1.1) .'" style="font-weight: bold;">E(100ml)</tspan><tspan x="50%%" dy="' . ($this->matrix->getVersion()->getVersionNumber() == 4 ? 3.5 : 3.8) .'" style="font-weight: bold;">%1$s KCal/%2$s KJ</tspan></text>%4$s',
         (float) $this->options->svgEnergies[0],
         (float) $this->options->svgEnergies[1],
-        24 + (4 * $this->matrix->getVersion()->getVersionNumber()),
+        24 + (4.8 * $this->matrix->getVersion()->getVersionNumber()),
         $this->options->eol
     );
 }
