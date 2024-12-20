@@ -22,7 +22,7 @@ abstract class QRCodeGeneralOptions extends QROptions
         $this->eccLevel = EccLevel::H;
         $this->outputBase64 = false;
         $this->connectPaths = true;
-        $this->addQuietzone = true;
+        $this->addQuietzone = false;
         $this->svgUseFillAttribute = true;
     }
 

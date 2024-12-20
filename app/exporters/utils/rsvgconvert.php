@@ -27,9 +27,9 @@ class rsvgconvert
         return false;
     }
 
-    public static function convert($input, $format)
+    public static function convert($input, $format, $width = '15mm')
     {
-        $proc = proc_open([self::command, '-f', $format, '--dpi-x', 300, '--dpi-y', 300, '--height', '142', '--width', '142'], [
+        $proc = proc_open([self::command, '-f', $format, '--dpi-x', 300, '--dpi-y', 300, '--width', $width], [
             0 => ['pipe', 'r'],
             1 => ['pipe', 'w'],
             2 => ['pipe', 'w']

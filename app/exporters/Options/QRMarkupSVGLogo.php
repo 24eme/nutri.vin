@@ -15,12 +15,18 @@ class QRMarkupSVGLogo extends QRMarkupSVG
             $this->matrix->setLogoSpace($size, $size);
         }
 
-        $svg = parent::paths();
+        $svg = '<g transform="translate(300, 300) scale('.(1000/$this->moduleCount).')">';
+        $svg .= parent::paths();
         $svg .= $this->getLogo();
+        $svg .= '</g>';
         $svg .= $this->getTitle();
         $svg .= $this->getEnergies();
-
         return $svg;
+    }
+
+    protected function getViewBox():string{
+
+        return sprintf('0 0 %s %s', 1600, 1600);
     }
 
     /**
@@ -48,23 +54,24 @@ class QRMarkupSVGLogo extends QRMarkupSVG
 
     protected function getTitle()
     {
-        return sprintf(
-            '%2$s<text x="50%%" y="3" font-size="2.5" font-kerning="normal" font-stretch="200%%" font-family="Liberation Mono, Verdana, Arial, Helvetica, sans-serif" text-anchor="middle">%1$s</text>%2$s',
-            $this->options->svgTitle,
-            $this->options->eol
-        );
+        $svg = '<text  x="300" y="150" xml:space="preserve" style="font-style:normal;font-size:145px;line-height:1;font-family:sans-serif;fill:#000000;stroke-width:2;stroke-dasharray:2, 10">';
+        $svg .= '<tspan x="50%" y="150" text-anchor="middle">INGRÉDIENTS</tspan>';
+        $svg .= '<tspan x="50%" y="260" text-anchor="middle">&amp;  NUTRITION</tspan></text>';
+        $svg .= $this->options->eol;
+        return $svg;
     }
 
     protected function getEnergies()
     {   if (!$this->options->svgEnergies || count($this->options->svgEnergies) != 2) {
-        return '';
+            return '';
+        }
+        $svg = '<text  x="300" y="1410" xml:space="preserve" style="font-style:normal;font-size:100px;line-height:1;font-family:sans-serif;fill:#000000;stroke-width:2;stroke-dasharray:2, 10; text-align:center;">';
+        $svg .= '<tspan x="50%" y="1410" text-anchor="middle">E (100ml) =</tspan>';
+        $svg .= '</text>';
+        $svg .= '<text x="300" y="1500" xml:space="preserve" style="font-style:normal;font-size:100px;line-height:1;font-family:sans-serif;fill:#000000;stroke-width:2;stroke-dasharray:2, 10; text-align:center;">';
+        $svg .= sprintf('<tspan x="50%%" y="1500" text-anchor="middle"> %1$s KCal / %2$s KJ</tspan>',(float) $this->options->svgEnergies[0],(float) $this->options->svgEnergies[1]);
+        $svg .= '</text>';
+        $svg .= $this->options->eol;
+        return $svg;
     }
-    return sprintf(
-        '%4$s<text x="50%%" y="%3$s" font-size="2.2" font-kerning="normal" font-stretch="200%%" font-family="Liberation Mono, Verdana, Arial, Helvetica, sans-serif" text-anchor="middle">E (100ml) = %1$s KCal / %2$s KJ</text>%4$s',
-        (float) $this->options->svgEnergies[0],
-        (float) $this->options->svgEnergies[1],
-        24 + (4 * $this->matrix->getVersion()->getVersionNumber()),
-        $this->options->eol
-    );
-}
 }
