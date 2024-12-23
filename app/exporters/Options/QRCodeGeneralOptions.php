@@ -18,7 +18,7 @@ abstract class QRCodeGeneralOptions extends QROptions
 
     public function __construct()
     {
-        $this->eccLevel = EccLevel::H;
+        $this->eccLevel = EccLevel::M;
         $this->outputBase64 = false;
         $this->connectPaths = true;
         $this->addQuietzone = false;
@@ -49,6 +49,7 @@ abstract class QRCodeGeneralOptions extends QROptions
         $this->addLogoSpace = true;
         $this->logoSpaceWidth = 8;
         $this->logoSpaceHeight = 8;
+        $this->eccLevel = EccLevel::H;
 
         $this->outputType = QROutputInterface::CUSTOM;
         $this->outputInterface = QRMarkupSVGLogo::class;
