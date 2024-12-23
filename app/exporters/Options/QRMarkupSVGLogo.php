@@ -56,8 +56,8 @@ class QRMarkupSVGLogo extends QRMarkupSVG
         if (!$this->options->svgEnergies || count($this->options->svgEnergies) != 2) {
             return '';
         }
-        $svg = '<text  x="300" y="180" xml:space="preserve" style="font-style:normal;font-size:100px;line-height:1;font-family:sans-serif;fill:#000000;stroke-width:2;stroke-dasharray:2, 10">';
-        $svg .= '<tspan x="50%" y="180" text-anchor="middle">INGRÉDIENTS</tspan>';
+        $svg = '<text  x="300" y="180" xml:space="preserve" style="font-style:normal;font-size:120px;line-height:1;font-family:sans-serif;fill:#000000;stroke-width:2;stroke-dasharray:2, 10">';
+        $svg .= '<tspan x="50%" y="160" text-anchor="middle">INGRÉDIENTS</tspan>';
         $svg .= '<tspan x="50%" y="260" text-anchor="middle">&amp;  NUTRITION</tspan></text>';
         $svg .= $this->options->eol;
         return $svg;
@@ -67,11 +67,11 @@ class QRMarkupSVGLogo extends QRMarkupSVG
     {   if (!$this->options->svgEnergies || count($this->options->svgEnergies) != 2) {
             return '';
         }
-        $svg = '<text  x="300" y="1410" xml:space="preserve" style="font-style:normal;font-size:100px;line-height:1;font-family:sans-serif;fill:#000000;stroke-width:2;stroke-dasharray:2, 10;text-align:center;font-weight:bold;">';
+        $svg = '<text  x="300" y="1410" xml:space="preserve" style="font-style:normal;font-size:120px;line-height:1;font-family:sans-serif;fill:#000000;stroke-width:2;stroke-dasharray:2, 10;text-align:center;font-weight:bold;">';
         $svg .= '<tspan x="50%" y="1410" text-anchor="middle">E (100ml) =</tspan>';
         $svg .= '</text>';
-        $svg .= '<text x="300" y="1500" xml:space="preserve" style="font-style:normal;font-size:100px;line-height:1;font-family:sans-serif;fill:#000000;stroke-width:2;stroke-dasharray:2, 10;text-align:center;font-weight:bold;">';
-        $svg .= sprintf('<tspan x="50%%" y="1500" text-anchor="middle"> %1$s KCal / %2$s KJ</tspan>',(float) $this->options->svgEnergies[0], (float) $this->options->svgEnergies[1]);
+        $svg .= '<text x="300" y="1520" xml:space="preserve" style="font-style:normal;font-size:120px;line-height:1;font-family:sans-serif;fill:#000000;stroke-width:2;stroke-dasharray:2, 10;text-align:center;font-weight:bold;">';
+        $svg .= sprintf('<tspan x="50%%" y="1520" text-anchor="middle"> %1$s KCal / %2$s KJ</tspan>',(float) $this->options->svgEnergies[0], (float) $this->options->svgEnergies[1]);
         $svg .= '</text>';
         $svg .= $this->options->eol;
         return $svg;
