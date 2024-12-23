@@ -24,6 +24,8 @@ abstract class QRCodeGeneralOptions extends QROptions
         $this->connectPaths = true;
         $this->addQuietzone = false;
         $this->svgUseFillAttribute = true;
+        $this->outputType = QROutputInterface::CUSTOM;
+        $this->outputInterface = QRMarkupSVGLogo::class;
     }
 
     // check logo

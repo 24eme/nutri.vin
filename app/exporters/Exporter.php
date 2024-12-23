@@ -16,11 +16,10 @@ class Exporter
             return self::$instance;
         }
 
-        if(rsvgconvert::commandExists()) {
-            self::$instance = new ExporterRSVG();
-        } else {
-            self::$instance = new ExporterNatif();
+        if(!rsvgconvert::commandExists()) {
+            throw new Exception('rsvgconvert missing');
         }
+        self::$instance = new ExporterRSVG();
 
         return self::$instance;
     }
