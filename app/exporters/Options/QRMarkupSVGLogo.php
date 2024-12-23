@@ -8,13 +8,6 @@ class QRMarkupSVGLogo extends QRMarkupSVG
 {
     protected function paths(): string
     {
-        if ($this->options->svgLogo) {
-            $size = (int)ceil($this->moduleCount * $this->options->svgLogoScale);
-
-            // we're calling QRMatrix::setLogoSpace() manually, so QROptions::$addLogoSpace has no effect here
-            $this->matrix->setLogoSpace($size, $size);
-        }
-
         $svg = '<g transform="translate(300, 300) scale('.(1000/$this->moduleCount).')">';
         $svg .= parent::paths();
         $svg .= '</g>';
