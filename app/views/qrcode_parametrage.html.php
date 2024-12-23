@@ -30,7 +30,7 @@
                     </div>
                     <div class="form-check form-switch mt-1">
                         <input class="form-check-input" style="cursor: pointer" type="checkbox" role="switch" value="1" name="gs1" id="switch-gs1" <?php if (!$qrcode->ean): ?> data-bs-toggle="modal" data-bs-target="#gs1"<?php endif; ?><?php if ($qrcode->gs1): ?>checked<?php endif; ?>></input>
-                        <label class="form-check-label" style="cursor: pointer" for="switch-gs1">Compatible avec la norme GS1 <small>(augmente légèrement la taille du QR Code)</small></label>
+                        <label class="form-check-label" style="cursor: pointer" for="switch-gs1">Compatible avec la norme GS1 <small>(peut augmenter légèrement la taille du QR Code)</small></label>
                     </div>
                 </div>
             </div>

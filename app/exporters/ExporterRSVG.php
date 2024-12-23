@@ -15,6 +15,6 @@ class ExporterRSVG extends ExporterNatif
             return $svgContent;
         }
 
-        return rsvgconvert::convert($svgContent, $format);
+        return rsvgconvert::convert($svgContent, $format, sprintf('%dmm', 10/29 * $this->configuration->getModuleCount() * 1600/1000));
     }
 }

@@ -15,6 +15,8 @@ class ExporterNatif
         'eps' => QRCodeEPSOptions::class,
         'pdf' => QRCodePDFOptions::class,
     ];
+    private $modules_size = null;
+    protected $configuration = null;
 
     public function setResponseHeaders($format) {
 
@@ -22,19 +24,20 @@ class ExporterNatif
     }
 
     public function getQRCodeContent($qrCodeData, $format, $logo = false, $energies = []) {
-        $configuration = new $this->qroptions[$format];
+        $this->configuration = new $this->qroptions[$format];
         if (strlen($qrCodeData) < 25) {
-            $configuration->version = 3;
+            $this->configuration->version = 3;
         }
         if($logo) {
-            $configuration->setLogo($logo);
+            $this->configuration->setLogo($logo);
         }
         if (count($energies)) {
-            $configuration->setTitle("INGRÉDIENTS &amp; NUTRITION");
-            $configuration->setEnergies($energies);
+            $this->configuration->setTitle("INGRÉDIENTS &amp; NUTRITION");
+            $this->configuration->setEnergies($energies);
         }
 
-        $content = (new QRCode($configuration))->render($qrCodeData);
+        $qrc = new QRCode($this->configuration);
+        $content = $qrc->render($qrCodeData);
 
         if($format == 'eps') {
             $content = str_replace(',', '.',$content);

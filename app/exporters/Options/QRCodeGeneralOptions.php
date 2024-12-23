@@ -15,6 +15,7 @@ abstract class QRCodeGeneralOptions extends QROptions
     protected string $svgLogoCssClass = '';
     protected string $svgTitle = '';
     protected array $svgEnergies = [];
+    protected int $moduleCount = 0;
 
     public function __construct()
     {
@@ -72,6 +73,14 @@ abstract class QRCodeGeneralOptions extends QROptions
         $this->outputInterface = QRMarkupSVGLogo::class;
 
         $this->svgEnergies = $energies;
+    }
+
+    public function setModuleCount($m) {
+        $this->moduleCount = $m;
+    }
+
+    public function getModuleCount() {
+        return $this->moduleCount;
     }
 
     public static function setResponseHeaders()

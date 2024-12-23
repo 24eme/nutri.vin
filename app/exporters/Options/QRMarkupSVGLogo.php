@@ -8,6 +8,8 @@ class QRMarkupSVGLogo extends QRMarkupSVG
 {
     protected function paths(): string
     {
+        $this->options->setModuleCount($this->moduleCount);
+
         $svg = '<g transform="translate(300, 300) scale('.(1000/$this->moduleCount).')">';
         $svg .= parent::paths();
         $svg .= '</g>';
