@@ -44,7 +44,7 @@ class QRMarkupSVGLogo extends QRMarkupSVG
         // @todo: customize the <g> element to your liking (css class, style...)
         return sprintf(
             '%5$s<g transform="translate(%1$s, %1$s) scale(%2$s)" class="%3$s">%5$s%4$s%5$s</g>',
-            308+($this->moduleCount-$this->options->logoSpaceWidth)*1000/$this->moduleCount/2 + $this->options->logoSpaceStartX/2,
+            str_replace(',', '.', 308+($this->moduleCount-$this->options->logoSpaceWidth)*1000/$this->moduleCount/2 + $this->options->logoSpaceStartX/2),
             str_replace(',', '.', ($this->options->logoSpaceWidth/$m[1]/4)*((1000-$m[1]/2)/$this->moduleCount)),
             $this->options->svgLogoCssClass,
             $original,
