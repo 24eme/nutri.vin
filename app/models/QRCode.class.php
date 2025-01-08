@@ -533,9 +533,9 @@ class QRCode extends Mapper
         unset($fields['date_creation']);
         unset($fields['date_version']);
 
-        Base::instance()->set('SESSION.qrcode.' . $this->id . '.image_etiquette', $this->image_etiquette ?: null);
-        Base::instance()->set('SESSION.qrcode.' . $this->id . '.image_contreetiquette', $this->image_contreetiquette ?: null);
-        Base::instance()->set('SESSION.qrcode.' . $this->id . '.image_bouteille', $this->image_bouteille ?: null);
+        Base::instance()->set('SESSION.qrcode.' . $this->getId() . '.image_etiquette', $this->image_etiquette ?: null);
+        Base::instance()->set('SESSION.qrcode.' . $this->getId() . '.image_contreetiquette', $this->image_contreetiquette ?: null);
+        Base::instance()->set('SESSION.qrcode.' . $this->getId() . '.image_bouteille', $this->image_bouteille ?: null);
 
         return $fields;
     }
