@@ -514,9 +514,9 @@ class QRCode extends Mapper
         unset($fields['date_creation']);
         unset($fields['date_version']);
 
-        Base::instance()->set('SESSION.qrcode.image_etiquette', $this->image_etiquette ?: null);
-        Base::instance()->set('SESSION.qrcode.image_contreetiquette', $this->image_contreetiquette ?: null);
-        Base::instance()->set('SESSION.qrcode.image_bouteille', $this->image_bouteille ?: null);
+        Base::instance()->set('SESSION.qrcode.' . $this->id . '.image_etiquette', $this->image_etiquette ?: null);
+        Base::instance()->set('SESSION.qrcode.' . $this->id . '.image_contreetiquette', $this->image_contreetiquette ?: null);
+        Base::instance()->set('SESSION.qrcode.' . $this->id . '.image_bouteille', $this->image_bouteille ?: null);
 
         return $fields;
     }
@@ -524,9 +524,10 @@ class QRCode extends Mapper
     public function clone($from)
     {
         $this->copyFrom($from);
-        $this->image_bouteille = Base::instance()->get('SESSION.qrcode.image_bouteille');
-        $this->image_etiquette = Base::instance()->get('SESSION.qrcode.image_etiquette');
-        $this->image_contreetiquette = Base::instance()->get('SESSION.qrcode.image_contreetiquette');
+        $idClone = Base::instance()->get('GET.id');
+        $this->image_bouteille = Base::instance()->get('SESSION.qrcode.' . $idClone . '.image_bouteille');
+        $this->image_etiquette = Base::instance()->get('SESSION.qrcode.' . $idClone . '.image_etiquette');
+        $this->image_contreetiquette = Base::instance()->get('SESSION.qrcode.' . $idClone . '.image_contreetiquette');
     }
 
     public function getIngredientsTraduits() {
