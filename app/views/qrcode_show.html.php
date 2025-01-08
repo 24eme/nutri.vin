@@ -10,7 +10,7 @@
             <?php if (array_key_exists('image_bouteille', $userImages)): ?>
                 <img id="slide_image_bouteille" class="mt-3 bg-white" style="max-height: 200px; max-width: 100%;"
                 data-liveform-name="image_bouteille" data-liveform-template="{{%s}}"
-                src="<?php echo $qrcode->image_bouteille ?>" >
+                src="<?php echo $qrcode->getImageBouteille() ?>" >
             <?php endif; ?>
             <?php if (array_key_exists('image_etiquette', $userImages)): ?>
                 <img id="slide_image_etiquette" class="mt-3 bg-white" style="display: none; max-height: 200px; max-width: 100%;"
@@ -47,7 +47,7 @@
                 <?php echo $qrcode->denomination ?>
             </small>
             <?php endif; ?>
-            <?php if (empty($publicview) || $qrcode->denomination): ?>
+            <?php if (empty($publicview) || $qrcode->couleur): ?>
             <small class="opacity-75" data-liveform-name="couleur" data-liveform-template='{{%s}}'>
                 <?php echo $qrcode->couleur ?>
             </small>

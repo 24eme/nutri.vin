@@ -386,7 +386,7 @@
             <div class="row">
                 <div class="text-center col-sm-4 img_selector">
                     Bouteille
-                    <img id="img_image_bouteille" src="<?php echo $qrcode->image_bouteille ?>" class="mb-2 mx-auto img-preview img-thumbnail"/>
+                    <img id="img_image_bouteille" src="<?php echo $qrcode->getImageBouteille() ?>" class="mb-2 mx-auto img-preview img-thumbnail"/>
                     <span class="img-add btn btn-link btn-sm">
                         <?php if ($qrcode->isImageDefault($qrcode->image_bouteille)): ?>Ajouter<?php else: ?>Modifier<?php endif; ?>
                     </span>
@@ -396,7 +396,7 @@
                     <span style="<?php if ($qrcode->isImageDefault($qrcode->image_bouteille) || isset($create)) { echo 'display: none;'; }?>">
                         <a class="btn btn-link btn-sm" href="/qrcode/<?php echo $qrcode->user_id ?>/edit/<?php echo $qrcode->getId(); ?>/img/0/delete">Supprimer</a>
                     </span>
-                    <input type="file" accept="image/png, image/jpeg" class="d-none form-control" id="image_bouteille" name="image_bouteille" data-imageorigin="img_image_bouteille" defaultvalue="<?php echo $qrcode->image_bouteille; ?>"/>
+                    <input type="file" accept="image/png, image/jpeg" class="d-none form-control" id="image_bouteille" name="image_bouteille" data-imageorigin="img_image_bouteille" defaultvalue="<?php echo $qrcode->getImageBouteille(); ?>"/>
                 </div>
                 <div class="text-center col-sm-4 img_selector">
                     Étiquette<br/>
@@ -430,8 +430,7 @@
         </div>
 
         <h4 id="ean" class="mt-4 mb-4"><i class="bi bi-upc-scan"></i> Code-barre EAN-13</h4>
-        <p>Renseignez ici votre numéro de code-barre EAN-13 ce qui permettra de rendre le QR Code, au même titre qu'un code-barre, d'être scanné par les lecteurs nouvelles génération afin d'éviter la confusion entre le QR Code et le code-barre.</small>
-        </p>
+        <p>Renseignez ici votre numéro de code-barre EAN-13 ce qui permettra de rendre le QR Code, au même titre qu'un code-barre, d'être scanné par les lecteurs nouvelles génération afin d'éviter la confusion entre le QR Code et le code-barre.</p>
         <div class="mb-3">
             <div class="form-floating">
                 <input type="text" class="form-control" name="ean" id="input_ean" value="<?php echo $qrcode->ean; ?>" placeholder="Code EAN" data-liveform-ignore>
@@ -624,6 +623,25 @@ document.addEventListener('DOMContentLoaded', function () {
             toUpdate.value = Math.round(toUpdate.value)
             liveform.update(toUpdate)
             e.stopPropagation()
+        }
+
+        if(e.target.id == "couleur" && document.querySelector('#img_image_bouteille').src.match(/default_bouteille.*\.jpg/)) {
+            let imgBouteille = document.querySelector('#img_image_bouteille');
+            let imgBouteilleDefault = document.querySelector('#image_bouteille');
+            let srcOrigin = imgBouteille.src;
+            if(e.target.value.match(/blanc/i)) {
+                imgBouteille.src = imgBouteille.src.replace(/default_bouteille.*\.jpg/, 'default_bouteille_blanc.jpg')
+            } else if(e.target.value.match(/rouge/i)) {
+                imgBouteille.src = imgBouteille.src.replace(/default_bouteille.*\.jpg/, 'default_bouteille_rouge.jpg')
+            } else if(e.target.value.match(/ros[ée]/i)) {
+                imgBouteille.src = imgBouteille.src.replace(/default_bouteille.*\.jpg/, 'default_bouteille_rose.jpg')
+            } else {
+                imgBouteille.src = imgBouteille.src.replace(/default_bouteille.*\.jpg/, 'default_bouteille.jpg')
+            }
+            if(srcOrigin != imgBouteille.src) {
+                 imgBouteilleDefault.attributes['defaultvalue'].value = imgBouteille.src;
+                 rebuildCarousel();
+            }
         }
 
         if(e.target.classList.contains('checkbox_additif')) {

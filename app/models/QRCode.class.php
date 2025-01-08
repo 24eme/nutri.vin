@@ -495,9 +495,28 @@ class QRCode extends Mapper
         return $b64Image;
     }
 
+    public function getImageBouteille() {
+        $imageBouteille = $this->image_bouteille;
+
+
+        if($this->isImageDefault('image_bouteille') && preg_match('/rouge/i', $this->couleur)) {
+            return '/images/default_bouteille_rouge.jpg';
+        }
+
+        if($this->isImageDefault('image_bouteille') && preg_match('/blanc/i', $this->couleur)) {
+            return '/images/default_bouteille_blanc.jpg';
+        }
+
+        if($this->isImageDefault('image_bouteille') && preg_match('/ros[ée]/i', $this->couleur)) {
+            return '/images/default_bouteille_rose.jpg';
+        }
+
+        return $imageBouteille;
+    }
+
     public function getImages()
     {
-        $images['image_bouteille'] = $this->image_bouteille;
+        $images['image_bouteille'] = $this->getImageBouteille();
         $images['image_etiquette'] = $this->image_etiquette;
         $images['image_contreetiquette'] = $this->image_contreetiquette;
         return $images;
@@ -699,14 +718,11 @@ class QRCode extends Mapper
         if (! $fromView) {
             return $this->getImages();
         }
-        $images = [];
+        $images = ['image_bouteille' => $this->getImageBouteille()];
         foreach ($this->getImages() as $imgNom => $imgPath) {
             if (! $this->isImageDefault($imgPath)) {
                 $images[$imgNom] = $imgPath;
             }
-        }
-        if (! $images) {
-            return $this->getImages();
         }
 
         return $images;
