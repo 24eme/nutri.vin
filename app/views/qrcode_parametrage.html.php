@@ -16,7 +16,7 @@
     <div class="col-6 offset-1 border-start">
         <form id="logoForm" method="POST" action="/qrcode/<?php echo $qrcode->user_id ?>/parametrage/<?php echo $qrcode->getId() ?>">
             <div class="d-flex justify-content-center align-items-center flex-column">
-                <p class="text-center mb-4 alert alert-success border-3 p-2 mx-4 shadow-sm" style="opacity: 0.5;"><strong>Le QR Code a été créé et il ne changera pas.</strong><br class="mb-1" />Il peut dés maintenant être téléchargé et transmis à l'impression et les informations de la fiche peuvent être modifiées à tout moment.</p>
+                <p class="text-center mb-4 alert alert-success border-3 p-2 mx-4 shadow-sm" style="opacity: 0.5;"><strong>Le QR Code a été créé et il restera toujours valide.</strong><br class="mb-1" />Il peut dés maintenant être téléchargé et transmis à l'impression et les informations de la fiche peuvent être modifiées à tout moment.</p>
 
                 <div class="shadow-sm p-2 bg-light border rounded">
                     <img src="/<?php echo $qrcode->getId() ?>/svg" class="img-thumbnail" style="height: 375px; width: 375px;">
