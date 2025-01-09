@@ -13,16 +13,19 @@
         <?php $iframe = true; ?>
         <?php include('_phone.html.php') ?>
     </div>
-    <div class="col-6 mt-5 offset-1 border-start">
+    <div class="col-6 offset-1 border-start">
         <form id="logoForm" method="POST" action="/qrcode/<?php echo $qrcode->user_id ?>/parametrage/<?php echo $qrcode->getId() ?>">
             <div class="d-flex justify-content-center align-items-center flex-column">
-                <div class="shadow-sm p-3 bg-light border rounded">
+                <p class="text-center mb-4 alert alert-success border-3 p-2 mx-4 shadow-sm" style="opacity: 0.5;"><strong>Le QR Code a été créé et il ne changera pas.</strong><br class="mb-1" />Il peut dés maintenant être téléchargé et transmis à l'impression et les informations de la fiche peuvent être modifiées à tout moment.</p>
+
+                <div class="shadow-sm p-2 bg-light border rounded">
                     <img src="/<?php echo $qrcode->getId() ?>/svg" class="img-thumbnail" style="height: 375px; width: 375px;">
                 </div>
-                <div class="text-align-start">
+
+                <div class="text-align-start mt-2">
                     <div class="form-check form-switch mt-3">
                         <input class="form-check-input" style="cursor: pointer" type="checkbox" role="switch" value="1" name="mentions" id="switch-mentions-qrcode"<?php echo $qrcode->mentions ? ' checked' : ''?>>
-                        <label class="form-check-label" style="cursor: pointer" for="switch-mentions-qrcode">Intégrer les mentions obligatoires autour du QRCode</label>
+                        <label class="form-check-label" style="cursor: pointer" for="switch-mentions-qrcode">Intégrer les mentions obligatoires autour du QR Code</label>
                     </div>
                     <div class="form-check form-switch mt-1">
                         <input class="form-check-input" style="cursor: pointer" type="checkbox" role="switch" value="1" name="logo" id="switch-logo-qrcode"<?php echo ($qrcode->logo && $canSwitchLogo) ? ' checked' : ''?> <?php echo $canSwitchLogo === false ? ' disabled' : '' ?>>
@@ -58,9 +61,8 @@
                 </div>
               </div>
             </div>
-        </form>
 
-        <div class="mt-3 text-center">
+        <div class="mt-4 text-center">
             <div class="dropdown">
                 <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <i class="bi bi-download"></i> Télécharger le QR Code
@@ -73,7 +75,7 @@
             </div>
         </div>
         <div class="mt-4 text-center">
-            <a target="_blank" href="/<?php echo $qrcode->getId(); ?>/fiche">Télécharger la fiche d'accompagnement</a>
+            <a class="btn btn-link" target="_blank" href="/<?php echo $qrcode->getId(); ?>/fiche">Télécharger la fiche d'accompagnement</a>
         </div>
     </div>
 </div>
