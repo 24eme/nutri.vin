@@ -6,7 +6,7 @@
     </div>
 <?php endif; ?>
 <div class="p-4 bg-white text-center liveform_anchor">
-        <div id="carrousel" class="bg-white border rounded rounded-bottom-0 shadow-sm d-flex justify-content-center" style="min-height: 218px;">
+        <div id="carrousel" class="bg-white border rounded rounded-bottom-0 d-flex justify-content-center" style="min-height: 218px;">
             <?php if (array_key_exists('image_bouteille', $userImages)): ?>
                 <img id="slide_image_bouteille" class="mt-3 bg-white" style="max-height: 200px; max-width: 100%;"
                 data-liveform-name="image_bouteille" data-liveform-template="{{%s}}"
@@ -28,7 +28,7 @@
             <?php endif; ?>
         </div>
 
-    <div class="bg-light-subtle border border-top-0 rounded rounded-top-0 pt-3 shadow-sm">
+    <div class="bg-light-subtle border border-top-0 rounded rounded-top-0 pt-3">
         <?php if (empty($publicview) || (!empty($publicview) && $qrcode->domaine_nom)): ?>
         <p data-liveform-name="domaine_nom" data-liveform-template='{{%s}}' class="fs-4">
           <?php echo $qrcode->domaine_nom ?>
