@@ -496,22 +496,19 @@ class QRCode extends Mapper
     }
 
     public function getImageBouteille() {
-        $imageBouteille = $this->image_bouteille;
-
-
-        if($this->isImageDefault('image_bouteille') && preg_match('/rouge/i', $this->couleur)) {
+        if($this->isImageDefault($this->image_bouteille) && preg_match('/rouge/i', $this->couleur)) {
             return '/images/default_bouteille_rouge.jpg';
         }
 
-        if($this->isImageDefault('image_bouteille') && preg_match('/blanc/i', $this->couleur)) {
+        if($this->isImageDefault($this->image_bouteille) && preg_match('/blanc/i', $this->couleur)) {
             return '/images/default_bouteille_blanc.jpg';
         }
 
-        if($this->isImageDefault('image_bouteille') && preg_match('/ros[ée]/i', $this->couleur)) {
+        if($this->isImageDefault($this->image_bouteille) && preg_match('/ros[ée]/i', $this->couleur)) {
             return '/images/default_bouteille_rose.jpg';
         }
 
-        return $imageBouteille;
+        return $this->image_bouteille;
     }
 
     public function getImages()
