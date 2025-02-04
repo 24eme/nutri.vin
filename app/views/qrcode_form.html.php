@@ -430,7 +430,7 @@
         </div>
 
         <h4 id="ean" class="mt-4 pt-2 mb-4"><i class="bi bi-upc-scan"></i> Code-barre EAN-13</h4>
-        <p>Si votre étiquette contient un code barre EAN, renseignez le ici. Cela permettra au QR Code, d'être scanné par les lecteurs de code barre compatible GS et ainsi d'éviter toute confusion.</p>
+        <p>Si votre étiquette contient un code barre EAN, renseignez le ici. Cela permettra au QR Code, d'être scanné par les lecteurs de code barre compatible GS1 et ainsi d'éviter toute confusion.</p>
         <div class="mb-3">
             <div class="form-floating">
                 <input type="text" class="form-control" name="ean" id="input_ean" value="<?php echo $qrcode->ean; ?>" placeholder="Code EAN" data-liveform-ignore>
