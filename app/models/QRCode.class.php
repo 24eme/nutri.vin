@@ -298,6 +298,7 @@ class QRCode extends Mapper
             _("E290") => ['additif' => "Gaz et gaz d'emballage"],
             _("Oxygène gazeux") => ['additif' => "Gaz et gaz d'emballage", 'facultatif' => true],
             _("E948") => ['additif' => "Gaz et gaz d'emballage", 'facultatif' => true],
+            _("Mis en bouteille sous atmosphère protectrice") => ['additif' => "Gaz et gaz d'emballage", 'facultatif' => true],
             _("Cellulose microcristalline") => ["additif" => "Activateur de fermentation", 'facultatif' => true],
             _("E460") => ["additif" => "Activateur de fermentation", 'facultatif' => true],
             _("Hydrogénophosphate de diammonium") => ["additif" => "Activateur de fermentation", 'facultatif' => true],

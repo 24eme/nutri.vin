@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-05 19:10+0100\n"
+"POT-Creation-Date: 2025-02-05 16:47+0100\n"
 "PO-Revision-Date: 2024-05-29 12:42+0200\n"
 "Last-Translator: tale-fau <tale-fau@24eme.fr>\n"
 "Language-Team: English\n"
@@ -511,6 +511,9 @@ msgstr "Gaseous Oxygen"
 
 msgid "E948"
 msgstr "E948"
+
+msgid "Mis en bouteille sous atmosphère protectrice"
+msgstr "Bottled under protective atmosphere"
 
 msgid "Cellulose microcristalline"
 msgstr "Microcrystalline Cellulose"
