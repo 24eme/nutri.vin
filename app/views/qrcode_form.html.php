@@ -805,7 +805,7 @@ function autoDetectAllergene(ingredient) {
         return ingredient
     }
 
-    const dataOption = document.querySelector(`#ingredients_list option[value="${ingredient}"`)
+    const dataOption = document.querySelector(`#ingredients_list option[value^="${ingredient}"]`)
 
     if(dataOption && dataOption.dataset && dataOption.dataset.allergene) {
         ingredient = '_'+ingredient+'_'
@@ -815,7 +815,7 @@ function autoDetectAllergene(ingredient) {
 }
 
 function autoDetectAdditif(ingredient) {
-    const dataOption = document.querySelector(`#ingredients_list option[value="${ingredient}"`)
+    const dataOption = document.querySelector(`#ingredients_list option[value^="${ingredient}"]`)
 
     if(dataOption && dataOption.dataset && dataOption.dataset.additif) {
         return dataOption.dataset.additif
@@ -825,7 +825,7 @@ function autoDetectAdditif(ingredient) {
 }
 
 function autoDetectFacultatif(ingredient) {
-    const dataOption = document.querySelector(`#ingredients_list option[value="${ingredient}"`)
+    const dataOption = document.querySelector(`#ingredients_list option[value^="${ingredient}"]`)
 
     if(dataOption && dataOption.dataset && dataOption.dataset.facultatif) {
         return dataOption.dataset.facultatif
