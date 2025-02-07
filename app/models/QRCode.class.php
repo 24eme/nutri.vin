@@ -107,12 +107,12 @@ class QRCode extends Mapper
         return self::find(['user_id=?',$userid]);
     }
 
-    public static function findAll($criteria = null, $limit = false, $instance_only = true) {
+    public static function findAll($limit = 20, $instance_only = true) {
         $class = get_called_class();
         $e = new $class();
         if (method_exists($e->mapper, 'findAll')) {
             $items = [];
-            foreach ($e->mapper->find($criteria) as $result) {
+            foreach ($e->mapper->findAll($limit) as $result) {
                 $a = new $class();
                 $a->mapper->load([self::$primaryKey.'=?', $result->{self::$primaryKey}]);
                 if ($instance_only && (!$a || !$a->isPartOfInstance())) {

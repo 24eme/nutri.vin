@@ -130,7 +130,7 @@ class Couch {
         return $results->docs;
     }
 
-    public function findAll($selector = [], $limit = false)
+    public function findAll($limit = 20)
     {
         $params = [];
         if ($limit) {

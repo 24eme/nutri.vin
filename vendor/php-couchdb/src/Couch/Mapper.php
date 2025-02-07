@@ -78,7 +78,7 @@ class Mapper extends \DB\Cursor {
         return $obj->document;
     }
 
-    function findAll($selector = [], $limit = false) {
+    function findAll($limit = 20) {
         $pre_docs = $this->db->findAll($limit);
         $docs = [];
         foreach($pre_docs as $p) {
@@ -89,9 +89,10 @@ class Mapper extends \DB\Cursor {
         }
         return $docs;
     }
+
     function find($filter = null, array $options = null, $ttl = 0) {
         if (!$filter) {
-            return $this->findAll();
+            return $this->findAll(false);
         }
         return $this->select($this->fields, $filter, $options, $ttl);
     }

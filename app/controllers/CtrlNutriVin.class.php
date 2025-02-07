@@ -34,7 +34,7 @@ class CtrlNutriVin {
         }
         $f3->set('schema_error', false);
         if ($qrcode->tableExists() ) {
-            $qr = QRCode::findAll(null, ['limit' => 1]);
+            $qr = QRCode::findAll(1);
             if (count($qr)) {
                 $qr = $qr[0];
                 $a = $qr->toArray();
@@ -51,7 +51,7 @@ class CtrlNutriVin {
             return $this->unauthorized($f3);
         }
 
-        if (!$this->isAdmin($f3) && $qrcode->tableExists() && count(QRCode::findAll())) {
+        if (!$this->isAdmin($f3) && $qrcode->tableExists() && count(QRCode::findAll(1))) {
             return $this->unauthorized($f3);
         }
         $f3->set('content','admin_setup.html.php');
@@ -61,7 +61,7 @@ class CtrlNutriVin {
 
     function exportAll(Base $f3) {
         $csv = null;
-        $rows = QRCode::findAll();
+        $rows = QRCode::findAll(false);
         foreach ($rows as $row) {
             $qrcode = $row->cast();
             foreach (QRCode::$versionning_ignore_fields as $field) {
@@ -511,7 +511,7 @@ class CtrlNutriVin {
             return $this->unauthorized($f3);
         }
         $users = [];
-        foreach (QRCode::findAll() as $d) {
+        foreach (QRCode::findAll(false) as $d) {
             $users[$d->user_id] = $d->domaine_nom;
         }
         $f3->set('users', $users);
