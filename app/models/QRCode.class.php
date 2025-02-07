@@ -563,7 +563,7 @@ class QRCode extends Mapper
                 $name = $v['region_name'].' ('.$v['country_name'].')';
             }
             if (!isset($stats[$k])) {
-                $stats[$k] = ['nb' => 0, 'name' => $name];
+                $stats[$k] = ['nb' => 0, 'title' => $name];
             }
             $stats[$k]['nb']++;
         }
