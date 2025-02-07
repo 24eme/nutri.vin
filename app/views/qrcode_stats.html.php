@@ -38,9 +38,9 @@
     <?php foreach($qrcode->getStats($type) as $k => $s): ?>
     <tr>
         <?php if ($type == 'week'): ?>
-        <td>Semaine du <?php echo date('j/m/y', strtotime($s['name'])); ?></td>
+        <td>Semaine du <?php echo $s['title']; ?></td>
         <?php else: ?>
-        <td><?php echo $s['name']; ?></td>
+        <td><?php echo $s['title']; ?></td>
         <?php endif; ?>
         <td class="text-end"><?php echo $s['nb']; ?></td>
     </tr>
