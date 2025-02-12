@@ -38,21 +38,21 @@
                             <?php echo $qr->millesime; ?>
                             <?php echo ($qr->centilisation) ? ' - '.$qr->centilisation . ' cl' : ''; ?>
                         </td>
-                        <td><?php if ($qr->visites) {
-                                echo "<a href='$urlbase/qrcode/".$qr->user_id."/stats/".$qr->getId()."/week'>";
-                                echo count( (array) json_decode($qr->visites) );
-                            }else {
-                                echo 0;
-                            }
-                        ?></td>
                         <td>
-                            <a data-bs-toggle="tooltip" title="Modifier" class="p-1 text-dark" href="/qrcode/<?php echo $qr->user_id ?>/edit/<?php echo $qr->getId() ?>"><i class="bi bi-pencil-fill"></i></a>
-                            <a data-bs-toggle="tooltip" title="Visualiser et télécharger" class="p-1 text-dark" href="/qrcode/<?php echo $qr->user_id ?>/parametrage/<?php echo $qr->getId() ?>"><i class="bi bi-qr-code"></i></a>
-                            <a data-bs-toggle="tooltip" title="Voir les statistiques d'utilisations" class="p-1 text-dark" href="/qrcode/<?php echo $qr->user_id ?>/stats/<?php echo $qr->getId() ?>/week"><i class="bi bi-clipboard2-data"></i></a>
-                            <a data-bs-toggle="tooltip" title="Télécharger la fiche d'accompagnement" class="p-1 text-dark" href="/<?php echo $qr->getId() ?>/fiche"><i class="bi bi-truck"></i></a>
-                            <a data-bs-toggle="tooltip" title="Dupliquer (créer un nouveau QR Code à partir des informations de celui-ci)" href="/qrcode/<?php echo $qr->user_id ?>/duplicate/<?php echo $qr->getId() ?>" class="text-dark float-end"><i class="bi bi-copy"></i></a>
+                            <?php if ($qr->visites): ?>
+                            <a href="<?php echo "$urlbase/qrcode/".$qr->user_id."/stats/".$qr->_id."/week" ?>">
+                                <?php echo count($qr->visites); ?>
+                            </a>
+                            <?php endif ?>
                         </td>
-                        <td><input form="multiExportForm" type="checkbox" name="qrcodes[]" value='<?php echo $qr->getId(); ?>'></td>
+                        <td>
+                            <a data-bs-toggle="tooltip" title="Modifier" class="p-1 text-dark" href="/qrcode/<?php echo $qr->user_id ?>/edit/<?php echo $qr->_id ?>"><i class="bi bi-pencil-fill"></i></a>
+                            <a data-bs-toggle="tooltip" title="Visualiser et télécharger" class="p-1 text-dark" href="/qrcode/<?php echo $qr->user_id ?>/parametrage/<?php echo $qr->_id ?>"><i class="bi bi-qr-code"></i></a>
+                            <a data-bs-toggle="tooltip" title="Voir les statistiques d'utilisations" class="p-1 text-dark" href="/qrcode/<?php echo $qr->user_id ?>/stats/<?php echo $qr->_id ?>/week"><i class="bi bi-clipboard2-data"></i></a>
+                            <a data-bs-toggle="tooltip" title="Télécharger la fiche d'accompagnement" class="p-1 text-dark" href="/<?php echo $qr->_id ?>/fiche"><i class="bi bi-truck"></i></a>
+                            <a data-bs-toggle="tooltip" title="Dupliquer (créer un nouveau QR Code à partir des informations de celui-ci)" href="/qrcode/<?php echo $qr->user_id ?>/duplicate/<?php echo $qr->_id ?>" class="text-dark float-end"><i class="bi bi-copy"></i></a>
+                        </td>
+                        <td><input form="multiExportForm" type="checkbox" name="qrcodes[]" value='<?php echo $qr->_id; ?>'></td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>

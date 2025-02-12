@@ -104,7 +104,14 @@ class QRCode extends Mapper
     ];
 
     public static function findByUserid($userid) {
-        return self::find(['user_id=?',$userid]);
+        $results = (new self())->mapper->select("_id, user_id, domaine_nom, cuvee_nom, denomination, couleur, millesime, centilisation, visites", ['user_id=?',$userid]);
+        foreach ($results as $result) {
+            $result->visites = json_decode($result->visites, true);
+            if (property_exists($result, '_id') === false) {
+                $result->_id = $result->id;
+            }
+        }
+        return $results;
     }
 
     public static function findAll($limit = 20, $instance_only = true) {

@@ -125,6 +125,12 @@ class Couch {
             $search['sort'] = [$sort[0] => $sort[1]];
         }
 
+        if ($fields) {
+            $fields = explode(',', $fields);
+            $fields = array_map('trim', $fields);
+            $search['fields'] = $fields;
+        }
+
         $results = $this->query('POST', '/'.urlencode($this->db).'/_find', [], $search);
 
         return $results->docs;

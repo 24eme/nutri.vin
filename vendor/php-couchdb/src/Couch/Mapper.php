@@ -112,7 +112,11 @@ class Mapper extends \DB\Cursor {
             return [$this->factory($doc)];
         }
 
-        return $this->db->find($filter);
+        $out = [];
+        foreach ($this->db->find($filter, $fields) as $doc) {
+            $out[] = $doc;
+        }
+        return $out;
     }
 
     function factory($row)
