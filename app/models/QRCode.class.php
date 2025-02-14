@@ -104,7 +104,7 @@ class QRCode extends Mapper
     ];
 
     public static function findByUserid($userid) {
-        $results = (new self())->mapper->select("_id, user_id, domaine_nom, cuvee_nom, denomination, couleur, millesime, centilisation, visites", ['user_id=?',$userid]);
+        $results = (new self())->mapper->select(self::$primaryKey . ", user_id, domaine_nom, cuvee_nom, denomination, couleur, millesime, centilisation, visites", ['user_id=?',$userid]);
         foreach ($results as $result) {
             $result->visites = json_decode($result->visites, true);
             if (property_exists($result, '_id') === false) {
@@ -129,7 +129,7 @@ class QRCode extends Mapper
             };
             return $items;
         }
-        return self::find($criteria);
+        return self::find();
     }
 
     public static function find($criteria = null, $instance_only = true) {
