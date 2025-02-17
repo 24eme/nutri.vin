@@ -7,11 +7,9 @@
 <h2 class="text-center mb-3"><?php echo htmlspecialchars($_SESSION["username"]);?> QR Codes</h2>
 
 <div class="text-end">
-    <?php if ($qrlist): ?>
-        <div class="col">
-            <a href="/qrcode/<?php echo $userid ?>/create" class="btn btn-primary pull-end mb-3">Créer un nouveau QRCode</a>
-        </div>
-    <?php endif; ?>
+    <div class="col">
+        <a href="/qrcode/<?php echo $userid ?>/create" class="btn btn-primary pull-end mb-3">Créer un nouveau QRCode</a>
+    </div>
     <table id="list_qr" class="table table-bordered table-striped text-center">
         <thead>
             <tr>
@@ -59,9 +57,11 @@
         <?php endif; ?>
     </table>
 
-    <div class="col">
-        <button type="button" id="multiExportBtn" class="btn btn-light" disabled>Télécharger la sélection</button>
-    </div>
+    <?php if ($qrlist): ?>
+        <div class="col">
+            <button type="button" id="multiExportBtn" class="btn btn-light" disabled>Télécharger la sélection</button>
+        </div>
+    <?php endif; ?>
 </div>
 
 <?php if ($qrlist) : ?>
