@@ -34,6 +34,12 @@ Pour exporter de multiples fichiers l'extension `zip-archive` est requise.
 
 Pour avoir un logo dans les qrcodes au format `eps` et `pdf`, il faut avoir [`rsvg-convert`](https://gitlab.gnome.org/GNOME/librsvg)
 
+## Financement
+
+Ce projet a été financé en majeur partie par [l'interprofession des Vins du Sud-Ouest](https://www.vignobles-sudouest.fr/) et aussi par le 24ème.
+
+Il est développé et maintenu par le 24ème qui accepte les dons pour pouvoir continuer à le faire évoluer et assurer sa maintenance : https://liberapay.com/NutriVin/
+
 ## License
 
 Logiciel libre sous licence AGPL-3.0
