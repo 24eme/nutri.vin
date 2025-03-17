@@ -38,7 +38,7 @@ Pour avoir un logo dans les qrcodes au format `eps` et `pdf`, il faut avoir [`rs
 
 Ce projet a été financé en majeur partie par [l'interprofession des Vins du Sud-Ouest](https://www.vignobles-sudouest.fr/) et aussi par le 24ème.
 
-Il est développé et maintenu par le 24ème qui accepte les dons pour pouvoir continuer à le faire évoluer et assurer sa maintenance : https://liberapay.com/NutriVin/
+Il est développé et maintenu par le 24ème qui accepte les dons afin pour pouvoir continuer à le faire évoluer et assurer sa maintenance dans les meilleurs conditions : https://liberapay.com/NutriVin/
 
 ## License
 
