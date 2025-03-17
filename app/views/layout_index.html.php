@@ -110,7 +110,7 @@
                 </div>
             </div>
         </div>
-        <div class="bg-light">
+        <div class="bg-light" style="border-bottom: 1px solid #ddd">
             <div class="container pt-4 pb-5" style="max-width: 1050px;">
                 <a name="fonctionnalites"></a>
                 <h2 class="mt-4">Les fonctionnalités</h2>
@@ -287,8 +287,8 @@
                 <p>Il est développé et maintenu par le 24ème qui accepte les dons afin pour pouvoir continuer à le faire évoluer et assurer sa maintenance dans les meilleurs conditions : <a href="https://liberapay.com/NutriVin/">Faire un don</a>
             </div>
         </div>
-        <div class="bg-light">
-            <div class="container pt-4 pb-5" style="max-width: 1050px;">
+        <div class="bg-light" style="border-bottom: 1px solid #ddd">
+            <div class="container pt-4 pb-5" style="max-width: 1050px;" >
                 <h2 class="mt-4" id="apropos">À propos</h2>
                 <div class="row align-items-center">
                     <div class="col-sm-2 text-center">
