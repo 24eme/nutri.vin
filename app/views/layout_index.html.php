@@ -27,10 +27,11 @@
 
                 <ul class="nav col-md-9 col-md-auto mb-2 justify-content-center mb-md-0">
                     <li><a href="#accueil" class="nav-link px-2 link-secondary">Accueil</a></li>
-                    <li><a href="#avantages" class="nav-link px-2">Les avantages</a></li>
-                    <li><a href="#fonctionnalites" class="nav-link px-2">Les fonctionnalités</a></li>
+                    <li><a href="#avantages" class="nav-link px-2">Avantages</a></li>
+                    <li><a href="#fonctionnalites" class="nav-link px-2">Fonctionnalités</a></li>
                     <li><a href="#conformite" class="nav-link px-2">Conformité UE</a></li>
-                    <li><a href="#plateforme" class="nav-link px-2">Les plateformes</a></li>
+                    <li><a href="#plateforme" class="nav-link px-2">Plateformes</a></li>
+                    <li><a href="#financement" class="nav-link px-2">Financement</a></li>
                     <li><a href="#apropos" class="nav-link px-2">À propos</a></li>
                 </ul>
 
@@ -216,7 +217,7 @@
                 </div>
             </div>
         </div>
-        <div class="bg-white shadow-lg" style="border-bottom: 1px solid #ddd">
+        <div style="border-bottom: 1px solid #ddd">
             <div class="container pt-4 pb-5" style="max-width: 992px;">
                 <a name="conformite"></a>
                 <h2 class="mb-4 text-center mt-4">Conforme aux legislations</h2>
@@ -276,7 +277,17 @@
                 </div>
             </div>
         </div>
-        <div>
+        <div style="border-bottom: 1px solid #ddd">
+            <div class="container pt-4 pb-5" style="max-width: 1050px;">
+                <a name="financement"></a>
+                <h2 class="mt-4">Financement</h2>
+
+                <p>Ce projet a été financé en majeur partie par <a href="https://www.vignobles-sudouest.fr/">l'interprofession des Vins du Sud-Ouest</a>, ainsi que par le 24ème.<p>
+
+                <p>Il est développé et maintenu par le 24ème qui accepte les dons afin pour pouvoir continuer à le faire évoluer et assurer sa maintenance dans les meilleurs conditions : <a href="https://liberapay.com/NutriVin/">Faire un don</a>
+            </div>
+        </div>
+        <div class="bg-light">
             <div class="container pt-4 pb-5" style="max-width: 1050px;">
                 <h2 class="mt-4" id="apropos">À propos</h2>
                 <div class="row align-items-center">
