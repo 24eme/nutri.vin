@@ -29,7 +29,7 @@
 <table class="table">
     <thead>
             <th><?php echo ($type == 'week') ? 'Date' : 'Localisation'; ?></th>
-            <th>Visites</th>
+            <th class="text-end">Visites</th>
     </thead>
     <tbody>
     <?php if (!$qrcode->getVisites()): ?>

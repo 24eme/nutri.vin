@@ -104,9 +104,9 @@ class QRCode extends Mapper
     ];
 
     public static function findByUserid($userid) {
-        $results = (new self())->mapper->select("_id, user_id, domaine_nom, cuvee_nom, denomination, couleur, millesime, centilisation, visites", ['user_id=?',$userid]);
+        $results = (new self())->mapper->select(self::$primaryKey . ", user_id, domaine_nom, cuvee_nom, denomination, couleur, millesime, centilisation, visites", ['user_id=?',$userid]);
         foreach ($results as $result) {
-            $result->visites = json_decode($result->visites, true);
+            $result->visites = json_decode($result->visites ?? "", true);
             if (property_exists($result, '_id') === false) {
                 $result->_id = $result->id;
             }
@@ -129,7 +129,7 @@ class QRCode extends Mapper
             };
             return $items;
         }
-        return self::find($criteria);
+        return self::find();
     }
 
     public static function find($criteria = null, $instance_only = true) {
@@ -504,15 +504,15 @@ class QRCode extends Mapper
     }
 
     public function getImageBouteille() {
-        if($this->isImageDefault($this->image_bouteille) && preg_match('/rouge/i', $this->couleur)) {
+        if($this->isImageDefault($this->image_bouteille) && preg_match('/rouge/i', $this->couleur ?? "")) {
             return '/images/default_bouteille_rouge.jpg';
         }
 
-        if($this->isImageDefault($this->image_bouteille) && preg_match('/blanc/i', $this->couleur)) {
+        if($this->isImageDefault($this->image_bouteille) && preg_match('/blanc/i', $this->couleur ?? "")) {
             return '/images/default_bouteille_blanc.jpg';
         }
 
-        if($this->isImageDefault($this->image_bouteille) && preg_match('/ros[ée]/i', $this->couleur)) {
+        if($this->isImageDefault($this->image_bouteille) && preg_match('/ros[ée]/i', $this->couleur ?? "")) {
             return '/images/default_bouteille_rose.jpg';
         }
 
