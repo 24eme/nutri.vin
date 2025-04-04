@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-05 16:47+0100\n"
+"POT-Creation-Date: 2025-04-04 12:24+0200\n"
 "Language-Team: Spanish\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
@@ -37,6 +37,9 @@ msgstr "Ingredientes alérgenos indicados en %snegrita%s."
 #, php-format
 msgid "Ingrédients issus de l'agriculture biologique indiqué avec une %s*%s."
 msgstr "Ingredientes de la agricultura orgánica indicados con una %s*%s."
+
+msgid "Informations nutritionnelles"
+msgstr "Información nutricional"
 
 msgid "Type"
 msgstr "Tipo"
