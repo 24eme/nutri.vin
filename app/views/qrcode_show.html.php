@@ -130,7 +130,7 @@
           ):
     ?>
     <div class="card text-bg-primary mt-4 shadow-sm liveform_anchor">
-        <div class="card-header text-center fw-bold"><i class="bi bi-clipboard-data float-start"></i> Informations nutritionnelles</div>
+        <div class="card-header text-center fw-bold"><i class="bi bi-clipboard-data float-start"></i> <?php echo _("Informations nutritionnelles") ?></div>
         <table class="table table-sm table-striped-columns mb-0">
             <thead>
                 <tr>
