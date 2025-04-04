@@ -72,7 +72,7 @@ class QRMarkupSVGLogo extends QRMarkupSVG
         $svg .= '<tspan x="50%" y="1410" text-anchor="middle">E (100ml) =</tspan>';
         $svg .= '</text>';
         $svg .= '<text x="300" y="1520" xml:space="preserve" style="font-style:normal;font-size:120px;line-height:1;font-family:sans-serif;fill:#000000;stroke-width:2;stroke-dasharray:2, 10;text-align:center;font-weight:bold;">';
-        $svg .= sprintf('<tspan x="50%%" y="1520" text-anchor="middle"> %1$s KCal / %2$s KJ</tspan>',(float) $this->options->svgEnergies[0], (float) $this->options->svgEnergies[1]);
+        $svg .= sprintf('<tspan x="50%%" y="1520" text-anchor="middle"> %1$s KJ / %2$s KCal</tspan>',(float) $this->options->svgEnergies[1], (float) $this->options->svgEnergies[0]);
         $svg .= '</text>';
         $svg .= $this->options->eol;
         return $svg;
