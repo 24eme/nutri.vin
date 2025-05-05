@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-04 12:24+0200\n"
+"POT-Creation-Date: 2025-05-05 10:34+0200\n"
 "PO-Revision-Date: 2024-05-29 12:42+0200\n"
 "Last-Translator: tale-fau <tale-fau@24eme.fr>\n"
 "Language-Team: English\n"
@@ -136,11 +136,38 @@ msgstr ""
 msgid "vue"
 msgstr "view"
 
+msgid "Activateur de fermentation"
+msgstr "Fermentation activator"
+
+msgid "Agent de fermentation"
+msgstr "Fermentation agent"
+
+msgid "Agent stabilisateur"
+msgstr "Stabilizing agent"
+
+msgid "Conservateur et antioxydant"
+msgstr "Preservative and antioxidant"
+
+msgid "Correction de défauts"
+msgstr "Correction of defects"
+
+msgid "Enzyme"
+msgstr "Enzyme"
+
+msgid "Gaz et gaz d'emballage"
+msgstr "Gas and packaging gas"
+
+msgid "Régulateur d'acidité"
+msgstr "Acidity regulator"
+
 msgid "Raisins"
 msgstr "Grapes"
 
 msgid "Moût de raisin concentré"
 msgstr "Concentrated Grape Must"
+
+msgid "Eau de vie de vin"
+msgstr "Wine eau de vie"
 
 msgid "Liqueur de tirage et liqueur d'expédition"
 msgstr "Tirage Liqueur and Shipping Liqueur"
