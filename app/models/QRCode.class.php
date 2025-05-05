@@ -555,7 +555,7 @@ class QRCode extends Mapper
     }
 
     public function getIngredientsTraduits() {
-        return implode('',array_map('_',preg_split("/( *[,;()*_] *)/", $this->ingredients, -1, PREG_SPLIT_NO_EMPTY  | PREG_SPLIT_DELIM_CAPTURE)));
+        return implode('',array_map('_',preg_split("/( *[,;():*_] *)/", $this->ingredients, -1, PREG_SPLIT_NO_EMPTY  | PREG_SPLIT_DELIM_CAPTURE)));
     }
 
 
