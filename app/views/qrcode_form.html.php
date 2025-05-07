@@ -1058,8 +1058,8 @@ function nutri_update_complet() {
 
     [inputType, inputSucre, inputTAV].forEach((el) => el.classList.remove('is-invalid'))
 
-    document.querySelector('#nutritionnel_sucres').value = sucre / 10
-    document.querySelector('#nutritionnel_glucides').value = (+sucre + 7) / 10
+    document.querySelector('#nutritionnel_sucres').value = +((sucre / 10).toFixed(3))
+    document.querySelector('#nutritionnel_glucides').value = +(((+sucre + 7) / 10).toFixed(3))
 
     if(cat_sucre === null) {
         document.querySelector('#nutritionnel_energie_kj').value = Math.round((alcool * 0.79 * 29) + (sucre * 17 / 10) + (7 * 10 / 10) + (6 * 13 / 10));
