@@ -382,6 +382,12 @@ class QRCode extends Mapper
 
         $this->saveVersion();
 
+        if ($this->ean && is_null($this->gs1)) {
+            $this->gs1 = true;
+        }elseif(!$this->ean) {
+            $this->gs1 = null;
+        }
+
         $mapper_save = parent::save();
 
         if ($this->ean && !Redirect::findById("REDIRECT-01-" . $this->ean)) {
@@ -392,8 +398,6 @@ class QRCode extends Mapper
             $redirect->version_origine = $this->date_version;
             $redirect->date_creation = date('c');
             $redirect->save();
-
-            $this->gs1 = 1;
         }
 
         return $mapper_save;
