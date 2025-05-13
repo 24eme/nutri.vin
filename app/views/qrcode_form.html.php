@@ -363,6 +363,7 @@
                     </td>
                   </tr>
 
+                  <?php if ($qrcode->nutritionnel_sodium): // pas affiché si "", null, ou 0 ?>
                   <tr>
                     <td class="align-middle">Sodium</td>
                     <td class="text-sm-start">
@@ -374,6 +375,7 @@
                       </div>
                     </td>
                   </tr>
+                  <?php endif ?>
 
                 </tbody>
                 </table>
