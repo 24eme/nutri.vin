@@ -541,6 +541,7 @@ class QRCode extends Mapper
         unset($fields['image_contreetiquette']);
         unset($fields['date_creation']);
         unset($fields['date_version']);
+        unset($fields['ean']);
 
         Base::instance()->set('SESSION.qrcode.' . $this->getId() . '.image_etiquette', $this->image_etiquette ?: null);
         Base::instance()->set('SESSION.qrcode.' . $this->getId() . '.image_contreetiquette', $this->image_contreetiquette ?: null);
