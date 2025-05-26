@@ -112,6 +112,7 @@ class QRCode extends Mapper
                 $result->_id = $result->id;
             }
         }
+        uasort($results, function($a, $b) { return ($a->date_creation < $b->date_creation) ? 1 : -1; });
         return $results;
     }
 

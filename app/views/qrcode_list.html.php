@@ -13,8 +13,9 @@
     <table id="list_qr" class="table table-bordered table-striped text-center">
         <thead>
             <tr>
-                <th class="col-3">Nom commercial</th>
-                <th class="col-5">Vin</th>
+                <th class="col-1">Crée le</th>
+                <th class="col-2 text-start">Nom commercial</th>
+                <th class="col-4 text-start">Vin</th>
                 <th class="col-1">Nb vues</th>
                 <th class="col-2">Actions</th>
                 <th class="col-1"><input id="allCheck" type="checkbox"></input></th>
@@ -29,8 +30,9 @@
 
                 <?php foreach($qrlist as $qr): ?>
                     <tr>
-                        <td><?php echo $qr->domaine_nom; ?></td>
-                        <td>
+                        <td><?php echo (new DateTime($qr->date_creation))->format('d/m/Y'); ?></td>
+                        <td class="text-start"><?php echo $qr->domaine_nom; ?></td>
+                        <td class="text-start">
                             <?php echo $qr->cuvee_nom; ?>
                             <?php echo $qr->denomination; ?> <?php echo $qr->couleur; ?>
                             <?php echo $qr->millesime; ?>
