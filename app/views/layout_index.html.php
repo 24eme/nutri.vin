@@ -164,6 +164,10 @@
                                     <td class="text-success text-center"><i class="bi bi-check-circle-fill"></i></td>
                                 </tr>
                                 <tr>
+                                    <td>Compatible avec la norme GS1</td>
+                                    <td class="text-success text-center"><i class="bi bi-check-circle-fill"></i></td>
+                                </tr>
+                                <tr>
                                     <td>Personnalisation du QR Code (logo et texte)</td>
                                     <td class="text-success text-center"><i class="bi bi-check-circle-fill"></i></td>
                                 </tr>
