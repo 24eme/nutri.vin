@@ -83,7 +83,7 @@ abstract class QRCodeGeneralOptions extends QROptions
         return $this->moduleCount;
     }
 
-    public static function setResponseHeaders()
+    public static function setResponseHeaders($filename = "qrcode")
     {
         throw new \Exception('should not be called directly');
     }

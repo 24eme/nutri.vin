@@ -10,10 +10,10 @@ class QRCodeEPSOptions extends QRCodeGeneralOptions
 {
     protected string $outputType = QROutputInterface::EPS;
 
-    public static function setResponseHeaders($moreHeaders = [])
+    public static function setResponseHeaders($filename = "qrcode")
     {
         header('Content-type: application/postscript');
-        header('Content-Disposition: filename="qrcode.eps"');
+        header('Content-Disposition: filename="'.$filename.'.eps"');
     }
 
     public function setLogo($logo)

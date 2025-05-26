@@ -12,7 +12,7 @@ class QRCodeSVGOptions extends QRCodeGeneralOptions
 {
     protected string $outputType = QROutputInterface::MARKUP_SVG;
 
-    public static function setResponseHeaders()
+    public static function setResponseHeaders($filename = "qrcode")
     {
         header('Content-type: image/svg+xml');
     }

@@ -14,10 +14,10 @@ class QRCodePDFOptions extends QRCodeGeneralOptions
     protected string $fpdfTitle = '';
     protected array $fpdfEnergies = [];
 
-    public static function setResponseHeaders()
+    public static function setResponseHeaders($filename = "qrcode")
     {
         header('Content-type: application/pdf');
-        header('Content-Disposition: filename="qrcode.pdf"');
+        header('Content-Disposition: filename="'.$filename.'.pdf"');
     }
 
     public function setLogo($logo)

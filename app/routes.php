@@ -19,7 +19,7 @@ $f3->route('GET /login', 'CtrlNutriVin->qrcodeAuthentication');
 $f3->route('GET /login/viticonnect', 'CtrlNutriVin->qrcodeViticonnect');
 $f3->route('GET /logout', 'CtrlNutriVin->qrcodeDisconnect');
 $f3->route('GET @qrview: /@qrcodeid', 'CtrlNutriVin->qrcodeView');
-$f3->route('GET @qrcodeexport: /@qrcodeid/@format', 'CtrlNutriVin->export');
+$f3->route('GET @qrcodeexport: /@qrcodeid.@format', 'CtrlNutriVin->export');
 $f3->route('GET /qrcode/@userid/parametrage/@qrcodeid', 'CtrlNutriVin->qrcodeParametrage');
 $f3->route('POST /qrcode/@userid/parametrage/@qrcodeid', 'CtrlNutriVin->qrcodeDisplay');
 $f3->route('GET /qrcode/@userid/stats/@qrcodeid/@type', 'CtrlNutriVin->qrcodeStats');

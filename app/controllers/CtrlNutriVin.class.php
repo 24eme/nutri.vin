@@ -508,7 +508,7 @@ class CtrlNutriVin {
             exit;
         }
 
-        Exporter::getInstance()->setResponseHeaders($f3->get('PARAMS.format'));
+        Exporter::getInstance()->setResponseHeaders($f3->get('PARAMS.format'), "qrcode_".$qrcode->getId());
 
         echo $qrcode->getQRCodeContent($f3->get('PARAMS.format'), $f3->get('urlbase'));
     }

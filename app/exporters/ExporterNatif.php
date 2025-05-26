@@ -18,9 +18,9 @@ class ExporterNatif
     private $modules_size = null;
     protected $configuration = null;
 
-    public function setResponseHeaders($format) {
+    public function setResponseHeaders($format, $filename = "qrcode") {
 
-        return $this->qroptions[$format]::setResponseHeaders();
+        return $this->qroptions[$format]::setResponseHeaders($filename);
     }
 
     public function getQRCodeContent($qrCodeData, $format, $logo = false, $energies = []) {
