@@ -97,6 +97,7 @@ class QRCode extends Mapper
         'logo' => 'BOOL',
         'mentions' => 'BOOL',
         'gs1' => 'BOOL',
+        'gs1_redirect' => 'VARCHAR(255)',
         'denomination_instance' => 'BOOL',
         'visites' => 'TEXT',
         'labels' => 'TEXT',
@@ -387,20 +388,42 @@ class QRCode extends Mapper
         }elseif(!$this->ean) {
             $this->gs1 = null;
         }
+        $redirect = $this->createOrFindRedirectEan();
 
-        $mapper_save = parent::save();
-
-        if ($this->ean && !Redirect::findById("REDIRECT-01-" . $this->ean)) {
-            $redirect = new Redirect();
-            $redirect->setId("REDIRECT-01-" . $this->ean);
-            $redirect->redirect_to = '/' . $this->getId();
-            $redirect->doc_origine = $this->getId();
-            $redirect->version_origine = $this->date_version;
-            $redirect->date_creation = date('c');
-            $redirect->save();
+        if(!$redirect) {
+            # Utilisation du code 22 "Consumer product variant" https://ref.gs1.org/ai/22
+            $redirect = $this->createOrFindRedirectEan("22");
         }
 
-        return $mapper_save;
+        if($redirect) {
+            $this->gs1_redirect = $redirect->getId();
+        }
+
+        return parent::save();
+    }
+
+    protected function createOrFindRedirectEan($applicationIdentifier = null) {
+        if(!$this->ean) {
+            return;
+        }
+        $id = "REDIRECT-01-" . $this->ean;
+        if($applicationIdentifier) {
+            $id .= "-".$applicationIdentifier."-" . $this->getId();
+        }
+        $redirect = Redirect::findById($id);
+        if($redirect && $redirect->doc_origine == $this->getId()) {
+            return $redirect;
+        } elseif($redirect) {
+            return null;
+        }
+        $redirect = new Redirect();
+        $redirect->setId($id);
+        $redirect->redirect_to = '/' . $this->getId();
+        $redirect->doc_origine = $this->getId();
+        $redirect->version_origine = $this->date_version;
+        $redirect->date_creation = date('c');
+        $redirect->save();
+        return $redirect;
     }
 
     private function saveVersion() {
@@ -439,9 +462,27 @@ class QRCode extends Mapper
         throw new Exception('no free id found');
     }
 
+    public function getQRCodeUrl() {
+        $redirect = null;
+        if($this->gs1 && $this->gs1_redirect) {
+            $redirect = Redirect::findById($this->gs1_redirect);
+        }
+
+        if($this->gs1 && $redirect) {
+            return '/'.str_replace(['REDIRECT-', '-'], ['', '/'], $redirect->getId());
+        }
+
+        if($this->gs1) {
+            return '/01/' . $this->ean;
+        }
+
+        return '/'.$this->getId();
+    }
+
     public function getQRCodeContent($format, $urlbase) {
+
         return Exporter::getInstance()->getQRCodeContent(
-            $urlbase.'/'.($this->gs1? '01/' . $this->ean: $this->getId()),
+            $urlbase.$this->getQRCodeUrl(),
             $format,
             ($this->logo) ? Config::getInstance()->get('qrcode_logo') : false,
             ($this->mentions) ? [$this->nutritionnel_energie_kcal, $this->nutritionnel_energie_kj]: []

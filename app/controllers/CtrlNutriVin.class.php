@@ -397,13 +397,20 @@ class CtrlNutriVin {
     }
 
     public function qrcodeEANView(Base $f3) {
-        $ean_id = "REDIRECT-01-" . $f3->get('PARAMS.ean');
-        $ean = Redirect::findById($ean_id);
-        if ($ean === null) {
+        $redirect_id = sprintf("REDIRECT-01-%s", $f3->get('PARAMS.ean'));
+        if($f3->get('PARAMS.qrcodeid')) {
+            $redirect_id .= sprintf('-22-%s', $f3->get('PARAMS.qrcodeid'));
+        }
+
+        echo $redirect_id."\n";
+
+        $redirect = Redirect::findById($redirect_id);
+
+        if ($redirect === null) {
             $f3->error(500, "Code EAN non trouvé");
             exit;
         }
-        $f3->reroute($ean->redirect_to);
+        $f3->reroute($redirect->redirect_to);
     }
 
     public function qrcodeParametrage(Base $f3) {
