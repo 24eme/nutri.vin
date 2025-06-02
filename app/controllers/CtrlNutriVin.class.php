@@ -460,7 +460,7 @@ class CtrlNutriVin {
 
     public function qrcodeMultiExport(Base $f3) {
         $qrcodes = $f3->get('GET.qrcodes');
-        $formats = ['svg', 'pdf', 'eps'];
+        $formats = ['svg', 'pdf', 'eps', 'png'];
         $userid = null;
 
         foreach ($qrcodes as $qr) {
