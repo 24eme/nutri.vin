@@ -7,7 +7,7 @@ Plateforme open source et communautaire de QRCode pour la déclaration nutrition
 Installation des dépendances :
 
 ```
-sudo apt-get install php-zip php-mbstring librsvg2-bin
+sudo apt-get install php-zip php-mbstring librsvg2-bin php-gd
 ```
 
 Récupérer le code source :
@@ -27,7 +27,8 @@ php -S localhost:8000 -t public
 
 ### Requis
 
-L'extension PHP `mbstring` est requis pour faire fonctionner la lib de qrcode.
+L'extension PHP `mbstring` est requise pour faire fonctionner la lib de qrcode.
+L'extension PHP `GD` est requise pour exporter le QRCode en PNG.
 Pour exporter de multiples fichiers l'extension `zip-archive` est requise.
 
 ### Optionnelles

@@ -71,6 +71,7 @@
                     <li><a class="dropdown-item" href="<?php echo Base::instance()->alias('qrcodeexport', ['qrcode' => $qrcode->getId(), 'format' => 'eps']) ?>">EPS</a></li>
                     <li><a class="dropdown-item" target="_blank" href="<?php echo Base::instance()->alias('qrcodeexport', ['qrcode' => $qrcode->getId(), 'format' => 'pdf']) ?>">PDF</a></li>
                     <li><a class="dropdown-item" target="_blank" href="<?php echo Base::instance()->alias('qrcodeexport', ['qrcode' => $qrcode->getId(), 'format' => 'svg']) ?>">SVG</a></li>
+                    <li><a class="dropdown-item" target="_blank" href="<?php echo Base::instance()->alias('qrcodeexport', ['qrcode' => $qrcode->getId(), 'format' => 'png']) ?>">PNG</a></li>
                 </ul>
             </div>
         </div>

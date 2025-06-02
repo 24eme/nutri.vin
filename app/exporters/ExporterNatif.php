@@ -5,6 +5,7 @@ namespace app\exporters;
 use app\exporters\Options\QRCodeSVGOptions;
 use app\exporters\Options\QRCodeEPSOptions;
 use app\exporters\Options\QRCodePDFOptions;
+use app\exporters\Options\QRCodePNGOptions;
 
 use chillerlan\QRCode\QRCode;
 
@@ -14,6 +15,7 @@ class ExporterNatif
         'svg' => QRCodeSVGOptions::class,
         'eps' => QRCodeEPSOptions::class,
         'pdf' => QRCodePDFOptions::class,
+        'png' => QRCodePNGOptions::class,
     ];
     private $modules_size = null;
     protected $configuration = null;
