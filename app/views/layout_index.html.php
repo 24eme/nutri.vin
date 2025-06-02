@@ -192,7 +192,7 @@
                                     <td class="text-success text-center"><i class="bi bi-check-circle-fill"></i></td>
                                 </tr>
                                 <tr>
-                                    <td>Installer le logiciel soi-même</td>
+                                    <td>Auto-hébergement possible</td>
                                     <td class="text-success text-center"><i class="bi bi-check-circle-fill"></i></td>
                                 </tr>
                                 <tr>
@@ -208,7 +208,7 @@
                                     <td class="text-success text-center"><i class="bi bi-check-circle-fill"></i></td>
                                 </tr>
                                 <tr>
-                                    <td>Récupération des informations des l'exploitation viticole</td>
+                                    <td>Récupération des informations de l'exploitation viticole</td>
                                     <td class="text-success text-center"><i class="bi bi-check-circle-fill"></i></td>
                                 </tr>
                                 <tr>
@@ -266,7 +266,7 @@
                                 <td>Nutri.Vin</td>
                                 <td><a href="https://24eme.fr">Société 24ème</a></td>
                                 <td>Accessible à tous les organismes compatible avec viticonnect</td>
-                                <td>Gratuit</td>
+                                <td>Libre et conscient</td>
                                 <td><a href="https://nutri.vin/">nutri.vin</a></td>
                             </tr>
                             <tr>
