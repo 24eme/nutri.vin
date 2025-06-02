@@ -146,8 +146,8 @@
                             <?php echo $qrcode->nutritionnel_energie_kj ?: 0 ?> <?php echo _("kJ"); ?>
                         </span>
                         <br>
-                        <span data-liveform-name="nutritionnel_energie_kcal" data-liveform-template='{{%s}} kCal'>
-                            <?php echo $qrcode->nutritionnel_energie_kcal ?: 0 ?> <?php echo _("kCal"); ?>
+                        <span data-liveform-name="nutritionnel_energie_kcal" data-liveform-template='{{%s}} kcal'>
+                            <?php echo $qrcode->nutritionnel_energie_kcal ?: 0 ?> <?php echo _("kcal"); ?>
                         </span><br>
                     </td>
                 </tr>
