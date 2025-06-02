@@ -55,7 +55,7 @@ msgstr ""
 msgid "kJ"
 msgstr ""
 
-msgid "kCal"
+msgid "kcal"
 msgstr ""
 
 msgid "Matières grasses"

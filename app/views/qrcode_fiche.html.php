@@ -35,7 +35,7 @@
                 <td>Énergie</td>
                 <td>
                     <span><?php echo $qrcode->nutritionnel_energie_kj ?: 0;?> kJ, </span>
-                    <span><?php echo $qrcode->nutritionnel_energie_kcal ?: 0;?> kCal</span>
+                    <span><?php echo $qrcode->nutritionnel_energie_kcal ?: 0;?> kcal</span>
                 </td>
             </tr>
             <tr>

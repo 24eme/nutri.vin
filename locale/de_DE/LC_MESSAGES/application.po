@@ -54,8 +54,8 @@ msgstr "Energie"
 msgid "kJ"
 msgstr "kJ"
 
-msgid "kCal"
-msgstr "kCal"
+msgid "kcal"
+msgstr "kcal"
 
 msgid "Matières grasses"
 msgstr "Fett"
