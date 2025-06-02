@@ -19,7 +19,7 @@
                 <p class="text-center mb-4 alert alert-success border-3 p-2 mx-4 shadow-sm" style="opacity: 0.5;"><strong>Le QR Code a été créé et il restera toujours valide.</strong><br class="mb-1" />Il peut dès maintenant être téléchargé et transmis à l'impression et les informations de la fiche peuvent être modifiées à tout moment.</p>
 
                 <div class="shadow-sm p-2 bg-light border rounded">
-                    <img src="/<?php echo $qrcode->getId() ?>.svg" class="img-thumbnail" style="height: 375px; width: 375px;">
+                    <img src="<?php echo Base::instance()->alias('qrcodeexport', ['qrcode' => $qrcode->getId(), 'format' => 'svg']) ?>" class="img-thumbnail" style="height: 375px; width: 375px;">
                 </div>
 
                 <div class="text-align-start mt-2">
@@ -68,9 +68,9 @@
                     <i class="bi bi-download"></i> Télécharger le QR Code
                 </button>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="/<?php echo $qrcode->getId() ?>.eps">EPS</a></li>
-                    <li><a class="dropdown-item" target="_blank" href="/<?php echo $qrcode->getId() ?>.pdf">PDF</a></li>
-                    <li><a class="dropdown-item" target="_blank" href="/<?php echo $qrcode->getId() ?>.svg">SVG</a></li>
+                    <li><a class="dropdown-item" href="<?php echo Base::instance()->alias('qrcodeexport', ['qrcode' => $qrcode->getId(), 'format' => 'eps']) ?>">EPS</a></li>
+                    <li><a class="dropdown-item" target="_blank" href="<?php echo Base::instance()->alias('qrcodeexport', ['qrcode' => $qrcode->getId(), 'format' => 'pdf']) ?>">PDF</a></li>
+                    <li><a class="dropdown-item" target="_blank" href="<?php echo Base::instance()->alias('qrcodeexport', ['qrcode' => $qrcode->getId(), 'format' => 'svg']) ?>">SVG</a></li>
                 </ul>
             </div>
         </div>
