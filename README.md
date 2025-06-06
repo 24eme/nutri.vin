@@ -43,6 +43,8 @@ Pour avoir un logo dans les qrcodes au format `eps` et `pdf`, il faut avoir [`rs
 
 La traduction des ingrédients et des éléments nutritionnels peut se faire via l'interface de [Weblate](https://hosted.weblate.org/engage/nutrivin/), ou en éditant directement les fichiers `.po` du dossier `locale`
 
+[![État de la traduction](https://hosted.weblate.org/widget/nutrivin/interface/multi-auto.svg)](https://hosted.weblate.org/engage/nutrivin/)
+
 ## Financement
 
 Ce projet a été financé en majeur partie par [l'interprofession des Vins du Sud-Ouest](https://www.vignobles-sudouest.fr/) et aussi par le 24ème.
