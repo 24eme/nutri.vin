@@ -2,6 +2,10 @@
 
 Plateforme open source et communautaire de QRCode pour la déclaration nutritionnelle de vos vins.
 
+<a href="https://hosted.weblate.org/engage/nutrivin/">
+<img src="https://hosted.weblate.org/widget/nutrivin/interface/svg-badge.svg" alt="État de la traduction" />
+</a>
+
 ## Installation
 
 Installation des dépendances :
@@ -34,6 +38,12 @@ Pour exporter de multiples fichiers l'extension `zip-archive` est requise.
 ### Optionnelles
 
 Pour avoir un logo dans les qrcodes au format `eps` et `pdf`, il faut avoir [`rsvg-convert`](https://gitlab.gnome.org/GNOME/librsvg)
+
+## Traduction
+
+La traduction des ingrédients et des éléments nutritionnels peut se faire via l'interface de [Weblate](https://hosted.weblate.org/engage/nutrivin/), ou en éditant directement les fichiers `.po` du dossier `locale`
+
+[![État de la traduction](https://hosted.weblate.org/widget/nutrivin/interface/multi-auto.svg)](https://hosted.weblate.org/engage/nutrivin/)
 
 ## Financement
 
