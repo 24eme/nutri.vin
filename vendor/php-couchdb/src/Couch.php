@@ -115,12 +115,12 @@ class Couch {
         return $this->query('PUT', $url, [], $file);
     }
 
-    public function find($selector = [], $fields = [], $sort = [], $limit = false)
+    public function find($selector = [], $fields = [], $sort = [], $limit = "25")
     {
         $search_key = strtok($selector[0], '='); // hack: on gère les `=?` qui sont pour le sql normalement
         $search_value = $selector[1];
 
-        $search = ["selector" => [$search_key => ["\$eq" => $search_value]]];
+        $search = ["selector" => [$search_key => ["\$eq" => $search_value]], "limit" => $limit];
         if ($sort) {
             $search['sort'] = [$sort[0] => $sort[1]];
         }

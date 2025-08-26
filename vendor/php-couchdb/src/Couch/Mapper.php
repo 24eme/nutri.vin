@@ -113,7 +113,7 @@ class Mapper extends \DB\Cursor {
         }
 
         $out = [];
-        foreach ($this->db->find($filter, $fields) as $doc) {
+        foreach ($this->db->find($filter, $fields, [], 1000) as $doc) {
             $out[] = $doc;
         }
         return $out;
