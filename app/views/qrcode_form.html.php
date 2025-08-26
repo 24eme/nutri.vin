@@ -713,6 +713,9 @@ document.addEventListener('DOMContentLoaded', function () {
     (document.querySelectorAll('.input-float') || []).forEach(function (el) {
         el.addEventListener('change', function() {
             let valeur = this.value;
+
+            if (! valeur.trim()) { this.value = null; return; }
+
             valeur = valeur.replace(/,/g, '.');
             valeur = parseFloat(valeur).toFixed(2);
             this.value = valeur;
