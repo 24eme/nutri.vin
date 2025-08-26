@@ -40,7 +40,7 @@ use app\config\Config;
         <th class="align-top">module php sqlite</th>
     <td class="text-muted">php-sqlite3</td>
         <td>
-            <?php if (method_exists('SQLite3', 'query')): ?>
+            <?php if (extension_loaded('pdo_sqlite')): ?>
             <i class="bi bi-check-square text-success"></i>
             <?php else: ?>
             <span class="text-danger">
