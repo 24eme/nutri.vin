@@ -30,7 +30,8 @@ $f3->set('SUPPORTED_LANGUAGES',
         'en_US.utf8' => 'English',
         'es_ES.utf8' => 'Español',
         'fr_FR.utf8' => 'Français',
-        'it_IT.utf8' => 'Italiano'
+        'it_IT.utf8' => 'Italiano',
+        'ru.utf8' => 'Русский',
     ]);
 if ($f3->get('GET.lang')) {
     selectLanguage($f3->get('GET.lang'), $f3);
