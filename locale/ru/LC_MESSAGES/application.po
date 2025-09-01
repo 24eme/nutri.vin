@@ -1,0 +1,645 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-02 13:14+0200\n"
+"PO-Revision-Date: 2025-08-25 03:02+0000\n"
+"Last-Translator: Yurt Page <yurtpage+weblate@gmail.com>\n"
+"Language-Team: Russian <https://hosted.weblate.org/projects/nutrivin/"
+"interface/ru/>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Weblate 5.13\n"
+
+msgid "Informations complémentaires"
+msgstr "Дополнительная информация"
+
+msgid "Volume d'alcool"
+msgstr "Объем алкоголя"
+
+msgid "Contenance"
+msgstr "Вместимость"
+
+msgid "N° de lot"
+msgstr "Номер партии"
+
+msgid "Ingrédients"
+msgstr "Состав"
+
+#, php-format
+msgid "Ingrédients allergènes indiqués en %sgras%s."
+msgstr "Аллергены указаны в %sgras%s."
+
+#, php-format
+msgid "Ingrédients issus de l'agriculture biologique indiqué avec une %s*%s."
+msgstr ""
+"Ингредиенты, полученные из органических продуктов, обозначены символом %s*%s."
+
+msgid "Informations nutritionnelles"
+msgstr "Пищевая ценность"
+
+msgid "Type"
+msgstr "Тип"
+
+msgid "Pour 100 mL"
+msgstr "На 100 мл"
+
+msgid "Énergie"
+msgstr "Энергетическая ценность"
+
+msgid "kJ"
+msgstr "кДж"
+
+msgid "kcal"
+msgstr "ккал"
+
+msgid "Matières grasses"
+msgstr "Жиры"
+
+msgid "dont acides gras saturés"
+msgstr "из которых насыщенные"
+
+msgid "g"
+msgstr "г"
+
+msgid "Glucides"
+msgstr "Углеводы"
+
+msgid "dont sucres"
+msgstr "из которых сахара"
+
+msgid "Fibres alimentaires"
+msgstr "Пищевые волокна"
+
+msgid "Protéines"
+msgstr "Белки"
+
+msgid "Sel"
+msgstr "Соль"
+
+msgid "Sodium"
+msgstr "Натрий"
+
+msgid "Autres informations"
+msgstr "Другая информация"
+
+msgid "Mentions légales"
+msgstr "Юридические уведомления"
+
+msgid "Cette fiche nutritionnelle est éditée sous la seule responsablité de"
+msgstr ""
+"Эта информация о пищевой ценности публикуется под исключительную "
+"ответственность"
+
+msgid "Elle est hébergée par"
+msgstr "Она размещена"
+
+msgid "sa plateforme"
+msgstr "на его платформе"
+
+msgid "et le projet libre"
+msgstr "и проект с открытым исходным кодом"
+
+msgid ""
+"ne peuvent être tenus responsables des informations publiées. Un historique "
+"de chaque modification est conservée et consultable publiquement"
+msgstr ""
+"не несёт ответственности за опубликованную информацию. История каждого "
+"изменения сохраняется и является общедоступной"
+
+msgid "Créé le "
+msgstr "Создано "
+
+msgid "Modifié le "
+msgstr "Изменено "
+
+msgid "Voir la version du "
+msgstr "См. версию "
+
+msgid ""
+"Seules l'heure de la première visite de la session et une évaluation "
+"géographique de la connexion sont conservées pour réaliser cette "
+"statistique. Conformément à la législation, aucune données à caractère "
+"personnel n'est conservé et aucun suivi des visiteurs de cette fiche n'est "
+"réalisé. La consultation de la page ne nécessite pas de cookie."
+msgstr ""
+"Для получения этой статистики сохраняются только время первого посещения "
+"сеанса и географическая оценка связи. В соответствии с законодательством "
+"персональные данные посетителей не хранятся и не отслеживаются. Просмотр "
+"этой страницы не требует установки файлов cookie."
+
+msgid "vue"
+msgstr "Просмотр"
+
+msgid "Activateur de fermentation"
+msgstr "Активатор брожения"
+
+msgid "Agent de fermentation"
+msgstr "Агент брожения"
+
+msgid "Agent stabilisateur"
+msgstr "Стабилизатор"
+
+msgid "Conservateur et antioxydant"
+msgstr "Консервант и антиоксидант"
+
+msgid "Correction de défauts"
+msgstr "Коррекция дефектов"
+
+msgid "Enzyme"
+msgstr "Фермент"
+
+msgid "Gaz et gaz d'emballage"
+msgstr "Газ и упаковочный газ"
+
+msgid "Régulateur d'acidité"
+msgstr "Регулятор кислотности"
+
+msgid "Raisins"
+msgstr "Виноград"
+
+msgid "Moût de raisin concentré"
+msgstr "Концентрированное виноградное сусло"
+
+msgid "Eau de vie de vin"
+msgstr "Винный бренди"
+
+msgid "Liqueur de tirage et liqueur d'expédition"
+msgstr "Трендовый ликёр и экспедиционный ликёр"
+
+msgid "Saccharose"
+msgstr "Сахароза"
+
+msgid "Acide tartrique - E334"
+msgstr "Винная кислота - E334"
+
+msgid "Acide malique - E296"
+msgstr "Яблочная кислота - E296"
+
+msgid "Acide lactique - E270"
+msgstr "Молочная кислота - E270"
+
+msgid "Tartrate de potassium - E336"
+msgstr "Тартрат калия - E336"
+
+msgid "Bicarbonate de potassium - E501"
+msgstr "Бикарбонат калия - E501"
+
+msgid "Carbonate de calcium - E170"
+msgstr "Карбонат кальция - E170"
+
+msgid "Tartrate de calcium - E354"
+msgstr "Тартрат кальция - E354"
+
+msgid "Sulfate de calcium - E516"
+msgstr "Сульфат кальция - E516"
+
+msgid "Carbonate de potassium - E501"
+msgstr "Карбонат калия - E501"
+
+msgid "Hydrogénotartrate de potassium - E336"
+msgstr "Гидротартрат калия - E336"
+
+msgid "Acide citrique - E330"
+msgstr "Лимонная кислота - E330"
+
+msgid "Tanins"
+msgstr "Таннины"
+
+msgid "Ferrocyanure de potassium - E536"
+msgstr "Ферроцианид калия - E536"
+
+msgid "Phytate de calcium"
+msgstr "Фитат кальция"
+
+msgid "Acide métatartrique - E353"
+msgstr "Метавинная кислота - E353"
+
+msgid "Gomme arabique - E414"
+msgstr "Камедь Аравийская камедь - E414"
+
+msgid "Acide DL-tartrique"
+msgstr "DL-Винная кислота"
+
+msgid "Sel neutre de potassium"
+msgstr "Нейтральная соль калия"
+
+msgid "Mannoprotéines de levures"
+msgstr "Дрожжевые маннопротеины"
+
+msgid "Carboxyméthylcellulose - E466"
+msgstr "Карбоксиметилцеллюлоза - E466"
+
+msgid "Copolymères polyvinylimidazole/polyvinylpyrrolidone"
+msgstr "Сополимеры поливинилимидазола/поливинилпирролидона"
+
+msgid "Polyaspartate de potassium - E456"
+msgstr "Полиаспартат калия - E456"
+
+msgid "Dioxyde de soufre - E220"
+msgstr "Диоксид серы - E220"
+
+msgid "Bisulfite de potassium - E228"
+msgstr "Бисульфит калия - E228"
+
+msgid "Métabisulfite de potassium - E224"
+msgstr "Пибисульфит калия - E224"
+
+msgid "Sorbate de potassium - E202"
+msgstr "Сорбат калия - E202"
+
+msgid "Lysozyme - E1105"
+msgstr "Лизоцим - E1105"
+
+msgid "Acide L-ascorbique - E300"
+msgstr "L-аскорбиновая кислота - E300"
+
+msgid "Dicarbonate de diméthyle - E242"
+msgstr "Диметилдикарбонат - E242"
+
+msgid "Argon - E938"
+msgstr "Аргон - E938"
+
+msgid "Azote - E941"
+msgstr "Азот - E941"
+
+msgid "Dioxyde de carbone - E290"
+msgstr "Углекислый газ - E290"
+
+msgid "Oxygène gazeux - E948"
+msgstr "Кислород - E948"
+
+msgid "Sulfites"
+msgstr "Сульфиты"
+
+msgid "Anhydride sulfureux"
+msgstr "Ангидрид серы"
+
+msgid "Oeuf"
+msgstr "Яйца"
+
+msgid "Protéine de l'oeuf"
+msgstr "Яичный белок"
+
+msgid "Produit de l'oeuf"
+msgstr "Яичный продукт"
+
+msgid "Lysozyme de l'oeuf"
+msgstr "Яичный лизоцим"
+
+msgid "Albumine de l'oeuf"
+msgstr "Яичный альбумин"
+
+msgid "Lait"
+msgstr "Молоко"
+
+msgid "Produits du lait"
+msgstr "Молочные продукты"
+
+msgid "Caséine du lait ou protéine du lait"
+msgstr "Молочный казеин или молочный белок"
+
+msgid "Résine de pin d'Alep"
+msgstr "Смола алеппской сосны"
+
+msgid "Lies fraîches"
+msgstr "Свежий осадок"
+
+msgid "Caramel - E150"
+msgstr "Карамель - E150"
+
+msgid "Isothiocyanate d'allyle"
+msgstr "Аллилизотиоцианат"
+
+msgid "Levures inactivées"
+msgstr "Инактивированные дрожжи"
+
+msgid "Charbons à usage oenologique"
+msgstr "Древесный уголь для энологического использования"
+
+msgid "Fibres végétales sélectives"
+msgstr "Селективные растительные волокна"
+
+msgid "Cellulose microcristalline - E460"
+msgstr "Микрокристаллическая целлюлоза - E460"
+
+msgid "Hydrogénophosphate de diammonium - E342/CAS7783-28-0"
+msgstr "Диаммонийгидрофосфат - E342/CAS7783-28-0"
+
+msgid "Sulfate d'ammonium - E517/CAS7783-20-2"
+msgstr "Сульфат аммония - E517/CAS7783-20-2"
+
+msgid "Bisulfite d'ammonium"
+msgstr "Бисульфит аммония"
+
+msgid "Chlorhydrate de thiamine"
+msgstr "Гидрохлорид тиамина"
+
+msgid "Autolysats de levures"
+msgstr "Автолизаты дрожжей"
+
+msgid "Levures inactivées ayant des niveaux garantis de glutathion"
+msgstr "Инактивированные дрожжи с гарантированным содержанием глутатиона"
+
+msgid "Gélatine alimentaire"
+msgstr "Пищевой желатин"
+
+msgid "Protéine de blé"
+msgstr "Пшеничный белок"
+
+msgid "Protéine issue de pois"
+msgstr "Гороховый белок"
+
+msgid "Protéine issue de pommes de terre"
+msgstr "Картофельный белок"
+
+msgid "Colle de poisson"
+msgstr "Рыбный клей"
+
+msgid "Caséines"
+msgstr "Казеины"
+
+msgid "Caséinates de potassium"
+msgstr "Казеинаты калия"
+
+msgid "Ovalbumine"
+msgstr "Овальбумин"
+
+msgid "Bentonite - E558"
+msgstr "Бентонит - E558"
+
+msgid "Dioxyde de silicium - E551"
+msgstr "Кремний Диоксид - E551"
+
+msgid "Kaolin"
+msgstr "Каолин"
+
+msgid "Chitosane dérivé d'Aspergillus niger"
+msgstr "Хитозан, полученный из Aspergillus niger"
+
+msgid "Chitine-glucane dérivé d'Aspergillus"
+msgstr "Хитин-глюкан, полученный из Aspergillus"
+
+msgid "Polyvinylpolypyrrolidone - E1202"
+msgstr "Поливинилполипирролидон - E1202"
+
+msgid "Alginate de calcium - E404"
+msgstr "Альгинат кальция - E404"
+
+msgid "Alginate de potassium - E402"
+msgstr "Альгинат калия - E402"
+
+msgid "Uréase"
+msgstr "Уреаза"
+
+msgid "Pectines lyases"
+msgstr "Пектинлиазы"
+
+msgid "Pectine méthylestérase"
+msgstr "Пектинметилэстераза"
+
+msgid "Polygalacturonase"
+msgstr "Полигалактуроназа"
+
+msgid "Hémicellulase"
+msgstr "Гемицеллюлаза"
+
+msgid "Cellulase"
+msgstr "Целлюлаза"
+
+msgid "Bétaglucanase"
+msgstr "Бетаглюканаза"
+
+msgid "Glycosidase"
+msgstr "Гликозидаза"
+
+msgid "Levures de vinification"
+msgstr "Винные дрожжи"
+
+msgid "Bactéries lactiques"
+msgstr "Молочнокислые бактерии"
+
+msgid "Sulfate de cuivre, pentahydraté"
+msgstr "Пентагидрат сульфата меди"
+
+msgid "Citrate de cuivre"
+msgstr "Цитрат меди"
+
+msgid "dérivé d'Aspergillus niger"
+msgstr "полученный из Aspergillus niger"
+
+msgid "Hydrogénotartrate de potassium"
+msgstr "Гидротартрат калия"
+
+msgid "Tartrate de calcium"
+msgstr "Тартрат кальция"
+
+msgid "E354"
+msgstr "E354"
+
+msgid "Acide citrique"
+msgstr "Лимонная кислота"
+
+msgid "E330"
+msgstr "E330"
+
+msgid "Ferrocyanure de potassium"
+msgstr "Ферроцианид калия"
+
+msgid "E536"
+msgstr "E536"
+
+msgid "Acide métatartrique"
+msgstr "Метавинная кислота"
+
+msgid "E353"
+msgstr "E353"
+
+msgid "Gomme arabique"
+msgstr "Камедь Арабик"
+
+msgid "E414"
+msgstr "E414"
+
+msgid "Carboxyméthylcellulose"
+msgstr "Карбоксиметилцеллюлоза"
+
+msgid "E466"
+msgstr "E466"
+
+msgid "Polyaspartate de potassium"
+msgstr "Полиаспартат калия"
+
+msgid "E456"
+msgstr "E456"
+
+msgid "Dioxyde de soufre"
+msgstr "Диоксид серы"
+
+msgid "E220"
+msgstr "E220"
+
+msgid "Bisulfite de potassium"
+msgstr "Бисульфит калия"
+
+msgid "E228"
+msgstr "E228"
+
+msgid "Métabisulfite de potassium"
+msgstr "Пибисульфит калия"
+
+msgid "E224"
+msgstr "E224"
+
+msgid "Sorbate de potassium"
+msgstr "Сорбат калия"
+
+msgid "E202"
+msgstr "E202"
+
+msgid "Lysozyme"
+msgstr "Лизоцим"
+
+msgid "E1105"
+msgstr "E1105"
+
+msgid "Acide L-ascorbique"
+msgstr "L-аскорбиновая кислота"
+
+msgid "E300"
+msgstr "E300"
+
+msgid "Dicarbonate de diméthyle"
+msgstr "Диметилдикарбонат"
+
+msgid "E242"
+msgstr "E242"
+
+msgid "Argon"
+msgstr "Аргон"
+
+msgid "E938"
+msgstr "E938"
+
+msgid "Azote"
+msgstr "Азот"
+
+msgid "E941"
+msgstr "E941"
+
+msgid "Dioxyde de carbone"
+msgstr "Диоксид углерода"
+
+msgid "E290"
+msgstr "E290"
+
+msgid "Oxygène gazeux"
+msgstr "Кислород"
+
+msgid "E948"
+msgstr "E948"
+
+msgid "Mis en bouteille sous atmosphère protectrice"
+msgstr "Разлито в защитной атмосфере"
+
+msgid "Cellulose microcristalline"
+msgstr "Микрокристаллическая целлюлоза"
+
+msgid "E460"
+msgstr "E460"
+
+msgid "Hydrogénophosphate de diammonium"
+msgstr "Гидрофосфат диаммония"
+
+msgid "E342/CAS7783-28-0"
+msgstr "E342/CAS7783-28-0"
+
+msgid "Sulfate d'ammonium"
+msgstr "Сульфат аммония"
+
+msgid "E517/CAS7783-20-2"
+msgstr "E517/CAS7783-20-2"
+
+msgid "Bentonite"
+msgstr "Бентонит"
+
+msgid "E558"
+msgstr "E558"
+
+msgid "Dioxyde de silicium"
+msgstr "Диоксид кремния"
+
+msgid "E551"
+msgstr "E551"
+
+msgid "Polyvinylpolypyrrolidone"
+msgstr "Поливинилполипирролидон"
+
+msgid "E1202"
+msgstr "E1202"
+
+msgid "Alginate de calcium"
+msgstr "Альгинат кальция"
+
+msgid "E404"
+msgstr "E404"
+
+msgid "Alginate de potassium"
+msgstr "Альгинат калия"
+
+msgid "E402"
+msgstr "E402"
+
+msgid "Acide tartrique"
+msgstr "Винная кислота"
+
+msgid "E334"
+msgstr "E334"
+
+msgid "Acide malique"
+msgstr "Яблочная кислота"
+
+msgid "E296"
+msgstr "E296"
+
+msgid "Acide lactique"
+msgstr "Молочная кислота"
+
+msgid "E270"
+msgstr "E270"
+
+msgid "Tartrate de potassium"
+msgstr "Тартрат калия"
+
+msgid "E336"
+msgstr "E336"
+
+msgid "Bicarbonate de potassium"
+msgstr "Бикарбонат калия"
+
+msgid "E501"
+msgstr "E501"
+
+msgid "Carbonate de calcium"
+msgstr "Карбонат кальция"
+
+msgid "E170"
+msgstr "E170"
+
+msgid "Sulfate de calcium"
+msgstr "Сульфат кальция"
+
+msgid "E516"
+msgstr "E516"
+
+msgid "Carbonate de potassium"
+msgstr "Карбонат калия"
