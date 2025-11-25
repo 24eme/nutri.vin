@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-01 10:59+0200\n"
 "PO-Revision-Date: 2025-11-25 15:56+0000\n"
-"Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
+"Last-Translator: NutriVin <nutrivin@24eme.fr>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/nutrivin/"
 "interface/sv_SV/>\n"
 "Language: sv_SV\n"
@@ -82,7 +82,7 @@ msgid "Protéines"
 msgstr "Protein"
 
 msgid "Sel"
-msgstr "Sel"
+msgstr "Salt"
 
 msgid "Sodium"
 msgstr "Natrium"
@@ -161,7 +161,7 @@ msgid "Régulateur d'acidité"
 msgstr "Acidity regulator"
 
 msgid "Raisins"
-msgstr "Raisins"
+msgstr "Druvor"
 
 msgid "Moût de raisin concentré"
 msgstr "Koncentrerad druva måste"
@@ -173,7 +173,7 @@ msgid "Liqueur de tirage et liqueur d'expédition"
 msgstr "Drag Liqueur och frakt Liqueur"
 
 msgid "Saccharose"
-msgstr "Saccharose"
+msgstr "Sackaros"
 
 msgid "Acide tartrique - E334"
 msgstr "Tartrisk syra - E334"
@@ -224,7 +224,7 @@ msgid "Gomme arabique - E414"
 msgstr "Arabiska tuggummi - E414"
 
 msgid "Acide DL-tartrique"
-msgstr "Acide DL-tartrique"
+msgstr "DL-vinsyra"
 
 msgid "Sel neutre de potassium"
 msgstr "Kaliumneutral salt"
@@ -266,7 +266,7 @@ msgid "Argon - E938"
 msgstr "Argon - E938"
 
 msgid "Azote - E941"
-msgstr "Azote - E941"
+msgstr "Kväve - E941"
 
 msgid "Dioxyde de carbone - E290"
 msgstr "Koldioxid - E290"
@@ -274,8 +274,9 @@ msgstr "Koldioxid - E290"
 msgid "Oxygène gazeux - E948"
 msgstr "Gas Oxygen E948"
 
+#, fuzzy
 msgid "Sulfites"
-msgstr "Sulfites"
+msgstr "Sulfiter"
 
 msgid "Anhydride sulfureux"
 msgstr "Svavel anhydrid"
@@ -296,7 +297,7 @@ msgid "Albumine de l'oeuf"
 msgstr "Albumin de l'oeuf"
 
 msgid "Lait"
-msgstr "Lait"
+msgstr "Mjölk"
 
 msgid "Produits du lait"
 msgstr "Mjölkprodukter"
@@ -371,11 +372,12 @@ msgid "Ovalbumine"
 msgstr "Ovalbumin"
 
 msgid "Bentonite - E558"
-msgstr "Bentonite - E558"
+msgstr "Bentonit - E558"
 
 msgid "Dioxyde de silicium - E551"
 msgstr "Kiseldioxid - E551"
 
+#, fuzzy
 msgid "Kaolin"
 msgstr "Kaolin"
 
@@ -386,7 +388,7 @@ msgid "Chitine-glucane dérivé d'Aspergillus"
 msgstr "Chitine-glucan derivat av Aspergillus"
 
 msgid "Polyvinylpolypyrrolidone - E1202"
-msgstr "Polyvinylpolypyrrolidone - E1202"
+msgstr "Polyvinylpolypyrrolidon - E1202"
 
 msgid "Alginate de calcium - E404"
 msgstr "Kalcium alginerar E404"
@@ -398,7 +400,7 @@ msgid "Uréase"
 msgstr "Urease"
 
 msgid "Pectines lyases"
-msgstr "Pectines lyases"
+msgstr "Pektinlyaser"
 
 msgid "Pectine méthylestérase"
 msgstr "Pectine methylesterase"
@@ -406,14 +408,16 @@ msgstr "Pectine methylesterase"
 msgid "Polygalacturonase"
 msgstr "Polygalakturonas"
 
+#, fuzzy
 msgid "Hémicellulase"
-msgstr "Hémicellulase"
+msgstr "Hemicellulasa"
 
+#, fuzzy
 msgid "Cellulase"
-msgstr "Cellulase"
+msgstr "Cellulas"
 
 msgid "Bétaglucanase"
-msgstr "Bétaglucanase"
+msgstr "Betaglukanas"
 
 msgid "Glycosidase"
 msgstr "Glykosidas"
