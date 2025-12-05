@@ -58,12 +58,14 @@
                     </small>
                 </td>
             </tr>
+<?php if ($qrcode->nutritionnel_fibres): ?>
             <tr>
                 <td>Fibres alimentaires</td>
                 <td>
                     <span><?php echo $qrcode->nutritionnel_fibres?: 0.00; ?> g</span>
                 </td>
             </tr>
+<?php endif; ?>
             <tr>
                 <td>Protéines</td>
                 <td>

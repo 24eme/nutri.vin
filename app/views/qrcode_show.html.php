@@ -179,6 +179,7 @@
                         </small>
                     </td>
                 </tr>
+<?php if ($qrcode->nutritionnel_fibres): ?>
                 <tr>
                     <td class="text-start"><?php echo _("Fibres alimentaires"); ?></td>
                     <td class="text-end">
@@ -187,6 +188,7 @@
                         </span>
                     </td>
                 </tr>
+<?php endif; ?>
                 <tr>
                     <td class="text-start"><?php echo _("Protéines"); ?></td>
                     <td class="text-end">
