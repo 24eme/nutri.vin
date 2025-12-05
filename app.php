@@ -58,6 +58,12 @@ include('app/routes.php');
 
 function selectLanguage($lang, $f3) {
     $langSupported = null;
+    if (strpos($lang, '.utf8') === false) {
+        $lang = str_replace('.utf8', '', $lang);
+    }
+    if (strpos($lang, '.') === false) {
+        $lang .= ".utf8";
+    }
     foreach(explode(',', $lang) as $l) {
         if(array_key_exists($l, $f3->get('SUPPORTED_LANGUAGES'))) {
             $langSupported = $l;
