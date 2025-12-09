@@ -26,13 +26,13 @@ $f3->language(isset($f3->get('HEADERS')['Accept-Language']) ? $f3->get('HEADERS'
 
 $f3->set('SUPPORTED_LANGUAGES',
     [
-        'de_DE.utf8' => 'Deutsch',
-        'en_US.utf8' => 'English',
-        'es_ES.utf8' => 'Español',
-        'fr_FR.utf8' => 'Français',
-        'it_IT.utf8' => 'Italiano',
-        'ru.utf8' => 'Русский',
-        'sv_SV.utf8' => 'Svenska',
+        'de' => 'Deutsch',
+        'en' => 'English',
+        'es' => 'Español',
+        'fr' => 'Français',
+        'it' => 'Italiano',
+        'ru' => 'Русский',
+        'sv' => 'Svenska',
     ]);
 if ($f3->get('GET.lang')) {
     selectLanguage($f3->get('GET.lang'), $f3);
@@ -58,13 +58,9 @@ include('app/routes.php');
 
 function selectLanguage($lang, $f3) {
     $langSupported = null;
-    if (strpos($lang, '.utf8') === false) {
-        $lang = str_replace('.utf8', '', $lang);
-    }
-    if (strpos($lang, '.') === false) {
-        $lang .= ".utf8";
-    }
     foreach(explode(',', $lang) as $l) {
+        $l = str_replace('-', '_', $l);
+
         if(array_key_exists($l, $f3->get('SUPPORTED_LANGUAGES'))) {
             $langSupported = $l;
             break;
