@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-01 10:59+0200\n"
-"PO-Revision-Date: 2025-11-25 15:56+0000\n"
-"Last-Translator: NutriVin <nutrivin@24eme.fr>\n"
+"PO-Revision-Date: 2026-01-14 12:01+0000\n"
+"Last-Translator: bittin1ddc447d824349b2 <bittin@reimu.nl>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/nutrivin/"
-"interface/sv_SV/>\n"
-"Language: sv_SV\n"
+"interface/sv/>\n"
+"Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.15-dev\n"
+"X-Generator: Weblate 5.15.2-dev\n"
 
 msgid "Informations complémentaires"
 msgstr "Ytterligare information"
@@ -274,7 +274,6 @@ msgstr "Koldioxid - E290"
 msgid "Oxygène gazeux - E948"
 msgstr "Gas Oxygen E948"
 
-#, fuzzy
 msgid "Sulfites"
 msgstr "Sulfiter"
 
@@ -377,7 +376,6 @@ msgstr "Bentonit - E558"
 msgid "Dioxyde de silicium - E551"
 msgstr "Kiseldioxid - E551"
 
-#, fuzzy
 msgid "Kaolin"
 msgstr "Kaolin"
 
@@ -408,11 +406,9 @@ msgstr "Pectine methylesterase"
 msgid "Polygalacturonase"
 msgstr "Polygalakturonas"
 
-#, fuzzy
 msgid "Hémicellulase"
-msgstr "Hemicellulasa"
+msgstr "Hemicellulas"
 
-#, fuzzy
 msgid "Cellulase"
 msgstr "Cellulas"
 
