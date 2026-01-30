@@ -204,7 +204,7 @@
         <div class="tab-content mb-3 pt-3">
             <div class="tab-pane show<?php echo $qrcode->nutritionnel_energie_kj ? '' : ' show active' ?> m-0 p-0" id="nutritionnelle_simplifie" role="tabpanel" aria-labelledby="nutritionnelle_simplifie" tabindex="0">
             <table class="table table-sm table-striped">
-              <tbody>
+              <tbody data-liveform-ignore>
                 <tr>
                   <td class="align-middle">Type de vin</td>
                     <td>
