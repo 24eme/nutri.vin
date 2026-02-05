@@ -43,7 +43,7 @@ class CtrlNutriVin {
                 $qr = null;
             }
             if ($qr && (count(array_keys($a)) != (count(QRCode::$getFieldsAndType) + 1))) {
-                $f3->set('schema_error', count(array_keys($qr->toArray())).' champs en base contre '.(count(QRCode::$getFieldsAndType)) + 1).' attendus';
+                $f3->set('schema_error', count(array_keys($qr->toArray())).' champs en base contre '.(count(QRCode::$getFieldsAndType) + 1).' attendus');
             }
         }
 
