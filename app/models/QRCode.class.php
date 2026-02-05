@@ -24,6 +24,7 @@ class QRCode extends Mapper
         'logo',
         'mentions',
         'visites',
+        'visites_nb',
         'versions'
     ];
 
@@ -100,6 +101,7 @@ class QRCode extends Mapper
         'gs1_redirect' => 'VARCHAR(255)',
         'denomination_instance' => 'BOOL',
         'visites' => 'TEXT',
+        'visites_nb' => 'FLOAT',
         'labels' => 'TEXT',
         'versions' => 'TEXT',
     ];
@@ -382,6 +384,8 @@ class QRCode extends Mapper
             $this->date_creation = $this->date_version;
         }
 
+        $this->visites_nb = count($this->getVisites());
+
         $this->saveVersion();
 
         if ($this->ean && is_null($this->gs1)) {
@@ -577,6 +581,7 @@ class QRCode extends Mapper
     {
         $fields = $this->toArray();
         unset($fields['visites']);
+        unset($fields['visites_nb']);
         unset($fields['versions']);
         unset($fields['image_bouteille']);
         unset($fields['image_etiquette']);
