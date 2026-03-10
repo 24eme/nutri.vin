@@ -97,6 +97,14 @@ class Mapper extends \DB\Cursor {
         return $this->select($this->fields, $filter, $options, $ttl);
     }
 
+    public function getView($view, $startkey = [], $endkey = [], $reduce = false)
+    {
+        $design = strtok($view, '/');
+        $view = strtok('/');
+
+        return $this->db->getView($design, $view);
+    }
+
     function select($fields=NULL,$filter=NULL,array $options=NULL,$ttl=0) {
         if (! $filter) {
             trigger_error('select function must have filter', E_USER_ERROR);

@@ -147,6 +147,16 @@ class Couch {
         return $results->rows;
     }
 
+    public function getView($design, $view, $startkey = [], $endkey = [], $reduce = false)
+    {
+        $params = [
+            'startkey' => $startkey ?? null,
+            'endkey' => $endkey ?? null,
+            'reduce' => $reduce ? 'true' : 'false'
+        ];
+
+        return $this->query('GET', '/'.urlencode($this->db).'/_design/'.$design.'/_view/'.$view, $params)->rows;
+    }
 
     public function deleteAttachment ($doc, $attachmentName) {
         if ( !is_object($doc)) {
