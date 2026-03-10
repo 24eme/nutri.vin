@@ -517,10 +517,9 @@ class CtrlNutriVin {
         if (!$this->isAdmin($f3)) {
             return $this->unauthorized($f3);
         }
-        $users = [];
-        foreach (QRCode::findAll(false) as $d) {
-            $users[$d->user_id] = $d->domaine_nom;
-        }
+
+        $users = QRCode::listUsers();
+
         $f3->set('users', $users);
         $f3->set('content', 'admin_users.html.php');
         echo View::instance()->render('layout.html.php');

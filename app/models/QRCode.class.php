@@ -157,7 +157,23 @@ class QRCode extends Mapper
             return null;
         }
         return $a;
+    }
 
+    public static function listUsers()
+    {
+        $class = get_called_class();
+        $e = new $class();
+
+        $view = 'stats/visites';
+        $results = $e->mapper->getView($view);
+        $results = array_column($results, 'key');
+
+        $users = array_combine(
+            array_column($results, 1),
+            array_column($results, 2),
+        );
+
+        return $users;
     }
 
     public static function getListeCategoriesAdditif() {
