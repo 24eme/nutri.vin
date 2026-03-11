@@ -171,6 +171,7 @@ class QRCode extends Mapper
         foreach ($results as $result) {
             if (array_key_exists($result->key[1], $users)) {
                 $users[$result->key[1]]['visites'] += $result->value[1];
+                $users[$result->key[1]]['qrcodes'] += $result->value[0];
             } else {
                 $users[$result->key[1]] = [
                     'domaine' => $result->key[2],
