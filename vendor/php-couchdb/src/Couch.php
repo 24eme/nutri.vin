@@ -5,6 +5,7 @@ namespace DB;
 class Couch {
 
     const HTTP_METHODS_ALLOWED = ['GET','POST','PUT','DELETE','COPY'];
+    const COUCHDB_PARAMS_ALLOWED = ['rev', 'startkey', 'endkey', 'reduce', 'group_level', 'limit', 'offset'];
 
     private $dsn;
     private $db;
@@ -185,6 +186,11 @@ class Couch {
         if (!in_array($method, self::HTTP_METHODS_ALLOWED )) {
             throw new \Exception("HTTP method $method not allowed");
         }
+
+        if ($diff = array_diff(array_keys($parameters), self::COUCHDB_PARAMS_ALLOWED)) {
+            throw new \LogicException("Couchdb parameters '".implode(', ', $diff)."' not allowed");
+        }
+
         $url = $this->dsn.$url;
         if ($parameters) {
             $url .= '?'.http_build_query($parameters);
