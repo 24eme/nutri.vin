@@ -518,7 +518,7 @@ class CtrlNutriVin {
             return $this->unauthorized($f3);
         }
 
-        $users = QRCode::listUsers();
+        $users = QRCode::listUsers('visites');
 
         $f3->set('users', $users);
         $f3->set('content', 'admin_users.html.php');

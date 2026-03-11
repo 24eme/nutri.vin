@@ -159,7 +159,7 @@ class QRCode extends Mapper
         return $a;
     }
 
-    public static function listUsers()
+    public static function listUsers($sort = null)
     {
         $class = get_called_class();
         $e = new $class();
@@ -178,6 +178,12 @@ class QRCode extends Mapper
                     'visites' => $result->value[1],
                 ];
             }
+        }
+
+        if ($sort && in_array($sort, ['domaine', 'qrcodes', 'visites'])) {
+            uasort($users, function ($u1, $u2) use ($sort) {
+                return $u2[$sort] <=> $u1[$sort];
+            });
         }
 
         return $users;
