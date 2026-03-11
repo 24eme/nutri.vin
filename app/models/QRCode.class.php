@@ -165,13 +165,20 @@ class QRCode extends Mapper
         $e = new $class();
 
         $view = 'stats/visites';
-        $results = $e->mapper->getView($view);
-        $results = array_column($results, 'key');
+        $results = $e->mapper->getView($view, ['reduce' => true, 'group_level' => 3]);
 
-        $users = array_combine(
-            array_column($results, 1),
-            array_column($results, 2),
-        );
+        $users = [];
+        foreach ($results as $result) {
+            if (array_key_exists($result->key[1], $users)) {
+                $users[$result->key[1]]['visites'] += $result->value[1];
+            } else {
+                $users[$result->key[1]] = [
+                    'domaine' => $result->key[2],
+                    'qrcodes' => $result->value[0],
+                    'visites' => $result->value[1],
+                ];
+            }
+        }
 
         return $users;
     }
