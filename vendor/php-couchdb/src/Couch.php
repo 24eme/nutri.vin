@@ -148,15 +148,13 @@ class Couch {
         return $results->rows;
     }
 
-    public function getView($design, $view, $startkey = [], $endkey = [], $reduce = false)
+    public function getView($design, $view, $options = [])
     {
-        $params = [
-            'startkey' => $startkey ?? null,
-            'endkey' => $endkey ?? null,
-            'reduce' => $reduce ? 'true' : 'false'
-        ];
+        if (isset($options['reduce'])) {
+            $options['reduce'] = $options['reduce'] ? 'true' : 'false';
+        }
 
-        return $this->query('GET', '/'.urlencode($this->db).'/_design/'.$design.'/_view/'.$view, $params)->rows;
+        return $this->query('GET', '/'.urlencode($this->db).'/_design/'.$design.'/_view/'.$view, $options)->rows;
     }
 
     public function deleteAttachment ($doc, $attachmentName) {

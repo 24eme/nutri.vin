@@ -97,12 +97,12 @@ class Mapper extends \DB\Cursor {
         return $this->select($this->fields, $filter, $options, $ttl);
     }
 
-    public function getView($view, $startkey = [], $endkey = [], $reduce = false)
+    public function getView($view, $options = [])
     {
         $design = strtok($view, '/');
         $view = strtok('/');
 
-        return $this->db->getView($design, $view);
+        return $this->db->getView($design, $view, $options);
     }
 
     function select($fields=NULL,$filter=NULL,array $options=NULL,$ttl=0) {
