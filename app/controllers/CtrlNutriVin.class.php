@@ -337,8 +337,13 @@ class CtrlNutriVin {
     function qrcodeList(Base $f3) {
         $this->authenticatedUserOnly($f3);
         if ($f3->exists('PARAMS.userid')) {
-            $f3->set('qrlist', QRCode::findByUserid($f3->get('PARAMS.userid')));
+            $qrlist = QRCode::findByUserid($f3->get('PARAMS.userid'));
+            $f3->set('qrlist', $qrlist);
             $f3->set('userid', $f3->get('PARAMS.userid'));
+
+            $responsables = array_count_values(array_column($qrlist, 'responsable_nom'));
+            $f3->set('display_name', array_search(max($responsables), $responsables));
+
             $f3->set('content', 'qrcode_list.html.php');
             echo View::instance()->render('layout.html.php');
         }

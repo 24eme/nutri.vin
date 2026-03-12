@@ -4,7 +4,7 @@
     </ol>
 </nav>
 
-<h2 class="text-center mb-3"><?php echo htmlspecialchars($_SESSION["username"]);?> QR Codes</h2>
+<h2 class="text-center mb-3"><?php echo htmlspecialchars(Base::instance()->get('display_name'));?> QR Codes</h2>
 
 <div class="text-end">
     <div class="col">
