@@ -342,7 +342,11 @@ class CtrlNutriVin {
             $f3->set('userid', $f3->get('PARAMS.userid'));
 
             $responsables = array_count_values(array_column($qrlist, 'responsable_nom'));
-            $f3->set('display_name', array_search(max($responsables), $responsables));
+            if (count($responsables)) {
+                $f3->set('display_name', array_search(max($responsables), $responsables));
+            } else {
+                $f3->set('display_name', $f3->get('SESSION.username'));
+            }
 
             $f3->set('content', 'qrcode_list.html.php');
             echo View::instance()->render('layout.html.php');
