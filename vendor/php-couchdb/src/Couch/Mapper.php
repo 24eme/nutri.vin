@@ -84,8 +84,9 @@ class Mapper extends \DB\Cursor {
         foreach($pre_docs as $p) {
             if (strpos($p->id, '_') !== 0) {
                 $p->_id = $p->id;
-                $docs[] = $p;
             }
+
+            $docs[] = $p;
         }
         return $docs;
     }

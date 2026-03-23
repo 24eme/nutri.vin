@@ -122,16 +122,16 @@ class QRCode extends Mapper
         $class = get_called_class();
         $e = new $class();
         if (method_exists($e->mapper, 'findAll')) {
-            $items = [];
             foreach ($e->mapper->findAll($limit) as $result) {
                 $a = new $class();
                 $a->mapper->load([self::$primaryKey.'=?', $result->{self::$primaryKey}]);
+
                 if ($instance_only && (!$a || !$a->isPartOfInstance())) {
                     continue;
                 }
-                $items[] = $a;
-            };
-            return $items;
+                yield $a;
+            }
+            return;
         }
         return self::find();
     }
