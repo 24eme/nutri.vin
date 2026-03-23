@@ -123,6 +123,10 @@ class QRCode extends Mapper
         $e = new $class();
         if (method_exists($e->mapper, 'findAll')) {
             foreach ($e->mapper->findAll($limit) as $result) {
+                if (strpos($result->id, 'REDIRECT') === 0 || strpos($result->id, '_design') === 0) {
+                    continue;
+                }
+
                 $a = new $class();
                 $a->mapper->load([self::$primaryKey.'=?', $result->{self::$primaryKey}]);
 
