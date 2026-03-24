@@ -34,7 +34,9 @@ class CtrlNutriVin {
         }
         $f3->set('schema_error', false);
         if ($qrcode->tableExists() ) {
-            $qr = QRCode::findAll(1);
+            foreach (QRCode::findAll(1) as $a) {
+                $qr[] = $a;
+            }
             if (count($qr)) {
                 $qr = $qr[0];
                 $a = $qr->toArray();
