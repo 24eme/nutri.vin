@@ -62,22 +62,12 @@ class CtrlNutriVin {
 
     }
 
-    function exportAll(Base $f3) {
-        $csv = null;
-        $rows = QRCode::findAll(false);
-        foreach ($rows as $row) {
-            $qrcode = $row->cast();
-            foreach (QRCode::$versionning_ignore_fields as $field) {
-                if (isset($qrcode[$field])) unset($qrcode[$field]);
-            }
-            if (!$csv) {
-                $csv = 'denomination de l\'instance;'.implode(';', array_keys($qrcode))."\n";
-            }
-            $csv .= (int)Config::getInstance()->isDenominationInConfig($qrcode['denomination']).';'.implode(';', array_values($qrcode))."\n";
-        }
+    public function exportAll(Base $f3)
+    {
         header('Content-Type: text/csv');
         header('Content-Disposition: attachment; filename="'.date('YmdHi').'_qrcodes.csv'.'"');
-        echo $csv;
+
+        QRCode::exportToCsv();
     }
 
     private function isAdmin(Base $f3) {
