@@ -838,7 +838,7 @@ class QRCode extends Mapper
         $URLBASE = Config::getInstance()->getUrlbase().'/';
 
         $csv_unsorted = new \SplFileObject('php://temp', 'rw');
-        $csv_unsorted->setCsvControl(';');
+        $csv_unsorted->setCsvControl(';', '"', '\\');
 
         foreach (QRCode::findAll(false) as $qrcode) {
             $csv_unsorted->fputcsv([
@@ -862,18 +862,21 @@ class QRCode extends Mapper
 
         $users_ids = [];
         $csv_unsorted->rewind();
-        while (! $csv_unsorted->eof()) {
-            $users_ids[] = $csv_unsorted->fgetcsv()[1];
-        }
-        $csv_unsorted->rewind();
 
-        $users_ids = array_unique($users_ids);
-        sort($users_ids);
+        while (! $csv_unsorted->eof()) {
+            $row = $csv_unsorted->fgetcsv();
+            if (array_key_exists($row[1], $users_ids) === false) {
+                $users_ids[$row[1]] = [];
+            }
+            $users_ids[$row[1]][] = $csv_unsorted->key();
+        }
+
+        ksort($users_ids);
 
         ob_flush();
 
         $csv = new \SplFileObject('php://output', 'w');
-        $csv->setCsvControl(';');
+        $csv->setCsvControl(';', '"', '\\');
 
         $csv->fputcsv([
             'QRCode',
@@ -893,17 +896,23 @@ class QRCode extends Mapper
             'Lien',
         ]);
 
-        foreach ($users_ids as $user_id) {
-            while (! $csv_unsorted->eof()) {
-                $row = $csv_unsorted->fgetcsv();
-                if ($row[1] === $user_id) {
-                    $csv->fputcsv($row);
+        foreach ($users_ids as $user_id => $lines) {
+            foreach ($lines as $line) {
+                // Bug avec seek en version < 8.0.1 @see https://www.php.net/manual/en/splfileobject.seek.php#126365
+                if (version_compare(PHP_VERSION, '8.0.1', '>=') || $line == 0) {
+                    $csv_unsorted->seek($line);
+                } else {
+                    if($line == 1){
+                        $csv_unsorted->rewind(); // Ensure to go at first row before exit
+                        $csv_unsorted->fgets(); // Read line 0. Cursor remains now at line 1
+                    } else {
+                        $csv_unsorted->seek($line - 1);
+                    }
                 }
 
-                $csv->fflush();
+                $csv->fputcsv($csv_unsorted->fgetcsv());
             }
-
-            $csv_unsorted->rewind();
+            $csv->fflush();
         }
     }
 }
