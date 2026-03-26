@@ -64,6 +64,10 @@ class CtrlNutriVin {
 
     public function exportAll(Base $f3)
     {
+        if (! $this->isAdmin($f3)) {
+            return $this->unauthorized($f3);
+        }
+
         header('Content-Type: text/csv');
         header('Content-Disposition: attachment; filename="'.date('YmdHi').'_qrcodes.csv'.'"');
 

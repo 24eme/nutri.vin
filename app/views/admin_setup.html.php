@@ -226,4 +226,14 @@ use app\config\Config;
   </tbody>
 </table>
 </div>
-<p class="text-end"><a class="btn btn-primary" href="/admin/users">Voir le listing des utilisateurs</a></p>
+<p class="text-end">
+    <a class="btn btn-primary" href="/admin/exportall" id="btn-export">Export CSV</a>
+    <a class="btn btn-primary" href="/admin/users">Voir le listing des utilisateurs</a>
+</p>
+
+<script>
+  document.getElementById('btn-export').addEventListener('click', function (e) {
+    e.target.innerHTML = '<span class="spinner-border spinner-border-sm" aria-hidden="true"></span> Génération en cours'
+    e.target.classList.add('disabled')
+  })
+</script>
