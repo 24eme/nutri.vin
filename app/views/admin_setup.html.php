@@ -232,8 +232,41 @@ use app\config\Config;
 </p>
 
 <script>
-  document.getElementById('btn-export').addEventListener('click', function (e) {
-    e.target.innerHTML = '<span class="spinner-border spinner-border-sm" aria-hidden="true"></span> Génération en cours'
-    e.target.classList.add('disabled')
+  document.getElementById('btn-export').addEventListener('click', async function (e) {
+      e.preventDefault()
+      const el = e.target
+
+      el.innerHTML = '<span class="spinner-border spinner-border-sm" aria-hidden="true"></span> Génération en cours'
+      el.classList.add('disabled')
+
+      await fetch(el.href, {
+        method: "GET",
+        headers: {'Content-Type': 'text/csv;charset=UTF-8'}
+      })
+        .then((csv) => {
+            filename = csv.headers.get('content-disposition')
+              .split(';')
+              .find(n => n.includes('filename='))
+              .replace('filename=', '')
+              .trim()
+              .replace(/^\"/, '')
+              .replace(/\"$/, '')
+
+            return csv.blob()
+        })
+        .then((blob) => {
+            const file = new Blob([blob], {type: 'text/csv'})
+            const url = URL.createObjectURL(file);
+
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = filename;
+            document.body.appendChild(a);
+            a.click();
+            a.remove()
+        })
+
+      el.innerHTML = 'Export CSV'
+      el.classList.remove('disabled')
   })
 </script>
