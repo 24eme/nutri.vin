@@ -868,7 +868,7 @@ class QRCode extends Mapper
                 $qrcode->nutritionnel_sodium,
                 implode(', ', json_decode($qrcode->labels)),
                 $qrcode->ean,
-                $qrcode->autres_infos,
+                str_replace("\r\n", ' ', $qrcode->autres_infos),
                 $qrcode->visites_nb ?: count(json_decode($qrcode->visites ?? '[]')),
                 $qrcode->date_creation,
                 $qrcode->date_version,
