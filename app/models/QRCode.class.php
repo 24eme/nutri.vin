@@ -842,7 +842,7 @@ class QRCode extends Mapper
 
         foreach (QRCode::findAll(false) as $qrcode) {
             $csv_unsorted->fputcsv([
-                $qrcode->getId(),
+                (string) $qrcode->getId(),
                 $qrcode->user_id,
                 $qrcode->responsable_nom,
                 $qrcode->responsable_siret,
