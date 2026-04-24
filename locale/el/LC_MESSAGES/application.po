@@ -8,14 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-05 09:27+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-04-24 13:02+0000\n"
+"Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
+"Language-Team: Greek <https://hosted.weblate.org/projects/nutrivin/interface/"
+"el/>\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.17.1-dev\n"
 
 msgid "Informations complémentaires"
 msgstr ""
@@ -80,42 +82,44 @@ msgid "Protéines"
 msgstr ""
 
 msgid "Sel"
-msgstr ""
+msgstr "Sel"
 
 msgid "Sodium"
-msgstr ""
+msgstr "Sodium"
 
 msgid "Autres informations"
-msgstr ""
+msgstr "Άλλες πληροφορίες"
 
 msgid "Mentions légales"
-msgstr ""
+msgstr "Νομικές πληροφορίες"
 
 msgid "Cette fiche nutritionnelle est éditée sous la seule responsablité de"
-msgstr ""
+msgstr "Αυτό το θρεπτικό φύλλο εκτελείται κάτω από τη μόνη αναδιαπλοκότητα της"
 
 msgid "Elle est hébergée par"
-msgstr ""
+msgstr "Έχει φιλοξενήσει"
 
 msgid "sa plateforme"
-msgstr ""
+msgstr "πλατφόρμα της"
 
 msgid "et le projet libre"
-msgstr ""
+msgstr "και το δωρεάν έργο"
 
 msgid ""
 "ne peuvent être tenus responsables des informations publiées. Un historique "
 "de chaque modification est conservée et consultable publiquement"
 msgstr ""
+"δεν μπορεί να θεωρηθεί υπεύθυνη για δημοσιευμένες πληροφορίες. Η ιστορία "
+"κάθε τροποποίησης διατηρείται και είναι δημόσια διαθέσιμη"
 
 msgid "Créé le "
-msgstr ""
+msgstr "Δημιουργήθηκε "
 
 msgid "Modifié le "
-msgstr ""
+msgstr "Τροποποιημένος "
 
 msgid "Voir la version du "
-msgstr ""
+msgstr "Δείτε την έκδοση "
 
 msgid ""
 "Seules l'heure de la première visite de la session et une évaluation "
@@ -124,87 +128,92 @@ msgid ""
 "personnel n'est conservé et aucun suivi des visiteurs de cette fiche n'est "
 "réalisé. La consultation de la page ne nécessite pas de cookie."
 msgstr ""
+"Μόνο ο χρόνος της πρώτης επίσκεψης της συνεδρίας και η γεωγραφική αξιολόγηση "
+"της σύνδεσης διατηρούνται για να συνειδητοποιήσουν αυτές τις στατιστικές. "
+"Σύμφωνα με τη νομοθεσία, δεν διατηρούνται προσωπικά δεδομένα και δεν γίνεται "
+"συνέχεια των επισκεπτών σε αυτή τη μορφή. Η διαβούλευση στη σελίδα δεν "
+"απαιτεί cookie."
 
 msgid "vue"
-msgstr ""
+msgstr "προβολή θέα θέα προβολή"
 
 msgid "Activateur de fermentation"
-msgstr ""
+msgstr "Ferment Activator"
 
 msgid "Agent de fermentation"
-msgstr ""
+msgstr "Πράκτορας ζύμωσης"
 
 msgid "Agent stabilisateur"
-msgstr ""
+msgstr "Σταθεροποιητή σταθεροποιητή σταθεροποιητή σταθεροποιητή σταθεροποιητή"
 
 msgid "Conservateur et antioxydant"
-msgstr ""
+msgstr "Συντηρητικοί και αντιοξειδωτικό"
 
 msgid "Correction de défauts"
-msgstr ""
+msgstr "Διόρθωση των ελατωμάτων"
 
 msgid "Enzyme"
-msgstr ""
+msgstr "Enzyme"
 
 msgid "Gaz et gaz d'emballage"
-msgstr ""
+msgstr "Φυσική και συσκευασία αερίου"
 
 msgid "Régulateur d'acidité"
-msgstr ""
+msgstr "Ο ρυθμιστής οξύτητας"
 
 msgid "Raisins"
-msgstr ""
+msgstr "Raisins"
 
 msgid "Moût de raisin concentré"
-msgstr ""
+msgstr "Τα συγκεντρωτικά σταφύλια πρέπει να"
 
 msgid "Eau de vie de vin"
-msgstr ""
+msgstr "Life water of Wine"
 
 msgid "Liqueur de tirage et liqueur d'expédition"
-msgstr ""
+msgstr "Σχεδιάστε liqueur και ναυτιλιακή liqueur"
 
 msgid "Saccharose"
-msgstr ""
+msgstr "Saccharose"
 
 msgid "Acide tartrique - E334"
-msgstr ""
+msgstr "Tartric acid - E334"
 
 msgid "Acide malique - E296"
-msgstr ""
+msgstr "Malian acid E296"
 
 msgid "Acide lactique - E270"
-msgstr ""
+msgstr "Lactic acid - E270"
 
 msgid "Tartrate de potassium - E336"
-msgstr ""
+msgstr "Potassium Tartrate E336"
 
 msgid "Bicarbonate de potassium - E501"
-msgstr ""
+msgstr "Bivio E501"
 
 msgid "Carbonate de calcium - E170"
-msgstr ""
+msgstr "Ασβέστιο E170"
 
 msgid "Tartrate de calcium - E354"
-msgstr ""
+msgstr "Ασβέστιο Tartrate E354"
 
 msgid "Sulfate de calcium - E516"
-msgstr ""
+msgstr "Ασβέστιο θειλφίδιο E516"
 
 msgid "Carbonate de potassium - E501"
-msgstr ""
+msgstr "Carbon Carbonate E501"
 
 msgid "Hydrogénotartrate de potassium - E336"
-msgstr ""
+msgstr "Potassium Hydrogenotartrate E336"
 
 msgid "Acide citrique - E330"
-msgstr ""
+msgstr "Citric acid - E330"
 
 msgid "Tanins"
-msgstr ""
+msgstr "Tanins"
 
 msgid "Ferrocyanure de potassium - E536"
-msgstr ""
+msgstr "Potassium Potassium  fer  fer E536"
 
 msgid "Phytate de calcium"
 msgstr ""
