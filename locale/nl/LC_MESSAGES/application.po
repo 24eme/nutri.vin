@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-05 09:27+0100\n"
 "PO-Revision-Date: 2026-04-24 13:02+0000\n"
-"Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
+"Last-Translator: NutriVin <nutrivin@24eme.fr>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/nutrivin/interface/"
 "nl/>\n"
 "Language: nl\n"
@@ -36,11 +36,11 @@ msgstr "Ingrediënten"
 
 #, php-format
 msgid "Ingrédients allergènes indiqués en %sgras%s."
-msgstr "Allergen ingrediënten wijzen op in £35."
+msgstr "Allergen ingrediënten wijzen op in %svet%s."
 
 #, php-format
 msgid "Ingrédients issus de l'agriculture biologique indiqué avec une %s*%s."
-msgstr "Ingrediënten van organische boerderijen wijzen op $40.000."
+msgstr "Ingrediënten van biologische landbouw worden aangegeven met een %s*%s."
 
 msgid "Informations nutritionnelles"
 msgstr "Vergeldingsinformatie"
@@ -82,13 +82,13 @@ msgid "Protéines"
 msgstr "Proteïne"
 
 msgid "Sel"
-msgstr "Sel"
+msgstr "Zout"
 
 msgid "Sodium"
-msgstr "Sodium"
+msgstr "Natrium"
 
 msgid "Autres informations"
-msgstr "Andere informatie"
+msgstr "Overige informatie"
 
 msgid "Mentions légales"
 msgstr "Juridische informatie"
@@ -174,7 +174,7 @@ msgid "Liqueur de tirage et liqueur d'expédition"
 msgstr "Draw liqueur en verzenden vloeistof"
 
 msgid "Saccharose"
-msgstr "Saccharose"
+msgstr "Sucrose"
 
 msgid "Acide tartrique - E334"
 msgstr "Tartric zuur, E334"
