@@ -10,8 +10,7 @@ msgstr ""
 "POT-Creation-Date: 2026-02-05 09:27+0100\n"
 "PO-Revision-Date: 2026-04-24 21:10+0000\n"
 "Last-Translator: NutriVin <nutrivin@24eme.fr>\n"
-"Language-Team: Dutch <https://hosted.weblate.org/projects/nutrivin/interface/"
-"nl/>\n"
+"Language-Team: Dutch <https://hosted.weblate.org/projects/nutrivin/interface/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -336,124 +335,124 @@ msgid "Sulfate d'ammonium - E517/CAS7783-20-2"
 msgstr "Ammoniumsulfaat E517/CAS7783-20-2"
 
 msgid "Bisulfite d'ammonium"
-msgstr ""
+msgstr "Ammoniumbisulfiet"
 
 msgid "Chlorhydrate de thiamine"
-msgstr ""
+msgstr "Thiaminehydrochloride"
 
 msgid "Autolysats de levures"
-msgstr ""
+msgstr "Autolysaten van gist"
 
 msgid "Levures inactivées ayant des niveaux garantis de glutathion"
-msgstr ""
+msgstr "Geïnactiveerde gisten met gegarandeerde glutathiongehalten"
 
 msgid "Gélatine alimentaire"
-msgstr ""
+msgstr "Voedselgelatine"
 
 msgid "Protéine de blé"
-msgstr ""
+msgstr "Tarweeiwit"
 
 msgid "Protéine issue de pois"
-msgstr ""
+msgstr "Pea-eiwit"
 
 msgid "Protéine issue de pommes de terre"
-msgstr ""
+msgstr "Aardappeleiwit"
 
 msgid "Colle de poisson"
-msgstr ""
+msgstr "Vislijm"
 
 msgid "Caséines"
-msgstr ""
+msgstr "Caseïne"
 
 msgid "Caséinates de potassium"
-msgstr ""
+msgstr "Kalium caseïnaten"
 
 msgid "Ovalbumine"
-msgstr ""
+msgstr "Ovalbumine"
 
 msgid "Bentonite - E558"
-msgstr ""
+msgstr "Bentoniet - E558"
 
 msgid "Dioxyde de silicium - E551"
-msgstr ""
+msgstr "Siliciumdioxide - E551"
 
 msgid "Kaolin"
-msgstr ""
+msgstr "Kaolien"
 
 msgid "Chitosane dérivé d'Aspergillus niger"
-msgstr ""
+msgstr "Chitosan afkomstig van Aspergillus niger"
 
 msgid "Chitine-glucane dérivé d'Aspergillus"
-msgstr ""
+msgstr "Chitineglucaan, afgeleid van Aspergillus"
 
 msgid "Polyvinylpolypyrrolidone - E1202"
-msgstr ""
+msgstr "Polyvinylpolypyrrolidon - E1202"
 
 msgid "Alginate de calcium - E404"
-msgstr ""
+msgstr "Calciumalginaat - E404"
 
 msgid "Alginate de potassium - E402"
-msgstr ""
+msgstr "Kaliumalginaat - E402"
 
 msgid "Uréase"
-msgstr ""
+msgstr "Ureum"
 
 msgid "Pectines lyases"
-msgstr ""
+msgstr "Lyse pectins"
 
 msgid "Pectine méthylestérase"
-msgstr ""
+msgstr "Pectinemethylesterase"
 
 msgid "Polygalacturonase"
-msgstr ""
+msgstr "Polygalacturonase"
 
 msgid "Hémicellulase"
-msgstr ""
+msgstr "Hemicellulase"
 
 msgid "Cellulase"
-msgstr ""
+msgstr "Cellulase"
 
 msgid "Bétaglucanase"
-msgstr ""
+msgstr "Betaglucanase"
 
 msgid "Glycosidase"
-msgstr ""
+msgstr "Glycosidase"
 
 msgid "Levures de vinification"
-msgstr ""
+msgstr "Vinificatiegist"
 
 msgid "Bactéries lactiques"
-msgstr ""
+msgstr "Melkbacteriën"
 
 msgid "Sulfate de cuivre, pentahydraté"
-msgstr ""
+msgstr "Kopersulfaat, pentahydraat"
 
 msgid "Citrate de cuivre"
-msgstr ""
+msgstr "Kopercitraat"
 
 msgid "dérivé d'Aspergillus niger"
-msgstr ""
+msgstr "afgeleid van Aspergillus niger"
 
 msgid "Hydrogénotartrate de potassium"
-msgstr ""
+msgstr "Kaliumwaterstoftartraat"
 
 msgid "Tartrate de calcium"
-msgstr ""
+msgstr "Calciumtartraat"
 
 msgid "E354"
-msgstr ""
+msgstr "E354"
 
 msgid "Acide citrique"
-msgstr ""
+msgstr "Citroenzuur"
 
 msgid "E330"
-msgstr ""
+msgstr "E330"
 
 msgid "Ferrocyanure de potassium"
-msgstr ""
+msgstr "Kaliumferrocyanide"
 
 msgid "E536"
-msgstr ""
+msgstr "E536"
 
 msgid "Acide métatartrique"
 msgstr "Metaartrisch zuur"
