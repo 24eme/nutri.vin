@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-05 09:27+0100\n"
 "PO-Revision-Date: 2026-04-24 13:02+0000\n"
-"Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
+"Last-Translator: NutriVin <nutrivin@24eme.fr>\n"
 "Language-Team: Greek <https://hosted.weblate.org/projects/nutrivin/interface/"
 "el/>\n"
 "Language: el\n"
@@ -82,10 +82,10 @@ msgid "Protéines"
 msgstr ""
 
 msgid "Sel"
-msgstr "Sel"
+msgstr "Αλας"
 
 msgid "Sodium"
-msgstr "Sodium"
+msgstr "Νάτριο"
 
 msgid "Autres informations"
 msgstr "Άλλες πληροφορίες"
@@ -135,16 +135,16 @@ msgstr ""
 "απαιτεί cookie."
 
 msgid "vue"
-msgstr "προβολή θέα θέα προβολή"
+msgstr "όψη"
 
 msgid "Activateur de fermentation"
-msgstr "Ferment Activator"
+msgstr "Ενεργοποιητής ζύμωσης"
 
 msgid "Agent de fermentation"
 msgstr "Πράκτορας ζύμωσης"
 
 msgid "Agent stabilisateur"
-msgstr "Σταθεροποιητή σταθεροποιητή σταθεροποιητή σταθεροποιητή σταθεροποιητή"
+msgstr "Σταθεροποιητικός παράγοντας"
 
 msgid "Conservateur et antioxydant"
 msgstr "Συντηρητικοί και αντιοξειδωτικό"
@@ -153,7 +153,7 @@ msgid "Correction de défauts"
 msgstr "Διόρθωση των ελατωμάτων"
 
 msgid "Enzyme"
-msgstr "Enzyme"
+msgstr "Ενζυμο"
 
 msgid "Gaz et gaz d'emballage"
 msgstr "Φυσική και συσκευασία αερίου"
@@ -162,34 +162,34 @@ msgid "Régulateur d'acidité"
 msgstr "Ο ρυθμιστής οξύτητας"
 
 msgid "Raisins"
-msgstr "Raisins"
+msgstr "Σταφύλια"
 
 msgid "Moût de raisin concentré"
 msgstr "Τα συγκεντρωτικά σταφύλια πρέπει να"
 
 msgid "Eau de vie de vin"
-msgstr "Life water of Wine"
+msgstr "Κρασί μπράντι"
 
 msgid "Liqueur de tirage et liqueur d'expédition"
 msgstr "Σχεδιάστε liqueur και ναυτιλιακή liqueur"
 
 msgid "Saccharose"
-msgstr "Saccharose"
+msgstr "Σακχαρόζη"
 
 msgid "Acide tartrique - E334"
-msgstr "Tartric acid - E334"
+msgstr "Τρυγικό οξύ - E334"
 
 msgid "Acide malique - E296"
-msgstr "Malian acid E296"
+msgstr "Μηλικό οξύ - E296"
 
 msgid "Acide lactique - E270"
-msgstr "Lactic acid - E270"
+msgstr "Γαλακτικό οξύ - E270"
 
 msgid "Tartrate de potassium - E336"
-msgstr "Potassium Tartrate E336"
+msgstr "Τρυγικό κάλιο - E336"
 
 msgid "Bicarbonate de potassium - E501"
-msgstr "Bivio E501"
+msgstr "Διττανθρακικό κάλιο - E501"
 
 msgid "Carbonate de calcium - E170"
 msgstr "Ασβέστιο E170"
@@ -204,31 +204,31 @@ msgid "Carbonate de potassium - E501"
 msgstr "Carbon Carbonate E501"
 
 msgid "Hydrogénotartrate de potassium - E336"
-msgstr "Potassium Hydrogenotartrate E336"
+msgstr "Όξινο τρυγικό κάλιο - E336"
 
 msgid "Acide citrique - E330"
-msgstr "Citric acid - E330"
+msgstr "Κιτρικό οξύ - E330"
 
 msgid "Tanins"
-msgstr "Tanins"
+msgstr "Τανίνες"
 
 msgid "Ferrocyanure de potassium - E536"
-msgstr "Potassium Potassium  fer  fer E536"
+msgstr "Σιδηροκυανιούχο κάλιο - E536"
 
 msgid "Phytate de calcium"
-msgstr ""
+msgstr "Φυτικό ασβέστιο"
 
 msgid "Acide métatartrique - E353"
-msgstr ""
+msgstr "Μετατρυγικό οξύ - E353"
 
 msgid "Gomme arabique - E414"
-msgstr ""
+msgstr "Αραβικό κόμμι - E414"
 
 msgid "Acide DL-tartrique"
-msgstr ""
+msgstr "DL-τρυγικό οξύ"
 
 msgid "Sel neutre de potassium"
-msgstr ""
+msgstr "Ουδέτερο άλας καλίου"
 
 msgid "Mannoprotéines de levures"
 msgstr ""
