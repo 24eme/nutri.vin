@@ -8,115 +8,120 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-05 09:27+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-04-24 13:02+0000\n"
+"Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
+"Language-Team: Polish <https://hosted.weblate.org/projects/nutrivin/"
+"interface/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
+"X-Generator: Weblate 5.17.1-dev\n"
 
 msgid "Informations complémentaires"
-msgstr ""
+msgstr "Informacja"
 
 msgid "Volume d'alcool"
-msgstr ""
+msgstr "Alcohol objętość"
 
 msgid "Contenance"
-msgstr ""
+msgstr "Capacity"
 
 msgid "N° de lot"
-msgstr ""
+msgstr "Numer jeden"
 
 msgid "Ingrédients"
-msgstr ""
+msgstr "Ingredient"
 
 #, php-format
 msgid "Ingrédients allergènes indiqués en %sgras%s."
-msgstr ""
+msgstr "Wszystkie składniki oznaczone jako X35X."
 
 #, php-format
 msgid "Ingrédients issus de l'agriculture biologique indiqué avec une %s*%s."
-msgstr ""
+msgstr "Ingredients from organic farming (X63X) (ang.)."
 
 msgid "Informations nutritionnelles"
-msgstr ""
+msgstr "Informacja o Nutrition"
 
 msgid "Type"
-msgstr ""
+msgstr "Typ"
 
 msgid "Pour 100 mL"
-msgstr ""
+msgstr "100 ml"
 
 msgid "Énergie"
-msgstr ""
+msgstr "Energia"
 
 msgid "kJ"
-msgstr ""
+msgstr "kJ"
 
 msgid "kcal"
-msgstr ""
+msgstr "kwarc"
 
 msgid "Matières grasses"
-msgstr ""
+msgstr "Fat"
 
 msgid "dont acides gras saturés"
-msgstr ""
+msgstr "kwas tłuszczowy"
 
 msgid "g"
-msgstr ""
+msgstr "g"
 
 msgid "Glucides"
-msgstr ""
+msgstr "Glucida"
 
 msgid "dont sucres"
-msgstr ""
+msgstr "cukier"
 
 msgid "Fibres alimentaires"
-msgstr ""
+msgstr "Włókna żywnościowe"
 
 msgid "Protéines"
-msgstr ""
+msgstr "Proteina"
 
 msgid "Sel"
-msgstr ""
+msgstr "Sel"
 
 msgid "Sodium"
-msgstr ""
+msgstr "Sodium"
 
 msgid "Autres informations"
-msgstr ""
+msgstr "Inne informacje"
 
 msgid "Mentions légales"
-msgstr ""
+msgstr "Informacje prawne"
 
 msgid "Cette fiche nutritionnelle est éditée sous la seule responsablité de"
 msgstr ""
+"Ten arkusz odżywiania jest redagowany pod jedyną odpowiedzią na rozbieżność"
 
 msgid "Elle est hébergée par"
-msgstr ""
+msgstr "Jest hostowana przez nią"
 
 msgid "sa plateforme"
-msgstr ""
+msgstr "platforma"
 
 msgid "et le projet libre"
-msgstr ""
+msgstr "i wolne projekty"
 
 msgid ""
 "ne peuvent être tenus responsables des informations publiées. Un historique "
 "de chaque modification est conservée et consultable publiquement"
 msgstr ""
+"nie mogą być dostępne dla opublikowanych informacji. Historia każdej "
+"modyfikacji jest przechowywana i dostępna publicznie"
 
 msgid "Créé le "
-msgstr ""
+msgstr "Stworzył "
 
 msgid "Modifié le "
-msgstr ""
+msgstr "Zmodyfikowany "
 
 msgid "Voir la version du "
-msgstr ""
+msgstr "Zobacz wersję "
 
 msgid ""
 "Seules l'heure de la première visite de la session et une évaluation "
@@ -125,27 +130,31 @@ msgid ""
 "personnel n'est conservé et aucun suivi des visiteurs de cette fiche n'est "
 "réalisé. La consultation de la page ne nécessite pas de cookie."
 msgstr ""
+"Dopiero w czasie pierwszej wizyty sesyjnej i geograficznej oceny połączenia "
+"są zachowane, aby zrozumieć te statystyki. Zgodnie z ustawodawstwem nie ma "
+"danych osobistych i nie ma żadnych śladów dla tej formy. Konsultacja na "
+"stronie nie wymaga ciastka."
 
 msgid "vue"
-msgstr ""
+msgstr "view"
 
 msgid "Activateur de fermentation"
-msgstr ""
+msgstr "Aktywność"
 
 msgid "Agent de fermentation"
-msgstr ""
+msgstr "Fermentator"
 
 msgid "Agent stabilisateur"
-msgstr ""
+msgstr "Stabilizator"
 
 msgid "Conservateur et antioxydant"
-msgstr ""
+msgstr "Konserwatywna i antyoksydantka"
 
 msgid "Correction de défauts"
-msgstr ""
+msgstr "Wyprawa defektów"
 
 msgid "Enzyme"
-msgstr ""
+msgstr "Enzym"
 
 msgid "Gaz et gaz d'emballage"
 msgstr ""
