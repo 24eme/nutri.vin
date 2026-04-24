@@ -8,14 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-05 09:27+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-04-24 21:10+0000\n"
+"Last-Translator: NutriVin <nutrivin@24eme.fr>\n"
+"Language-Team: Bulgarian <https://hosted.weblate.org/projects/nutrivin/"
+"interface/bg/>\n"
 "Language: bg\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.17.1-dev\n"
 
 msgid "Informations complémentaires"
 msgstr "Допълнителна информация"
@@ -34,7 +36,7 @@ msgstr "Съставки"
 
 #, php-format
 msgid "Ingrédients allergènes indiqués en %sgras%s."
-msgstr "Алергичните съставки са обозначени с %sудебелен шрифт%s"
+msgstr "Алергичните съставки са обозначени с %sудебелен шрифт%s."
 
 #, php-format
 msgid "Ingrédients issus de l'agriculture biologique indiqué avec une %s*%s."
@@ -111,13 +113,13 @@ msgstr ""
 "се поддържа и се търси публично"
 
 msgid "Créé le "
-msgstr "Създаване на"
+msgstr "Създаване на "
 
 msgid "Modifié le "
-msgstr "Промяна на"
+msgstr "Промяна на "
 
 msgid "Voir la version du "
-msgstr "Вж. версия на"
+msgstr "Вж. версия на "
 
 msgid ""
 "Seules l'heure de la première visite de la session et une évaluation "
