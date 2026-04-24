@@ -26,14 +26,33 @@ $f3->language(isset($f3->get('HEADERS')['Accept-Language']) ? $f3->get('HEADERS'
 
 $f3->set('SUPPORTED_LANGUAGES',
     [
+        'bg' => 'Български',
+        'cs' => 'Čeština',
+        'da' => 'Dansk',
         'de' => 'Deutsch',
+        'el' => '(Νέα) Ελληνικά',
         'en' => 'English',
         'es' => 'Español',
+        'et' => 'Eesti keel',
+        'fi' => 'Suomi',
         'fr' => 'Français',
+        'ga' => 'Gaeilge',
+        'hr' => 'Hrvatski',
+        'hu' => 'Magyar nyelv',
         'it' => 'Italiano',
+        'lt' => 'Lietuvių kalba',
+        'lv' => 'Latviešu valoda',
+        'mt' => 'Malti',
+        'nl' => 'Nederlands',
+        'pl' => 'Język polski',
+        'pt' => 'Português',
+        'ro' => 'Română',
         'ru' => 'Русский',
+        'sk' => 'Slovenčina',
+        'sl' => 'Slovenščina',
         'sv' => 'Svenska',
     ]);
+
 if ($f3->get('GET.lang')) {
     selectLanguage($f3->get('GET.lang'), $f3);
 } else {
