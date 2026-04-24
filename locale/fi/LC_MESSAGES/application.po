@@ -8,76 +8,78 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-05 09:27+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-04-24 13:02+0000\n"
+"Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
+"Language-Team: Finnish <https://hosted.weblate.org/projects/nutrivin/"
+"interface/fi/>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.17.1-dev\n"
 
 msgid "Informations complémentaires"
-msgstr ""
+msgstr "Lisätietoja"
 
 msgid "Volume d'alcool"
-msgstr ""
+msgstr "Alkoholin määrä"
 
 msgid "Contenance"
-msgstr ""
+msgstr "Kapasiteetti"
 
 msgid "N° de lot"
-msgstr ""
+msgstr "Paljon numeroita"
 
 msgid "Ingrédients"
-msgstr ""
+msgstr "Ainesosia"
 
 #, php-format
 msgid "Ingrédients allergènes indiqués en %sgras%s."
-msgstr ""
+msgstr "Allergeenin ainesosat (X35X)gras %s."
 
 #, php-format
 msgid "Ingrédients issus de l'agriculture biologique indiqué avec une %s*%s."
-msgstr ""
+msgstr "Luonnonmukaisen viljelyn ainesosat (X63X)."
 
 msgid "Informations nutritionnelles"
-msgstr ""
+msgstr "Ravitsemustiedot"
 
 msgid "Type"
-msgstr ""
+msgstr "Tyyppi"
 
 msgid "Pour 100 mL"
-msgstr ""
+msgstr "100 ml"
 
 msgid "Énergie"
-msgstr ""
+msgstr "Ener"
 
 msgid "kJ"
-msgstr ""
+msgstr "kJ"
 
 msgid "kcal"
-msgstr ""
+msgstr "k"
 
 msgid "Matières grasses"
-msgstr ""
+msgstr "Rasvaa"
 
 msgid "dont acides gras saturés"
-msgstr ""
+msgstr "tyydyttyneitä rasvahappoja"
 
 msgid "g"
-msgstr ""
+msgstr "g"
 
 msgid "Glucides"
-msgstr ""
+msgstr "Glucida"
 
 msgid "dont sucres"
-msgstr ""
+msgstr "sokereita"
 
 msgid "Fibres alimentaires"
-msgstr ""
+msgstr "Ruokakuituja"
 
 msgid "Protéines"
-msgstr ""
+msgstr "Proteiinit"
 
 msgid "Sel"
 msgstr ""
@@ -627,7 +629,7 @@ msgid "Sulfate de calcium"
 msgstr ""
 
 msgid "E516"
-msgstr ""
+msgstr "E516"
 
 msgid "Carbonate de potassium"
-msgstr ""
+msgstr "Kaliumkarbonaatti"
