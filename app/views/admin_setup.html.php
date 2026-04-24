@@ -238,12 +238,18 @@ use app\config\Config;
 
       el.innerHTML = '<span class="spinner-border spinner-border-sm" aria-hidden="true"></span> Génération en cours'
       el.classList.add('disabled')
+      el.classList.add('btn-danger')
+      el.classList.add('btn-primary')
 
       await fetch(el.href, {
         method: "GET",
         headers: {'Content-Type': 'text/csv;charset=UTF-8'}
       })
         .then((csv) => {
+            if (! csv.ok) {
+                throw new Error(`An HTTP error occured : ${csv.status}`)
+            }
+
             filename = csv.headers.get('content-disposition')
               .split(';')
               .find(n => n.includes('filename='))
@@ -264,6 +270,11 @@ use app\config\Config;
             document.body.appendChild(a);
             a.click();
             a.remove()
+        })
+        .catch((error) => {
+            console.error("Error while generating csv", error)
+            el.classList.remove('btn-primary')
+            el.classList.add('btn-danger')
         })
 
       el.innerHTML = 'Export CSV'
