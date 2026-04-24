@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-02 13:14+0200\n"
-"PO-Revision-Date: 2025-08-25 03:02+0000\n"
-"Last-Translator: Yurt Page <yurtpage+weblate@gmail.com>\n"
+"PO-Revision-Date: 2026-04-24 21:09+0000\n"
+"Last-Translator: NutriVin <nutrivin@24eme.fr>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/nutrivin/"
 "interface/ru/>\n"
 "Language: ru\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.13\n"
+"X-Generator: Weblate 5.17.1-dev\n"
 
 msgid "Informations complémentaires"
 msgstr "Дополнительная информация"
@@ -37,7 +37,7 @@ msgstr "Состав"
 
 #, php-format
 msgid "Ingrédients allergènes indiqués en %sgras%s."
-msgstr "Аллергенные ингредиенты выделены %sжирным шрифтом%s"
+msgstr "Аллергенные ингредиенты выделены %sжирным шрифтом%s."
 
 #, php-format
 msgid "Ingrédients issus de l'agriculture biologique indiqué avec une %s*%s."
