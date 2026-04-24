@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-05 09:27+0100\n"
 "PO-Revision-Date: 2026-04-24 13:02+0000\n"
-"Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
+"Last-Translator: NutriVin <nutrivin@24eme.fr>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/nutrivin/"
 "interface/pl/>\n"
 "Language: pl\n"
@@ -37,11 +37,11 @@ msgstr "Ingredient"
 
 #, php-format
 msgid "Ingrédients allergènes indiqués en %sgras%s."
-msgstr "Wszystkie składniki oznaczone jako X35X."
+msgstr "Składniki alergenne oznaczono %spogrubioną czcionką%s."
 
 #, php-format
 msgid "Ingrédients issus de l'agriculture biologique indiqué avec une %s*%s."
-msgstr "Ingredients from organic farming (X63X) (ang.)."
+msgstr "Składniki pochodzące z upraw ekologicznych oznaczone są symbolem %s*%s."
 
 msgid "Informations nutritionnelles"
 msgstr "Informacja o Nutrition"
@@ -83,10 +83,10 @@ msgid "Protéines"
 msgstr "Proteina"
 
 msgid "Sel"
-msgstr "Sel"
+msgstr "Sól"
 
 msgid "Sodium"
-msgstr "Sodium"
+msgstr "Sód"
 
 msgid "Autres informations"
 msgstr "Inne informacje"
