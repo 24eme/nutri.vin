@@ -24,6 +24,7 @@ class QRCode extends Mapper
         'logo',
         'mentions',
         'visites',
+        'visites_nb',
         'versions'
     ];
 
@@ -100,12 +101,13 @@ class QRCode extends Mapper
         'gs1_redirect' => 'VARCHAR(255)',
         'denomination_instance' => 'BOOL',
         'visites' => 'TEXT',
+        'visites_nb' => 'FLOAT',
         'labels' => 'TEXT',
         'versions' => 'TEXT',
     ];
 
     public static function findByUserid($userid) {
-        $results = (new self())->mapper->select(self::$primaryKey . ", user_id, domaine_nom, cuvee_nom, denomination, couleur, millesime, centilisation, visites, date_creation", ['user_id=?',$userid]);
+        $results = (new self())->mapper->select(self::$primaryKey . ", user_id, domaine_nom, cuvee_nom, denomination, couleur, millesime, centilisation, visites, date_creation, responsable_nom", ['user_id=?',$userid]);
         foreach ($results as $result) {
             $result->visites = json_decode($result->visites ?? "", true);
             if (property_exists($result, '_id') === false || $result->_id === NULL) {
@@ -120,16 +122,20 @@ class QRCode extends Mapper
         $class = get_called_class();
         $e = new $class();
         if (method_exists($e->mapper, 'findAll')) {
-            $items = [];
             foreach ($e->mapper->findAll($limit) as $result) {
+                if (strpos($result->id, 'REDIRECT') === 0 || strpos($result->id, '_design') === 0) {
+                    continue;
+                }
+
                 $a = new $class();
                 $a->mapper->load([self::$primaryKey.'=?', $result->{self::$primaryKey}]);
+
                 if ($instance_only && (!$a || !$a->isPartOfInstance())) {
                     continue;
                 }
-                $items[] = $a;
-            };
-            return $items;
+                yield $a;
+            }
+            return;
         }
         return self::find();
     }
@@ -155,7 +161,37 @@ class QRCode extends Mapper
             return null;
         }
         return $a;
+    }
 
+    public static function listUsers($sort = null)
+    {
+        $class = get_called_class();
+        $e = new $class();
+
+        $view = 'stats/visites';
+        $results = $e->mapper->getView($view, ['reduce' => true, 'group_level' => 3]);
+
+        $users = [];
+        foreach ($results as $result) {
+            if (array_key_exists($result->key[1], $users)) {
+                $users[$result->key[1]]['visites'] += $result->value[1];
+                $users[$result->key[1]]['qrcodes'] += $result->value[0];
+            } else {
+                $users[$result->key[1]] = [
+                    'domaine' => $result->key[2],
+                    'qrcodes' => $result->value[0],
+                    'visites' => $result->value[1],
+                ];
+            }
+        }
+
+        if ($sort && in_array($sort, ['domaine', 'qrcodes', 'visites'])) {
+            uasort($users, function ($u1, $u2) use ($sort) {
+                return $u2[$sort] <=> $u1[$sort];
+            });
+        }
+
+        return $users;
     }
 
     public static function getListeCategoriesAdditif() {
@@ -382,6 +418,8 @@ class QRCode extends Mapper
             $this->date_creation = $this->date_version;
         }
 
+        $this->visites_nb = count($this->getVisites());
+
         $this->saveVersion();
 
         if ($this->ean && is_null($this->gs1)) {
@@ -577,6 +615,7 @@ class QRCode extends Mapper
     {
         $fields = $this->toArray();
         unset($fields['visites']);
+        unset($fields['visites_nb']);
         unset($fields['versions']);
         unset($fields['image_bouteille']);
         unset($fields['image_etiquette']);
@@ -794,4 +833,120 @@ class QRCode extends Mapper
         return $images;
     }
 
+    public static function exportToCsv()
+    {
+        $URLBASE = Config::getInstance()->getUrlbase().'/';
+
+        $csv_unsorted = new \SplFileObject('php://temp', 'rw');
+        $csv_unsorted->setCsvControl(';', '"', '\\');
+
+        foreach (QRCode::findAll(false) as $qrcode) {
+            $csv_unsorted->fputcsv([
+                (string) $qrcode->getId(),
+                $qrcode->user_id,
+                $qrcode->responsable_nom,
+                $qrcode->responsable_siret,
+                $qrcode->responsable_adresse,
+                $qrcode->denomination,
+                $qrcode->couleur,
+                $qrcode->domaine_nom,
+                $qrcode->cuvee_nom,
+                $qrcode->alcool_degre,
+                $qrcode->centilisation,
+                $qrcode->millesime,
+                $qrcode->lot,
+                $qrcode->ingredients,
+                $qrcode->nutritionnel_energie_kj,
+                $qrcode->nutritionnel_energie_kcal,
+                $qrcode->nutritionnel_graisses,
+                $qrcode->nutritionnel_acides_gras,
+                $qrcode->nutritionnel_glucides,
+                $qrcode->nutritionnel_sucres,
+                $qrcode->nutritionnel_fibres,
+                $qrcode->nutritionnel_proteines,
+                $qrcode->nutritionnel_sel,
+                $qrcode->nutritionnel_sodium,
+                implode(', ', json_decode($qrcode->labels)),
+                $qrcode->ean,
+                str_replace("\r\n", ' ', $qrcode->autres_infos),
+                $qrcode->visites_nb ?: count(json_decode($qrcode->visites ?? '[]')),
+                $qrcode->date_creation,
+                $qrcode->date_version,
+                $qrcode->denomination_instance ? 'NON' : 'OUI', // facturable ?
+                $URLBASE.$qrcode->getId(),
+            ]);
+        }
+
+        $users_ids = [];
+        $csv_unsorted->rewind();
+
+        while (! $csv_unsorted->eof()) {
+            $row = $csv_unsorted->fgetcsv();
+            if (array_key_exists($row[1], $users_ids) === false) {
+                $users_ids[$row[1]] = [];
+            }
+            $users_ids[$row[1]][] = $csv_unsorted->key();
+        }
+
+        ksort($users_ids);
+
+        ob_flush();
+
+        $csv = new \SplFileObject('php://output', 'w');
+        $csv->setCsvControl(';', '"', '\\');
+
+        $csv->fputcsv([
+            'ID',
+            'ID Utilisateur',
+            'Nom responsable',
+            'Siret responsable',
+            'Adresse responsable',
+            'Dénomination',
+            'Couleur',
+            'Domaine',
+            'Cuvée',
+            'Volume d\'alcool',
+            'Centilisation',
+            'Millésime',
+            'Lot',
+            'Ingrédients',
+            'Nutritionnel: kjoule',
+            'Nutritionnel: kcal',
+            'Nutritionnel: graisses',
+            'Nutritionnel: acides gras',
+            'Nutritionnel: glucides',
+            'Nutritionnel: sucres',
+            'Nutritionnel: fibres',
+            'Nutritionnel: proteines',
+            'Nutritionnel: sel',
+            'Nutritionnel: sodium',
+            'Labels',
+            'EAN',
+            'Autres infos',
+            'Visites',
+            'Date création',
+            'Date version',
+            'Facturable',
+            'Lien',
+        ]);
+
+        foreach ($users_ids as $user_id => $lines) {
+            foreach ($lines as $line) {
+                // Bug avec seek en version < 8.0.1 @see https://www.php.net/manual/en/splfileobject.seek.php#126365
+                if (version_compare(PHP_VERSION, '8.0.1', '>=') || $line == 0) {
+                    $csv_unsorted->seek($line);
+                } else {
+                    if($line == 1){
+                        $csv_unsorted->rewind(); // Ensure to go at first row before exit
+                        $csv_unsorted->fgets(); // Read line 0. Cursor remains now at line 1
+                    } else {
+                        $csv_unsorted->seek($line - 1);
+                    }
+                }
+
+                $csv->fputcsv($csv_unsorted->fgetcsv());
+            }
+            $csv->fflush();
+        }
+    }
 }

@@ -226,4 +226,58 @@ use app\config\Config;
   </tbody>
 </table>
 </div>
-<p class="text-end"><a class="btn btn-primary" href="/admin/users">Voir le listing des utilisateurs</a></p>
+<p class="text-end">
+    <a class="btn btn-primary" href="/admin/exportall" id="btn-export">Export CSV</a>
+    <a class="btn btn-primary" href="/admin/users">Voir le listing des utilisateurs</a>
+</p>
+
+<script>
+  document.getElementById('btn-export').addEventListener('click', async function (e) {
+      e.preventDefault()
+      const el = e.target
+
+      el.innerHTML = '<span class="spinner-border spinner-border-sm" aria-hidden="true"></span> Génération en cours'
+      el.classList.add('disabled')
+      el.classList.add('btn-danger')
+      el.classList.add('btn-primary')
+
+      await fetch(el.href, {
+        method: "GET",
+        headers: {'Content-Type': 'text/csv;charset=UTF-8'}
+      })
+        .then((csv) => {
+            if (! csv.ok) {
+                throw new Error(`An HTTP error occured : ${csv.status}`)
+            }
+
+            filename = csv.headers.get('content-disposition')
+              .split(';')
+              .find(n => n.includes('filename='))
+              .replace('filename=', '')
+              .trim()
+              .replace(/^\"/, '')
+              .replace(/\"$/, '')
+
+            return csv.blob()
+        })
+        .then((blob) => {
+            const file = new Blob([blob], {type: 'text/csv'})
+            const url = URL.createObjectURL(file);
+
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = filename;
+            document.body.appendChild(a);
+            a.click();
+            a.remove()
+        })
+        .catch((error) => {
+            console.error("Error while generating csv", error)
+            el.classList.remove('btn-primary')
+            el.classList.add('btn-danger')
+        })
+
+      el.innerHTML = 'Export CSV'
+      el.classList.remove('disabled')
+  })
+</script>

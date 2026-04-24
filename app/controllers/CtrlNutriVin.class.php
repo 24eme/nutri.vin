@@ -34,7 +34,10 @@ class CtrlNutriVin {
         }
         $f3->set('schema_error', false);
         if ($qrcode->tableExists() ) {
-            $qr = QRCode::findAll(1);
+            $qr = [];
+            foreach (QRCode::findAll(1) as $a) {
+                $qr[] = $a;
+            }
             if (count($qr)) {
                 $qr = $qr[0];
                 $a = $qr->toArray();
@@ -43,7 +46,7 @@ class CtrlNutriVin {
                 $qr = null;
             }
             if ($qr && (count(array_keys($a)) != (count(QRCode::$getFieldsAndType) + 1))) {
-                $f3->set('schema_error', count(array_keys($qr->toArray())).' champs en base contre '.(count(QRCode::$getFieldsAndType)) + 1).' attendus';
+                $f3->set('schema_error', count(array_keys($qr->toArray())).' champs en base contre '.(count(QRCode::$getFieldsAndType) + 1).' attendus');
             }
         }
 
@@ -59,22 +62,16 @@ class CtrlNutriVin {
 
     }
 
-    function exportAll(Base $f3) {
-        $csv = null;
-        $rows = QRCode::findAll(false);
-        foreach ($rows as $row) {
-            $qrcode = $row->cast();
-            foreach (QRCode::$versionning_ignore_fields as $field) {
-                if (isset($qrcode[$field])) unset($qrcode[$field]);
-            }
-            if (!$csv) {
-                $csv = 'denomination de l\'instance;'.implode(';', array_keys($qrcode))."\n";
-            }
-            $csv .= (int)Config::getInstance()->isDenominationInConfig($qrcode['denomination']).';'.implode(';', array_values($qrcode))."\n";
+    public function exportAll(Base $f3)
+    {
+        if (! $this->isAdmin($f3)) {
+            return $this->unauthorized($f3);
         }
+
         header('Content-Type: text/csv');
         header('Content-Disposition: attachment; filename="'.date('YmdHi').'_qrcodes.csv'.'"');
-        echo $csv;
+
+        QRCode::exportToCsv();
     }
 
     private function isAdmin(Base $f3) {
@@ -337,8 +334,17 @@ class CtrlNutriVin {
     function qrcodeList(Base $f3) {
         $this->authenticatedUserOnly($f3);
         if ($f3->exists('PARAMS.userid')) {
-            $f3->set('qrlist', QRCode::findByUserid($f3->get('PARAMS.userid')));
+            $qrlist = QRCode::findByUserid($f3->get('PARAMS.userid'));
+            $f3->set('qrlist', $qrlist);
             $f3->set('userid', $f3->get('PARAMS.userid'));
+
+            $responsables = array_count_values(array_column($qrlist, 'responsable_nom'));
+            if (count($responsables)) {
+                $f3->set('display_name', array_search(max($responsables), $responsables));
+            } else {
+                $f3->set('display_name', $f3->get('SESSION.username'));
+            }
+
             $f3->set('content', 'qrcode_list.html.php');
             echo View::instance()->render('layout.html.php');
         }
@@ -517,10 +523,9 @@ class CtrlNutriVin {
         if (!$this->isAdmin($f3)) {
             return $this->unauthorized($f3);
         }
-        $users = [];
-        foreach (QRCode::findAll(false) as $d) {
-            $users[$d->user_id] = $d->domaine_nom;
-        }
+
+        $users = QRCode::listUsers('visites');
+
         $f3->set('users', $users);
         $f3->set('content', 'admin_users.html.php');
         echo View::instance()->render('layout.html.php');
