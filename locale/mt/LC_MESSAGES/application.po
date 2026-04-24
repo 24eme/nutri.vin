@@ -1,127 +1,122 @@
-# English translations for PACKAGE package.
-# Copyright (C) 2024 THE PACKAGE'S COPYRIGHT HOLDER
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# tale-fau <tale-fau@24eme.fr>, 2024.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-05 10:34+0200\n"
-"PO-Revision-Date: 2026-04-24 13:02+0000\n"
-"Last-Translator: NutriVin <nutrivin@24eme.fr>\n"
-"Language-Team: English <https://hosted.weblate.org/projects/nutrivin/"
-"interface/en/>\n"
-"Language: en\n"
+"POT-Creation-Date: 2026-02-05 09:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: mt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.17.1-dev\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 0 : n==0 || ( n%100>1 && n%100<11) ? "
+"1 : (n%100>10 && n%100<20 ) ? 2 : 3;\n"
 
 msgid "Informations complémentaires"
-msgstr "Additional Information"
+msgstr ""
 
 msgid "Volume d'alcool"
-msgstr "Alcohol Volume"
+msgstr ""
 
 msgid "Contenance"
-msgstr "Capacity"
+msgstr ""
 
 msgid "N° de lot"
-msgstr "Batch Number"
+msgstr ""
 
 msgid "Ingrédients"
-msgstr "Ingredients"
+msgstr ""
 
 #, php-format
 msgid "Ingrédients allergènes indiqués en %sgras%s."
-msgstr "Allergen ingredients indicated in %sbold%s."
+msgstr ""
 
 #, php-format
 msgid "Ingrédients issus de l'agriculture biologique indiqué avec une %s*%s."
-msgstr "Ingredients from organic farming indicated with a %s*%s."
+msgstr ""
 
 msgid "Informations nutritionnelles"
-msgstr "Nutritional Information"
+msgstr ""
 
 msgid "Type"
-msgstr "Type"
+msgstr ""
 
 msgid "Pour 100 mL"
-msgstr "Per 100 mL"
+msgstr ""
 
 msgid "Énergie"
-msgstr "Energy"
+msgstr ""
 
 msgid "kJ"
-msgstr "kJ"
+msgstr ""
 
 msgid "kcal"
-msgstr "kcal"
+msgstr ""
 
 msgid "Matières grasses"
-msgstr "Fat"
+msgstr ""
 
 msgid "dont acides gras saturés"
-msgstr "of which saturated fatty acids"
+msgstr ""
 
 msgid "g"
-msgstr "g"
+msgstr ""
 
 msgid "Glucides"
-msgstr "Carbohydrates"
+msgstr ""
 
 msgid "dont sucres"
-msgstr "of which sugars"
+msgstr ""
 
 msgid "Fibres alimentaires"
-msgstr "Dietary Fiber"
+msgstr ""
 
 msgid "Protéines"
-msgstr "Protein"
+msgstr ""
 
 msgid "Sel"
-msgstr "Salt"
+msgstr ""
 
 msgid "Sodium"
-msgstr "Sodium"
+msgstr ""
 
 msgid "Autres informations"
-msgstr "Other Information"
+msgstr ""
 
 msgid "Mentions légales"
-msgstr "Legal notices"
+msgstr ""
 
 msgid "Cette fiche nutritionnelle est éditée sous la seule responsablité de"
 msgstr ""
-"This nutritional information sheet is published under the sole "
-"responsibility of"
 
 msgid "Elle est hébergée par"
-msgstr "It is hosted by"
+msgstr ""
 
 msgid "sa plateforme"
-msgstr "its platform"
+msgstr ""
 
 msgid "et le projet libre"
-msgstr "and the free project"
+msgstr ""
 
 msgid ""
 "ne peuvent être tenus responsables des informations publiées. Un historique "
 "de chaque modification est conservée et consultable publiquement"
 msgstr ""
-"cannot be held responsible for the information published. A history of each "
-"modification is kept and publicly available"
 
 msgid "Créé le "
-msgstr "Created on "
+msgstr ""
 
 msgid "Modifié le "
-msgstr "Modified on "
+msgstr ""
 
 msgid "Voir la version du "
-msgstr "See version from "
+msgstr ""
 
 msgid ""
 "Seules l'heure de la première visite de la session et une évaluation "
@@ -130,514 +125,510 @@ msgid ""
 "personnel n'est conservé et aucun suivi des visiteurs de cette fiche n'est "
 "réalisé. La consultation de la page ne nécessite pas de cookie."
 msgstr ""
-"Only the time of the first visit of the session and a geographical "
-"assessment of the connection are retained to generate this statistic. In "
-"accordance with legislation, no personal data is stored, and no tracking of "
-"visitors to this page is conducted.Viewing the page does not require cookies."
 
 msgid "vue"
-msgstr "view"
+msgstr ""
 
 msgid "Activateur de fermentation"
-msgstr "Fermentation activator"
+msgstr ""
 
 msgid "Agent de fermentation"
-msgstr "Fermentation agent"
+msgstr ""
 
 msgid "Agent stabilisateur"
-msgstr "Stabilizing agent"
+msgstr ""
 
 msgid "Conservateur et antioxydant"
-msgstr "Preservative and antioxidant"
+msgstr ""
 
 msgid "Correction de défauts"
-msgstr "Correction of defects"
+msgstr ""
 
 msgid "Enzyme"
-msgstr "Enzyme"
+msgstr ""
 
 msgid "Gaz et gaz d'emballage"
-msgstr "Gas and packaging gas"
+msgstr ""
 
 msgid "Régulateur d'acidité"
-msgstr "Acidity regulator"
+msgstr ""
 
 msgid "Raisins"
-msgstr "Grapes"
+msgstr ""
 
 msgid "Moût de raisin concentré"
-msgstr "Concentrated Grape Must"
+msgstr ""
 
 msgid "Eau de vie de vin"
-msgstr "Wine eau de vie"
+msgstr ""
 
 msgid "Liqueur de tirage et liqueur d'expédition"
-msgstr "Tirage Liqueur and Shipping Liqueur"
+msgstr ""
 
 msgid "Saccharose"
-msgstr "Sucrose"
+msgstr ""
 
 msgid "Acide tartrique - E334"
-msgstr "Tartaric Acid - E334"
+msgstr ""
 
 msgid "Acide malique - E296"
-msgstr "Malic Acid - E296"
+msgstr ""
 
 msgid "Acide lactique - E270"
-msgstr "Lactic Acid - E270"
+msgstr ""
 
 msgid "Tartrate de potassium - E336"
-msgstr "Potassium Tartrate - E336"
+msgstr ""
 
 msgid "Bicarbonate de potassium - E501"
-msgstr "Potassium Bicarbonate - E501"
+msgstr ""
 
 msgid "Carbonate de calcium - E170"
-msgstr "Calcium Carbonate - E170"
+msgstr ""
 
 msgid "Tartrate de calcium - E354"
-msgstr "Calcium Tartrate - E354"
+msgstr ""
 
 msgid "Sulfate de calcium - E516"
-msgstr "Calcium Sulfate - E516"
+msgstr ""
 
 msgid "Carbonate de potassium - E501"
-msgstr "Potassium Carbonate - E501"
+msgstr ""
 
 msgid "Hydrogénotartrate de potassium - E336"
-msgstr "Potassium Hydrogen Tartrate - E336"
+msgstr ""
 
 msgid "Acide citrique - E330"
-msgstr "Citric Acid - E330"
+msgstr ""
 
 msgid "Tanins"
-msgstr "Tannins"
+msgstr ""
 
 msgid "Ferrocyanure de potassium - E536"
-msgstr "Potassium Ferrocyanide - E536"
+msgstr ""
 
 msgid "Phytate de calcium"
-msgstr "Calcium Phytate"
+msgstr ""
 
 msgid "Acide métatartrique - E353"
-msgstr "Metatartaric Acid - E353"
+msgstr ""
 
 msgid "Gomme arabique - E414"
-msgstr "Gum Arabic - E414"
+msgstr ""
 
 msgid "Acide DL-tartrique"
-msgstr "DL-Tartaric Acid"
+msgstr ""
 
 msgid "Sel neutre de potassium"
-msgstr "Neutral Potassium Salt"
+msgstr ""
 
 msgid "Mannoprotéines de levures"
-msgstr "Yeast Mannoproteins"
+msgstr ""
 
 msgid "Carboxyméthylcellulose - E466"
-msgstr "Carboxymethylcellulose - E466"
+msgstr ""
 
 msgid "Copolymères polyvinylimidazole/polyvinylpyrrolidone"
-msgstr "Polyvinylimidazole/Polyvinylpyrrolidone Copolymers"
+msgstr ""
 
 msgid "Polyaspartate de potassium - E456"
-msgstr "Potassium Polyaspartate - E456"
+msgstr ""
 
 msgid "Dioxyde de soufre - E220"
-msgstr "Sulfur Dioxide - E220"
+msgstr ""
 
 msgid "Bisulfite de potassium - E228"
-msgstr "Potassium Bisulfite - E228"
+msgstr ""
 
 msgid "Métabisulfite de potassium - E224"
-msgstr "Potassium Metabisulfite - E224"
+msgstr ""
 
 msgid "Sorbate de potassium - E202"
-msgstr "Potassium Sorbate - E202"
+msgstr ""
 
 msgid "Lysozyme - E1105"
-msgstr "Lysozyme - E1105"
+msgstr ""
 
 msgid "Acide L-ascorbique - E300"
-msgstr "L-Ascorbic Acid - E300"
+msgstr ""
 
 msgid "Dicarbonate de diméthyle - E242"
-msgstr "Dimethyl Dicarbonate - E242"
+msgstr ""
 
 msgid "Argon - E938"
-msgstr "Argon - E938"
+msgstr ""
 
 msgid "Azote - E941"
-msgstr "Nitrogen - E941"
+msgstr ""
 
 msgid "Dioxyde de carbone - E290"
-msgstr "Carbon Dioxide - E290"
+msgstr ""
 
 msgid "Oxygène gazeux - E948"
-msgstr "Gaseous Oxygen - E948"
+msgstr ""
 
 msgid "Sulfites"
-msgstr "Sulfites"
+msgstr ""
 
 msgid "Anhydride sulfureux"
-msgstr "Sulfurous Anhydride"
+msgstr ""
 
 msgid "Oeuf"
-msgstr "Egg"
+msgstr ""
 
 msgid "Protéine de l'oeuf"
-msgstr "Egg Protein"
+msgstr ""
 
 msgid "Produit de l'oeuf"
-msgstr "Egg Product"
+msgstr ""
 
 msgid "Lysozyme de l'oeuf"
-msgstr "Egg Lysozyme"
+msgstr ""
 
 msgid "Albumine de l'oeuf"
-msgstr "Egg Albumin"
+msgstr ""
 
 msgid "Lait"
-msgstr "Milk"
+msgstr ""
 
 msgid "Produits du lait"
-msgstr "Milk Products"
+msgstr ""
 
 msgid "Caséine du lait ou protéine du lait"
-msgstr "Milk Casein or Milk Protein"
+msgstr ""
 
 msgid "Résine de pin d'Alep"
-msgstr "Aleppo Pine Resin"
+msgstr ""
 
 msgid "Lies fraîches"
-msgstr "Fresh Lees"
+msgstr ""
 
 msgid "Caramel - E150"
-msgstr "Caramel - E150"
+msgstr ""
 
 msgid "Isothiocyanate d'allyle"
-msgstr "Allyl Isothiocyanate"
+msgstr ""
 
 msgid "Levures inactivées"
-msgstr "Inactive Yeast"
+msgstr ""
 
 msgid "Charbons à usage oenologique"
-msgstr "Oenological Charcoal"
+msgstr ""
 
 msgid "Fibres végétales sélectives"
-msgstr "Selective Plant Fibers"
+msgstr ""
 
 msgid "Cellulose microcristalline - E460"
-msgstr "Microcrystalline Cellulose - E460"
+msgstr ""
 
 msgid "Hydrogénophosphate de diammonium - E342/CAS7783-28-0"
-msgstr "Diammonium Hydrogen Phosphate - E342/CAS7783-28-0"
+msgstr ""
 
 msgid "Sulfate d'ammonium - E517/CAS7783-20-2"
-msgstr "Ammonium Sulfate - E517/CAS7783-20-2"
+msgstr ""
 
 msgid "Bisulfite d'ammonium"
-msgstr "Ammonium Bisulfite"
+msgstr ""
 
 msgid "Chlorhydrate de thiamine"
-msgstr "Thiamine Hydrochloride"
+msgstr ""
 
 msgid "Autolysats de levures"
-msgstr "Yeast Autolysates"
+msgstr ""
 
 msgid "Levures inactivées ayant des niveaux garantis de glutathion"
-msgstr "Inactive Yeast with Guaranteed Levels of Glutathione"
+msgstr ""
 
 msgid "Gélatine alimentaire"
-msgstr "Food Gelatin"
+msgstr ""
 
 msgid "Protéine de blé"
-msgstr "Wheat Protein"
+msgstr ""
 
 msgid "Protéine issue de pois"
-msgstr "Pea Protein"
+msgstr ""
 
 msgid "Protéine issue de pommes de terre"
-msgstr "Potato Protein"
+msgstr ""
 
 msgid "Colle de poisson"
-msgstr "Fish Glue"
+msgstr ""
 
 msgid "Caséines"
-msgstr "Caseins"
+msgstr ""
 
 msgid "Caséinates de potassium"
-msgstr "Potassium Caseinates"
+msgstr ""
 
 msgid "Ovalbumine"
-msgstr "Ovalbumin"
+msgstr ""
 
 msgid "Bentonite - E558"
-msgstr "Bentonite - E558"
+msgstr ""
 
 msgid "Dioxyde de silicium - E551"
-msgstr "Silicon Dioxide - E551"
+msgstr ""
 
 msgid "Kaolin"
-msgstr "Kaolin"
+msgstr ""
 
 msgid "Chitosane dérivé d'Aspergillus niger"
-msgstr "Chitosan Derived from Aspergillus niger"
+msgstr ""
 
 msgid "Chitine-glucane dérivé d'Aspergillus"
-msgstr "Chitin-Glucan Derived from Aspergillus"
+msgstr ""
 
 msgid "Polyvinylpolypyrrolidone - E1202"
-msgstr "Polyvinylpolypyrrolidone - E1202"
+msgstr ""
 
 msgid "Alginate de calcium - E404"
-msgstr "Calcium Alginate - E404"
+msgstr ""
 
 msgid "Alginate de potassium - E402"
-msgstr "Potassium Alginate - E402"
+msgstr ""
 
 msgid "Uréase"
-msgstr "Urease"
+msgstr ""
 
 msgid "Pectines lyases"
-msgstr "Pectin Lyases"
+msgstr ""
 
 msgid "Pectine méthylestérase"
-msgstr "Pectin Methylesterase"
+msgstr ""
 
 msgid "Polygalacturonase"
-msgstr "Polygalacturonase"
+msgstr ""
 
 msgid "Hémicellulase"
-msgstr "Hemicellulase"
+msgstr ""
 
 msgid "Cellulase"
-msgstr "Cellulase"
+msgstr ""
 
 msgid "Bétaglucanase"
-msgstr "Beta-Glucanase"
+msgstr ""
 
 msgid "Glycosidase"
-msgstr "Glycosidase"
+msgstr ""
 
 msgid "Levures de vinification"
-msgstr "Wine Yeast"
+msgstr ""
 
 msgid "Bactéries lactiques"
-msgstr "Lactic Bacteria"
+msgstr ""
 
 msgid "Sulfate de cuivre, pentahydraté"
-msgstr "Copper Sulfate, Pentahydrate"
+msgstr ""
 
 msgid "Citrate de cuivre"
-msgstr "Copper Citrate"
+msgstr ""
 
 msgid "dérivé d'Aspergillus niger"
-msgstr "derived from Aspergillus niger"
+msgstr ""
 
 msgid "Hydrogénotartrate de potassium"
-msgstr "Potassium Hydrogen Tartrate"
+msgstr ""
 
 msgid "Tartrate de calcium"
-msgstr "Calcium Tartrate"
+msgstr ""
 
 msgid "E354"
-msgstr "E354"
+msgstr ""
 
 msgid "Acide citrique"
-msgstr "Citric Acid"
+msgstr ""
 
 msgid "E330"
-msgstr "E330"
+msgstr ""
 
 msgid "Ferrocyanure de potassium"
-msgstr "Potassium Ferrocyanide"
+msgstr ""
 
 msgid "E536"
-msgstr "E536"
+msgstr ""
 
 msgid "Acide métatartrique"
-msgstr "Metatartaric Acid"
+msgstr ""
 
 msgid "E353"
-msgstr "E353"
+msgstr ""
 
 msgid "Gomme arabique"
-msgstr "Gum Arabic"
+msgstr ""
 
 msgid "E414"
-msgstr "E414"
+msgstr ""
 
 msgid "Carboxyméthylcellulose"
-msgstr "Carboxymethylcellulose"
+msgstr ""
 
 msgid "E466"
-msgstr "E466"
+msgstr ""
 
 msgid "Polyaspartate de potassium"
-msgstr "Potassium Polyaspartate"
+msgstr ""
 
 msgid "E456"
-msgstr "E456"
+msgstr ""
 
 msgid "Dioxyde de soufre"
-msgstr "Sulfur Dioxide"
+msgstr ""
 
 msgid "E220"
-msgstr "E220"
+msgstr ""
 
 msgid "Bisulfite de potassium"
-msgstr "Potassium Bisulfite"
+msgstr ""
 
 msgid "E228"
-msgstr "E228"
+msgstr ""
 
 msgid "Métabisulfite de potassium"
-msgstr "Potassium Metabisulfite"
+msgstr ""
 
 msgid "E224"
-msgstr "E224"
+msgstr ""
 
 msgid "Sorbate de potassium"
-msgstr "Potassium Sorbate"
+msgstr ""
 
 msgid "E202"
-msgstr "E202"
+msgstr ""
 
 msgid "Lysozyme"
-msgstr "Lysozyme"
+msgstr ""
 
 msgid "E1105"
-msgstr "E1105"
+msgstr ""
 
 msgid "Acide L-ascorbique"
-msgstr "L-Ascorbic Acid"
+msgstr ""
 
 msgid "E300"
-msgstr "E300"
+msgstr ""
 
 msgid "Dicarbonate de diméthyle"
-msgstr "Dimethyl Dicarbonate"
+msgstr ""
 
 msgid "E242"
-msgstr "E242"
+msgstr ""
 
 msgid "Argon"
-msgstr "Argon"
+msgstr ""
 
 msgid "E938"
-msgstr "E938"
+msgstr ""
 
 msgid "Azote"
-msgstr "Nitrogen"
+msgstr ""
 
 msgid "E941"
-msgstr "E941"
+msgstr ""
 
 msgid "Dioxyde de carbone"
-msgstr "Carbon Dioxide"
+msgstr ""
 
 msgid "E290"
-msgstr "E290"
+msgstr ""
 
 msgid "Oxygène gazeux"
-msgstr "Gaseous Oxygen"
+msgstr ""
 
 msgid "E948"
-msgstr "E948"
+msgstr ""
 
 msgid "Mis en bouteille sous atmosphère protectrice"
-msgstr "Bottled under protective atmosphere"
+msgstr ""
 
 msgid "Cellulose microcristalline"
-msgstr "Microcrystalline Cellulose"
+msgstr ""
 
 msgid "E460"
-msgstr "E460"
+msgstr ""
 
 msgid "Hydrogénophosphate de diammonium"
-msgstr "Diammonium Hydrogen Phosphate"
+msgstr ""
 
 msgid "E342/CAS7783-28-0"
-msgstr "E342/CAS7783-28-0"
+msgstr ""
 
 msgid "Sulfate d'ammonium"
-msgstr "Ammonium Sulfate"
+msgstr ""
 
 msgid "E517/CAS7783-20-2"
-msgstr "E517/CAS7783-20-2"
+msgstr ""
 
 msgid "Bentonite"
-msgstr "Bentonite"
+msgstr ""
 
 msgid "E558"
-msgstr "E558"
+msgstr ""
 
 msgid "Dioxyde de silicium"
-msgstr "Silicon Dioxide"
+msgstr ""
 
 msgid "E551"
-msgstr "E551"
+msgstr ""
 
 msgid "Polyvinylpolypyrrolidone"
-msgstr "Polyvinylpolypyrrolidone"
+msgstr ""
 
 msgid "E1202"
-msgstr "E1202"
+msgstr ""
 
 msgid "Alginate de calcium"
-msgstr "Calcium Alginate"
+msgstr ""
 
 msgid "E404"
-msgstr "E404"
+msgstr ""
 
 msgid "Alginate de potassium"
-msgstr "Potassium Alginate"
+msgstr ""
 
 msgid "E402"
-msgstr "E402"
+msgstr ""
 
 msgid "Acide tartrique"
-msgstr "Tartaric Acid"
+msgstr ""
 
 msgid "E334"
-msgstr "E334"
+msgstr ""
 
 msgid "Acide malique"
-msgstr "Malic Acid"
+msgstr ""
 
 msgid "E296"
-msgstr "E296"
+msgstr ""
 
 msgid "Acide lactique"
-msgstr "Lactic Acid"
+msgstr ""
 
 msgid "E270"
-msgstr "E270"
+msgstr ""
 
 msgid "Tartrate de potassium"
-msgstr "Potassium Tartrate"
+msgstr ""
 
 msgid "E336"
-msgstr "E336"
+msgstr ""
 
 msgid "Bicarbonate de potassium"
-msgstr "Potassium Bicarbonate"
+msgstr ""
 
 msgid "E501"
-msgstr "E501"
+msgstr ""
 
 msgid "Carbonate de calcium"
-msgstr "Calcium Carbonate"
+msgstr ""
 
 msgid "E170"
-msgstr "E170"
+msgstr ""
 
 msgid "Sulfate de calcium"
-msgstr "Calcium Sulfate"
+msgstr ""
 
 msgid "E516"
-msgstr "E516"
+msgstr ""
 
 msgid "Carbonate de potassium"
-msgstr "Potassium Carbonate"
+msgstr ""
