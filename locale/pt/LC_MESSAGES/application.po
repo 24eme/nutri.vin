@@ -19,7 +19,7 @@ msgstr ""
 "X-Generator: Weblate 5.17.1-dev\n"
 
 msgid "Informations complémentaires"
-msgstr "InformaÃ§Ãμes adicionais"
+msgstr "Informações adicionais"
 
 msgid "Volume d'alcool"
 msgstr "Volume do álcool"
@@ -113,13 +113,13 @@ msgstr ""
 " modificação é mantido e publicamente pesquisável"
 
 msgid "Créé le "
-msgstr "Criado em"
+msgstr "Criado em "
 
 msgid "Modifié le "
-msgstr "Modificado em"
+msgstr "Modificado em "
 
 msgid "Voir la version du "
-msgstr "Ver versão de"
+msgstr "Ver versão de "
 
 msgid ""
 "Seules l'heure de la première visite de la session et une évaluation "
