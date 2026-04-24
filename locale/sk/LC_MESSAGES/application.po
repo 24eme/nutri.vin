@@ -18,104 +18,106 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 
 msgid "Informations complémentaires"
-msgstr ""
+msgstr "Ďalšie informácie"
 
 msgid "Volume d'alcool"
-msgstr ""
+msgstr "Objem alkoholu"
 
 msgid "Contenance"
-msgstr ""
+msgstr "Kapacita"
 
 msgid "N° de lot"
-msgstr ""
+msgstr "Č. šarže"
 
 msgid "Ingrédients"
-msgstr ""
+msgstr "Zložky"
 
 #, php-format
 msgid "Ingrédients allergènes indiqués en %sgras%s."
-msgstr ""
+msgstr "Alergénne zložky sú vyznačené %stučným písmom%s"
 
 #, php-format
 msgid "Ingrédients issus de l'agriculture biologique indiqué avec une %s*%s."
-msgstr ""
+msgstr "Zložky z ekologického poľnohospodárstva označené %s*%s."
 
 msgid "Informations nutritionnelles"
-msgstr ""
+msgstr "Informácie o výživovej hodnote"
 
 msgid "Type"
-msgstr ""
+msgstr "Typ"
 
 msgid "Pour 100 mL"
-msgstr ""
+msgstr "Na 100 ml"
 
 msgid "Énergie"
-msgstr ""
+msgstr "Energia"
 
 msgid "kJ"
-msgstr ""
+msgstr "kJ"
 
 msgid "kcal"
-msgstr ""
+msgstr "kcal"
 
 msgid "Matières grasses"
-msgstr ""
+msgstr "Tuk"
 
 msgid "dont acides gras saturés"
-msgstr ""
+msgstr "z toho nasýtené mastné kyseliny"
 
 msgid "g"
-msgstr ""
+msgstr "g"
 
 msgid "Glucides"
-msgstr ""
+msgstr "Sacharidy"
 
 msgid "dont sucres"
-msgstr ""
+msgstr "z toho cukry"
 
 msgid "Fibres alimentaires"
-msgstr ""
+msgstr "Potravinové vlákna"
 
 msgid "Protéines"
-msgstr ""
+msgstr "Bielkoviny"
 
 msgid "Sel"
-msgstr ""
+msgstr "Soľ"
 
 msgid "Sodium"
-msgstr ""
+msgstr "Sodík"
 
 msgid "Autres informations"
-msgstr ""
+msgstr "Ďalšie informácie"
 
 msgid "Mentions légales"
-msgstr ""
+msgstr "Právne informácie"
 
 msgid "Cette fiche nutritionnelle est éditée sous la seule responsablité de"
-msgstr ""
+msgstr "Tento nutričný list je publikovaný pod výlučnou zodpovednosťou"
 
 msgid "Elle est hébergée par"
-msgstr ""
+msgstr "Je hostiteľom"
 
 msgid "sa plateforme"
-msgstr ""
+msgstr "jej platforma"
 
 msgid "et le projet libre"
-msgstr ""
+msgstr "a slobodný projekt"
 
 msgid ""
 "ne peuvent être tenus responsables des informations publiées. Un historique "
 "de chaque modification est conservée et consultable publiquement"
 msgstr ""
+"nezodpovedá za zverejnené informácie. História každej úpravy sa vedie a "
+"verejne vyhľadávateľné"
 
 msgid "Créé le "
-msgstr ""
+msgstr "Vytvorené"
 
 msgid "Modifié le "
-msgstr ""
+msgstr "Zmenené"
 
 msgid "Voir la version du "
-msgstr ""
+msgstr "Pozri verziu"
 
 msgid ""
 "Seules l'heure de la première visite de la session et une évaluation "
@@ -124,510 +126,515 @@ msgid ""
 "personnel n'est conservé et aucun suivi des visiteurs de cette fiche n'est "
 "réalisé. La consultation de la page ne nécessite pas de cookie."
 msgstr ""
+"Len čas prvej návštevy zasadnutia a geografické hodnotenie spojenia sú "
+"zachované, aby sa táto štatistika. V súlade s právnymi predpismi sa "
+"neuchovávajú žiadne osobné údaje a na návštevníkoch tohto hárku sa "
+"nevykonáva žiadna následná kontrola. Zobrazenie stránky nevyžaduje súbor "
+"cookie."
 
 msgid "vue"
-msgstr ""
+msgstr "pohľad"
 
 msgid "Activateur de fermentation"
-msgstr ""
+msgstr "Aktivátor kvasenia"
 
 msgid "Agent de fermentation"
-msgstr ""
+msgstr "Fermentačný prostriedok"
 
 msgid "Agent stabilisateur"
-msgstr ""
+msgstr "Stabilizujúce činidlo"
 
 msgid "Conservateur et antioxydant"
-msgstr ""
+msgstr "Konzervátor a antioxidant"
 
 msgid "Correction de défauts"
-msgstr ""
+msgstr "Oprava chýb"
 
 msgid "Enzyme"
-msgstr ""
+msgstr "Enzým"
 
 msgid "Gaz et gaz d'emballage"
-msgstr ""
+msgstr "Plyny a baliace plyny"
 
 msgid "Régulateur d'acidité"
-msgstr ""
+msgstr "Regulátor kyselín"
 
 msgid "Raisins"
-msgstr ""
+msgstr "Hrozno"
 
 msgid "Moût de raisin concentré"
-msgstr ""
+msgstr "Zahustený hroznový mušt"
 
 msgid "Eau de vie de vin"
-msgstr ""
+msgstr "Vínny život"
 
 msgid "Liqueur de tirage et liqueur d'expédition"
-msgstr ""
+msgstr "Kresliť Liquor a Poštovné Liquor"
 
 msgid "Saccharose"
-msgstr ""
+msgstr "Sacharóza"
 
 msgid "Acide tartrique - E334"
-msgstr ""
+msgstr "Kyselina vínna - E334"
 
 msgid "Acide malique - E296"
-msgstr ""
+msgstr "Kyselina jablčná - E296"
 
 msgid "Acide lactique - E270"
-msgstr ""
+msgstr "Kyselina mliečna - E270"
 
 msgid "Tartrate de potassium - E336"
-msgstr ""
+msgstr "Vínan draselný - E336"
 
 msgid "Bicarbonate de potassium - E501"
-msgstr ""
+msgstr "Hydrogenuhličitan draselný - E501"
 
 msgid "Carbonate de calcium - E170"
-msgstr ""
+msgstr "Uhličitan vápenatý - E170"
 
 msgid "Tartrate de calcium - E354"
-msgstr ""
+msgstr "Vínan vápenatý - E354"
 
 msgid "Sulfate de calcium - E516"
-msgstr ""
+msgstr "Síran vápenatý - E516"
 
 msgid "Carbonate de potassium - E501"
-msgstr ""
+msgstr "Uhličitan draselný - E501"
 
 msgid "Hydrogénotartrate de potassium - E336"
-msgstr ""
+msgstr "Hydrogenartarát draselný - E336"
 
 msgid "Acide citrique - E330"
-msgstr ""
+msgstr "Kyselina citrónová - E330"
 
 msgid "Tanins"
-msgstr ""
+msgstr "Taníny"
 
 msgid "Ferrocyanure de potassium - E536"
-msgstr ""
+msgstr "Ferrokyanid draselný - E536"
 
 msgid "Phytate de calcium"
-msgstr ""
+msgstr "Fytát vápenatý"
 
 msgid "Acide métatartrique - E353"
-msgstr ""
+msgstr "Kyselina metatarbová - E353"
 
 msgid "Gomme arabique - E414"
-msgstr ""
+msgstr "Arabská guma - E414"
 
 msgid "Acide DL-tartrique"
-msgstr ""
+msgstr "Kyselina DL-vínna"
 
 msgid "Sel neutre de potassium"
-msgstr ""
+msgstr "Draslíkovo neutrálna soľ"
 
 msgid "Mannoprotéines de levures"
-msgstr ""
+msgstr "Kvasinky manoproteíny"
 
 msgid "Carboxyméthylcellulose - E466"
-msgstr ""
+msgstr "Karboxymetylcelulóza - E466"
 
 msgid "Copolymères polyvinylimidazole/polyvinylpyrrolidone"
-msgstr ""
+msgstr "Polyvinylimidazol/polyvinylpyrolidónové kopolyméry"
 
 msgid "Polyaspartate de potassium - E456"
-msgstr ""
+msgstr "Polyaspartát draselný - E456"
 
 msgid "Dioxyde de soufre - E220"
-msgstr ""
+msgstr "Oxid siričitý - E220"
 
 msgid "Bisulfite de potassium - E228"
-msgstr ""
+msgstr "Bissulfit draselný - E228"
 
 msgid "Métabisulfite de potassium - E224"
-msgstr ""
+msgstr "Metabissulfit draselný - E224"
 
 msgid "Sorbate de potassium - E202"
-msgstr ""
+msgstr "Sorban draselný - E202"
 
 msgid "Lysozyme - E1105"
-msgstr ""
+msgstr "Lyzozým - E1105"
 
 msgid "Acide L-ascorbique - E300"
-msgstr ""
+msgstr "Kyselina L-askorbová - E300"
 
 msgid "Dicarbonate de diméthyle - E242"
-msgstr ""
+msgstr "Dimetyldikarbonát - E242"
 
 msgid "Argon - E938"
-msgstr ""
+msgstr "Argón - E938"
 
 msgid "Azote - E941"
-msgstr ""
+msgstr "Azote - E941"
 
 msgid "Dioxyde de carbone - E290"
-msgstr ""
+msgstr "Oxid uhličitý - E290"
 
 msgid "Oxygène gazeux - E948"
-msgstr ""
+msgstr "Plynný kyslík - E948"
 
 msgid "Sulfites"
-msgstr ""
+msgstr "Sulfidy"
 
 msgid "Anhydride sulfureux"
-msgstr ""
+msgstr "Oxid siričitý"
 
 msgid "Oeuf"
-msgstr ""
+msgstr "Vajcia"
 
 msgid "Protéine de l'oeuf"
-msgstr ""
+msgstr "Vaječný proteín"
 
 msgid "Produit de l'oeuf"
-msgstr ""
+msgstr "Vaječný výrobok"
 
 msgid "Lysozyme de l'oeuf"
-msgstr ""
+msgstr "Vaječný lyzozým"
 
 msgid "Albumine de l'oeuf"
-msgstr ""
+msgstr "Vaječný albumín"
 
 msgid "Lait"
-msgstr ""
+msgstr "Mlieko"
 
 msgid "Produits du lait"
-msgstr ""
+msgstr "Mliečne výrobky"
 
 msgid "Caséine du lait ou protéine du lait"
-msgstr ""
+msgstr "Mliečny kazeín alebo mliečne bielkoviny"
 
 msgid "Résine de pin d'Alep"
-msgstr ""
+msgstr "Aleppo borovicová živica"
 
 msgid "Lies fraîches"
-msgstr ""
+msgstr "Čerstvé kaly"
 
 msgid "Caramel - E150"
-msgstr ""
+msgstr "Karamel - E150"
 
 msgid "Isothiocyanate d'allyle"
-msgstr ""
+msgstr "Alylizotiokyanát"
 
 msgid "Levures inactivées"
-msgstr ""
+msgstr "Inaktivované kvasinky"
 
 msgid "Charbons à usage oenologique"
-msgstr ""
+msgstr "Uhlie na enologické účely"
 
 msgid "Fibres végétales sélectives"
-msgstr ""
+msgstr "Selektívne rastlinné vlákna"
 
 msgid "Cellulose microcristalline - E460"
-msgstr ""
+msgstr "Mikrokryštalická celulóza - E460"
 
 msgid "Hydrogénophosphate de diammonium - E342/CAS7783-28-0"
-msgstr ""
+msgstr "Hydrogenfosforečnan diamónny - E342/CAS7783-28-0"
 
 msgid "Sulfate d'ammonium - E517/CAS7783-20-2"
-msgstr ""
+msgstr "Síran amónny - E517/CAS7783-20-2"
 
 msgid "Bisulfite d'ammonium"
-msgstr ""
+msgstr "Bisulfit amónny"
 
 msgid "Chlorhydrate de thiamine"
-msgstr ""
+msgstr "Tiamín hydrochlorid"
 
 msgid "Autolysats de levures"
-msgstr ""
+msgstr "Autolyzáty kvasiniek"
 
 msgid "Levures inactivées ayant des niveaux garantis de glutathion"
-msgstr ""
+msgstr "Inaktivované kvasinky s garantovanými hladinami glutatiónu"
 
 msgid "Gélatine alimentaire"
-msgstr ""
+msgstr "Jedlo želatína"
 
 msgid "Protéine de blé"
-msgstr ""
+msgstr "Pšeničná bielkovina"
 
 msgid "Protéine issue de pois"
-msgstr ""
+msgstr "Hrachový proteín"
 
 msgid "Protéine issue de pommes de terre"
-msgstr ""
+msgstr "Zemiaková bielkovina"
 
 msgid "Colle de poisson"
-msgstr ""
+msgstr "Rybie lepidlo"
 
 msgid "Caséines"
-msgstr ""
+msgstr "Kazeíny"
 
 msgid "Caséinates de potassium"
-msgstr ""
+msgstr "Kazeináty draslíka"
 
 msgid "Ovalbumine"
-msgstr ""
+msgstr "Ovalbumín"
 
 msgid "Bentonite - E558"
-msgstr ""
+msgstr "Bentonit - E558"
 
 msgid "Dioxyde de silicium - E551"
-msgstr ""
+msgstr "Oxid kremičitý - E551"
 
 msgid "Kaolin"
-msgstr ""
+msgstr "Kaolín"
 
 msgid "Chitosane dérivé d'Aspergillus niger"
-msgstr ""
+msgstr "Chitosan získaný z Aspergillus niger"
 
 msgid "Chitine-glucane dérivé d'Aspergillus"
-msgstr ""
+msgstr "Chitínglukán získaný z Aspergillus"
 
 msgid "Polyvinylpolypyrrolidone - E1202"
-msgstr ""
+msgstr "Polyvinylpolypyrolidón - E1202"
 
 msgid "Alginate de calcium - E404"
-msgstr ""
+msgstr "Alginát vápenatý - E404"
 
 msgid "Alginate de potassium - E402"
-msgstr ""
+msgstr "Alginát draselný - E402"
 
 msgid "Uréase"
-msgstr ""
+msgstr "Močovina"
 
 msgid "Pectines lyases"
-msgstr ""
+msgstr "Lyáza pektíny"
 
 msgid "Pectine méthylestérase"
-msgstr ""
+msgstr "Pektín metylesteráza"
 
 msgid "Polygalacturonase"
-msgstr ""
+msgstr "Polygalakturonáza"
 
 msgid "Hémicellulase"
-msgstr ""
+msgstr "Hemiceluláza"
 
 msgid "Cellulase"
-msgstr ""
+msgstr "Celuláza"
 
 msgid "Bétaglucanase"
-msgstr ""
+msgstr "Betaglukanáza"
 
 msgid "Glycosidase"
-msgstr ""
+msgstr "Glykozidáza"
 
 msgid "Levures de vinification"
-msgstr ""
+msgstr "Vinifikačné kvasinky"
 
 msgid "Bactéries lactiques"
-msgstr ""
+msgstr "Laktické baktérie"
 
 msgid "Sulfate de cuivre, pentahydraté"
-msgstr ""
+msgstr "Pentahydrát síranu meďnatého"
 
 msgid "Citrate de cuivre"
-msgstr ""
+msgstr "Citran meďnatý"
 
 msgid "dérivé d'Aspergillus niger"
-msgstr ""
+msgstr "získané z Aspergillus niger"
 
 msgid "Hydrogénotartrate de potassium"
-msgstr ""
+msgstr "Hydrogenartarát draselný"
 
 msgid "Tartrate de calcium"
-msgstr ""
+msgstr "Vínan vápenatý"
 
 msgid "E354"
-msgstr ""
+msgstr "E354"
 
 msgid "Acide citrique"
-msgstr ""
+msgstr "Kyselina citrónová"
 
 msgid "E330"
-msgstr ""
+msgstr "E330"
 
 msgid "Ferrocyanure de potassium"
-msgstr ""
+msgstr "Ferrokyanid draselný"
 
 msgid "E536"
-msgstr ""
+msgstr "E536"
 
 msgid "Acide métatartrique"
-msgstr ""
+msgstr "Kyselina metatarbová"
 
 msgid "E353"
-msgstr ""
+msgstr "E353"
 
 msgid "Gomme arabique"
-msgstr ""
+msgstr "Arabská guma"
 
 msgid "E414"
-msgstr ""
+msgstr "E414"
 
 msgid "Carboxyméthylcellulose"
-msgstr ""
+msgstr "Karboxymetylcelulóza"
 
 msgid "E466"
-msgstr ""
+msgstr "E466"
 
 msgid "Polyaspartate de potassium"
-msgstr ""
+msgstr "Polyaspartát draselný"
 
 msgid "E456"
-msgstr ""
+msgstr "E456"
 
 msgid "Dioxyde de soufre"
-msgstr ""
+msgstr "Oxid siričitý"
 
 msgid "E220"
-msgstr ""
+msgstr "E220"
 
 msgid "Bisulfite de potassium"
-msgstr ""
+msgstr "Bissulfit draselný"
 
 msgid "E228"
-msgstr ""
+msgstr "E228"
 
 msgid "Métabisulfite de potassium"
-msgstr ""
+msgstr "Metabisulfit draselný"
 
 msgid "E224"
-msgstr ""
+msgstr "E224"
 
 msgid "Sorbate de potassium"
-msgstr ""
+msgstr "Sorban draselný"
 
 msgid "E202"
-msgstr ""
+msgstr "E202"
 
 msgid "Lysozyme"
-msgstr ""
+msgstr "Lyzozým"
 
 msgid "E1105"
-msgstr ""
+msgstr "E1105"
 
 msgid "Acide L-ascorbique"
-msgstr ""
+msgstr "Kyselina L-askorbová"
 
 msgid "E300"
-msgstr ""
+msgstr "E300"
 
 msgid "Dicarbonate de diméthyle"
-msgstr ""
+msgstr "Dimetyldikarbonát"
 
 msgid "E242"
-msgstr ""
+msgstr "E242"
 
 msgid "Argon"
-msgstr ""
+msgstr "Argón"
 
 msgid "E938"
-msgstr ""
+msgstr "E938"
 
 msgid "Azote"
-msgstr ""
+msgstr "Azote"
 
 msgid "E941"
-msgstr ""
+msgstr "E941"
 
 msgid "Dioxyde de carbone"
-msgstr ""
+msgstr "Oxid uhličitý"
 
 msgid "E290"
-msgstr ""
+msgstr "E290"
 
 msgid "Oxygène gazeux"
-msgstr ""
+msgstr "Plynný kyslík"
 
 msgid "E948"
-msgstr ""
+msgstr "E948"
 
 msgid "Mis en bouteille sous atmosphère protectrice"
-msgstr ""
+msgstr "Fľaškované pod ochrannou atmosférou"
 
 msgid "Cellulose microcristalline"
-msgstr ""
+msgstr "Mikrokryštalická celulóza"
 
 msgid "E460"
-msgstr ""
+msgstr "E460"
 
 msgid "Hydrogénophosphate de diammonium"
-msgstr ""
+msgstr "Hydrogenfosforečnan diamónny"
 
 msgid "E342/CAS7783-28-0"
-msgstr ""
+msgstr "E342/CAS7783-28-0"
 
 msgid "Sulfate d'ammonium"
-msgstr ""
+msgstr "Síran amónny"
 
 msgid "E517/CAS7783-20-2"
-msgstr ""
+msgstr "E517/CAS7783-20-2"
 
 msgid "Bentonite"
-msgstr ""
+msgstr "Bentonit"
 
 msgid "E558"
-msgstr ""
+msgstr "E558"
 
 msgid "Dioxyde de silicium"
-msgstr ""
+msgstr "Oxid kremičitý"
 
 msgid "E551"
-msgstr ""
+msgstr "E551"
 
 msgid "Polyvinylpolypyrrolidone"
-msgstr ""
+msgstr "Polyvinylpolypyrolidón"
 
 msgid "E1202"
-msgstr ""
+msgstr "E1202"
 
 msgid "Alginate de calcium"
-msgstr ""
+msgstr "Alginát vápenatý"
 
 msgid "E404"
-msgstr ""
+msgstr "E404"
 
 msgid "Alginate de potassium"
-msgstr ""
+msgstr "Alginát draselný"
 
 msgid "E402"
-msgstr ""
+msgstr "E402"
 
 msgid "Acide tartrique"
-msgstr ""
+msgstr "Kyselina vínna"
 
 msgid "E334"
-msgstr ""
+msgstr "E334"
 
 msgid "Acide malique"
-msgstr ""
+msgstr "Kyselina jablčná"
 
 msgid "E296"
-msgstr ""
+msgstr "E296"
 
 msgid "Acide lactique"
-msgstr ""
+msgstr "Kyselina mliečna"
 
 msgid "E270"
-msgstr ""
+msgstr "E270"
 
 msgid "Tartrate de potassium"
-msgstr ""
+msgstr "Vínan draselný"
 
 msgid "E336"
-msgstr ""
+msgstr "E336"
 
 msgid "Bicarbonate de potassium"
-msgstr ""
+msgstr "Hydrogenuhličitan draselný"
 
 msgid "E501"
-msgstr ""
+msgstr "E501"
 
 msgid "Carbonate de calcium"
-msgstr ""
+msgstr "Uhličitan vápenatý"
 
 msgid "E170"
-msgstr ""
+msgstr "E170"
 
 msgid "Sulfate de calcium"
-msgstr ""
+msgstr "Síran vápenatý"
 
 msgid "E516"
-msgstr ""
+msgstr "E516"
 
 msgid "Carbonate de potassium"
-msgstr ""
+msgstr "Uhličitan draselný"

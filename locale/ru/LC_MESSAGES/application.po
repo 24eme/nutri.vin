@@ -37,12 +37,11 @@ msgstr "Состав"
 
 #, php-format
 msgid "Ingrédients allergènes indiqués en %sgras%s."
-msgstr "Аллергены указаны в %sgras%s."
+msgstr "Аллергенные ингредиенты выделены %sжирным шрифтом%s"
 
 #, php-format
 msgid "Ingrédients issus de l'agriculture biologique indiqué avec une %s*%s."
-msgstr ""
-"Ингредиенты, полученные из органических продуктов, обозначены символом %s*%s."
+msgstr "Ингредиенты, полученные из органических продуктов, обозначены символом %s*%s."
 
 msgid "Informations nutritionnelles"
 msgstr "Пищевая ценность"

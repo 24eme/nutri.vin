@@ -10,14 +10,12 @@ msgstr ""
 "POT-Creation-Date: 2026-02-05 09:27+0100\n"
 "PO-Revision-Date: 2026-04-24 13:02+0000\n"
 "Last-Translator: NutriVin <nutrivin@24eme.fr>\n"
-"Language-Team: Polish <https://hosted.weblate.org/projects/nutrivin/"
-"interface/pl/>\n"
+"Language-Team: Polish <https://hosted.weblate.org/projects/nutrivin/interface/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Weblate 5.17.1-dev\n"
 
 msgid "Informations complémentaires"
@@ -157,487 +155,487 @@ msgid "Enzyme"
 msgstr "Enzym"
 
 msgid "Gaz et gaz d'emballage"
-msgstr ""
+msgstr "Gazy i gazy opakowaniowe"
 
 msgid "Régulateur d'acidité"
-msgstr ""
+msgstr "Regulator kwasowości"
 
 msgid "Raisins"
-msgstr ""
+msgstr "Winogrona"
 
 msgid "Moût de raisin concentré"
-msgstr ""
+msgstr "Koncentrat moszczu gronowego"
 
 msgid "Eau de vie de vin"
-msgstr ""
+msgstr "Życie winne"
 
 msgid "Liqueur de tirage et liqueur d'expédition"
-msgstr ""
+msgstr "Draw Liquor and Shipping Liquor"
 
 msgid "Saccharose"
-msgstr ""
+msgstr "Sacharoza"
 
 msgid "Acide tartrique - E334"
-msgstr ""
+msgstr "Kwas winowy - E334"
 
 msgid "Acide malique - E296"
-msgstr ""
+msgstr "Kwas jabłkowy - E296"
 
 msgid "Acide lactique - E270"
-msgstr ""
+msgstr "Kwas mlekowy - E270"
 
 msgid "Tartrate de potassium - E336"
-msgstr ""
+msgstr "Winian potasu - E336"
 
 msgid "Bicarbonate de potassium - E501"
-msgstr ""
+msgstr "Wodorowęglan potasu - E501"
 
 msgid "Carbonate de calcium - E170"
-msgstr ""
+msgstr "Węglan wapnia - E170"
 
 msgid "Tartrate de calcium - E354"
-msgstr ""
+msgstr "Winian wapnia - E354"
 
 msgid "Sulfate de calcium - E516"
-msgstr ""
+msgstr "Siarczan wapnia - E516"
 
 msgid "Carbonate de potassium - E501"
-msgstr ""
+msgstr "Węglan potasu - E501"
 
 msgid "Hydrogénotartrate de potassium - E336"
-msgstr ""
+msgstr "Wodorowęglan potasu - E336"
 
 msgid "Acide citrique - E330"
-msgstr ""
+msgstr "Kwas cytrynowy - E330"
 
 msgid "Tanins"
-msgstr ""
+msgstr "Taniny"
 
 msgid "Ferrocyanure de potassium - E536"
-msgstr ""
+msgstr "Żelazocyjanek potasu - E536"
 
 msgid "Phytate de calcium"
-msgstr ""
+msgstr "Fitynian wapnia"
 
 msgid "Acide métatartrique - E353"
-msgstr ""
+msgstr "Kwas metatartryczny - E353"
 
 msgid "Gomme arabique - E414"
-msgstr ""
+msgstr "Guma arabska - E414"
 
 msgid "Acide DL-tartrique"
-msgstr ""
+msgstr "Kwas DL-winowy"
 
 msgid "Sel neutre de potassium"
-msgstr ""
+msgstr "Sól obojętna potasu"
 
 msgid "Mannoprotéines de levures"
-msgstr ""
+msgstr "Mannoproteiny drożdży"
 
 msgid "Carboxyméthylcellulose - E466"
-msgstr ""
+msgstr "Karboksymetyloceluloza - E466"
 
 msgid "Copolymères polyvinylimidazole/polyvinylpyrrolidone"
-msgstr ""
+msgstr "Poliwinylimidazol / poliwinylopirolidon kopolimery"
 
 msgid "Polyaspartate de potassium - E456"
-msgstr ""
+msgstr "Poliasparaginian potasu - E456"
 
 msgid "Dioxyde de soufre - E220"
-msgstr ""
+msgstr "Dwutlenek siarki - E220"
 
 msgid "Bisulfite de potassium - E228"
-msgstr ""
+msgstr "Bisulfit potasu - E228"
 
 msgid "Métabisulfite de potassium - E224"
-msgstr ""
+msgstr "Metabisulfit potasu - E224"
 
 msgid "Sorbate de potassium - E202"
-msgstr ""
+msgstr "Sorbinian potasu - E202"
 
 msgid "Lysozyme - E1105"
-msgstr ""
+msgstr "Lizozym - E1105"
 
 msgid "Acide L-ascorbique - E300"
-msgstr ""
+msgstr "Kwas L-askorbinowy - E300"
 
 msgid "Dicarbonate de diméthyle - E242"
-msgstr ""
+msgstr "Diwęglan dimetylu - E242"
 
 msgid "Argon - E938"
-msgstr ""
+msgstr "Argon - E938"
 
 msgid "Azote - E941"
-msgstr ""
+msgstr "Azote - E941"
 
 msgid "Dioxyde de carbone - E290"
-msgstr ""
+msgstr "Dwutlenek węgla - E290"
 
 msgid "Oxygène gazeux - E948"
-msgstr ""
+msgstr "Tlen gazowy - E948"
 
 msgid "Sulfites"
-msgstr ""
+msgstr "Siarczyny"
 
 msgid "Anhydride sulfureux"
-msgstr ""
+msgstr "Ditlenek siarki"
 
 msgid "Oeuf"
-msgstr ""
+msgstr "Jaja"
 
 msgid "Protéine de l'oeuf"
-msgstr ""
+msgstr "Białko jaj"
 
 msgid "Produit de l'oeuf"
-msgstr ""
+msgstr "Produkt jajeczny"
 
 msgid "Lysozyme de l'oeuf"
-msgstr ""
+msgstr "Lizozym jaj"
 
 msgid "Albumine de l'oeuf"
-msgstr ""
+msgstr "Albumina jaja"
 
 msgid "Lait"
-msgstr ""
+msgstr "Mleko"
 
 msgid "Produits du lait"
-msgstr ""
+msgstr "Przetwory mleczne"
 
 msgid "Caséine du lait ou protéine du lait"
-msgstr ""
+msgstr "Kazeina mleka lub białko mleka"
 
 msgid "Résine de pin d'Alep"
-msgstr ""
+msgstr "Żywica sosnowa Aleppo"
 
 msgid "Lies fraîches"
-msgstr ""
+msgstr "Drożdże świeże"
 
 msgid "Caramel - E150"
-msgstr ""
+msgstr "Karmel - E150"
 
 msgid "Isothiocyanate d'allyle"
-msgstr ""
+msgstr "Izotiocyjanian allilu"
 
 msgid "Levures inactivées"
-msgstr ""
+msgstr "Drożdże nieaktywne"
 
 msgid "Charbons à usage oenologique"
-msgstr ""
+msgstr "Węgiel do celów enologicznych"
 
 msgid "Fibres végétales sélectives"
-msgstr ""
+msgstr "Selektywne włókna roślinne"
 
 msgid "Cellulose microcristalline - E460"
-msgstr ""
+msgstr "Celuloza mikrokrystaliczna - E460"
 
 msgid "Hydrogénophosphate de diammonium - E342/CAS7783-28-0"
-msgstr ""
+msgstr "Wodorofosforan diamonu - E342 / CAS7783- 28- 0"
 
 msgid "Sulfate d'ammonium - E517/CAS7783-20-2"
-msgstr ""
+msgstr "Siarczan amonu - E517 / CAS7783-20-2"
 
 msgid "Bisulfite d'ammonium"
-msgstr ""
+msgstr "Bisulfit amonu"
 
 msgid "Chlorhydrate de thiamine"
-msgstr ""
+msgstr "Chlorowodorek tiaminy"
 
 msgid "Autolysats de levures"
-msgstr ""
+msgstr "Autolizaty drożdży"
 
 msgid "Levures inactivées ayant des niveaux garantis de glutathion"
-msgstr ""
+msgstr "Drożdże inaktywowane z gwarantowanym poziomem glutationu"
 
 msgid "Gélatine alimentaire"
-msgstr ""
+msgstr "Żelatyna spożywcza"
 
 msgid "Protéine de blé"
-msgstr ""
+msgstr "Białko pszenicy"
 
 msgid "Protéine issue de pois"
-msgstr ""
+msgstr "Białko grochu"
 
 msgid "Protéine issue de pommes de terre"
-msgstr ""
+msgstr "Białko ziemniaka"
 
 msgid "Colle de poisson"
-msgstr ""
+msgstr "Klej rybny"
 
 msgid "Caséines"
-msgstr ""
+msgstr "Kazeiny"
 
 msgid "Caséinates de potassium"
-msgstr ""
+msgstr "Kazeiniany potasu"
 
 msgid "Ovalbumine"
-msgstr ""
+msgstr "Ovalbumina"
 
 msgid "Bentonite - E558"
-msgstr ""
+msgstr "Bentonit - E558"
 
 msgid "Dioxyde de silicium - E551"
-msgstr ""
+msgstr "Ditlenek krzemu - E551"
 
 msgid "Kaolin"
-msgstr ""
+msgstr "Kaolin"
 
 msgid "Chitosane dérivé d'Aspergillus niger"
-msgstr ""
+msgstr "Chitosan pochodzący z Aspergillus niger"
 
 msgid "Chitine-glucane dérivé d'Aspergillus"
-msgstr ""
+msgstr "Chitin- glukan pochodzący z Aspergillus"
 
 msgid "Polyvinylpolypyrrolidone - E1202"
-msgstr ""
+msgstr "Poliwinylopolipirolidon - E1202"
 
 msgid "Alginate de calcium - E404"
-msgstr ""
+msgstr "Alginian wapnia - E404"
 
 msgid "Alginate de potassium - E402"
-msgstr ""
+msgstr "Alginian potasu - E402"
 
 msgid "Uréase"
-msgstr ""
+msgstr "Urease"
 
 msgid "Pectines lyases"
-msgstr ""
+msgstr "Pektyny liazy"
 
 msgid "Pectine méthylestérase"
-msgstr ""
+msgstr "Metyloesterazy pektynowej"
 
 msgid "Polygalacturonase"
-msgstr ""
+msgstr "Poligalakturonaza"
 
 msgid "Hémicellulase"
-msgstr ""
+msgstr "Hemicellulaza"
 
 msgid "Cellulase"
-msgstr ""
+msgstr "Celulaza"
 
 msgid "Bétaglucanase"
-msgstr ""
+msgstr "Betaglukanaza"
 
 msgid "Glycosidase"
-msgstr ""
+msgstr "Glikozydaza"
 
 msgid "Levures de vinification"
-msgstr ""
+msgstr "Drożdże winiarskie"
 
 msgid "Bactéries lactiques"
-msgstr ""
+msgstr "Bakterie mleczanowe"
 
 msgid "Sulfate de cuivre, pentahydraté"
-msgstr ""
+msgstr "Siarczan miedzi, pentahydrat"
 
 msgid "Citrate de cuivre"
-msgstr ""
+msgstr "Cytrynian miedzi"
 
 msgid "dérivé d'Aspergillus niger"
-msgstr ""
+msgstr "pochodzące z Aspergillus niger"
 
 msgid "Hydrogénotartrate de potassium"
-msgstr ""
+msgstr "Wodorowęglan potasu"
 
 msgid "Tartrate de calcium"
-msgstr ""
+msgstr "Winian wapnia"
 
 msgid "E354"
-msgstr ""
+msgstr "E354"
 
 msgid "Acide citrique"
-msgstr ""
+msgstr "Kwas cytrynowy"
 
 msgid "E330"
-msgstr ""
+msgstr "E330"
 
 msgid "Ferrocyanure de potassium"
-msgstr ""
+msgstr "Żelazocyjanek potasu"
 
 msgid "E536"
-msgstr ""
+msgstr "E536"
 
 msgid "Acide métatartrique"
-msgstr ""
+msgstr "Kwas metatartryczny"
 
 msgid "E353"
-msgstr ""
+msgstr "E353"
 
 msgid "Gomme arabique"
-msgstr ""
+msgstr "Guma arabska"
 
 msgid "E414"
-msgstr ""
+msgstr "E414"
 
 msgid "Carboxyméthylcellulose"
-msgstr ""
+msgstr "Karboksymetyloceluloza"
 
 msgid "E466"
-msgstr ""
+msgstr "E466"
 
 msgid "Polyaspartate de potassium"
-msgstr ""
+msgstr "Poliasparaginian potasu"
 
 msgid "E456"
-msgstr ""
+msgstr "E456"
 
 msgid "Dioxyde de soufre"
-msgstr ""
+msgstr "Ditlenek siarki"
 
 msgid "E220"
-msgstr ""
+msgstr "E220"
 
 msgid "Bisulfite de potassium"
-msgstr ""
+msgstr "Bisulfit potasu"
 
 msgid "E228"
-msgstr ""
+msgstr "E228"
 
 msgid "Métabisulfite de potassium"
-msgstr ""
+msgstr "Metabisulfit potasu"
 
 msgid "E224"
-msgstr ""
+msgstr "E224"
 
 msgid "Sorbate de potassium"
-msgstr ""
+msgstr "Sorbinian potasu"
 
 msgid "E202"
-msgstr ""
+msgstr "E202"
 
 msgid "Lysozyme"
-msgstr ""
+msgstr "Lizozym"
 
 msgid "E1105"
-msgstr ""
+msgstr "E1105"
 
 msgid "Acide L-ascorbique"
-msgstr ""
+msgstr "Kwas L-askorbinowy"
 
 msgid "E300"
-msgstr ""
+msgstr "E300"
 
 msgid "Dicarbonate de diméthyle"
-msgstr ""
+msgstr "Diwęglan dimetylu"
 
 msgid "E242"
-msgstr ""
+msgstr "E242"
 
 msgid "Argon"
-msgstr ""
+msgstr "Argon"
 
 msgid "E938"
-msgstr ""
+msgstr "E938"
 
 msgid "Azote"
-msgstr ""
+msgstr "Azote"
 
 msgid "E941"
-msgstr ""
+msgstr "E941"
 
 msgid "Dioxyde de carbone"
-msgstr ""
+msgstr "Ditlenek węgla"
 
 msgid "E290"
-msgstr ""
+msgstr "E290"
 
 msgid "Oxygène gazeux"
-msgstr ""
+msgstr "Tlen gazowy"
 
 msgid "E948"
-msgstr ""
+msgstr "E948"
 
 msgid "Mis en bouteille sous atmosphère protectrice"
-msgstr ""
+msgstr "Butelki w atmosferze ochronnej"
 
 msgid "Cellulose microcristalline"
-msgstr ""
+msgstr "Celuloza mikrokrystaliczna"
 
 msgid "E460"
-msgstr ""
+msgstr "E460"
 
 msgid "Hydrogénophosphate de diammonium"
-msgstr ""
+msgstr "Wodorofosforan diamonu"
 
 msgid "E342/CAS7783-28-0"
-msgstr ""
+msgstr "E342 / CAS7783- 28- 0"
 
 msgid "Sulfate d'ammonium"
-msgstr ""
+msgstr "Siarczan amonu"
 
 msgid "E517/CAS7783-20-2"
-msgstr ""
+msgstr "E517 / CAS7783-20-2"
 
 msgid "Bentonite"
-msgstr ""
+msgstr "Bentonit"
 
 msgid "E558"
-msgstr ""
+msgstr "E558"
 
 msgid "Dioxyde de silicium"
-msgstr ""
+msgstr "Ditlenek krzemu"
 
 msgid "E551"
-msgstr ""
+msgstr "E551"
 
 msgid "Polyvinylpolypyrrolidone"
-msgstr ""
+msgstr "Poliwinylopolipirolidon"
 
 msgid "E1202"
-msgstr ""
+msgstr "E1202"
 
 msgid "Alginate de calcium"
-msgstr ""
+msgstr "Alginian wapnia"
 
 msgid "E404"
-msgstr ""
+msgstr "E404"
 
 msgid "Alginate de potassium"
-msgstr ""
+msgstr "Alginian potasu"
 
 msgid "E402"
-msgstr ""
+msgstr "E402"
 
 msgid "Acide tartrique"
-msgstr ""
+msgstr "Kwas winowy"
 
 msgid "E334"
-msgstr ""
+msgstr "E334"
 
 msgid "Acide malique"
-msgstr ""
+msgstr "Kwas jabłkowy"
 
 msgid "E296"
-msgstr ""
+msgstr "E296"
 
 msgid "Acide lactique"
-msgstr ""
+msgstr "Kwas mlekowy"
 
 msgid "E270"
-msgstr ""
+msgstr "E270"
 
 msgid "Tartrate de potassium"
-msgstr ""
+msgstr "Winian potasu"
 
 msgid "E336"
-msgstr ""
+msgstr "E336"
 
 msgid "Bicarbonate de potassium"
-msgstr ""
+msgstr "Wodorowęglan potasu"
 
 msgid "E501"
-msgstr ""
+msgstr "E501"
 
 msgid "Carbonate de calcium"
-msgstr ""
+msgstr "Węglan wapnia"
 
 msgid "E170"
-msgstr ""
+msgstr "E170"
 
 msgid "Sulfate de calcium"
-msgstr ""
+msgstr "Siarczan wapnia"
 
 msgid "E516"
-msgstr ""
+msgstr "E516"
 
 msgid "Carbonate de potassium"
-msgstr ""
+msgstr "Węglan potasu"

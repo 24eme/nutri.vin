@@ -15,108 +15,109 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
-"n%100==4 ? 2 : 3;\n"
+"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3;\n"
 
 msgid "Informations complémentaires"
-msgstr ""
+msgstr "Dodatne informacije"
 
 msgid "Volume d'alcool"
-msgstr ""
+msgstr "Količina alkohola"
 
 msgid "Contenance"
-msgstr ""
+msgstr "Zmogljivost"
 
 msgid "N° de lot"
-msgstr ""
+msgstr "Serija"
 
 msgid "Ingrédients"
-msgstr ""
+msgstr "Sestavine"
 
 #, php-format
 msgid "Ingrédients allergènes indiqués en %sgras%s."
-msgstr ""
+msgstr "Alergeni so označeni z %skrepko%s pisavo"
 
 #, php-format
 msgid "Ingrédients issus de l'agriculture biologique indiqué avec une %s*%s."
-msgstr ""
+msgstr "Sestavine ekološkega kmetovanja z %s*%s."
 
 msgid "Informations nutritionnelles"
-msgstr ""
+msgstr "Hranilna vrednost"
 
 msgid "Type"
-msgstr ""
+msgstr "Vrsta"
 
 msgid "Pour 100 mL"
-msgstr ""
+msgstr "Na 100 ml"
 
 msgid "Énergie"
-msgstr ""
+msgstr "Energija"
 
 msgid "kJ"
-msgstr ""
+msgstr "kJ"
 
 msgid "kcal"
-msgstr ""
+msgstr "kcal"
 
 msgid "Matières grasses"
-msgstr ""
+msgstr "Maščoba"
 
 msgid "dont acides gras saturés"
-msgstr ""
+msgstr "od tega nasičene maščobne kisline"
 
 msgid "g"
-msgstr ""
+msgstr "g"
 
 msgid "Glucides"
-msgstr ""
+msgstr "Ogljikovi hidrati"
 
 msgid "dont sucres"
-msgstr ""
+msgstr "od tega sladkorji"
 
 msgid "Fibres alimentaires"
-msgstr ""
+msgstr "Prehranska vlakna"
 
 msgid "Protéines"
-msgstr ""
+msgstr "Proteini"
 
 msgid "Sel"
-msgstr ""
+msgstr "Sol"
 
 msgid "Sodium"
-msgstr ""
+msgstr "Natrij"
 
 msgid "Autres informations"
-msgstr ""
+msgstr "Druge informacije"
 
 msgid "Mentions légales"
-msgstr ""
+msgstr "Pravne informacije"
 
 msgid "Cette fiche nutritionnelle est éditée sous la seule responsablité de"
-msgstr ""
+msgstr "Ta hranilni list je objavljen v izključni pristojnosti"
 
 msgid "Elle est hébergée par"
-msgstr ""
+msgstr "Gostuje ga"
 
 msgid "sa plateforme"
-msgstr ""
+msgstr "njena platforma"
 
 msgid "et le projet libre"
-msgstr ""
+msgstr "in brezplačen projekt"
 
 msgid ""
 "ne peuvent être tenus responsables des informations publiées. Un historique "
 "de chaque modification est conservée et consultable publiquement"
 msgstr ""
+"niso odgovorni za objavljene informacije. Ohranjena in javno dostopna "
+"zgodovina vsake spremembe"
 
 msgid "Créé le "
-msgstr ""
+msgstr "Ustvarjeno"
 
 msgid "Modifié le "
-msgstr ""
+msgstr "Spremenjeno dne"
 
 msgid "Voir la version du "
-msgstr ""
+msgstr "Glej različico"
 
 msgid ""
 "Seules l'heure de la première visite de la session et une évaluation "
@@ -125,510 +126,514 @@ msgid ""
 "personnel n'est conservé et aucun suivi des visiteurs de cette fiche n'est "
 "réalisé. La consultation de la page ne nécessite pas de cookie."
 msgstr ""
+"Le čas prvega obiska zasedanja in geografska ocena povezave sta ohranjena za"
+" to statistiko. V skladu z zakonodajo se osebni podatki ne hranijo in se ne "
+"izvajajo nadaljnji ukrepi na obiskovalcih tega lista. Pregled strani ne "
+"zahteva piškotka."
 
 msgid "vue"
-msgstr ""
+msgstr "pogled"
 
 msgid "Activateur de fermentation"
-msgstr ""
+msgstr "Aktivator fermentacije"
 
 msgid "Agent de fermentation"
-msgstr ""
+msgstr "Fermentacijsko sredstvo"
 
 msgid "Agent stabilisateur"
-msgstr ""
+msgstr "Stabilizator"
 
 msgid "Conservateur et antioxydant"
-msgstr ""
+msgstr "Konservator in antioksidant"
 
 msgid "Correction de défauts"
-msgstr ""
+msgstr "Korekcija napak"
 
 msgid "Enzyme"
-msgstr ""
+msgstr "Encim"
 
 msgid "Gaz et gaz d'emballage"
-msgstr ""
+msgstr "Plini in plini za pakiranje"
 
 msgid "Régulateur d'acidité"
-msgstr ""
+msgstr "Regulator kislosti"
 
 msgid "Raisins"
-msgstr ""
+msgstr "Grozdje"
 
 msgid "Moût de raisin concentré"
-msgstr ""
+msgstr "Zgoščeni grozdni mošt"
 
 msgid "Eau de vie de vin"
-msgstr ""
+msgstr "Vinska življenjska doba"
 
 msgid "Liqueur de tirage et liqueur d'expédition"
-msgstr ""
+msgstr "Narišite likvor in dostavno tekočino"
 
 msgid "Saccharose"
-msgstr ""
+msgstr "Saharoza"
 
 msgid "Acide tartrique - E334"
-msgstr ""
+msgstr "Vinska kislina - E334"
 
 msgid "Acide malique - E296"
-msgstr ""
+msgstr "Malinska kislina - E296"
 
 msgid "Acide lactique - E270"
-msgstr ""
+msgstr "Mlečna kislina - E270"
 
 msgid "Tartrate de potassium - E336"
-msgstr ""
+msgstr "Kalijev tartrat - E336"
 
 msgid "Bicarbonate de potassium - E501"
-msgstr ""
+msgstr "Kalijev bikarbonat - E501"
 
 msgid "Carbonate de calcium - E170"
-msgstr ""
+msgstr "Kalcijev karbonat - E170"
 
 msgid "Tartrate de calcium - E354"
-msgstr ""
+msgstr "Kalcijev tartrat - E354"
 
 msgid "Sulfate de calcium - E516"
-msgstr ""
+msgstr "Kalcijev sulfat - E516"
 
 msgid "Carbonate de potassium - E501"
-msgstr ""
+msgstr "Kalijev karbonat - E501"
 
 msgid "Hydrogénotartrate de potassium - E336"
-msgstr ""
+msgstr "Kalijev hidrogenartrat - E336"
 
 msgid "Acide citrique - E330"
-msgstr ""
+msgstr "Citronska kislina - E330"
 
 msgid "Tanins"
-msgstr ""
+msgstr "Tanini"
 
 msgid "Ferrocyanure de potassium - E536"
-msgstr ""
+msgstr "Kalijev ferocianid - E536"
 
 msgid "Phytate de calcium"
-msgstr ""
+msgstr "Kalcijev fitat"
 
 msgid "Acide métatartrique - E353"
-msgstr ""
+msgstr "Metatartrična kislina - E353"
 
 msgid "Gomme arabique - E414"
-msgstr ""
+msgstr "Arabski gumi - E414"
 
 msgid "Acide DL-tartrique"
-msgstr ""
+msgstr "DL-vinska kislina"
 
 msgid "Sel neutre de potassium"
-msgstr ""
+msgstr "Kalijeva nevtralna sol"
 
 msgid "Mannoprotéines de levures"
-msgstr ""
+msgstr "Kvas mannoproteini"
 
 msgid "Carboxyméthylcellulose - E466"
-msgstr ""
+msgstr "Karboksimetilceluloza - E466"
 
 msgid "Copolymères polyvinylimidazole/polyvinylpyrrolidone"
-msgstr ""
+msgstr "Polivinilimidazol/polivinilpirolidon kopolimeri"
 
 msgid "Polyaspartate de potassium - E456"
-msgstr ""
+msgstr "Kalijev poliaspartat - E456"
 
 msgid "Dioxyde de soufre - E220"
-msgstr ""
+msgstr "Žveplov dioksid – E220"
 
 msgid "Bisulfite de potassium - E228"
-msgstr ""
+msgstr "Kalijev bisulfit – E228"
 
 msgid "Métabisulfite de potassium - E224"
-msgstr ""
+msgstr "Kalijev metabisulfit - E224"
 
 msgid "Sorbate de potassium - E202"
-msgstr ""
+msgstr "Kalijev sorbat – E202"
 
 msgid "Lysozyme - E1105"
-msgstr ""
+msgstr "Lysozyme - E1105"
 
 msgid "Acide L-ascorbique - E300"
-msgstr ""
+msgstr "L-askorbinska kislina - E300"
 
 msgid "Dicarbonate de diméthyle - E242"
-msgstr ""
+msgstr "Dimetil dikarbonat - E242"
 
 msgid "Argon - E938"
-msgstr ""
+msgstr "Argon - E938"
 
 msgid "Azote - E941"
-msgstr ""
+msgstr "Azote - E941"
 
 msgid "Dioxyde de carbone - E290"
-msgstr ""
+msgstr "Ogljikov dioksid – E290"
 
 msgid "Oxygène gazeux - E948"
-msgstr ""
+msgstr "Plinski kisik - E948"
 
 msgid "Sulfites"
-msgstr ""
+msgstr "Sulfiti"
 
 msgid "Anhydride sulfureux"
-msgstr ""
+msgstr "Žveplov dioksid"
 
 msgid "Oeuf"
-msgstr ""
+msgstr "Jajce"
 
 msgid "Protéine de l'oeuf"
-msgstr ""
+msgstr "Jajčne beljakovine"
 
 msgid "Produit de l'oeuf"
-msgstr ""
+msgstr "Jajčni proizvod"
 
 msgid "Lysozyme de l'oeuf"
-msgstr ""
+msgstr "Jajčni lizocim"
 
 msgid "Albumine de l'oeuf"
-msgstr ""
+msgstr "Jajčni albumin"
 
 msgid "Lait"
-msgstr ""
+msgstr "Mleko"
 
 msgid "Produits du lait"
-msgstr ""
+msgstr "Mlečni izdelki"
 
 msgid "Caséine du lait ou protéine du lait"
-msgstr ""
+msgstr "Mlečni kazein ali mlečne beljakovine"
 
 msgid "Résine de pin d'Alep"
-msgstr ""
+msgstr "Alepska borova smola"
 
 msgid "Lies fraîches"
-msgstr ""
+msgstr "Sveže droži"
 
 msgid "Caramel - E150"
-msgstr ""
+msgstr "Karamel - E150"
 
 msgid "Isothiocyanate d'allyle"
-msgstr ""
+msgstr "Alil izotiocianat"
 
 msgid "Levures inactivées"
-msgstr ""
+msgstr "Inaktivirani kvas"
 
 msgid "Charbons à usage oenologique"
-msgstr ""
+msgstr "Premog za enološko uporabo"
 
 msgid "Fibres végétales sélectives"
-msgstr ""
+msgstr "Selektivna rastlinska vlakna"
 
 msgid "Cellulose microcristalline - E460"
-msgstr ""
+msgstr "Mikrokristalna celuloza - E460"
 
 msgid "Hydrogénophosphate de diammonium - E342/CAS7783-28-0"
-msgstr ""
+msgstr "Diamonijev hidrogenfosfat - E342/CAS7783-28-0"
 
 msgid "Sulfate d'ammonium - E517/CAS7783-20-2"
-msgstr ""
+msgstr "Amonijev sulfat - E517/CAS7783-20-2"
 
 msgid "Bisulfite d'ammonium"
-msgstr ""
+msgstr "Amonijev bisulfit"
 
 msgid "Chlorhydrate de thiamine"
-msgstr ""
+msgstr "Tiamin hidroklorid"
 
 msgid "Autolysats de levures"
-msgstr ""
+msgstr "Avtolizati kvasa"
 
 msgid "Levures inactivées ayant des niveaux garantis de glutathion"
-msgstr ""
+msgstr "Inaktivirani kvas z zajamčenimi ravnmi glutationa"
 
 msgid "Gélatine alimentaire"
-msgstr ""
+msgstr "Želatina za hrano"
 
 msgid "Protéine de blé"
-msgstr ""
+msgstr "Pšenični proteini"
 
 msgid "Protéine issue de pois"
-msgstr ""
+msgstr "Beljakovine iz graha"
 
 msgid "Protéine issue de pommes de terre"
-msgstr ""
+msgstr "Krompirjeve beljakovine"
 
 msgid "Colle de poisson"
-msgstr ""
+msgstr "Ribje lepilo"
 
 msgid "Caséines"
-msgstr ""
+msgstr "Kazeini"
 
 msgid "Caséinates de potassium"
-msgstr ""
+msgstr "Kalijevi kazeinati"
 
 msgid "Ovalbumine"
-msgstr ""
+msgstr "Ovalbumin"
 
 msgid "Bentonite - E558"
-msgstr ""
+msgstr "Bentonit - E558"
 
 msgid "Dioxyde de silicium - E551"
-msgstr ""
+msgstr "Silicijev dioksid - E551"
 
 msgid "Kaolin"
-msgstr ""
+msgstr "Kaolin"
 
 msgid "Chitosane dérivé d'Aspergillus niger"
-msgstr ""
+msgstr "Hitozan, pridobljen iz Aspergillus niger"
 
 msgid "Chitine-glucane dérivé d'Aspergillus"
-msgstr ""
+msgstr "Chitin-glukan, pridobljen iz Aspergillus"
 
 msgid "Polyvinylpolypyrrolidone - E1202"
-msgstr ""
+msgstr "Polivinilpolipirolidon - E1202"
 
 msgid "Alginate de calcium - E404"
-msgstr ""
+msgstr "Kalcijev alginat - E404"
 
 msgid "Alginate de potassium - E402"
-msgstr ""
+msgstr "Kalijev alginat - E402"
 
 msgid "Uréase"
-msgstr ""
+msgstr "Urease"
 
 msgid "Pectines lyases"
-msgstr ""
+msgstr "Liase pektini"
 
 msgid "Pectine méthylestérase"
-msgstr ""
+msgstr "Pektin metilesteraza"
 
 msgid "Polygalacturonase"
-msgstr ""
+msgstr "Poligalakturonaza"
 
 msgid "Hémicellulase"
-msgstr ""
+msgstr "Hemicelulaza"
 
 msgid "Cellulase"
-msgstr ""
+msgstr "Celulaza"
 
 msgid "Bétaglucanase"
-msgstr ""
+msgstr "Betaglukanaza"
 
 msgid "Glycosidase"
-msgstr ""
+msgstr "Glikozidaza"
 
 msgid "Levures de vinification"
-msgstr ""
+msgstr "Vinifikacijski kvas"
 
 msgid "Bactéries lactiques"
-msgstr ""
+msgstr "Laktične bakterije"
 
 msgid "Sulfate de cuivre, pentahydraté"
-msgstr ""
+msgstr "Bakrov sulfat, pentahidrat"
 
 msgid "Citrate de cuivre"
-msgstr ""
+msgstr "Bakrov citrat"
 
 msgid "dérivé d'Aspergillus niger"
-msgstr ""
+msgstr "pridobljen iz Aspergillus niger"
 
 msgid "Hydrogénotartrate de potassium"
-msgstr ""
+msgstr "Kalijev hidrogenartrat"
 
 msgid "Tartrate de calcium"
-msgstr ""
+msgstr "Kalcijev tartrat"
 
 msgid "E354"
-msgstr ""
+msgstr "E354"
 
 msgid "Acide citrique"
-msgstr ""
+msgstr "Citronska kislina"
 
 msgid "E330"
-msgstr ""
+msgstr "E330"
 
 msgid "Ferrocyanure de potassium"
-msgstr ""
+msgstr "Kalijev ferocianid"
 
 msgid "E536"
-msgstr ""
+msgstr "E536"
 
 msgid "Acide métatartrique"
-msgstr ""
+msgstr "Metatartrična kislina"
 
 msgid "E353"
-msgstr ""
+msgstr "E353"
 
 msgid "Gomme arabique"
-msgstr ""
+msgstr "Arabski gumi"
 
 msgid "E414"
-msgstr ""
+msgstr "E414"
 
 msgid "Carboxyméthylcellulose"
-msgstr ""
+msgstr "Karboksimetilceluloza"
 
 msgid "E466"
-msgstr ""
+msgstr "E466"
 
 msgid "Polyaspartate de potassium"
-msgstr ""
+msgstr "Kalijev poliaspartat"
 
 msgid "E456"
-msgstr ""
+msgstr "E456"
 
 msgid "Dioxyde de soufre"
-msgstr ""
+msgstr "Žveplov dioksid"
 
 msgid "E220"
-msgstr ""
+msgstr "E220"
 
 msgid "Bisulfite de potassium"
-msgstr ""
+msgstr "Kalijev bisulfit"
 
 msgid "E228"
-msgstr ""
+msgstr "E228"
 
 msgid "Métabisulfite de potassium"
-msgstr ""
+msgstr "Kalijev metabisulfit"
 
 msgid "E224"
-msgstr ""
+msgstr "E224"
 
 msgid "Sorbate de potassium"
-msgstr ""
+msgstr "Kalijev sorbat"
 
 msgid "E202"
-msgstr ""
+msgstr "E202"
 
 msgid "Lysozyme"
-msgstr ""
+msgstr "Lizocim"
 
 msgid "E1105"
-msgstr ""
+msgstr "E1105"
 
 msgid "Acide L-ascorbique"
-msgstr ""
+msgstr "L-askorbinska kislina"
 
 msgid "E300"
-msgstr ""
+msgstr "E300"
 
 msgid "Dicarbonate de diméthyle"
-msgstr ""
+msgstr "Dimetil dikarbonat"
 
 msgid "E242"
-msgstr ""
+msgstr "E242"
 
 msgid "Argon"
-msgstr ""
+msgstr "Argon"
 
 msgid "E938"
-msgstr ""
+msgstr "E938"
 
 msgid "Azote"
-msgstr ""
+msgstr "Azote"
 
 msgid "E941"
-msgstr ""
+msgstr "E941"
 
 msgid "Dioxyde de carbone"
-msgstr ""
+msgstr "Ogljikov dioksid"
 
 msgid "E290"
-msgstr ""
+msgstr "E290"
 
 msgid "Oxygène gazeux"
-msgstr ""
+msgstr "Plinski kisik"
 
 msgid "E948"
-msgstr ""
+msgstr "E948"
 
 msgid "Mis en bouteille sous atmosphère protectrice"
-msgstr ""
+msgstr "Ustekleničeni pod zaščitno atmosfero"
 
 msgid "Cellulose microcristalline"
-msgstr ""
+msgstr "Mikrokristalna celuloza"
 
 msgid "E460"
-msgstr ""
+msgstr "E460"
 
 msgid "Hydrogénophosphate de diammonium"
-msgstr ""
+msgstr "Diamonijev hidrogenfosfat"
 
 msgid "E342/CAS7783-28-0"
-msgstr ""
+msgstr "E342/CAS7783-28-0"
 
 msgid "Sulfate d'ammonium"
-msgstr ""
+msgstr "Amonijev sulfat"
 
 msgid "E517/CAS7783-20-2"
-msgstr ""
+msgstr "E517/CAS7783-20-2"
 
 msgid "Bentonite"
-msgstr ""
+msgstr "Bentonit"
 
 msgid "E558"
-msgstr ""
+msgstr "E558"
 
 msgid "Dioxyde de silicium"
-msgstr ""
+msgstr "Silicijev dioksid"
 
 msgid "E551"
-msgstr ""
+msgstr "E551"
 
 msgid "Polyvinylpolypyrrolidone"
-msgstr ""
+msgstr "Polivinilpolipirolidon"
 
 msgid "E1202"
-msgstr ""
+msgstr "E1202"
 
 msgid "Alginate de calcium"
-msgstr ""
+msgstr "Kalcijev alginat"
 
 msgid "E404"
-msgstr ""
+msgstr "E404"
 
 msgid "Alginate de potassium"
-msgstr ""
+msgstr "Kalijev alginat"
 
 msgid "E402"
-msgstr ""
+msgstr "E402"
 
 msgid "Acide tartrique"
-msgstr ""
+msgstr "Vinska kislina"
 
 msgid "E334"
-msgstr ""
+msgstr "E334"
 
 msgid "Acide malique"
-msgstr ""
+msgstr "Jabolčna kislina"
 
 msgid "E296"
-msgstr ""
+msgstr "E296"
 
 msgid "Acide lactique"
-msgstr ""
+msgstr "Mlečna kislina"
 
 msgid "E270"
-msgstr ""
+msgstr "E270"
 
 msgid "Tartrate de potassium"
-msgstr ""
+msgstr "Kalijev tartrat"
 
 msgid "E336"
-msgstr ""
+msgstr "E336"
 
 msgid "Bicarbonate de potassium"
-msgstr ""
+msgstr "Kalijev bikarbonat"
 
 msgid "E501"
-msgstr ""
+msgstr "E501"
 
 msgid "Carbonate de calcium"
-msgstr ""
+msgstr "Kalcijev karbonat"
 
 msgid "E170"
-msgstr ""
+msgstr "E170"
 
 msgid "Sulfate de calcium"
-msgstr ""
+msgstr "Kalcijev sulfat"
 
 msgid "E516"
-msgstr ""
+msgstr "E516"
 
 msgid "Carbonate de potassium"
-msgstr ""
+msgstr "Kalijev karbonat"

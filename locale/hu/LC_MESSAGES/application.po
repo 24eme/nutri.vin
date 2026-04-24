@@ -18,104 +18,108 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 msgid "Informations complémentaires"
-msgstr ""
+msgstr "További információk"
 
 msgid "Volume d'alcool"
-msgstr ""
+msgstr "Alkohol mennyisége"
 
 msgid "Contenance"
-msgstr ""
+msgstr "Kapacitás"
 
 msgid "N° de lot"
-msgstr ""
+msgstr "Gy. sz.:"
 
 msgid "Ingrédients"
-msgstr ""
+msgstr "Összetevők"
 
 #, php-format
 msgid "Ingrédients allergènes indiqués en %sgras%s."
-msgstr ""
+msgstr "Az allergén összetevőket %sfélkövérrel%s jelöltük."
 
 #, php-format
 msgid "Ingrédients issus de l'agriculture biologique indiqué avec une %s*%s."
-msgstr ""
+msgstr "A biogazdálkodásból származó összetevők: %s*%s."
 
 msgid "Informations nutritionnelles"
-msgstr ""
+msgstr "Táplálkozási információk"
 
 msgid "Type"
-msgstr ""
+msgstr "Típus"
 
 msgid "Pour 100 mL"
-msgstr ""
+msgstr "100 ml-enként"
 
 msgid "Énergie"
-msgstr ""
+msgstr "Energia"
 
 msgid "kJ"
-msgstr ""
+msgstr "kJ"
 
 msgid "kcal"
-msgstr ""
+msgstr "kcal"
 
 msgid "Matières grasses"
-msgstr ""
+msgstr "Zsír"
 
 msgid "dont acides gras saturés"
-msgstr ""
+msgstr "ebből telített zsírsavak"
 
 msgid "g"
-msgstr ""
+msgstr "g"
 
 msgid "Glucides"
-msgstr ""
+msgstr "Szénhidrátok"
 
 msgid "dont sucres"
-msgstr ""
+msgstr "ebből cukor"
 
 msgid "Fibres alimentaires"
-msgstr ""
+msgstr "Ételszálak"
 
 msgid "Protéines"
-msgstr ""
+msgstr "Fehérjék"
 
 msgid "Sel"
-msgstr ""
+msgstr "Só"
 
 msgid "Sodium"
-msgstr ""
+msgstr "Nátrium"
 
 msgid "Autres informations"
-msgstr ""
+msgstr "Egyéb információk"
 
 msgid "Mentions légales"
-msgstr ""
+msgstr "Jogi információk"
 
 msgid "Cette fiche nutritionnelle est éditée sous la seule responsablité de"
 msgstr ""
+"A tápanyag-összetételre vonatkozó adatlapot kizárólag az alábbi személyek "
+"felelőssége mellett teszik közzé:"
 
 msgid "Elle est hébergée par"
-msgstr ""
+msgstr "Ennek házigazdája"
 
 msgid "sa plateforme"
-msgstr ""
+msgstr "platformja"
 
 msgid "et le projet libre"
-msgstr ""
+msgstr "és az ingyenes projekt"
 
 msgid ""
 "ne peuvent être tenus responsables des informations publiées. Un historique "
 "de chaque modification est conservée et consultable publiquement"
 msgstr ""
+"nem vonhatók felelősségre a közzétett információkért. Minden módosítás "
+"történelme megtart és nyilvánosan kereshető"
 
 msgid "Créé le "
-msgstr ""
+msgstr "Létrehozva"
 
 msgid "Modifié le "
-msgstr ""
+msgstr "Módosítva"
 
 msgid "Voir la version du "
-msgstr ""
+msgstr "Lásd:"
 
 msgid ""
 "Seules l'heure de la première visite de la session et une évaluation "
@@ -124,510 +128,514 @@ msgid ""
 "personnel n'est conservé et aucun suivi des visiteurs de cette fiche n'est "
 "réalisé. La consultation de la page ne nécessite pas de cookie."
 msgstr ""
+"A statisztika elkészítéséhez csak az ülés első látogatásának és a kapcsolat "
+"földrajzi értékelésének ideje áll rendelkezésre. A jogszabályoknak "
+"megfelelően nem tárolnak személyes adatokat, és e lap látogatóin nem "
+"végeznek nyomon követést. Az oldal megtekintése nem igényel sütit."
 
 msgid "vue"
-msgstr ""
+msgstr "nézet"
 
 msgid "Activateur de fermentation"
-msgstr ""
+msgstr "Fermentációs aktivátor"
 
 msgid "Agent de fermentation"
-msgstr ""
+msgstr "Fermentációs szer"
 
 msgid "Agent stabilisateur"
-msgstr ""
+msgstr "Stabilizáló szer"
 
 msgid "Conservateur et antioxydant"
-msgstr ""
+msgstr "Konzervátor és antioxidáns"
 
 msgid "Correction de défauts"
-msgstr ""
+msgstr "Hibák korrekciója"
 
 msgid "Enzyme"
-msgstr ""
+msgstr "Enzim"
 
 msgid "Gaz et gaz d'emballage"
-msgstr ""
+msgstr "Gázok és csomagolási gázok"
 
 msgid "Régulateur d'acidité"
-msgstr ""
+msgstr "Savasság-szabályozó"
 
 msgid "Raisins"
-msgstr ""
+msgstr "Szőlő"
 
 msgid "Moût de raisin concentré"
-msgstr ""
+msgstr "Sűrített szőlőmust"
 
 msgid "Eau de vie de vin"
-msgstr ""
+msgstr "Borélet"
 
 msgid "Liqueur de tirage et liqueur d'expédition"
-msgstr ""
+msgstr "Liquor és Shipping Liquor rajzolása"
 
 msgid "Saccharose"
-msgstr ""
+msgstr "Szacharóz"
 
 msgid "Acide tartrique - E334"
-msgstr ""
+msgstr "Borkősav - E334"
 
 msgid "Acide malique - E296"
-msgstr ""
+msgstr "Malinsav - E296"
 
 msgid "Acide lactique - E270"
-msgstr ""
+msgstr "Tejsav - E270"
 
 msgid "Tartrate de potassium - E336"
-msgstr ""
+msgstr "Kálium-tartarát - E336"
 
 msgid "Bicarbonate de potassium - E501"
-msgstr ""
+msgstr "Kálium-bikarbonát - E501"
 
 msgid "Carbonate de calcium - E170"
-msgstr ""
+msgstr "Kalcium-karbonát - E170"
 
 msgid "Tartrate de calcium - E354"
-msgstr ""
+msgstr "Kalcium-tartarát - E354"
 
 msgid "Sulfate de calcium - E516"
-msgstr ""
+msgstr "Kalcium-szulfát - E516"
 
 msgid "Carbonate de potassium - E501"
-msgstr ""
+msgstr "Kálium-karbonát - E501"
 
 msgid "Hydrogénotartrate de potassium - E336"
-msgstr ""
+msgstr "Kálium-hidrogén-artarát - E336"
 
 msgid "Acide citrique - E330"
-msgstr ""
+msgstr "Citromsav - E330"
 
 msgid "Tanins"
-msgstr ""
+msgstr "Taninok"
 
 msgid "Ferrocyanure de potassium - E536"
-msgstr ""
+msgstr "Kálium-ferrocianid - E536"
 
 msgid "Phytate de calcium"
-msgstr ""
+msgstr "Kalcium-fitát"
 
 msgid "Acide métatartrique - E353"
-msgstr ""
+msgstr "Metartrinsav - E353"
 
 msgid "Gomme arabique - E414"
-msgstr ""
+msgstr "Arab gumi - E414"
 
 msgid "Acide DL-tartrique"
-msgstr ""
+msgstr "DL- borkősav"
 
 msgid "Sel neutre de potassium"
-msgstr ""
+msgstr "Kálium-semleges só"
 
 msgid "Mannoprotéines de levures"
-msgstr ""
+msgstr "Élesztő-mannoproteinek"
 
 msgid "Carboxyméthylcellulose - E466"
-msgstr ""
+msgstr "Karboxi-metil-cellulóz - E466"
 
 msgid "Copolymères polyvinylimidazole/polyvinylpyrrolidone"
-msgstr ""
+msgstr "Polivinilimidazol / polivinil-pirrolidon-kopolimerek"
 
 msgid "Polyaspartate de potassium - E456"
-msgstr ""
+msgstr "Kálium-poliaszpartát - E456"
 
 msgid "Dioxyde de soufre - E220"
-msgstr ""
+msgstr "Kén-dioxid - E220"
 
 msgid "Bisulfite de potassium - E228"
-msgstr ""
+msgstr "Kálium-biszulfit - E228"
 
 msgid "Métabisulfite de potassium - E224"
-msgstr ""
+msgstr "Kálium-temperizulfit - E224"
 
 msgid "Sorbate de potassium - E202"
-msgstr ""
+msgstr "Kálium-szorbát - E202"
 
 msgid "Lysozyme - E1105"
-msgstr ""
+msgstr "Lyzozyme - E1105"
 
 msgid "Acide L-ascorbique - E300"
-msgstr ""
+msgstr "L- aszkorbinsav - E300"
 
 msgid "Dicarbonate de diméthyle - E242"
-msgstr ""
+msgstr "Dimetil-dikarbonát - E242"
 
 msgid "Argon - E938"
-msgstr ""
+msgstr "Argon - E938"
 
 msgid "Azote - E941"
-msgstr ""
+msgstr "Azote - E941"
 
 msgid "Dioxyde de carbone - E290"
-msgstr ""
+msgstr "Szén-dioxid - E290"
 
 msgid "Oxygène gazeux - E948"
-msgstr ""
+msgstr "Gáznemű oxigén - E948"
 
 msgid "Sulfites"
-msgstr ""
+msgstr "Szulfiták"
 
 msgid "Anhydride sulfureux"
-msgstr ""
+msgstr "Kén-dioxid"
 
 msgid "Oeuf"
-msgstr ""
+msgstr "Tojás"
 
 msgid "Protéine de l'oeuf"
-msgstr ""
+msgstr "Tojásfehérje"
 
 msgid "Produit de l'oeuf"
-msgstr ""
+msgstr "Tojástermék"
 
 msgid "Lysozyme de l'oeuf"
-msgstr ""
+msgstr "Tojás-lizozim"
 
 msgid "Albumine de l'oeuf"
-msgstr ""
+msgstr "Tojásfehérje"
 
 msgid "Lait"
-msgstr ""
+msgstr "Tej"
 
 msgid "Produits du lait"
-msgstr ""
+msgstr "Tejtermékek"
 
 msgid "Caséine du lait ou protéine du lait"
-msgstr ""
+msgstr "Tejkazein vagy tejfehérje"
 
 msgid "Résine de pin d'Alep"
-msgstr ""
+msgstr "Aleppo fenyőgyanta"
 
 msgid "Lies fraîches"
-msgstr ""
+msgstr "Friss póréhagyma"
 
 msgid "Caramel - E150"
-msgstr ""
+msgstr "Karamell - E150"
 
 msgid "Isothiocyanate d'allyle"
-msgstr ""
+msgstr "Allil-izotiocianát"
 
 msgid "Levures inactivées"
-msgstr ""
+msgstr "Inaktivált élesztők"
 
 msgid "Charbons à usage oenologique"
-msgstr ""
+msgstr "Szén borászati célra"
 
 msgid "Fibres végétales sélectives"
-msgstr ""
+msgstr "Szelektív növényi szálak"
 
 msgid "Cellulose microcristalline - E460"
-msgstr ""
+msgstr "Mikrokristályos cellulóz - E460"
 
 msgid "Hydrogénophosphate de diammonium - E342/CAS7783-28-0"
-msgstr ""
+msgstr "Diammónium-hidrogén-foszfát - E342 / CAS7783-28- 0"
 
 msgid "Sulfate d'ammonium - E517/CAS7783-20-2"
-msgstr ""
+msgstr "Ammónium-szulfát - E517 / CAS7783-202"
 
 msgid "Bisulfite d'ammonium"
-msgstr ""
+msgstr "Ammónium-biszulfit"
 
 msgid "Chlorhydrate de thiamine"
-msgstr ""
+msgstr "Tiamin-hidroklorid"
 
 msgid "Autolysats de levures"
-msgstr ""
+msgstr "Élesztő autolizátumok"
 
 msgid "Levures inactivées ayant des niveaux garantis de glutathion"
-msgstr ""
+msgstr "Inaktivált élesztők garantált glutationszinttel"
 
 msgid "Gélatine alimentaire"
-msgstr ""
+msgstr "Élelmiszer-zselatin"
 
 msgid "Protéine de blé"
-msgstr ""
+msgstr "Búzafehérje"
 
 msgid "Protéine issue de pois"
-msgstr ""
+msgstr "Borsó"
 
 msgid "Protéine issue de pommes de terre"
-msgstr ""
+msgstr "Burgonyafehérje"
 
 msgid "Colle de poisson"
-msgstr ""
+msgstr "Halragasztó"
 
 msgid "Caséines"
-msgstr ""
+msgstr "Kaszein"
 
 msgid "Caséinates de potassium"
-msgstr ""
+msgstr "Kálium-kazeinátok"
 
 msgid "Ovalbumine"
-msgstr ""
+msgstr "Ovalbumin"
 
 msgid "Bentonite - E558"
-msgstr ""
+msgstr "Bentonit - E558"
 
 msgid "Dioxyde de silicium - E551"
-msgstr ""
+msgstr "Szilícium-dioxid - E551"
 
 msgid "Kaolin"
-msgstr ""
+msgstr "Kaolin"
 
 msgid "Chitosane dérivé d'Aspergillus niger"
-msgstr ""
+msgstr "Aspergillus nigerből származó kitozán"
 
 msgid "Chitine-glucane dérivé d'Aspergillus"
-msgstr ""
+msgstr "Aspergillus-ból származó kitin- glükán"
 
 msgid "Polyvinylpolypyrrolidone - E1202"
-msgstr ""
+msgstr "Polivinil-polipirrolidon - E1202"
 
 msgid "Alginate de calcium - E404"
-msgstr ""
+msgstr "Kalcium-alginát - E404"
 
 msgid "Alginate de potassium - E402"
-msgstr ""
+msgstr "Kálium-alginát - E402"
 
 msgid "Uréase"
-msgstr ""
+msgstr "Ureáz"
 
 msgid "Pectines lyases"
-msgstr ""
+msgstr "Lyáz-pektinek"
 
 msgid "Pectine méthylestérase"
-msgstr ""
+msgstr "Pektin-metilészteráz"
 
 msgid "Polygalacturonase"
-msgstr ""
+msgstr "Poligalakturonáz"
 
 msgid "Hémicellulase"
-msgstr ""
+msgstr "Hemicelluláz"
 
 msgid "Cellulase"
-msgstr ""
+msgstr "Celluláz"
 
 msgid "Bétaglucanase"
-msgstr ""
+msgstr "Betaglucanáz"
 
 msgid "Glycosidase"
-msgstr ""
+msgstr "Glikozidáz"
 
 msgid "Levures de vinification"
-msgstr ""
+msgstr "Borostyán"
 
 msgid "Bactéries lactiques"
-msgstr ""
+msgstr "Tejbaktérium"
 
 msgid "Sulfate de cuivre, pentahydraté"
-msgstr ""
+msgstr "Réz-szulfát, pentahidrát"
 
 msgid "Citrate de cuivre"
-msgstr ""
+msgstr "Réz-citrát"
 
 msgid "dérivé d'Aspergillus niger"
-msgstr ""
+msgstr "aspergillus nigerből"
 
 msgid "Hydrogénotartrate de potassium"
-msgstr ""
+msgstr "Kálium-hidrogén-artarát"
 
 msgid "Tartrate de calcium"
-msgstr ""
+msgstr "Kalcium-tartarát"
 
 msgid "E354"
-msgstr ""
+msgstr "E354"
 
 msgid "Acide citrique"
-msgstr ""
+msgstr "Citromsav"
 
 msgid "E330"
-msgstr ""
+msgstr "E330"
 
 msgid "Ferrocyanure de potassium"
-msgstr ""
+msgstr "Kálium-ferrocianid"
 
 msgid "E536"
-msgstr ""
+msgstr "E536"
 
 msgid "Acide métatartrique"
-msgstr ""
+msgstr "Metatartrinsav"
 
 msgid "E353"
-msgstr ""
+msgstr "E353"
 
 msgid "Gomme arabique"
-msgstr ""
+msgstr "Rágógumi"
 
 msgid "E414"
-msgstr ""
+msgstr "E414"
 
 msgid "Carboxyméthylcellulose"
-msgstr ""
+msgstr "Karboxi-metil-cellulóz"
 
 msgid "E466"
-msgstr ""
+msgstr "E466"
 
 msgid "Polyaspartate de potassium"
-msgstr ""
+msgstr "Kálium-poliaszpartát"
 
 msgid "E456"
-msgstr ""
+msgstr "E456"
 
 msgid "Dioxyde de soufre"
-msgstr ""
+msgstr "Kén-dioxid"
 
 msgid "E220"
-msgstr ""
+msgstr "E220"
 
 msgid "Bisulfite de potassium"
-msgstr ""
+msgstr "Kálium-biszulfit"
 
 msgid "E228"
-msgstr ""
+msgstr "E228"
 
 msgid "Métabisulfite de potassium"
-msgstr ""
+msgstr "Kálium-metabiszulfit"
 
 msgid "E224"
-msgstr ""
+msgstr "E224"
 
 msgid "Sorbate de potassium"
-msgstr ""
+msgstr "Kálium-szorbát"
 
 msgid "E202"
-msgstr ""
+msgstr "E202"
 
 msgid "Lysozyme"
-msgstr ""
+msgstr "Lyzozim"
 
 msgid "E1105"
-msgstr ""
+msgstr "E1105"
 
 msgid "Acide L-ascorbique"
-msgstr ""
+msgstr "L- aszkorbinsav"
 
 msgid "E300"
-msgstr ""
+msgstr "E300"
 
 msgid "Dicarbonate de diméthyle"
-msgstr ""
+msgstr "Dimetil-dikarbonát"
 
 msgid "E242"
-msgstr ""
+msgstr "E242"
 
 msgid "Argon"
-msgstr ""
+msgstr "Argon"
 
 msgid "E938"
-msgstr ""
+msgstr "E938"
 
 msgid "Azote"
-msgstr ""
+msgstr "AzoteName"
 
 msgid "E941"
-msgstr ""
+msgstr "E941"
 
 msgid "Dioxyde de carbone"
-msgstr ""
+msgstr "Szén-dioxid"
 
 msgid "E290"
-msgstr ""
+msgstr "E290"
 
 msgid "Oxygène gazeux"
-msgstr ""
+msgstr "Gáznemű oxigén"
 
 msgid "E948"
-msgstr ""
+msgstr "E948"
 
 msgid "Mis en bouteille sous atmosphère protectrice"
-msgstr ""
+msgstr "Védőlégkörben palackozott"
 
 msgid "Cellulose microcristalline"
-msgstr ""
+msgstr "Mikrokristályos cellulóz"
 
 msgid "E460"
-msgstr ""
+msgstr "E460"
 
 msgid "Hydrogénophosphate de diammonium"
-msgstr ""
+msgstr "Diammónium-hidrogén-foszfát"
 
 msgid "E342/CAS7783-28-0"
-msgstr ""
+msgstr "E342 / CAS7783- 28- 0"
 
 msgid "Sulfate d'ammonium"
-msgstr ""
+msgstr "Ammónium-szulfát"
 
 msgid "E517/CAS7783-20-2"
-msgstr ""
+msgstr "E517 / CAS7783-202"
 
 msgid "Bentonite"
-msgstr ""
+msgstr "Bentonit"
 
 msgid "E558"
-msgstr ""
+msgstr "E558"
 
 msgid "Dioxyde de silicium"
-msgstr ""
+msgstr "Szilícium-dioxid"
 
 msgid "E551"
-msgstr ""
+msgstr "E551"
 
 msgid "Polyvinylpolypyrrolidone"
-msgstr ""
+msgstr "Polivinil-polipirrolidon"
 
 msgid "E1202"
-msgstr ""
+msgstr "E1202"
 
 msgid "Alginate de calcium"
-msgstr ""
+msgstr "Kalcium-alginát"
 
 msgid "E404"
-msgstr ""
+msgstr "E404"
 
 msgid "Alginate de potassium"
-msgstr ""
+msgstr "Kálium-alginát"
 
 msgid "E402"
-msgstr ""
+msgstr "E402"
 
 msgid "Acide tartrique"
-msgstr ""
+msgstr "Borkősav"
 
 msgid "E334"
-msgstr ""
+msgstr "E334"
 
 msgid "Acide malique"
-msgstr ""
+msgstr "Malinsav"
 
 msgid "E296"
-msgstr ""
+msgstr "E296"
 
 msgid "Acide lactique"
-msgstr ""
+msgstr "Tejsav"
 
 msgid "E270"
-msgstr ""
+msgstr "E270"
 
 msgid "Tartrate de potassium"
-msgstr ""
+msgstr "Kálium-tartarát"
 
 msgid "E336"
-msgstr ""
+msgstr "E336"
 
 msgid "Bicarbonate de potassium"
-msgstr ""
+msgstr "Kálium-bikarbonát"
 
 msgid "E501"
-msgstr ""
+msgstr "E501"
 
 msgid "Carbonate de calcium"
-msgstr ""
+msgstr "Kalcium-karbonát"
 
 msgid "E170"
-msgstr ""
+msgstr "E170"
 
 msgid "Sulfate de calcium"
-msgstr ""
+msgstr "Kalcium-szulfát"
 
 msgid "E516"
-msgstr ""
+msgstr "E516"
 
 msgid "Carbonate de potassium"
-msgstr ""
+msgstr "Kálium-karbonát"

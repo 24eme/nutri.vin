@@ -10,8 +10,7 @@ msgstr ""
 "POT-Creation-Date: 2026-02-05 09:27+0100\n"
 "PO-Revision-Date: 2026-04-24 13:02+0000\n"
 "Last-Translator: NutriVin <nutrivin@24eme.fr>\n"
-"Language-Team: Greek <https://hosted.weblate.org/projects/nutrivin/interface/"
-"el/>\n"
+"Language-Team: Greek <https://hosted.weblate.org/projects/nutrivin/interface/el/>\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,66 +19,66 @@ msgstr ""
 "X-Generator: Weblate 5.17.1-dev\n"
 
 msgid "Informations complémentaires"
-msgstr ""
+msgstr "Λοιπές πληροφορίες"
 
 msgid "Volume d'alcool"
-msgstr ""
+msgstr "Όγκος αλκοόλης"
 
 msgid "Contenance"
-msgstr ""
+msgstr "Χωρητικότητα"
 
 msgid "N° de lot"
-msgstr ""
+msgstr "Αριθμός παρτίδας"
 
 msgid "Ingrédients"
-msgstr ""
+msgstr "Συστατικά"
 
 #, php-format
 msgid "Ingrédients allergènes indiqués en %sgras%s."
-msgstr ""
+msgstr "Τα αλλεργιογόνα συστατικά αναφέρονται με %sέντονα%s."
 
 #, php-format
 msgid "Ingrédients issus de l'agriculture biologique indiqué avec une %s*%s."
-msgstr ""
+msgstr "Συστατικά από βιολογική καλλιέργεια που αναφέρονται με %s*%s."
 
 msgid "Informations nutritionnelles"
-msgstr ""
+msgstr "Πληροφορίες διατροφής"
 
 msgid "Type"
-msgstr ""
+msgstr "Τύπος"
 
 msgid "Pour 100 mL"
-msgstr ""
+msgstr "Ανά 100 mL"
 
 msgid "Énergie"
-msgstr ""
+msgstr "Ενέργεια"
 
 msgid "kJ"
-msgstr ""
+msgstr "kJ"
 
 msgid "kcal"
-msgstr ""
+msgstr "kcal"
 
 msgid "Matières grasses"
-msgstr ""
+msgstr "Λίπος"
 
 msgid "dont acides gras saturés"
-msgstr ""
+msgstr "εκ των οποίων κορεσμένα λιπαρά οξέα"
 
 msgid "g"
-msgstr ""
+msgstr "ζ"
 
 msgid "Glucides"
-msgstr ""
+msgstr "Υδατάνθρακες"
 
 msgid "dont sucres"
-msgstr ""
+msgstr "εκ των οποίων σάκχαρα"
 
 msgid "Fibres alimentaires"
-msgstr ""
+msgstr "Ίνες τροφίμων"
 
 msgid "Protéines"
-msgstr ""
+msgstr "Πρωτεΐνες"
 
 msgid "Sel"
 msgstr "Αλας"
@@ -231,412 +230,412 @@ msgid "Sel neutre de potassium"
 msgstr "Ουδέτερο άλας καλίου"
 
 msgid "Mannoprotéines de levures"
-msgstr ""
+msgstr "Μαννοπρωτεϊνες μαγιάς"
 
 msgid "Carboxyméthylcellulose - E466"
-msgstr ""
+msgstr "Καρβοξυμεθυλοκυτταρίνη - E466"
 
 msgid "Copolymères polyvinylimidazole/polyvinylpyrrolidone"
-msgstr ""
+msgstr "Συμπολυμερή πολυβινυλιμιδαζολίου/πολυβινυλοπυρρολιδόνης"
 
 msgid "Polyaspartate de potassium - E456"
-msgstr ""
+msgstr "Πολυασπαρτικό κάλιο - E456"
 
 msgid "Dioxyde de soufre - E220"
-msgstr ""
+msgstr "Διοξείδιο του θείου - E220"
 
 msgid "Bisulfite de potassium - E228"
-msgstr ""
+msgstr "Διθειώδες κάλιο - E228"
 
 msgid "Métabisulfite de potassium - E224"
-msgstr ""
+msgstr "Μεταδιθειώδες κάλιο - E224"
 
 msgid "Sorbate de potassium - E202"
-msgstr ""
+msgstr "Σορβικό κάλιο - E202"
 
 msgid "Lysozyme - E1105"
-msgstr ""
+msgstr "Λυσοζύμη - E1105"
 
 msgid "Acide L-ascorbique - E300"
-msgstr ""
+msgstr "L-ασκορβικό οξύ - E300"
 
 msgid "Dicarbonate de diméthyle - E242"
-msgstr ""
+msgstr "Δικαρβονικό διμεθύλιο - E242"
 
 msgid "Argon - E938"
-msgstr ""
+msgstr "Αργόν - E938"
 
 msgid "Azote - E941"
-msgstr ""
+msgstr "Αζότε - Ε941"
 
 msgid "Dioxyde de carbone - E290"
-msgstr ""
+msgstr "Διοξείδιο του άνθρακα - E290"
 
 msgid "Oxygène gazeux - E948"
-msgstr ""
+msgstr "Αέριο οξυγόνο - E948"
 
 msgid "Sulfites"
-msgstr ""
+msgstr "Θειώδη άλατα"
 
 msgid "Anhydride sulfureux"
-msgstr ""
+msgstr "Διοξείδιο του θείου"
 
 msgid "Oeuf"
-msgstr ""
+msgstr "Αυγά"
 
 msgid "Protéine de l'oeuf"
-msgstr ""
+msgstr "Πρωτεΐνες αυγών"
 
 msgid "Produit de l'oeuf"
-msgstr ""
+msgstr "Προϊόν αυγών"
 
 msgid "Lysozyme de l'oeuf"
-msgstr ""
+msgstr "Λυσοζύμη αυγών"
 
 msgid "Albumine de l'oeuf"
-msgstr ""
+msgstr "Αυγοαλβουμίνη"
 
 msgid "Lait"
-msgstr ""
+msgstr "Γάλα"
 
 msgid "Produits du lait"
-msgstr ""
+msgstr "Γαλακτοκομικά προϊόντα"
 
 msgid "Caséine du lait ou protéine du lait"
-msgstr ""
+msgstr "Καζεΐνη ή πρωτεΐνη γάλακτος"
 
 msgid "Résine de pin d'Alep"
-msgstr ""
+msgstr "Ρητίνη πεύκης Χαλεπίου"
 
 msgid "Lies fraîches"
-msgstr ""
+msgstr "Νωπά βρύα"
 
 msgid "Caramel - E150"
-msgstr ""
+msgstr "Καραμέλα - E150"
 
 msgid "Isothiocyanate d'allyle"
-msgstr ""
+msgstr "Ισοθειοκυανικό αλλύλιο"
 
 msgid "Levures inactivées"
-msgstr ""
+msgstr "Ζύμες αδρανείς"
 
 msgid "Charbons à usage oenologique"
-msgstr ""
+msgstr "Άνθρακας για οινολογική χρήση"
 
 msgid "Fibres végétales sélectives"
-msgstr ""
+msgstr "Επιλεκτικές φυτικές ίνες"
 
 msgid "Cellulose microcristalline - E460"
-msgstr ""
+msgstr "Μικροκρυσταλλική κυτταρίνη - E460"
 
 msgid "Hydrogénophosphate de diammonium - E342/CAS7783-28-0"
-msgstr ""
+msgstr "Υδρογονοφωσφορικό διαμμώνιο - E342/CAS7783-28-0"
 
 msgid "Sulfate d'ammonium - E517/CAS7783-20-2"
-msgstr ""
+msgstr "Θειικό αμμώνιο - E517/CAS7783-20-2"
 
 msgid "Bisulfite d'ammonium"
-msgstr ""
+msgstr "Διθειώδες αμμώνιο"
 
 msgid "Chlorhydrate de thiamine"
-msgstr ""
+msgstr "Υδροχλωρική θειαμίνη"
 
 msgid "Autolysats de levures"
-msgstr ""
+msgstr "Αυτόλυτα ζυμομύκητες"
 
 msgid "Levures inactivées ayant des niveaux garantis de glutathion"
-msgstr ""
+msgstr "Αδρανοποιημένοι ζύμες με εγγυημένα επίπεδα γλουταθειόνης"
 
 msgid "Gélatine alimentaire"
-msgstr ""
+msgstr "Ζελατίνη τροφίμων"
 
 msgid "Protéine de blé"
-msgstr ""
+msgstr "Πρωτεΐνες σίτου"
 
 msgid "Protéine issue de pois"
-msgstr ""
+msgstr "Πρωτεΐνες μπαχαρικών"
 
 msgid "Protéine issue de pommes de terre"
-msgstr ""
+msgstr "Πρωτεΐνες γεωμήλων"
 
 msgid "Colle de poisson"
-msgstr ""
+msgstr "Κόλλα ψαριών"
 
 msgid "Caséines"
-msgstr ""
+msgstr "Καζεΐνες"
 
 msgid "Caséinates de potassium"
-msgstr ""
+msgstr "Καζεϊνικά άλατα του καλίου"
 
 msgid "Ovalbumine"
-msgstr ""
+msgstr "Οβλευκωματίνη"
 
 msgid "Bentonite - E558"
-msgstr ""
+msgstr "Μπεντονίτης - E558"
 
 msgid "Dioxyde de silicium - E551"
-msgstr ""
+msgstr "Διοξείδιο του πυριτίου - E551"
 
 msgid "Kaolin"
-msgstr ""
+msgstr "Καολίνης"
 
 msgid "Chitosane dérivé d'Aspergillus niger"
-msgstr ""
+msgstr "Τσιτοζάνη προερχόμενη από Aspergillus niger"
 
 msgid "Chitine-glucane dérivé d'Aspergillus"
-msgstr ""
+msgstr "Χιτίνη-γλυκάνη που προέρχεται από Aspergillus"
 
 msgid "Polyvinylpolypyrrolidone - E1202"
-msgstr ""
+msgstr "Πολυβινυλοπολυπυρρολιδόνη - E1202"
 
 msgid "Alginate de calcium - E404"
-msgstr ""
+msgstr "Αλγινικό ασβέστιο - E404"
 
 msgid "Alginate de potassium - E402"
-msgstr ""
+msgstr "Αλγινικό κάλιο - E402"
 
 msgid "Uréase"
-msgstr ""
+msgstr "Ουρία"
 
 msgid "Pectines lyases"
-msgstr ""
+msgstr "Πηκτίνες Lyase"
 
 msgid "Pectine méthylestérase"
-msgstr ""
+msgstr "Πεκτίνη μεθυλεστεράση"
 
 msgid "Polygalacturonase"
-msgstr ""
+msgstr "Πολυγαλακτουρονάση"
 
 msgid "Hémicellulase"
-msgstr ""
+msgstr "Ημικυτταρίνη"
 
 msgid "Cellulase"
-msgstr ""
+msgstr "Κυτταρίνη"
 
 msgid "Bétaglucanase"
-msgstr ""
+msgstr "Βηταγλυκανάση"
 
 msgid "Glycosidase"
-msgstr ""
+msgstr "Γλυκοσιδάση"
 
 msgid "Levures de vinification"
-msgstr ""
+msgstr "Ζύμες οινοποίησης"
 
 msgid "Bactéries lactiques"
-msgstr ""
+msgstr "Γαλακτικά βακτήρια"
 
 msgid "Sulfate de cuivre, pentahydraté"
-msgstr ""
+msgstr "Θειικός χαλκός, πενταένυδρος"
 
 msgid "Citrate de cuivre"
-msgstr ""
+msgstr "Κιτρικός χαλκός"
 
 msgid "dérivé d'Aspergillus niger"
-msgstr ""
+msgstr "που προέρχονται από Aspergillus niger"
 
 msgid "Hydrogénotartrate de potassium"
-msgstr ""
+msgstr "Υδρογονοτρυγικό κάλιο"
 
 msgid "Tartrate de calcium"
-msgstr ""
+msgstr "Τρυγικό ασβέστιο"
 
 msgid "E354"
-msgstr ""
+msgstr "E354"
 
 msgid "Acide citrique"
-msgstr ""
+msgstr "Κιτρικό οξύ"
 
 msgid "E330"
-msgstr ""
+msgstr "E330"
 
 msgid "Ferrocyanure de potassium"
-msgstr ""
+msgstr "Σιδηροκυανιούχο κάλιο"
 
 msgid "E536"
-msgstr ""
+msgstr "E536"
 
 msgid "Acide métatartrique"
-msgstr ""
+msgstr "Μετατρικό οξύ"
 
 msgid "E353"
-msgstr ""
+msgstr "E353"
 
 msgid "Gomme arabique"
-msgstr ""
+msgstr "Αραβικό κόμμι"
 
 msgid "E414"
-msgstr ""
+msgstr "E414"
 
 msgid "Carboxyméthylcellulose"
-msgstr ""
+msgstr "Καρβοξυμεθυλοκυτταρίνη"
 
 msgid "E466"
-msgstr ""
+msgstr "E466"
 
 msgid "Polyaspartate de potassium"
-msgstr ""
+msgstr "Πολυασπαρτικό κάλιο"
 
 msgid "E456"
-msgstr ""
+msgstr "E456"
 
 msgid "Dioxyde de soufre"
-msgstr ""
+msgstr "Διοξείδιο του θείου"
 
 msgid "E220"
-msgstr ""
+msgstr "E220"
 
 msgid "Bisulfite de potassium"
-msgstr ""
+msgstr "Διθειώδες κάλιο"
 
 msgid "E228"
-msgstr ""
+msgstr "E228"
 
 msgid "Métabisulfite de potassium"
-msgstr ""
+msgstr "Μεταδιθειώδες κάλιο"
 
 msgid "E224"
-msgstr ""
+msgstr "E224"
 
 msgid "Sorbate de potassium"
-msgstr ""
+msgstr "Σορβικό κάλιο"
 
 msgid "E202"
-msgstr ""
+msgstr "E202"
 
 msgid "Lysozyme"
-msgstr ""
+msgstr "Λυσοζύμη"
 
 msgid "E1105"
-msgstr ""
+msgstr "E1105"
 
 msgid "Acide L-ascorbique"
-msgstr ""
+msgstr "L-ασκορβικό οξύ"
 
 msgid "E300"
-msgstr ""
+msgstr "E300"
 
 msgid "Dicarbonate de diméthyle"
-msgstr ""
+msgstr "Δικαρβονικό διμεθύλιο"
 
 msgid "E242"
-msgstr ""
+msgstr "E242"
 
 msgid "Argon"
-msgstr ""
+msgstr "Αργόν"
 
 msgid "E938"
-msgstr ""
+msgstr "E938"
 
 msgid "Azote"
-msgstr ""
+msgstr "Αζότε"
 
 msgid "E941"
-msgstr ""
+msgstr "E941"
 
 msgid "Dioxyde de carbone"
-msgstr ""
+msgstr "Διοξείδιο του άνθρακα"
 
 msgid "E290"
-msgstr ""
+msgstr "E290"
 
 msgid "Oxygène gazeux"
-msgstr ""
+msgstr "Αέριο οξυγόνο"
 
 msgid "E948"
-msgstr ""
+msgstr "E948"
 
 msgid "Mis en bouteille sous atmosphère protectrice"
-msgstr ""
+msgstr "Εμφιαλωμένο υπό προστατευτική ατμόσφαιρα"
 
 msgid "Cellulose microcristalline"
-msgstr ""
+msgstr "Μικροκρυσταλλική κυτταρίνη"
 
 msgid "E460"
-msgstr ""
+msgstr "E460"
 
 msgid "Hydrogénophosphate de diammonium"
-msgstr ""
+msgstr "Υδρογονοφωσφορικό διαμμώνιο"
 
 msgid "E342/CAS7783-28-0"
-msgstr ""
+msgstr "E342/CAS7783-28-0"
 
 msgid "Sulfate d'ammonium"
-msgstr ""
+msgstr "Θειικό αμμώνιο"
 
 msgid "E517/CAS7783-20-2"
-msgstr ""
+msgstr "E517/CAS7783-20-2"
 
 msgid "Bentonite"
-msgstr ""
+msgstr "Μπεντονίτης"
 
 msgid "E558"
-msgstr ""
+msgstr "E558"
 
 msgid "Dioxyde de silicium"
-msgstr ""
+msgstr "Διοξείδιο του πυριτίου"
 
 msgid "E551"
-msgstr ""
+msgstr "E551"
 
 msgid "Polyvinylpolypyrrolidone"
-msgstr ""
+msgstr "Πολυβινυλοπολυπυρρολιδόνη"
 
 msgid "E1202"
-msgstr ""
+msgstr "E1202"
 
 msgid "Alginate de calcium"
-msgstr ""
+msgstr "Αλγινικό ασβέστιο"
 
 msgid "E404"
-msgstr ""
+msgstr "E404"
 
 msgid "Alginate de potassium"
-msgstr ""
+msgstr "Αλγινικό κάλιο"
 
 msgid "E402"
-msgstr ""
+msgstr "E402"
 
 msgid "Acide tartrique"
-msgstr ""
+msgstr "Τρυγικό οξύ"
 
 msgid "E334"
-msgstr ""
+msgstr "E334"
 
 msgid "Acide malique"
-msgstr ""
+msgstr "Μηλικό οξύ"
 
 msgid "E296"
-msgstr ""
+msgstr "E296"
 
 msgid "Acide lactique"
-msgstr ""
+msgstr "Γαλακτικό οξύ"
 
 msgid "E270"
-msgstr ""
+msgstr "E270"
 
 msgid "Tartrate de potassium"
-msgstr ""
+msgstr "Τρυγικό κάλιο"
 
 msgid "E336"
-msgstr ""
+msgstr "E336"
 
 msgid "Bicarbonate de potassium"
-msgstr ""
+msgstr "Διττανθρακικό κάλιο"
 
 msgid "E501"
-msgstr ""
+msgstr "E501"
 
 msgid "Carbonate de calcium"
-msgstr ""
+msgstr "Ανθρακικό ασβέστιο"
 
 msgid "E170"
-msgstr ""
+msgstr "E170"
 
 msgid "Sulfate de calcium"
-msgstr ""
+msgstr "Θειικό ασβέστιο"
 
 msgid "E516"
-msgstr ""
+msgstr "E516"
 
 msgid "Carbonate de potassium"
-msgstr ""
+msgstr "Ανθρακικό κάλιο"

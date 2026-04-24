@@ -15,109 +15,109 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && (n % 100 < 11 || n % 100 > "
-"19)) ? 0 : ((n % 10 >= 2 && n % 10 <= 9 && (n % 100 < 11 || n % 100 > 19)) ? "
-"1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && (n % 100 < 11 || n % 100 > 19)) ? 0 : ((n % 10 >= 2 && n % 10 <= 9 && (n % 100 < 11 || n % 100 > 19)) ? 1 : 2);\n"
 
 msgid "Informations complémentaires"
-msgstr ""
+msgstr "Kita informacija"
 
 msgid "Volume d'alcool"
-msgstr ""
+msgstr "Alkoholio kiekis"
 
 msgid "Contenance"
-msgstr ""
+msgstr "Talpa"
 
 msgid "N° de lot"
-msgstr ""
+msgstr "Nr"
 
 msgid "Ingrédients"
-msgstr ""
+msgstr "Sudėtis"
 
 #, php-format
 msgid "Ingrédients allergènes indiqués en %sgras%s."
-msgstr ""
+msgstr "Alergenai nurodyti %sparyškintu%s šriftu."
 
 #, php-format
 msgid "Ingrédients issus de l'agriculture biologique indiqué avec une %s*%s."
-msgstr ""
+msgstr "Ekologinės žemdirbystės sudedamosios dalys nurodytos su %s*%s."
 
 msgid "Informations nutritionnelles"
-msgstr ""
+msgstr "Informacija apie maistingumą"
 
 msgid "Type"
-msgstr ""
+msgstr "Tipas"
 
 msgid "Pour 100 mL"
-msgstr ""
+msgstr "100 ml"
 
 msgid "Énergie"
-msgstr ""
+msgstr "Energetika"
 
 msgid "kJ"
-msgstr ""
+msgstr "unit description in lists"
 
 msgid "kcal"
-msgstr ""
+msgstr "unit description in lists"
 
 msgid "Matières grasses"
-msgstr ""
+msgstr "Riebalai"
 
 msgid "dont acides gras saturés"
-msgstr ""
+msgstr "iš kurių sočiosios riebalų rūgštys"
 
 msgid "g"
-msgstr ""
+msgstr "g"
 
 msgid "Glucides"
-msgstr ""
+msgstr "Angliavandeniai"
 
 msgid "dont sucres"
-msgstr ""
+msgstr "iš jų cukrų"
 
 msgid "Fibres alimentaires"
-msgstr ""
+msgstr "Maisto pluoštai"
 
 msgid "Protéines"
-msgstr ""
+msgstr "Baltymai"
 
 msgid "Sel"
-msgstr ""
+msgstr "Druska"
 
 msgid "Sodium"
-msgstr ""
+msgstr "Natris"
 
 msgid "Autres informations"
-msgstr ""
+msgstr "Kt. informacija"
 
 msgid "Mentions légales"
-msgstr ""
+msgstr "Teisinė informacija"
 
 msgid "Cette fiche nutritionnelle est éditée sous la seule responsablité de"
-msgstr ""
+msgstr "III PRIEDAS"
 
 msgid "Elle est hébergée par"
-msgstr ""
+msgstr "Jį veda:"
 
 msgid "sa plateforme"
-msgstr ""
+msgstr "jo platforma"
 
 msgid "et le projet libre"
-msgstr ""
+msgstr "ir nemokamas projektas"
 
 msgid ""
 "ne peuvent être tenus responsables des informations publiées. Un historique "
 "de chaque modification est conservée et consultable publiquement"
 msgstr ""
+"už paskelbtą informaciją neatsako. Saugoma kiekvieno pakeitimo istorija ir "
+"galima atlikti viešą paiešką"
 
 msgid "Créé le "
-msgstr ""
+msgstr "Sukūrimo data"
 
 msgid "Modifié le "
-msgstr ""
+msgstr "Modifikuota"
 
 msgid "Voir la version du "
-msgstr ""
+msgstr "4. 5 skyrių)"
 
 msgid ""
 "Seules l'heure de la première visite de la session et une évaluation "
@@ -126,510 +126,513 @@ msgid ""
 "personnel n'est conservé et aucun suivi des visiteurs de cette fiche n'est "
 "réalisé. La consultation de la page ne nécessite pas de cookie."
 msgstr ""
+"Trūksta tik pirmojo posėdžio laiko ir geografinio ryšio įvertinimo, kad būtų"
+" galima atlikti šią statistiką. (neprivaloma) Žiūrint iš puslapio nereikia "
+"slapuko."
 
 msgid "vue"
-msgstr ""
+msgstr "vaizdas"
 
 msgid "Activateur de fermentation"
-msgstr ""
+msgstr "Fermentacijos aktyvatorius"
 
 msgid "Agent de fermentation"
-msgstr ""
+msgstr "Fermentacijos medžiaga"
 
 msgid "Agent stabilisateur"
-msgstr ""
+msgstr "Stabilizavimo medžiaga"
 
 msgid "Conservateur et antioxydant"
-msgstr ""
+msgstr "Konservantas ir antioksidantas"
 
 msgid "Correction de défauts"
-msgstr ""
+msgstr "Trūkumų ištaisymas"
 
 msgid "Enzyme"
-msgstr ""
+msgstr "Fermentai"
 
 msgid "Gaz et gaz d'emballage"
-msgstr ""
+msgstr "Dujos ir pakavimo dujos"
 
 msgid "Régulateur d'acidité"
-msgstr ""
+msgstr "Rūgštingumo reguliatorius"
 
 msgid "Raisins"
-msgstr ""
+msgstr "Vynuogės"
 
 msgid "Moût de raisin concentré"
-msgstr ""
+msgstr "Koncentruota vynuogių misA"
 
 msgid "Eau de vie de vin"
-msgstr ""
+msgstr "Vynas"
 
 msgid "Liqueur de tirage et liqueur d'expédition"
-msgstr ""
+msgstr "Piešti Liquor ir laivybos Liquor"
 
 msgid "Saccharose"
-msgstr ""
+msgstr "Sacharozė"
 
 msgid "Acide tartrique - E334"
-msgstr ""
+msgstr "Vyno rūgštis - E334"
 
 msgid "Acide malique - E296"
-msgstr ""
+msgstr "Namo rūgštis - E296"
 
 msgid "Acide lactique - E270"
-msgstr ""
+msgstr "Pieno rūgštis - E 270"
 
 msgid "Tartrate de potassium - E336"
-msgstr ""
+msgstr "Kalio tartratas - E336"
 
 msgid "Bicarbonate de potassium - E501"
-msgstr ""
+msgstr "Kalio bikarbonatas - E501"
 
 msgid "Carbonate de calcium - E170"
-msgstr ""
+msgstr "Kalcio karbonatas - E 170"
 
 msgid "Tartrate de calcium - E354"
-msgstr ""
+msgstr "Kalcio tartratas - E354"
 
 msgid "Sulfate de calcium - E516"
-msgstr ""
+msgstr "Kalcio sulfatas - E516"
 
 msgid "Carbonate de potassium - E501"
-msgstr ""
+msgstr "Kalio karbonatas - E501"
 
 msgid "Hydrogénotartrate de potassium - E336"
-msgstr ""
+msgstr "Kalio vandenilio artratas - E336"
 
 msgid "Acide citrique - E330"
-msgstr ""
+msgstr "Citrinų rūgštis - E330"
 
 msgid "Tanins"
-msgstr ""
+msgstr "Taninai"
 
 msgid "Ferrocyanure de potassium - E536"
-msgstr ""
+msgstr "Kalio ferocianidas - E536"
 
 msgid "Phytate de calcium"
-msgstr ""
+msgstr "Kalcio fitatas"
 
 msgid "Acide métatartrique - E353"
-msgstr ""
+msgstr "Metaelemento rūgštis - E353"
 
 msgid "Gomme arabique - E414"
-msgstr ""
+msgstr "Arabų derva - E414"
 
 msgid "Acide DL-tartrique"
-msgstr ""
+msgstr "DL-vyno rūgštis"
 
 msgid "Sel neutre de potassium"
-msgstr ""
+msgstr "Kalio neutrali druska"
 
 msgid "Mannoprotéines de levures"
-msgstr ""
+msgstr "Mielių manobaltymai"
 
 msgid "Carboxyméthylcellulose - E466"
-msgstr ""
+msgstr "Karboksimetilceliuliozė - E466"
 
 msgid "Copolymères polyvinylimidazole/polyvinylpyrrolidone"
-msgstr ""
+msgstr "Polivinilimidazolas / polivinilpirolidono kopolimerai"
 
 msgid "Polyaspartate de potassium - E456"
-msgstr ""
+msgstr "Kalio poliaspartatas - E456"
 
 msgid "Dioxyde de soufre - E220"
-msgstr ""
+msgstr "Sieros dioksidas - E 220"
 
 msgid "Bisulfite de potassium - E228"
-msgstr ""
+msgstr "Kalio bisulfitas - E228"
 
 msgid "Métabisulfite de potassium - E224"
-msgstr ""
+msgstr "Kalio metabisulfitas - E224"
 
 msgid "Sorbate de potassium - E202"
-msgstr ""
+msgstr "Kalio sorbatas - E202"
 
 msgid "Lysozyme - E1105"
-msgstr ""
+msgstr "Lizocimas - E1105"
 
 msgid "Acide L-ascorbique - E300"
-msgstr ""
+msgstr "L- askorbo rūgštis - E300"
 
 msgid "Dicarbonate de diméthyle - E242"
-msgstr ""
+msgstr "Dimetildikarbonatas - E242"
 
 msgid "Argon - E938"
-msgstr ""
+msgstr "Argonas - E938"
 
 msgid "Azote - E941"
-msgstr ""
+msgstr "Azotas - E941"
 
 msgid "Dioxyde de carbone - E290"
-msgstr ""
+msgstr "Anglies dioksidas - E 290"
 
 msgid "Oxygène gazeux - E948"
-msgstr ""
+msgstr "Dujinis deguonis - E948"
 
 msgid "Sulfites"
-msgstr ""
+msgstr "Sulfitai"
 
 msgid "Anhydride sulfureux"
-msgstr ""
+msgstr "Sieros dioksidas"
 
 msgid "Oeuf"
-msgstr ""
+msgstr "Vištos"
 
 msgid "Protéine de l'oeuf"
-msgstr ""
+msgstr "Kiaušinių baltymai"
 
 msgid "Produit de l'oeuf"
-msgstr ""
+msgstr "Kiaušinių produktas"
 
 msgid "Lysozyme de l'oeuf"
-msgstr ""
+msgstr "Kiaušinių lizocimas"
 
 msgid "Albumine de l'oeuf"
-msgstr ""
+msgstr "Kiaušinių albuminas"
 
 msgid "Lait"
-msgstr ""
+msgstr "Pienas"
 
 msgid "Produits du lait"
-msgstr ""
+msgstr "Pieno produktai"
 
 msgid "Caséine du lait ou protéine du lait"
-msgstr ""
+msgstr "Pieno kazeinui arba pieno baltymams"
 
 msgid "Résine de pin d'Alep"
-msgstr ""
+msgstr "Aleppo pušies derva"
 
 msgid "Lies fraîches"
-msgstr ""
+msgstr "Šviežios nuosėdos"
 
 msgid "Caramel - E150"
-msgstr ""
+msgstr "Karamelė - E150"
 
 msgid "Isothiocyanate d'allyle"
-msgstr ""
+msgstr "Alilizotiocianatas"
 
 msgid "Levures inactivées"
-msgstr ""
+msgstr "Inaktyvuotos mielės"
 
 msgid "Charbons à usage oenologique"
-msgstr ""
+msgstr "Vynininkystei skirtos anglys"
 
 msgid "Fibres végétales sélectives"
-msgstr ""
+msgstr "Selektyvūs augaliniai pluoštai"
 
 msgid "Cellulose microcristalline - E460"
-msgstr ""
+msgstr "Mikrokristalinė celiuliozė - E 460"
 
 msgid "Hydrogénophosphate de diammonium - E342/CAS7783-28-0"
-msgstr ""
+msgstr "Diamonio vandenilio fosfatas - E342 / CAS7783- 28- 0"
 
 msgid "Sulfate d'ammonium - E517/CAS7783-20-2"
-msgstr ""
+msgstr "Amonio sulfatas - E517 / CAS7783- 20- 2"
 
 msgid "Bisulfite d'ammonium"
-msgstr ""
+msgstr "Amonio bisulfitas"
 
 msgid "Chlorhydrate de thiamine"
-msgstr ""
+msgstr "Tiamino hidrochloridas"
 
 msgid "Autolysats de levures"
-msgstr ""
+msgstr "Mielių autolizatai"
 
 msgid "Levures inactivées ayant des niveaux garantis de glutathion"
-msgstr ""
+msgstr "Inaktyvuotos mielės, kurių garantuotas glutationo kiekis"
 
 msgid "Gélatine alimentaire"
-msgstr ""
+msgstr "Maistinė želatina"
 
 msgid "Protéine de blé"
-msgstr ""
+msgstr "Kviečių baltymai"
 
 msgid "Protéine issue de pois"
-msgstr ""
+msgstr "Žirnių baltymai"
 
 msgid "Protéine issue de pommes de terre"
-msgstr ""
+msgstr "Bulvių baltymai"
 
 msgid "Colle de poisson"
-msgstr ""
+msgstr "Žuvų klijai"
 
 msgid "Caséines"
-msgstr ""
+msgstr "Kazeinai"
 
 msgid "Caséinates de potassium"
-msgstr ""
+msgstr "Kalio kazeinatai"
 
 msgid "Ovalbumine"
-msgstr ""
+msgstr "Ovalbuminas"
 
 msgid "Bentonite - E558"
-msgstr ""
+msgstr "Bentonitas - E558"
 
 msgid "Dioxyde de silicium - E551"
-msgstr ""
+msgstr "Silicio dioksidas - E551"
 
 msgid "Kaolin"
-msgstr ""
+msgstr "Kaolinas"
 
 msgid "Chitosane dérivé d'Aspergillus niger"
-msgstr ""
+msgstr "Chitozanas, gautas iš Aspergillus niger"
 
 msgid "Chitine-glucane dérivé d'Aspergillus"
-msgstr ""
+msgstr "Chitin-gliukanas, gautas iš Aspergillus"
 
 msgid "Polyvinylpolypyrrolidone - E1202"
-msgstr ""
+msgstr "Polivinilpolipirolidonas - E 1202"
 
 msgid "Alginate de calcium - E404"
-msgstr ""
+msgstr "Kalcio alginatas - E404"
 
 msgid "Alginate de potassium - E402"
-msgstr ""
+msgstr "Kalio alginatas - E 402"
 
 msgid "Uréase"
-msgstr ""
+msgstr "Ureazė"
 
 msgid "Pectines lyases"
-msgstr ""
+msgstr "Liaziniai pektinai"
 
 msgid "Pectine méthylestérase"
-msgstr ""
+msgstr "Pektino metilesterazĖ"
 
 msgid "Polygalacturonase"
-msgstr ""
+msgstr "Poligalakturonazė"
 
 msgid "Hémicellulase"
-msgstr ""
+msgstr "Hemiceliuliozė"
 
 msgid "Cellulase"
-msgstr ""
+msgstr "Celiuliazė"
 
 msgid "Bétaglucanase"
-msgstr ""
+msgstr "Betaglukanazė"
 
 msgid "Glycosidase"
-msgstr ""
+msgstr "Glikozidazė"
 
 msgid "Levures de vinification"
-msgstr ""
+msgstr "Viniliavimo mielės"
 
 msgid "Bactéries lactiques"
-msgstr ""
+msgstr "Laktinės bakterijos"
 
 msgid "Sulfate de cuivre, pentahydraté"
-msgstr ""
+msgstr "Vario sulfatas, pentahidratas"
 
 msgid "Citrate de cuivre"
-msgstr ""
+msgstr "Vario citratas"
 
 msgid "dérivé d'Aspergillus niger"
-msgstr ""
+msgstr "iš Aspergillus niger"
 
 msgid "Hydrogénotartrate de potassium"
-msgstr ""
+msgstr "Kalio vandenilio artratas"
 
 msgid "Tartrate de calcium"
-msgstr ""
+msgstr "Kalcio tartratas"
 
 msgid "E354"
-msgstr ""
+msgstr "E 354"
 
 msgid "Acide citrique"
-msgstr ""
+msgstr "Citrinų rūgštis"
 
 msgid "E330"
-msgstr ""
+msgstr "E 330"
 
 msgid "Ferrocyanure de potassium"
-msgstr ""
+msgstr "Kalio ferocianidas"
 
 msgid "E536"
-msgstr ""
+msgstr "E536"
 
 msgid "Acide métatartrique"
-msgstr ""
+msgstr "Metatirato rūgštis"
 
 msgid "E353"
-msgstr ""
+msgstr "E 353"
 
 msgid "Gomme arabique"
-msgstr ""
+msgstr "Arabų guma"
 
 msgid "E414"
-msgstr ""
+msgstr "E 414"
 
 msgid "Carboxyméthylcellulose"
-msgstr ""
+msgstr "Karboksimetilceliuliozė"
 
 msgid "E466"
-msgstr ""
+msgstr "E 466"
 
 msgid "Polyaspartate de potassium"
-msgstr ""
+msgstr "Kalio poliaspartatas"
 
 msgid "E456"
-msgstr ""
+msgstr "E 456"
 
 msgid "Dioxyde de soufre"
-msgstr ""
+msgstr "Sieros dioksidas"
 
 msgid "E220"
-msgstr ""
+msgstr "E 220"
 
 msgid "Bisulfite de potassium"
-msgstr ""
+msgstr "Kalio bisulfitas"
 
 msgid "E228"
-msgstr ""
+msgstr "E 228"
 
 msgid "Métabisulfite de potassium"
-msgstr ""
+msgstr "Kalio metabisulfitas"
 
 msgid "E224"
-msgstr ""
+msgstr "E 224"
 
 msgid "Sorbate de potassium"
-msgstr ""
+msgstr "Kalio sorbatas"
 
 msgid "E202"
-msgstr ""
+msgstr "E 202"
 
 msgid "Lysozyme"
-msgstr ""
+msgstr "Lizocimas"
 
 msgid "E1105"
-msgstr ""
+msgstr "E 1105"
 
 msgid "Acide L-ascorbique"
-msgstr ""
+msgstr "L- askorbo rūgštis"
 
 msgid "E300"
-msgstr ""
+msgstr "E 300"
 
 msgid "Dicarbonate de diméthyle"
-msgstr ""
+msgstr "Dimetildikarbonatas"
 
 msgid "E242"
-msgstr ""
+msgstr "E 242"
 
 msgid "Argon"
-msgstr ""
+msgstr "Argonas"
 
 msgid "E938"
-msgstr ""
+msgstr "E 938"
 
 msgid "Azote"
-msgstr ""
+msgstr "Azotas"
 
 msgid "E941"
-msgstr ""
+msgstr "E 941"
 
 msgid "Dioxyde de carbone"
-msgstr ""
+msgstr "Anglies dioksidas"
 
 msgid "E290"
-msgstr ""
+msgstr "E 290"
 
 msgid "Oxygène gazeux"
-msgstr ""
+msgstr "Dujinis deguonis"
 
 msgid "E948"
-msgstr ""
+msgstr "E 948"
 
 msgid "Mis en bouteille sous atmosphère protectrice"
-msgstr ""
+msgstr "Burnoje po apsaugine atmosferA"
 
 msgid "Cellulose microcristalline"
-msgstr ""
+msgstr "Mikrokristalinė celiuliozė"
 
 msgid "E460"
-msgstr ""
+msgstr "E 460"
 
 msgid "Hydrogénophosphate de diammonium"
-msgstr ""
+msgstr "Diamonio-vandenilio fosfatas"
 
 msgid "E342/CAS7783-28-0"
-msgstr ""
+msgstr "E 342 / CAS773- 28- 0"
 
 msgid "Sulfate d'ammonium"
-msgstr ""
+msgstr "Amonio sulfatas"
 
 msgid "E517/CAS7783-20-2"
-msgstr ""
+msgstr "E 517 / CAS7783- 20- 2"
 
 msgid "Bentonite"
-msgstr ""
+msgstr "Bentonitas"
 
 msgid "E558"
-msgstr ""
+msgstr "E 558"
 
 msgid "Dioxyde de silicium"
-msgstr ""
+msgstr "Silicio dioksidas"
 
 msgid "E551"
-msgstr ""
+msgstr "E 551"
 
 msgid "Polyvinylpolypyrrolidone"
-msgstr ""
+msgstr "Polivinilpolipirolidonas"
 
 msgid "E1202"
-msgstr ""
+msgstr "E 1202"
 
 msgid "Alginate de calcium"
-msgstr ""
+msgstr "Kalcio alginatas"
 
 msgid "E404"
-msgstr ""
+msgstr "E 404"
 
 msgid "Alginate de potassium"
-msgstr ""
+msgstr "Kalio alginatas"
 
 msgid "E402"
-msgstr ""
+msgstr "E 402"
 
 msgid "Acide tartrique"
-msgstr ""
+msgstr "Vyno rūgštis"
 
 msgid "E334"
-msgstr ""
+msgstr "E 334"
 
 msgid "Acide malique"
-msgstr ""
+msgstr "Maleino rūgštis"
 
 msgid "E296"
-msgstr ""
+msgstr "E 296"
 
 msgid "Acide lactique"
-msgstr ""
+msgstr "Pieno rūgštis"
 
 msgid "E270"
-msgstr ""
+msgstr "E 270"
 
 msgid "Tartrate de potassium"
-msgstr ""
+msgstr "Kalio tartratas"
 
 msgid "E336"
-msgstr ""
+msgstr "E 336"
 
 msgid "Bicarbonate de potassium"
-msgstr ""
+msgstr "Kalio hidrokarbonatas"
 
 msgid "E501"
-msgstr ""
+msgstr "E 501"
 
 msgid "Carbonate de calcium"
-msgstr ""
+msgstr "Kalcio karbonatas"
 
 msgid "E170"
-msgstr ""
+msgstr "E 170"
 
 msgid "Sulfate de calcium"
-msgstr ""
+msgstr "Kalcio sulfatas"
 
 msgid "E516"
-msgstr ""
+msgstr "E 516"
 
 msgid "Carbonate de potassium"
-msgstr ""
+msgstr "Kalio karbonatas"

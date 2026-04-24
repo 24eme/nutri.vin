@@ -18,104 +18,106 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 msgid "Informations complémentaires"
-msgstr ""
+msgstr "Täiendav teave"
 
 msgid "Volume d'alcool"
-msgstr ""
+msgstr "Alkoholikogus"
 
 msgid "Contenance"
-msgstr ""
+msgstr "Võimekus"
 
 msgid "N° de lot"
-msgstr ""
+msgstr "Partii nr"
 
 msgid "Ingrédients"
-msgstr ""
+msgstr "Koostisosad"
 
 #, php-format
 msgid "Ingrédients allergènes indiqués en %sgras%s."
-msgstr ""
+msgstr "Allergeenid on märgitud %spaksus kirjas%s."
 
 #, php-format
 msgid "Ingrédients issus de l'agriculture biologique indiqué avec une %s*%s."
-msgstr ""
+msgstr "Mahepõllumajandusest pärit koostisosad on märgitud protsendiga %s*%s."
 
 msgid "Informations nutritionnelles"
-msgstr ""
+msgstr "Toitumisalane teave"
 
 msgid "Type"
-msgstr ""
+msgstr "Tüüp"
 
 msgid "Pour 100 mL"
-msgstr ""
+msgstr "100 ml kohta"
 
 msgid "Énergie"
-msgstr ""
+msgstr "Energia"
 
 msgid "kJ"
-msgstr ""
+msgstr "kJ"
 
 msgid "kcal"
-msgstr ""
+msgstr "kcal"
 
 msgid "Matières grasses"
-msgstr ""
+msgstr "Paks"
 
 msgid "dont acides gras saturés"
-msgstr ""
+msgstr "sellest küllastunud rasvhapped"
 
 msgid "g"
-msgstr ""
+msgstr "g"
 
 msgid "Glucides"
-msgstr ""
+msgstr "Süsivesikud"
 
 msgid "dont sucres"
-msgstr ""
+msgstr "sellest suhkrud"
 
 msgid "Fibres alimentaires"
-msgstr ""
+msgstr "Toiduained"
 
 msgid "Protéines"
-msgstr ""
+msgstr "Valgud"
 
 msgid "Sel"
-msgstr ""
+msgstr "Sool"
 
 msgid "Sodium"
-msgstr ""
+msgstr "Naatrium"
 
 msgid "Autres informations"
-msgstr ""
+msgstr "Muu teave"
 
 msgid "Mentions légales"
-msgstr ""
+msgstr "Õiguslik teave"
 
 msgid "Cette fiche nutritionnelle est éditée sous la seule responsablité de"
-msgstr ""
+msgstr "Käesolev toitumisleht on avaldatud ainuvastutusel"
 
 msgid "Elle est hébergée par"
-msgstr ""
+msgstr "Seda võõrustab"
 
 msgid "sa plateforme"
-msgstr ""
+msgstr "platvormil"
 
 msgid "et le projet libre"
-msgstr ""
+msgstr "ja tasuta projekti"
 
 msgid ""
 "ne peuvent être tenus responsables des informations publiées. Un historique "
 "de chaque modification est conservée et consultable publiquement"
 msgstr ""
+"ei vastuta avaldatud teabe eest. Iga muudatuse ajalugu säilitatakse ja seda "
+"saab avalikult otsida"
 
 msgid "Créé le "
-msgstr ""
+msgstr "Loodud"
 
 msgid "Modifié le "
-msgstr ""
+msgstr "Muudetud"
 
 msgid "Voir la version du "
-msgstr ""
+msgstr "Vaata versiooni"
 
 msgid ""
 "Seules l'heure de la première visite de la session et une évaluation "
@@ -124,510 +126,514 @@ msgid ""
 "personnel n'est conservé et aucun suivi des visiteurs de cette fiche n'est "
 "réalisé. La consultation de la page ne nécessite pas de cookie."
 msgstr ""
+"Statistiliseks muutmiseks säilitatakse ainult seansi esimese külastuse aeg "
+"ja ühenduse geograafiline hinnang. Õigusaktide kohaselt ei säilitata "
+"isikuandmeid ega jälgita lehe külastajaid. Lehekülje vaatamiseks ei ole vaja"
+" küpsist."
 
 msgid "vue"
-msgstr ""
+msgstr "vaade"
 
 msgid "Activateur de fermentation"
-msgstr ""
+msgstr "Fermentatsiooniaktivaator"
 
 msgid "Agent de fermentation"
-msgstr ""
+msgstr "Fermentatsiooniaine"
 
 msgid "Agent stabilisateur"
-msgstr ""
+msgstr "Stabilisaator"
 
 msgid "Conservateur et antioxydant"
-msgstr ""
+msgstr "Konservaator ja antioksüdant"
 
 msgid "Correction de défauts"
-msgstr ""
+msgstr "Puuduste parandamine"
 
 msgid "Enzyme"
-msgstr ""
+msgstr "Enzyme"
 
 msgid "Gaz et gaz d'emballage"
-msgstr ""
+msgstr "Gaasid ja pakkegaasid"
 
 msgid "Régulateur d'acidité"
-msgstr ""
+msgstr "Happesuse regulaator"
 
 msgid "Raisins"
-msgstr ""
+msgstr "Viinamarjad"
 
 msgid "Moût de raisin concentré"
-msgstr ""
+msgstr "Kontsentreeritud viinamarjavirre"
 
 msgid "Eau de vie de vin"
-msgstr ""
+msgstr "Veinielu"
 
 msgid "Liqueur de tirage et liqueur d'expédition"
-msgstr ""
+msgstr "Vedeliku ja transpordivedeliku näitamine"
 
 msgid "Saccharose"
-msgstr ""
+msgstr "Sahharoosi"
 
 msgid "Acide tartrique - E334"
-msgstr ""
+msgstr "Viinhape - E334"
 
 msgid "Acide malique - E296"
-msgstr ""
+msgstr "Õunhape - E296"
 
 msgid "Acide lactique - E270"
-msgstr ""
+msgstr "Piimhape - E270"
 
 msgid "Tartrate de potassium - E336"
-msgstr ""
+msgstr "Kaaliumtartraat - E336"
 
 msgid "Bicarbonate de potassium - E501"
-msgstr ""
+msgstr "Kaaliumvesinikkarbonaat - E501"
 
 msgid "Carbonate de calcium - E170"
-msgstr ""
+msgstr "Kaltsiumkarbonaat - E170"
 
 msgid "Tartrate de calcium - E354"
-msgstr ""
+msgstr "Kaltsiumtartraat - E354"
 
 msgid "Sulfate de calcium - E516"
-msgstr ""
+msgstr "Kaltsiumsulfaat - E516"
 
 msgid "Carbonate de potassium - E501"
-msgstr ""
+msgstr "Kaaliumkarbonaat - E501"
 
 msgid "Hydrogénotartrate de potassium - E336"
-msgstr ""
+msgstr "Kaaliumvesinikartraat - E336"
 
 msgid "Acide citrique - E330"
-msgstr ""
+msgstr "Sidrunhape - E330"
 
 msgid "Tanins"
-msgstr ""
+msgstr "Tanins"
 
 msgid "Ferrocyanure de potassium - E536"
-msgstr ""
+msgstr "Kaaliumferrotsüaniid - E536"
 
 msgid "Phytate de calcium"
-msgstr ""
+msgstr "Kaltsiumfütaat"
 
 msgid "Acide métatartrique - E353"
-msgstr ""
+msgstr "Metatarrhape - E353"
 
 msgid "Gomme arabique - E414"
-msgstr ""
+msgstr "Araabia näts - E414"
 
 msgid "Acide DL-tartrique"
-msgstr ""
+msgstr "DL-viinhape"
 
 msgid "Sel neutre de potassium"
-msgstr ""
+msgstr "Kaaliumneutraalne sool"
 
 msgid "Mannoprotéines de levures"
-msgstr ""
+msgstr "Pärmi mannoproteiinid"
 
 msgid "Carboxyméthylcellulose - E466"
-msgstr ""
+msgstr "Karboksümetüültselluloos - E466"
 
 msgid "Copolymères polyvinylimidazole/polyvinylpyrrolidone"
-msgstr ""
+msgstr "Polüvinüülimidasooli ja polüvinüülpürrolidooni kopolümeerid"
 
 msgid "Polyaspartate de potassium - E456"
-msgstr ""
+msgstr "Kaaliumpolüaspartaat - E456"
 
 msgid "Dioxyde de soufre - E220"
-msgstr ""
+msgstr "Vääveldioksiid - E220"
 
 msgid "Bisulfite de potassium - E228"
-msgstr ""
+msgstr "Kaaliumbisulfit - E228"
 
 msgid "Métabisulfite de potassium - E224"
-msgstr ""
+msgstr "Kaaliummetabisulfit - E224"
 
 msgid "Sorbate de potassium - E202"
-msgstr ""
+msgstr "Kaaliumsorbaat - E202"
 
 msgid "Lysozyme - E1105"
-msgstr ""
+msgstr "Lüsosüüm - E1105"
 
 msgid "Acide L-ascorbique - E300"
-msgstr ""
+msgstr "L-askorbiinhape - E300"
 
 msgid "Dicarbonate de diméthyle - E242"
-msgstr ""
+msgstr "Dimetüüldikarbonaat - E242"
 
 msgid "Argon - E938"
-msgstr ""
+msgstr "Argoon - E938"
 
 msgid "Azote - E941"
-msgstr ""
+msgstr "Asoot - E941"
 
 msgid "Dioxyde de carbone - E290"
-msgstr ""
+msgstr "Süsinikdioksiid - E290"
 
 msgid "Oxygène gazeux - E948"
-msgstr ""
+msgstr "Gaasiline hapnik - E948"
 
 msgid "Sulfites"
-msgstr ""
+msgstr "Sulfitid"
 
 msgid "Anhydride sulfureux"
-msgstr ""
+msgstr "Vääveldioksiid"
 
 msgid "Oeuf"
-msgstr ""
+msgstr "Muna"
 
 msgid "Protéine de l'oeuf"
-msgstr ""
+msgstr "Munavalk"
 
 msgid "Produit de l'oeuf"
-msgstr ""
+msgstr "Munatoode"
 
 msgid "Lysozyme de l'oeuf"
-msgstr ""
+msgstr "Muna lüsosüüm"
 
 msgid "Albumine de l'oeuf"
-msgstr ""
+msgstr "Munaalbumiin"
 
 msgid "Lait"
-msgstr ""
+msgstr "Piima"
 
 msgid "Produits du lait"
-msgstr ""
+msgstr "Piimatooted"
 
 msgid "Caséine du lait ou protéine du lait"
-msgstr ""
+msgstr "Piimakaseiin või piimavalk"
 
 msgid "Résine de pin d'Alep"
-msgstr ""
+msgstr "Aleppo männivaik"
 
 msgid "Lies fraîches"
-msgstr ""
+msgstr "Värsked seted"
 
 msgid "Caramel - E150"
-msgstr ""
+msgstr "Karamell - E150"
 
 msgid "Isothiocyanate d'allyle"
-msgstr ""
+msgstr "Allüülisotiotsüanaat"
 
 msgid "Levures inactivées"
-msgstr ""
+msgstr "Inaktiveeritud pärmid"
 
 msgid "Charbons à usage oenologique"
-msgstr ""
+msgstr "Veinivalmistuses kasutatav süsi"
 
 msgid "Fibres végétales sélectives"
-msgstr ""
+msgstr "Selektiivsed taimekiud"
 
 msgid "Cellulose microcristalline - E460"
-msgstr ""
+msgstr "Mikrokristalne tselluloos - E460"
 
 msgid "Hydrogénophosphate de diammonium - E342/CAS7783-28-0"
-msgstr ""
+msgstr "Diammooniumvesinikfosfaat - E342/CAS7783-28-0"
 
 msgid "Sulfate d'ammonium - E517/CAS7783-20-2"
-msgstr ""
+msgstr "Ammooniumsulfaat - E517/CAS7783-20-2"
 
 msgid "Bisulfite d'ammonium"
-msgstr ""
+msgstr "Ammooniumbisulfit"
 
 msgid "Chlorhydrate de thiamine"
-msgstr ""
+msgstr "Tiamiinvesinikkloriid"
 
 msgid "Autolysats de levures"
-msgstr ""
+msgstr "Pärmi autolüsaadid"
 
 msgid "Levures inactivées ayant des niveaux garantis de glutathion"
-msgstr ""
+msgstr "Inaktiveeritud pärmid, mille glutatioonisisaldus on tagatud"
 
 msgid "Gélatine alimentaire"
-msgstr ""
+msgstr "Toiduželatiin"
 
 msgid "Protéine de blé"
-msgstr ""
+msgstr "Nisuproteiin"
 
 msgid "Protéine issue de pois"
-msgstr ""
+msgstr "Herneproteiin"
 
 msgid "Protéine issue de pommes de terre"
-msgstr ""
+msgstr "Kartuliproteiin"
 
 msgid "Colle de poisson"
-msgstr ""
+msgstr "Kalaliim"
 
 msgid "Caséines"
-msgstr ""
+msgstr "Kaseiinid"
 
 msgid "Caséinates de potassium"
-msgstr ""
+msgstr "Kaaliumkaseinaadid"
 
 msgid "Ovalbumine"
-msgstr ""
+msgstr "Ovalbumin"
 
 msgid "Bentonite - E558"
-msgstr ""
+msgstr "Bentoniit - E558"
 
 msgid "Dioxyde de silicium - E551"
-msgstr ""
+msgstr "Ränidioksiid - E551"
 
 msgid "Kaolin"
-msgstr ""
+msgstr "Kaolin"
 
 msgid "Chitosane dérivé d'Aspergillus niger"
-msgstr ""
+msgstr "Aspergillus niger’ist saadud kitosaan"
 
 msgid "Chitine-glucane dérivé d'Aspergillus"
-msgstr ""
+msgstr "Aspergillus’est saadud kitiinglükaan"
 
 msgid "Polyvinylpolypyrrolidone - E1202"
-msgstr ""
+msgstr "Polüvinüülpolüpürrolidoon - E1202"
 
 msgid "Alginate de calcium - E404"
-msgstr ""
+msgstr "Kaltsiumalginaat - E404"
 
 msgid "Alginate de potassium - E402"
-msgstr ""
+msgstr "Kaaliumalginaat - E402"
 
 msgid "Uréase"
-msgstr ""
+msgstr "Urease"
 
 msgid "Pectines lyases"
-msgstr ""
+msgstr "Lyase pektiinid"
 
 msgid "Pectine méthylestérase"
-msgstr ""
+msgstr "Pektiinmetüülesteraasi"
 
 msgid "Polygalacturonase"
-msgstr ""
+msgstr "Polügalakturonaas"
 
 msgid "Hémicellulase"
-msgstr ""
+msgstr "Hemitselluloos"
 
 msgid "Cellulase"
-msgstr ""
+msgstr "Tsellulaas"
 
 msgid "Bétaglucanase"
-msgstr ""
+msgstr "Beetaglükanaas"
 
 msgid "Glycosidase"
-msgstr ""
+msgstr "Glükosidaasi"
 
 msgid "Levures de vinification"
-msgstr ""
+msgstr "Veinistamispärmid"
 
 msgid "Bactéries lactiques"
-msgstr ""
+msgstr "Piimhappebakterid"
 
 msgid "Sulfate de cuivre, pentahydraté"
-msgstr ""
+msgstr "Vasksulfaatpentahüdraat"
 
 msgid "Citrate de cuivre"
-msgstr ""
+msgstr "Vasktsitraat"
 
 msgid "dérivé d'Aspergillus niger"
-msgstr ""
+msgstr "mis on saadud Aspergillus niger’ist"
 
 msgid "Hydrogénotartrate de potassium"
-msgstr ""
+msgstr "Kaaliumvesinikartraat"
 
 msgid "Tartrate de calcium"
-msgstr ""
+msgstr "Kaltsiumtartraat"
 
 msgid "E354"
-msgstr ""
+msgstr "E354"
 
 msgid "Acide citrique"
-msgstr ""
+msgstr "Sidrunhape"
 
 msgid "E330"
-msgstr ""
+msgstr "E330"
 
 msgid "Ferrocyanure de potassium"
-msgstr ""
+msgstr "Kaaliumferrotsüaniid"
 
 msgid "E536"
-msgstr ""
+msgstr "E536"
 
 msgid "Acide métatartrique"
-msgstr ""
+msgstr "Metatarrhape"
 
 msgid "E353"
-msgstr ""
+msgstr "E353"
 
 msgid "Gomme arabique"
-msgstr ""
+msgstr "Araabia näts"
 
 msgid "E414"
-msgstr ""
+msgstr "E414"
 
 msgid "Carboxyméthylcellulose"
-msgstr ""
+msgstr "Karboksümetüültselluloos"
 
 msgid "E466"
-msgstr ""
+msgstr "E466"
 
 msgid "Polyaspartate de potassium"
-msgstr ""
+msgstr "Kaaliumpolüaspartaat"
 
 msgid "E456"
-msgstr ""
+msgstr "E456"
 
 msgid "Dioxyde de soufre"
-msgstr ""
+msgstr "Vääveldioksiid"
 
 msgid "E220"
-msgstr ""
+msgstr "E220"
 
 msgid "Bisulfite de potassium"
-msgstr ""
+msgstr "Kaaliumbisulfit"
 
 msgid "E228"
-msgstr ""
+msgstr "E228"
 
 msgid "Métabisulfite de potassium"
-msgstr ""
+msgstr "Kaaliummetabisulfit"
 
 msgid "E224"
-msgstr ""
+msgstr "E224"
 
 msgid "Sorbate de potassium"
-msgstr ""
+msgstr "Kaaliumsorbaat"
 
 msgid "E202"
-msgstr ""
+msgstr "E202"
 
 msgid "Lysozyme"
-msgstr ""
+msgstr "Lüsosüümi"
 
 msgid "E1105"
-msgstr ""
+msgstr "E1105"
 
 msgid "Acide L-ascorbique"
-msgstr ""
+msgstr "L-askorbiinhape"
 
 msgid "E300"
-msgstr ""
+msgstr "E300"
 
 msgid "Dicarbonate de diméthyle"
-msgstr ""
+msgstr "Dimetüüldikarbonaat"
 
 msgid "E242"
-msgstr ""
+msgstr "E242"
 
 msgid "Argon"
-msgstr ""
+msgstr "Argon"
 
 msgid "E938"
-msgstr ""
+msgstr "E938"
 
 msgid "Azote"
-msgstr ""
+msgstr "Asote"
 
 msgid "E941"
-msgstr ""
+msgstr "E941"
 
 msgid "Dioxyde de carbone"
-msgstr ""
+msgstr "Süsinikdioksiid"
 
 msgid "E290"
-msgstr ""
+msgstr "E290"
 
 msgid "Oxygène gazeux"
-msgstr ""
+msgstr "Gaasiline hapnik"
 
 msgid "E948"
-msgstr ""
+msgstr "E948"
 
 msgid "Mis en bouteille sous atmosphère protectrice"
-msgstr ""
+msgstr "Kaitstud õhu käes villitud"
 
 msgid "Cellulose microcristalline"
-msgstr ""
+msgstr "Mikrokristalne tselluloos"
 
 msgid "E460"
-msgstr ""
+msgstr "E460"
 
 msgid "Hydrogénophosphate de diammonium"
-msgstr ""
+msgstr "Diammooniumvesinikfosfaat"
 
 msgid "E342/CAS7783-28-0"
-msgstr ""
+msgstr "E342/CAS7783-28-0"
 
 msgid "Sulfate d'ammonium"
-msgstr ""
+msgstr "Ammooniumsulfaat"
 
 msgid "E517/CAS7783-20-2"
-msgstr ""
+msgstr "E517/CAS7783-20-2"
 
 msgid "Bentonite"
-msgstr ""
+msgstr "Bentoniit"
 
 msgid "E558"
-msgstr ""
+msgstr "E558"
 
 msgid "Dioxyde de silicium"
-msgstr ""
+msgstr "Ränidioksiid"
 
 msgid "E551"
-msgstr ""
+msgstr "E551"
 
 msgid "Polyvinylpolypyrrolidone"
-msgstr ""
+msgstr "Polüvinüülpolüpürrolidoon"
 
 msgid "E1202"
-msgstr ""
+msgstr "E1202"
 
 msgid "Alginate de calcium"
-msgstr ""
+msgstr "Kaltsiumalginaat"
 
 msgid "E404"
-msgstr ""
+msgstr "E404"
 
 msgid "Alginate de potassium"
-msgstr ""
+msgstr "Kaaliumalginaat"
 
 msgid "E402"
-msgstr ""
+msgstr "E402"
 
 msgid "Acide tartrique"
-msgstr ""
+msgstr "Viinhape"
 
 msgid "E334"
-msgstr ""
+msgstr "E334"
 
 msgid "Acide malique"
-msgstr ""
+msgstr "Õunhape"
 
 msgid "E296"
-msgstr ""
+msgstr "E296"
 
 msgid "Acide lactique"
-msgstr ""
+msgstr "Piimhape"
 
 msgid "E270"
-msgstr ""
+msgstr "E270"
 
 msgid "Tartrate de potassium"
-msgstr ""
+msgstr "Kaaliumtartraat"
 
 msgid "E336"
-msgstr ""
+msgstr "E336"
 
 msgid "Bicarbonate de potassium"
-msgstr ""
+msgstr "Kaaliumvesinikkarbonaat"
 
 msgid "E501"
-msgstr ""
+msgstr "E501"
 
 msgid "Carbonate de calcium"
-msgstr ""
+msgstr "Kaltsiumkarbonaat"
 
 msgid "E170"
-msgstr ""
+msgstr "E170"
 
 msgid "Sulfate de calcium"
-msgstr ""
+msgstr "Kaltsiumsulfaat"
 
 msgid "E516"
-msgstr ""
+msgstr "E516"
 
 msgid "Carbonate de potassium"
-msgstr ""
+msgstr "Kaaliumkarbonaat"

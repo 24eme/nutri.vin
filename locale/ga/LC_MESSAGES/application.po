@@ -15,108 +15,109 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=5; plural=n==1 ? 0 : n==2 ? 1 : (n>2 && n<7) ? 2 :(n>"
-"6 && n<11) ? 3 : 4;\n"
+"Plural-Forms: nplurals=5; plural=n==1 ? 0 : n==2 ? 1 : (n>2 && n<7) ? 2 :(n>6 && n<11) ? 3 : 4;\n"
 
 msgid "Informations complémentaires"
-msgstr ""
+msgstr "Tuilleadh eolais"
 
 msgid "Volume d'alcool"
-msgstr ""
+msgstr "Méid an alcóil"
 
 msgid "Contenance"
-msgstr ""
+msgstr "Cumas"
 
 msgid "N° de lot"
-msgstr ""
+msgstr "Riachtanais uisce: measartha"
 
 msgid "Ingrédients"
-msgstr ""
+msgstr "Comhábhair"
 
 #, php-format
 msgid "Ingrédients allergènes indiqués en %sgras%s."
-msgstr ""
+msgstr "Léirítear comhábhair ailléirgineacha i gcló %strom%s."
 
 #, php-format
 msgid "Ingrédients issus de l'agriculture biologique indiqué avec une %s*%s."
-msgstr ""
+msgstr "Comhábhair ó fheirmeoireacht orgánach a léirítear le %s*%s."
 
 msgid "Informations nutritionnelles"
-msgstr ""
+msgstr "Eolas bunúsach"
 
 msgid "Type"
-msgstr ""
+msgstr "Cineál"
 
 msgid "Pour 100 mL"
-msgstr ""
+msgstr "100 méadar"
 
 msgid "Énergie"
-msgstr ""
+msgstr "Fuinneamh Fuinnimh"
 
 msgid "kJ"
-msgstr ""
+msgstr "déan teagmháil linn"
 
 msgid "kcal"
-msgstr ""
+msgstr "minicíocht uisce: flúirseach"
 
 msgid "Matières grasses"
-msgstr ""
+msgstr "Saill Saill"
 
 msgid "dont acides gras saturés"
-msgstr ""
+msgstr "as a aigéid shailleacha sáithithe"
 
 msgid "g"
-msgstr ""
+msgstr "g"
 
 msgid "Glucides"
-msgstr ""
+msgstr "Carbohydrates"
 
 msgid "dont sucres"
-msgstr ""
+msgstr "as a siúcraí"
 
 msgid "Fibres alimentaires"
-msgstr ""
+msgstr "Snáithíní bia"
 
 msgid "Protéines"
-msgstr ""
+msgstr "Próitéiní"
 
 msgid "Sel"
-msgstr ""
+msgstr "Salann"
 
 msgid "Sodium"
-msgstr ""
+msgstr "Sóidiam"
 
 msgid "Autres informations"
-msgstr ""
+msgstr "Faisnéis eile"
 
 msgid "Mentions légales"
-msgstr ""
+msgstr "Eolas dlíthiúil"
 
 msgid "Cette fiche nutritionnelle est éditée sous la seule responsablité de"
-msgstr ""
+msgstr "Foilsítear an bhileog cothaithe seo faoi fhreagracht aonair"
 
 msgid "Elle est hébergée par"
-msgstr ""
+msgstr "Tá sé á óstáil ag"
 
 msgid "sa plateforme"
-msgstr ""
+msgstr "a ardán"
 
 msgid "et le projet libre"
-msgstr ""
+msgstr "agus an tionscadal saor in aisce"
 
 msgid ""
 "ne peuvent être tenus responsables des informations publiées. Un historique "
 "de chaque modification est conservée et consultable publiquement"
 msgstr ""
+"ní bheidh sé faoi dhliteanas i leith na faisnéise a fhoilseofar. Tá stair "
+"gach modhnú a choinneáil agus go poiblí inchuardaithe"
 
 msgid "Créé le "
-msgstr ""
+msgstr "Cruthaithe ar"
 
 msgid "Modifié le "
-msgstr ""
+msgstr "Athraithe ar"
 
 msgid "Voir la version du "
-msgstr ""
+msgstr "Féach leagan de"
 
 msgid ""
 "Seules l'heure de la première visite de la session et une évaluation "
@@ -125,510 +126,515 @@ msgid ""
 "personnel n'est conservé et aucun suivi des visiteurs de cette fiche n'est "
 "réalisé. La consultation de la page ne nécessite pas de cookie."
 msgstr ""
+"Ní choinnítear ach am na chéad chuairte ar an seisiún agus measúnú "
+"geografach ar an nasc chun an staitistic seo a dhéanamh. I gcomhréir leis an"
+" reachtaíocht, ní choinnítear aon sonraí pearsanta agus ní dhéantar aon "
+"obair leantach ar chuairteoirí an chláir seo. Ní gá fianán a dhéanamh ar an "
+"leathanach."
 
 msgid "vue"
-msgstr ""
+msgstr "féachaint ar"
 
 msgid "Activateur de fermentation"
-msgstr ""
+msgstr "An tAcht Leasacháin"
 
 msgid "Agent de fermentation"
-msgstr ""
+msgstr "Gníomhaire ríofa"
 
 msgid "Agent stabilisateur"
-msgstr ""
+msgstr "Gníomhaire cobhsaíochta"
 
 msgid "Conservateur et antioxydant"
-msgstr ""
+msgstr "Coimeádaí agus frithocsaídeoir"
 
 msgid "Correction de défauts"
-msgstr ""
+msgstr "Fadhbanna a cheartú"
 
 msgid "Enzyme"
-msgstr ""
+msgstr "Tumadóireacht"
 
 msgid "Gaz et gaz d'emballage"
-msgstr ""
+msgstr "Gáis agus gáis pacáistithe"
 
 msgid "Régulateur d'acidité"
-msgstr ""
+msgstr "Rialtóir Aigéadacht"
 
 msgid "Raisins"
-msgstr ""
+msgstr "Fíonchaora"
 
 msgid "Moût de raisin concentré"
-msgstr ""
+msgstr "Úrfhíon fíonchaor tiubhaithe"
 
 msgid "Eau de vie de vin"
-msgstr ""
+msgstr "Saol fíona"
 
 msgid "Liqueur de tirage et liqueur d'expédition"
-msgstr ""
+msgstr "Deochanna Tarraing agus Deochanna Loingseoireachta"
 
 msgid "Saccharose"
-msgstr ""
+msgstr "Taiseachas aeir: fliuch"
 
 msgid "Acide tartrique - E334"
-msgstr ""
+msgstr "Aigéad Tartaric - E334"
 
 msgid "Acide malique - E296"
-msgstr ""
+msgstr "Aigéad Malic - E296"
 
 msgid "Acide lactique - E270"
-msgstr ""
+msgstr "Aigéad réaltrach - E270"
 
 msgid "Tartrate de potassium - E336"
-msgstr ""
+msgstr "Potassium tartrate - E336"
 
 msgid "Bicarbonate de potassium - E501"
-msgstr ""
+msgstr "Bicarbonate potaisiam - E501"
 
 msgid "Carbonate de calcium - E170"
-msgstr ""
+msgstr "Cailciam carbónáit - E170"
 
 msgid "Tartrate de calcium - E354"
-msgstr ""
+msgstr "Tartrate Cailciam - E354"
 
 msgid "Sulfate de calcium - E516"
-msgstr ""
+msgstr "Sulfáit amóiniam - E516"
 
 msgid "Carbonate de potassium - E501"
-msgstr ""
+msgstr "Carbónáit photaisiam - E501"
 
 msgid "Hydrogénotartrate de potassium - E336"
-msgstr ""
+msgstr "Cairt Tuismitheoiri agus Scolair"
 
 msgid "Acide citrique - E330"
-msgstr ""
+msgstr "Aigéad citreach - E330"
 
 msgid "Tanins"
-msgstr ""
+msgstr "Taiseachas aeir: fliuch"
 
 msgid "Ferrocyanure de potassium - E536"
-msgstr ""
+msgstr "Potaisiam neamhfheiriúil - E536"
 
 msgid "Phytate de calcium"
-msgstr ""
+msgstr "Cliceáil grianghraf a mhéadú"
 
 msgid "Acide métatartrique - E353"
-msgstr ""
+msgstr "Aigéad meitéarach - E353"
 
 msgid "Gomme arabique - E414"
-msgstr ""
+msgstr "Guma Araibis - E414"
 
 msgid "Acide DL-tartrique"
-msgstr ""
+msgstr "DL-tartartach aigéad"
 
 msgid "Sel neutre de potassium"
-msgstr ""
+msgstr "Salann neodrach"
 
 msgid "Mannoprotéines de levures"
-msgstr ""
+msgstr "Bláthanna cumhra: cumhráin"
 
 msgid "Carboxyméthylcellulose - E466"
-msgstr ""
+msgstr "Ceallalós carboxymethyl - E466"
 
 msgid "Copolymères polyvinylimidazole/polyvinylpyrrolidone"
-msgstr ""
+msgstr "Polyvinylimidazole / polaiméirí polaitilimídone"
 
 msgid "Polyaspartate de potassium - E456"
-msgstr ""
+msgstr "Polainnisiam - E456"
 
 msgid "Dioxyde de soufre - E220"
-msgstr ""
+msgstr "Dé-ocsaíd sulfair - E220"
 
 msgid "Bisulfite de potassium - E228"
-msgstr ""
+msgstr "Sulfáit photaisiam - E228"
 
 msgid "Métabisulfite de potassium - E224"
-msgstr ""
+msgstr "Meitibíáit photaisiam - E224"
 
 msgid "Sorbate de potassium - E202"
-msgstr ""
+msgstr "Seirbhís do Chustaiméirí"
 
 msgid "Lysozyme - E1105"
-msgstr ""
+msgstr "Inis dúinn, le do thoil.."
 
 msgid "Acide L-ascorbique - E300"
-msgstr ""
+msgstr "L-aigéad ascorbic - E300"
 
 msgid "Dicarbonate de diméthyle - E242"
-msgstr ""
+msgstr "Dimethyl dicarbonate - E242"
 
 msgid "Argon - E938"
-msgstr ""
+msgstr "Inis dúinn, le do thoil.."
 
 msgid "Azote - E941"
-msgstr ""
+msgstr "Uisce - E941"
 
 msgid "Dioxyde de carbone - E290"
-msgstr ""
+msgstr "Dé-ocsaíd charbóin - E290"
 
 msgid "Oxygène gazeux - E948"
-msgstr ""
+msgstr "Ocsaigin gasta - E948"
 
 msgid "Sulfites"
-msgstr ""
+msgstr "Uisce agus Séarachas"
 
 msgid "Anhydride sulfureux"
-msgstr ""
+msgstr "Dé-ocsaíd sulfair"
 
 msgid "Oeuf"
-msgstr ""
+msgstr "Uibheacha"
 
 msgid "Protéine de l'oeuf"
-msgstr ""
+msgstr "Próitéin uibheacha"
 
 msgid "Produit de l'oeuf"
-msgstr ""
+msgstr "Táirge Uibheacha"
 
 msgid "Lysozyme de l'oeuf"
-msgstr ""
+msgstr "Cliceáil grianghraf a mhéadú"
 
 msgid "Albumine de l'oeuf"
-msgstr ""
+msgstr "Albaimine uibheacha"
 
 msgid "Lait"
-msgstr ""
+msgstr "Bainne"
 
 msgid "Produits du lait"
-msgstr ""
+msgstr "Táirgí bainne"
 
 msgid "Caséine du lait ou protéine du lait"
-msgstr ""
+msgstr "Cáisín bainne nó próitéin bainne"
 
 msgid "Résine de pin d'Alep"
-msgstr ""
+msgstr "Roisín péine Aleppo"
 
 msgid "Lies fraîches"
-msgstr ""
+msgstr "Seirbhís do Chustaiméirí"
 
 msgid "Caramel - E150"
-msgstr ""
+msgstr "Seirbhís do Chustaiméirí"
 
 msgid "Isothiocyanate d'allyle"
-msgstr ""
+msgstr "Cliceáil grianghraf a mhéadú"
 
 msgid "Levures inactivées"
-msgstr ""
+msgstr "Giostaí gníomhachtaithe"
 
 msgid "Charbons à usage oenologique"
-msgstr ""
+msgstr "Gual le haghaidh úsáide fíoneolaíochta"
 
 msgid "Fibres végétales sélectives"
-msgstr ""
+msgstr "Snáithíní plandaí Roghnach"
 
 msgid "Cellulose microcristalline - E460"
-msgstr ""
+msgstr "Ceallalós microcrystalline - E460"
 
 msgid "Hydrogénophosphate de diammonium - E342/CAS7783-28-0"
-msgstr ""
+msgstr "Fosfáit hidrigine dimmonium - E342/CAS7783-28-0"
 
 msgid "Sulfate d'ammonium - E517/CAS7783-20-2"
-msgstr ""
+msgstr "Sulfáit amóiniam - E517/CAS7783-20-2"
 
 msgid "Bisulfite d'ammonium"
-msgstr ""
+msgstr "Sulfáit amóiniam"
 
 msgid "Chlorhydrate de thiamine"
-msgstr ""
+msgstr "Taiseachas aeir: fliuch"
 
 msgid "Autolysats de levures"
-msgstr ""
+msgstr "Go huathoibríoch giosta"
 
 msgid "Levures inactivées ayant des niveaux garantis de glutathion"
-msgstr ""
+msgstr "Giostaí gníomhachtaithe le leibhéil ráthaithe glutathione"
 
 msgid "Gélatine alimentaire"
-msgstr ""
+msgstr "Bia geilitín"
 
 msgid "Protéine de blé"
-msgstr ""
+msgstr "Próitéine Cruithneacht"
 
 msgid "Protéine issue de pois"
-msgstr ""
+msgstr "Próitéin Pea"
 
 msgid "Protéine issue de pommes de terre"
-msgstr ""
+msgstr "Próitéin prátaí"
 
 msgid "Colle de poisson"
-msgstr ""
+msgstr "Gliú éisc"
 
 msgid "Caséines"
-msgstr ""
+msgstr "Cásanna"
 
 msgid "Caséinates de potassium"
-msgstr ""
+msgstr "Cáiséiniam"
 
 msgid "Ovalbumine"
-msgstr ""
+msgstr "Iasachtaí"
 
 msgid "Bentonite - E558"
-msgstr ""
+msgstr "Inis dúinn, le do thoil.."
 
 msgid "Dioxyde de silicium - E551"
-msgstr ""
+msgstr "Dé-ocsaíd sileacain - E551"
 
 msgid "Kaolin"
-msgstr ""
+msgstr "Déan teagmháil anois"
 
 msgid "Chitosane dérivé d'Aspergillus niger"
-msgstr ""
+msgstr "Chitosan a dhíorthaítear ó Aspergillus niger"
 
 msgid "Chitine-glucane dérivé d'Aspergillus"
-msgstr ""
+msgstr "Chitin-glucan dhíorthaítear ó Aspergillus"
 
 msgid "Polyvinylpolypyrrolidone - E1202"
-msgstr ""
+msgstr "Polaivinilepolyquinone - E1202"
 
 msgid "Alginate de calcium - E404"
-msgstr ""
+msgstr "Cailciam ailgionáit - E404"
 
 msgid "Alginate de potassium - E402"
-msgstr ""
+msgstr "Ailgionáit photaisiam - E402"
 
 msgid "Uréase"
-msgstr ""
+msgstr "Uisce agus Séarachas"
 
 msgid "Pectines lyases"
-msgstr ""
+msgstr "Pectins Lyase"
 
 msgid "Pectine méthylestérase"
-msgstr ""
+msgstr "Aigéad meitile"
 
 msgid "Polygalacturonase"
-msgstr ""
+msgstr "Polygalacturonase"
 
 msgid "Hémicellulase"
-msgstr ""
+msgstr "Riachtanais uisce: measartha"
 
 msgid "Cellulase"
-msgstr ""
+msgstr "Taiseachas aeir: fliuch"
 
 msgid "Bétaglucanase"
-msgstr ""
+msgstr "An bhfuil a fhios agat.."
 
 msgid "Glycosidase"
-msgstr ""
+msgstr "Cliceáil grianghraf a mhéadú"
 
 msgid "Levures de vinification"
-msgstr ""
+msgstr "Giostaí Vinification"
 
 msgid "Bactéries lactiques"
-msgstr ""
+msgstr "Cad iad na rudaí maithe a bhí faoin tseirbhís"
 
 msgid "Sulfate de cuivre, pentahydraté"
-msgstr ""
+msgstr "Sulfáit chopair, pentahydrate"
 
 msgid "Citrate de cuivre"
-msgstr ""
+msgstr "Copper citrate"
 
 msgid "dérivé d'Aspergillus niger"
-msgstr ""
+msgstr "a dhíorthaítear ó Aspergillus niger"
 
 msgid "Hydrogénotartrate de potassium"
-msgstr ""
+msgstr "Potassium hidrigine"
 
 msgid "Tartrate de calcium"
-msgstr ""
+msgstr "Cliceáil grianghraf a mhéadú"
 
 msgid "E354"
-msgstr ""
+msgstr "E354"
 
 msgid "Acide citrique"
-msgstr ""
+msgstr "Aigéad citreach"
 
 msgid "E330"
-msgstr ""
+msgstr "E330"
 
 msgid "Ferrocyanure de potassium"
-msgstr ""
+msgstr "Potaisiam neamhfheiriúil"
 
 msgid "E536"
-msgstr ""
+msgstr "E536"
 
 msgid "Acide métatartrique"
-msgstr ""
+msgstr "Aigéadacht ithreach: ithir neodrach"
 
 msgid "E353"
-msgstr ""
+msgstr "E353"
 
 msgid "Gomme arabique"
-msgstr ""
+msgstr "Guma Araibis"
 
 msgid "E414"
-msgstr ""
+msgstr "E414"
 
 msgid "Carboxyméthylcellulose"
-msgstr ""
+msgstr "Ceallalós carboxymethyl"
 
 msgid "E466"
-msgstr ""
+msgstr "AMHARC AR GACH EOLAS"
 
 msgid "Polyaspartate de potassium"
-msgstr ""
+msgstr "Polainnisiam polyaspartate"
 
 msgid "E456"
-msgstr ""
+msgstr "E456"
 
 msgid "Dioxyde de soufre"
-msgstr ""
+msgstr "Dé-ocsaíd sulfair"
 
 msgid "E220"
-msgstr ""
+msgstr "E220"
 
 msgid "Bisulfite de potassium"
-msgstr ""
+msgstr "Potassium bisulfite"
 
 msgid "E228"
-msgstr ""
+msgstr "AMHARC AR GACH EOLAS"
 
 msgid "Métabisulfite de potassium"
-msgstr ""
+msgstr "Metabisulfite potaisiam"
 
 msgid "E224"
-msgstr ""
+msgstr "E224"
 
 msgid "Sorbate de potassium"
-msgstr ""
+msgstr "Seirbhís do Chustaiméirí"
 
 msgid "E202"
-msgstr ""
+msgstr "AMHARC AR GACH EOLAS"
 
 msgid "Lysozyme"
-msgstr ""
+msgstr "Cliceáil grianghraf a mhéadú"
 
 msgid "E1105"
-msgstr ""
+msgstr "AMHARC AR GACH EOLAS"
 
 msgid "Acide L-ascorbique"
-msgstr ""
+msgstr "L-aigéad ascorbic"
 
 msgid "E300"
-msgstr ""
+msgstr "E300"
 
 msgid "Dicarbonate de diméthyle"
-msgstr ""
+msgstr "Dimethyl dicarbonate"
 
 msgid "E242"
-msgstr ""
+msgstr "E242"
 
 msgid "Argon"
-msgstr ""
+msgstr "Riachtanais uisce: measartha"
 
 msgid "E938"
-msgstr ""
+msgstr "AN TSRAITH SHINSEARACH"
 
 msgid "Azote"
-msgstr ""
+msgstr "Taiseachas aeir: fliuch"
 
 msgid "E941"
-msgstr ""
+msgstr "AMHARC AR GACH EOLAS"
 
 msgid "Dioxyde de carbone"
-msgstr ""
+msgstr "Dé-ocsaíd charbóin"
 
 msgid "E290"
-msgstr ""
+msgstr "AMHARC AR GACH EOLAS"
 
 msgid "Oxygène gazeux"
-msgstr ""
+msgstr "Ocsaigin gasta"
 
 msgid "E948"
-msgstr ""
+msgstr "SEIRBHÍS DO CHUSTAIMÉIRÍ"
 
 msgid "Mis en bouteille sous atmosphère protectrice"
-msgstr ""
+msgstr "Buidéal faoi atmaisféar cosanta"
 
 msgid "Cellulose microcristalline"
-msgstr ""
+msgstr "Ceallalós microcrystalline"
 
 msgid "E460"
-msgstr ""
+msgstr "SRAITH AN DOMHAIN"
 
 msgid "Hydrogénophosphate de diammonium"
-msgstr ""
+msgstr "Fosfáit hidrigine dimmonium"
 
 msgid "E342/CAS7783-28-0"
-msgstr ""
+msgstr "E342/CAS7783-2"
 
 msgid "Sulfate d'ammonium"
-msgstr ""
+msgstr "Sulfáit amóiniam"
 
 msgid "E517/CAS7783-20-2"
-msgstr ""
+msgstr "E517/CAS7783-20-2"
 
 msgid "Bentonite"
-msgstr ""
+msgstr "Bentonite"
 
 msgid "E558"
-msgstr ""
+msgstr "SEIRBHÍS DO CHUSTAIMÉIRÍ"
 
 msgid "Dioxyde de silicium"
-msgstr ""
+msgstr "Dé-ocsaíd shilice"
 
 msgid "E551"
-msgstr ""
+msgstr "CLÁR NA DTOGHTHÓIRÍ"
 
 msgid "Polyvinylpolypyrrolidone"
-msgstr ""
+msgstr "Polaivinile polapróipiléin"
 
 msgid "E1202"
-msgstr ""
+msgstr "AMHARC AR GACH EOLAS"
 
 msgid "Alginate de calcium"
-msgstr ""
+msgstr "Cailciam alginate"
 
 msgid "E404"
-msgstr ""
+msgstr "E404"
 
 msgid "Alginate de potassium"
-msgstr ""
+msgstr "Ailgionáit photaisiam"
 
 msgid "E402"
-msgstr ""
+msgstr "FÉACH AR LÉARSCÁILEANNA"
 
 msgid "Acide tartrique"
-msgstr ""
+msgstr "Aigéad Tartaric"
 
 msgid "E334"
-msgstr ""
+msgstr "E334"
 
 msgid "Acide malique"
-msgstr ""
+msgstr "Aigéad Malico"
 
 msgid "E296"
-msgstr ""
+msgstr "AMHARC AR GACH EOLAS"
 
 msgid "Acide lactique"
-msgstr ""
+msgstr "Aigéadacht ithreach: ithir neodrach"
 
 msgid "E270"
-msgstr ""
+msgstr "E270"
 
 msgid "Tartrate de potassium"
-msgstr ""
+msgstr "Potassium tartrate"
 
 msgid "E336"
-msgstr ""
+msgstr "E336"
 
 msgid "Bicarbonate de potassium"
-msgstr ""
+msgstr "Bicarbonate potaisiam"
 
 msgid "E501"
-msgstr ""
+msgstr "E501"
 
 msgid "Carbonate de calcium"
-msgstr ""
+msgstr "Cailciam carbónáit"
 
 msgid "E170"
-msgstr ""
+msgstr "AMHARC AR GACH EOLAS"
 
 msgid "Sulfate de calcium"
-msgstr ""
+msgstr "Sulfáit amóiniam"
 
 msgid "E516"
-msgstr ""
+msgstr "SEIRBHÍS DO CHUSTAIMÉIRÍ"
 
 msgid "Carbonate de potassium"
-msgstr ""
+msgstr "Carbónáit photaisiam"

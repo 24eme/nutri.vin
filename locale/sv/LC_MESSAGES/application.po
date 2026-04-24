@@ -36,7 +36,7 @@ msgstr "Ingredienser"
 
 #, php-format
 msgid "Ingrédients allergènes indiqués en %sgras%s."
-msgstr "Allergen ingredienser som anges i %sgras %s."
+msgstr "Allergena ingredienser anges i %sfetstil%s."
 
 #, php-format
 msgid "Ingrédients issus de l'agriculture biologique indiqué avec une %s*%s."

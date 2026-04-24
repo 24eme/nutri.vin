@@ -15,108 +15,110 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
-"20)) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < 20)) ? 1 : 2;\n"
 
 msgid "Informations complémentaires"
-msgstr ""
+msgstr "Informaţii suplimentare"
 
 msgid "Volume d'alcool"
-msgstr ""
+msgstr "Volumul de alcool"
 
 msgid "Contenance"
-msgstr ""
+msgstr "Capacitate"
 
 msgid "N° de lot"
-msgstr ""
+msgstr "Serie"
 
 msgid "Ingrédients"
-msgstr ""
+msgstr "Ingrediente"
 
 #, php-format
 msgid "Ingrédients allergènes indiqués en %sgras%s."
-msgstr ""
+msgstr "Ingredientele alergene sunt indicate cu %sbold%s"
 
 #, php-format
 msgid "Ingrédients issus de l'agriculture biologique indiqué avec une %s*%s."
-msgstr ""
+msgstr "Ingrediente provenite din agricultura ecologică indicate cu %s*%s."
 
 msgid "Informations nutritionnelles"
-msgstr ""
+msgstr "Informații nutriționale"
 
 msgid "Type"
-msgstr ""
+msgstr "Tip"
 
 msgid "Pour 100 mL"
-msgstr ""
+msgstr "Per 100 ml"
 
 msgid "Énergie"
-msgstr ""
+msgstr "Energie"
 
 msgid "kJ"
-msgstr ""
+msgstr "kJ"
 
 msgid "kcal"
-msgstr ""
+msgstr "kcal"
 
 msgid "Matières grasses"
-msgstr ""
+msgstr "Grăsime"
 
 msgid "dont acides gras saturés"
-msgstr ""
+msgstr "din care acizi grași saturati"
 
 msgid "g"
-msgstr ""
+msgstr "g"
 
 msgid "Glucides"
-msgstr ""
+msgstr "Carbohidrați"
 
 msgid "dont sucres"
-msgstr ""
+msgstr "din care zaharuri"
 
 msgid "Fibres alimentaires"
-msgstr ""
+msgstr "Fibre alimentare"
 
 msgid "Protéines"
-msgstr ""
+msgstr "Proteine"
 
 msgid "Sel"
-msgstr ""
+msgstr "Sare"
 
 msgid "Sodium"
-msgstr ""
+msgstr "Sodiu"
 
 msgid "Autres informations"
-msgstr ""
+msgstr "Alte informații"
 
 msgid "Mentions légales"
-msgstr ""
+msgstr "Informații juridice"
 
 msgid "Cette fiche nutritionnelle est éditée sous la seule responsablité de"
 msgstr ""
+"Această fișă nutrițională este publicată sub responsabilitatea exclusivă a"
 
 msgid "Elle est hébergée par"
-msgstr ""
+msgstr "Acesta este găzduit de"
 
 msgid "sa plateforme"
-msgstr ""
+msgstr "platforma sa"
 
 msgid "et le projet libre"
-msgstr ""
+msgstr "și proiectul gratuit"
 
 msgid ""
 "ne peuvent être tenus responsables des informations publiées. Un historique "
 "de chaque modification est conservée et consultable publiquement"
 msgstr ""
+"nu este trasă la răspundere pentru informațiile publicate. O istorie a "
+"fiecărei modificări este păstrată și căutată în mod public"
 
 msgid "Créé le "
-msgstr ""
+msgstr "Creat pe"
 
 msgid "Modifié le "
-msgstr ""
+msgstr "Modificat pe"
 
 msgid "Voir la version du "
-msgstr ""
+msgstr "A se vedea versiunea"
 
 msgid ""
 "Seules l'heure de la première visite de la session et une évaluation "
@@ -125,510 +127,515 @@ msgid ""
 "personnel n'est conservé et aucun suivi des visiteurs de cette fiche n'est "
 "réalisé. La consultation de la page ne nécessite pas de cookie."
 msgstr ""
+"Numai momentul primei vizite a sesiunii și o evaluare geografică a "
+"conexiunii sunt păstrate pentru a face această statistică. În conformitate "
+"cu legislația, nu se păstrează date cu caracter personal și nu se efectuează"
+" nicio monitorizare a vizitatorilor prezentei fișe. Vizualizarea paginii nu "
+"necesită un cookie."
 
 msgid "vue"
-msgstr ""
+msgstr "vedere"
 
 msgid "Activateur de fermentation"
-msgstr ""
+msgstr "Activator de oxidare"
 
 msgid "Agent de fermentation"
-msgstr ""
+msgstr "Agent de fermentare"
 
 msgid "Agent stabilisateur"
-msgstr ""
+msgstr "Agent stabilizator"
 
 msgid "Conservateur et antioxydant"
-msgstr ""
+msgstr "Conservator și antioxidant"
 
 msgid "Correction de défauts"
-msgstr ""
+msgstr "Corectarea defectelor"
 
 msgid "Enzyme"
-msgstr ""
+msgstr "Enzimă"
 
 msgid "Gaz et gaz d'emballage"
-msgstr ""
+msgstr "Gaze și gaze de ambalare"
 
 msgid "Régulateur d'acidité"
-msgstr ""
+msgstr "Regulator de aciditate"
 
 msgid "Raisins"
-msgstr ""
+msgstr "Struguri"
 
 msgid "Moût de raisin concentré"
-msgstr ""
+msgstr "Must de struguri concentrat"
 
 msgid "Eau de vie de vin"
-msgstr ""
+msgstr "Viața vinului"
 
 msgid "Liqueur de tirage et liqueur d'expédition"
-msgstr ""
+msgstr "Draw Lichior și Liquor de transport maritim"
 
 msgid "Saccharose"
-msgstr ""
+msgstr "Zaharoză"
 
 msgid "Acide tartrique - E334"
-msgstr ""
+msgstr "Acid tartaric - E334"
 
 msgid "Acide malique - E296"
-msgstr ""
+msgstr "Acid Malic - E296"
 
 msgid "Acide lactique - E270"
-msgstr ""
+msgstr "Acid lactic - E270"
 
 msgid "Tartrate de potassium - E336"
-msgstr ""
+msgstr "Tartrat de potasiu - E336"
 
 msgid "Bicarbonate de potassium - E501"
-msgstr ""
+msgstr "Bicarbonat de potasiu - E501"
 
 msgid "Carbonate de calcium - E170"
-msgstr ""
+msgstr "Carbonat de calciu - E170"
 
 msgid "Tartrate de calcium - E354"
-msgstr ""
+msgstr "Tartrat de calciu - E354"
 
 msgid "Sulfate de calcium - E516"
-msgstr ""
+msgstr "Sulfat de calciu - E516"
 
 msgid "Carbonate de potassium - E501"
-msgstr ""
+msgstr "Carbonat de potasiu - E501"
 
 msgid "Hydrogénotartrate de potassium - E336"
-msgstr ""
+msgstr "Hidrogenartrat de potasiu - E336"
 
 msgid "Acide citrique - E330"
-msgstr ""
+msgstr "Acid citric - E330"
 
 msgid "Tanins"
-msgstr ""
+msgstr "Tanini"
 
 msgid "Ferrocyanure de potassium - E536"
-msgstr ""
+msgstr "Ferocianură de potasiu - E536"
 
 msgid "Phytate de calcium"
-msgstr ""
+msgstr "Fitat de calciu"
 
 msgid "Acide métatartrique - E353"
-msgstr ""
+msgstr "Acid metatartric - E353"
 
 msgid "Gomme arabique - E414"
-msgstr ""
+msgstr "Gumă arabă - E414"
 
 msgid "Acide DL-tartrique"
-msgstr ""
+msgstr "Acid DL-tartaric"
 
 msgid "Sel neutre de potassium"
-msgstr ""
+msgstr "Sare neutră din potasiu"
 
 msgid "Mannoprotéines de levures"
-msgstr ""
+msgstr "Manoproteine ureice"
 
 msgid "Carboxyméthylcellulose - E466"
-msgstr ""
+msgstr "Carboximetilceluloză - E466"
 
 msgid "Copolymères polyvinylimidazole/polyvinylpyrrolidone"
-msgstr ""
+msgstr "Copolimeri de vinilimidazol/polivinilbifenili"
 
 msgid "Polyaspartate de potassium - E456"
-msgstr ""
+msgstr "Poliaspartat de potasiu - E456"
 
 msgid "Dioxyde de soufre - E220"
-msgstr ""
+msgstr "Dioxid de sulf - E220"
 
 msgid "Bisulfite de potassium - E228"
-msgstr ""
+msgstr "Bisulfit de potasiu - E228"
 
 msgid "Métabisulfite de potassium - E224"
-msgstr ""
+msgstr "Metabisulfit de potasiu - E224"
 
 msgid "Sorbate de potassium - E202"
-msgstr ""
+msgstr "Sorbat de potasiu - E202"
 
 msgid "Lysozyme - E1105"
-msgstr ""
+msgstr "Lizozyme - E1105"
 
 msgid "Acide L-ascorbique - E300"
-msgstr ""
+msgstr "Acid L-ascorbic - E300"
 
 msgid "Dicarbonate de diméthyle - E242"
-msgstr ""
+msgstr "Dicarbonat de dimetil - E242"
 
 msgid "Argon - E938"
-msgstr ""
+msgstr "Argon - E938"
 
 msgid "Azote - E941"
-msgstr ""
+msgstr "Azot - E941"
 
 msgid "Dioxyde de carbone - E290"
-msgstr ""
+msgstr "Dioxid de carbon - E290"
 
 msgid "Oxygène gazeux - E948"
-msgstr ""
+msgstr "Oxigen gazos - E948"
 
 msgid "Sulfites"
-msgstr ""
+msgstr "Sulfiți"
 
 msgid "Anhydride sulfureux"
-msgstr ""
+msgstr "Dioxid de sulf"
 
 msgid "Oeuf"
-msgstr ""
+msgstr "Ouă"
 
 msgid "Protéine de l'oeuf"
-msgstr ""
+msgstr "Proteine din ouă"
 
 msgid "Produit de l'oeuf"
-msgstr ""
+msgstr "Produs din ouă"
 
 msgid "Lysozyme de l'oeuf"
-msgstr ""
+msgstr "Lizozimă de ou"
 
 msgid "Albumine de l'oeuf"
-msgstr ""
+msgstr "Ovalbumine"
 
 msgid "Lait"
-msgstr ""
+msgstr "Lapte"
 
 msgid "Produits du lait"
-msgstr ""
+msgstr "Produse lactate"
 
 msgid "Caséine du lait ou protéine du lait"
-msgstr ""
+msgstr "Cazeină din lapte sau proteine din lapte"
 
 msgid "Résine de pin d'Alep"
-msgstr ""
+msgstr "Rășină de pin Alep"
 
 msgid "Lies fraîches"
-msgstr ""
+msgstr "Drojdii proaspete"
 
 msgid "Caramel - E150"
-msgstr ""
+msgstr "Caramel - E150"
 
 msgid "Isothiocyanate d'allyle"
-msgstr ""
+msgstr "Izotiocianat de alil"
 
 msgid "Levures inactivées"
-msgstr ""
+msgstr "Drojdii inactivate"
 
 msgid "Charbons à usage oenologique"
-msgstr ""
+msgstr "Cărbune pentru uz oenologice"
 
 msgid "Fibres végétales sélectives"
-msgstr ""
+msgstr "Fibre vegetale selective"
 
 msgid "Cellulose microcristalline - E460"
-msgstr ""
+msgstr "Celuloză microcristalină - E460"
 
 msgid "Hydrogénophosphate de diammonium - E342/CAS7783-28-0"
-msgstr ""
+msgstr "Hidrogenofosfat de diamoniu - E342/CAS7783-28-0"
 
 msgid "Sulfate d'ammonium - E517/CAS7783-20-2"
-msgstr ""
+msgstr "Sulfat de amoniu - E517/CAS7783-20-2"
 
 msgid "Bisulfite d'ammonium"
-msgstr ""
+msgstr "Bisulfit de amoniu"
 
 msgid "Chlorhydrate de thiamine"
-msgstr ""
+msgstr "Clorhidrat de tiamină"
 
 msgid "Autolysats de levures"
-msgstr ""
+msgstr "Autolizați de drojdie"
 
 msgid "Levures inactivées ayant des niveaux garantis de glutathion"
-msgstr ""
+msgstr "Drojdii inactivate cu niveluri garantate de glutation"
 
 msgid "Gélatine alimentaire"
-msgstr ""
+msgstr "Gelatină alimentară"
 
 msgid "Protéine de blé"
-msgstr ""
+msgstr "Proteine din grâu"
 
 msgid "Protéine issue de pois"
-msgstr ""
+msgstr "Proteine de mazăre"
 
 msgid "Protéine issue de pommes de terre"
-msgstr ""
+msgstr "Proteine din cartofi"
 
 msgid "Colle de poisson"
-msgstr ""
+msgstr "Lipici de pește"
 
 msgid "Caséines"
-msgstr ""
+msgstr "Cazene"
 
 msgid "Caséinates de potassium"
-msgstr ""
+msgstr "Castraveți de potasiu"
 
 msgid "Ovalbumine"
-msgstr ""
+msgstr "Ovalbumină"
 
 msgid "Bentonite - E558"
-msgstr ""
+msgstr "Bentonită - E558"
 
 msgid "Dioxyde de silicium - E551"
-msgstr ""
+msgstr "Dioxid de siliciu - E551"
 
 msgid "Kaolin"
-msgstr ""
+msgstr "Caolin"
 
 msgid "Chitosane dérivé d'Aspergillus niger"
-msgstr ""
+msgstr "Chitosan derivat din Aspergillus niger"
 
 msgid "Chitine-glucane dérivé d'Aspergillus"
-msgstr ""
+msgstr "Chitin-glucan derivat din Aspergillus"
 
 msgid "Polyvinylpolypyrrolidone - E1202"
-msgstr ""
+msgstr "Polivinilpolibifenili - E1202"
 
 msgid "Alginate de calcium - E404"
-msgstr ""
+msgstr "Alginat de calciu - E404"
 
 msgid "Alginate de potassium - E402"
-msgstr ""
+msgstr "Alginat de potasiu - E402"
 
 msgid "Uréase"
-msgstr ""
+msgstr "Uree"
 
 msgid "Pectines lyases"
-msgstr ""
+msgstr "Pectine Lyase"
 
 msgid "Pectine méthylestérase"
-msgstr ""
+msgstr "Pectin metilesterase"
 
 msgid "Polygalacturonase"
-msgstr ""
+msgstr "Poligalacturonază"
 
 msgid "Hémicellulase"
-msgstr ""
+msgstr "Hemicelulază"
 
 msgid "Cellulase"
-msgstr ""
+msgstr "Celulază"
 
 msgid "Bétaglucanase"
-msgstr ""
+msgstr "Betatiazol"
 
 msgid "Glycosidase"
-msgstr ""
+msgstr "Glicosidază"
 
 msgid "Levures de vinification"
-msgstr ""
+msgstr "Drojdii de vinificare"
 
 msgid "Bactéries lactiques"
-msgstr ""
+msgstr "Bacterii lactice"
 
 msgid "Sulfate de cuivre, pentahydraté"
-msgstr ""
+msgstr "Sulfat de cupru pentahidrat"
 
 msgid "Citrate de cuivre"
-msgstr ""
+msgstr "Citrat de cupru"
 
 msgid "dérivé d'Aspergillus niger"
-msgstr ""
+msgstr "derivat din Aspergillus niger"
 
 msgid "Hydrogénotartrate de potassium"
-msgstr ""
+msgstr "Hidrogenartrat de potasiu"
 
 msgid "Tartrate de calcium"
-msgstr ""
+msgstr "Tartrat de calciu"
 
 msgid "E354"
-msgstr ""
+msgstr "E354"
 
 msgid "Acide citrique"
-msgstr ""
+msgstr "Acid citric"
 
 msgid "E330"
-msgstr ""
+msgstr "E330"
 
 msgid "Ferrocyanure de potassium"
-msgstr ""
+msgstr "Ferocianură de potasiu"
 
 msgid "E536"
-msgstr ""
+msgstr "E536"
 
 msgid "Acide métatartrique"
-msgstr ""
+msgstr "Acid metatartric"
 
 msgid "E353"
-msgstr ""
+msgstr "E353"
 
 msgid "Gomme arabique"
-msgstr ""
+msgstr "Gumă arabă"
 
 msgid "E414"
-msgstr ""
+msgstr "E414"
 
 msgid "Carboxyméthylcellulose"
-msgstr ""
+msgstr "Carboximetilceluloză"
 
 msgid "E466"
-msgstr ""
+msgstr "E466"
 
 msgid "Polyaspartate de potassium"
-msgstr ""
+msgstr "Poliaspartat de potasiu"
 
 msgid "E456"
-msgstr ""
+msgstr "E456"
 
 msgid "Dioxyde de soufre"
-msgstr ""
+msgstr "Dioxid de sulf"
 
 msgid "E220"
-msgstr ""
+msgstr "E220"
 
 msgid "Bisulfite de potassium"
-msgstr ""
+msgstr "Bisulfit de potasiu"
 
 msgid "E228"
-msgstr ""
+msgstr "E228"
 
 msgid "Métabisulfite de potassium"
-msgstr ""
+msgstr "Metabisulfit de potasiu"
 
 msgid "E224"
-msgstr ""
+msgstr "E 224"
 
 msgid "Sorbate de potassium"
-msgstr ""
+msgstr "Sorg de potasiu"
 
 msgid "E202"
-msgstr ""
+msgstr "E202"
 
 msgid "Lysozyme"
-msgstr ""
+msgstr "Lizozyme"
 
 msgid "E1105"
-msgstr ""
+msgstr "E1105"
 
 msgid "Acide L-ascorbique"
-msgstr ""
+msgstr "Acid L-ascorbic"
 
 msgid "E300"
-msgstr ""
+msgstr "E300"
 
 msgid "Dicarbonate de diméthyle"
-msgstr ""
+msgstr "Dicarbonat de dimetil"
 
 msgid "E242"
-msgstr ""
+msgstr "E242"
 
 msgid "Argon"
-msgstr ""
+msgstr "Argon"
 
 msgid "E938"
-msgstr ""
+msgstr "E938"
 
 msgid "Azote"
-msgstr ""
+msgstr "Azot"
 
 msgid "E941"
-msgstr ""
+msgstr "E941"
 
 msgid "Dioxyde de carbone"
-msgstr ""
+msgstr "Dioxid de carbon"
 
 msgid "E290"
-msgstr ""
+msgstr "E290"
 
 msgid "Oxygène gazeux"
-msgstr ""
+msgstr "Oxigen gazos"
 
 msgid "E948"
-msgstr ""
+msgstr "E948"
 
 msgid "Mis en bouteille sous atmosphère protectrice"
-msgstr ""
+msgstr "Sticlă sub atmosfera protectoare"
 
 msgid "Cellulose microcristalline"
-msgstr ""
+msgstr "Celuloză microcristalină"
 
 msgid "E460"
-msgstr ""
+msgstr "E460"
 
 msgid "Hydrogénophosphate de diammonium"
-msgstr ""
+msgstr "Hidrogenofosfat de diamoniu"
 
 msgid "E342/CAS7783-28-0"
-msgstr ""
+msgstr "E342/CAS7783-28-0"
 
 msgid "Sulfate d'ammonium"
-msgstr ""
+msgstr "Sulfat de amoniu"
 
 msgid "E517/CAS7783-20-2"
-msgstr ""
+msgstr "E517/CAS7783-20-2"
 
 msgid "Bentonite"
-msgstr ""
+msgstr "Bentonită"
 
 msgid "E558"
-msgstr ""
+msgstr "E558"
 
 msgid "Dioxyde de silicium"
-msgstr ""
+msgstr "Dioxid de siliciu"
 
 msgid "E551"
-msgstr ""
+msgstr "E551"
 
 msgid "Polyvinylpolypyrrolidone"
-msgstr ""
+msgstr "Polivinilpolibifenili"
 
 msgid "E1202"
-msgstr ""
+msgstr "E1202"
 
 msgid "Alginate de calcium"
-msgstr ""
+msgstr "Alginat de calciu"
 
 msgid "E404"
-msgstr ""
+msgstr "E404"
 
 msgid "Alginate de potassium"
-msgstr ""
+msgstr "Alginat de potasiu"
 
 msgid "E402"
-msgstr ""
+msgstr "E402"
 
 msgid "Acide tartrique"
-msgstr ""
+msgstr "Acid tartaric"
 
 msgid "E334"
-msgstr ""
+msgstr "E334"
 
 msgid "Acide malique"
-msgstr ""
+msgstr "Acid Malic"
 
 msgid "E296"
-msgstr ""
+msgstr "E296"
 
 msgid "Acide lactique"
-msgstr ""
+msgstr "Acid lactic"
 
 msgid "E270"
-msgstr ""
+msgstr "E270"
 
 msgid "Tartrate de potassium"
-msgstr ""
+msgstr "Tartrat de potasiu"
 
 msgid "E336"
-msgstr ""
+msgstr "E336"
 
 msgid "Bicarbonate de potassium"
-msgstr ""
+msgstr "Bicarbonat de potasiu"
 
 msgid "E501"
-msgstr ""
+msgstr "E501"
 
 msgid "Carbonate de calcium"
-msgstr ""
+msgstr "Carbonat de calciu"
 
 msgid "E170"
-msgstr ""
+msgstr "E170"
 
 msgid "Sulfate de calcium"
-msgstr ""
+msgstr "Sulfat de calciu"
 
 msgid "E516"
-msgstr ""
+msgstr "E516"
 
 msgid "Carbonate de potassium"
-msgstr ""
+msgstr "Carbonat de potasiu"
