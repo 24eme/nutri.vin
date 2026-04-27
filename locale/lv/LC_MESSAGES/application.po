@@ -8,14 +8,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-05 09:27+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-04-24 21:09+0000\n"
+"Last-Translator: NutriVin <nutrivin@24eme.fr>\n"
+"Language-Team: Latvian <https://hosted.weblate.org/projects/nutrivin/"
+"interface/lv/>\n"
 "Language: lv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n % 10 == 0 || n % 100 >= 11 && n % 100 <= 19) ? 0 : ((n % 10 == 1 && n % 100 != 11) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 0 || n % 100 >= 11 && n % 100 <= "
+"19) ? 0 : ((n % 10 == 1 && n % 100 != 11) ? 1 : 2);\n"
+"X-Generator: Weblate 5.17.1-dev\n"
 
 msgid "Informations complémentaires"
 msgstr "Sīkāka informācija"
@@ -34,7 +37,7 @@ msgstr "Sastāvdaļas"
 
 #, php-format
 msgid "Ingrédients allergènes indiqués en %sgras%s."
-msgstr "Alerģiskas sastāvdaļas ir norādītas %streknrakstā%s"
+msgstr "Alerģiskas sastāvdaļas ir norādītas %streknrakstā%s."
 
 #, php-format
 msgid "Ingrédients issus de l'agriculture biologique indiqué avec une %s*%s."
@@ -111,13 +114,13 @@ msgstr ""
 "vēsture tiek saglabāta un publiski pieejama"
 
 msgid "Créé le "
-msgstr "Izveidots"
+msgstr "Izveidots "
 
 msgid "Modifié le "
-msgstr "Mainīts"
+msgstr "Mainīts "
 
 msgid "Voir la version du "
-msgstr "Skatīt"
+msgstr "Skatīt versiju "
 
 msgid ""
 "Seules l'heure de la première visite de la session et une évaluation "

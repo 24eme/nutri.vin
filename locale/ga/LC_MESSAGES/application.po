@@ -8,14 +8,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-05 09:27+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-04-24 21:09+0000\n"
+"Last-Translator: NutriVin <nutrivin@24eme.fr>\n"
+"Language-Team: Irish <https://hosted.weblate.org/projects/nutrivin/interface/"
+"ga/>\n"
 "Language: ga\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=5; plural=n==1 ? 0 : n==2 ? 1 : (n>2 && n<7) ? 2 :(n>6 && n<11) ? 3 : 4;\n"
+"Plural-Forms: nplurals=5; plural=n==1 ? 0 : n==2 ? 1 : (n>2 && n<7) ? 2 :(n>"
+"6 && n<11) ? 3 : 4;\n"
+"X-Generator: Weblate 5.17.1-dev\n"
 
 msgid "Informations complémentaires"
 msgstr "Tuilleadh eolais"
@@ -27,7 +30,7 @@ msgid "Contenance"
 msgstr "Cumas"
 
 msgid "N° de lot"
-msgstr "Riachtanais uisce: measartha"
+msgstr "Uimhir bhaisce"
 
 msgid "Ingrédients"
 msgstr "Comhábhair"
@@ -59,7 +62,7 @@ msgid "kcal"
 msgstr "minicíocht uisce: flúirseach"
 
 msgid "Matières grasses"
-msgstr "Saill Saill"
+msgstr "Saillte"
 
 msgid "dont acides gras saturés"
 msgstr "as a aigéid shailleacha sáithithe"
@@ -111,13 +114,13 @@ msgstr ""
 "gach modhnú a choinneáil agus go poiblí inchuardaithe"
 
 msgid "Créé le "
-msgstr "Cruthaithe ar"
+msgstr "Cruthaithe ar "
 
 msgid "Modifié le "
-msgstr "Athraithe ar"
+msgstr "Athraithe ar "
 
 msgid "Voir la version du "
-msgstr "Féach leagan de"
+msgstr "Féach leagan de "
 
 msgid ""
 "Seules l'heure de la première visite de la session et une évaluation "
@@ -172,7 +175,7 @@ msgid "Liqueur de tirage et liqueur d'expédition"
 msgstr "Deochanna Tarraing agus Deochanna Loingseoireachta"
 
 msgid "Saccharose"
-msgstr "Taiseachas aeir: fliuch"
+msgstr "Siúcrós"
 
 msgid "Acide tartrique - E334"
 msgstr "Aigéad Tartaric - E334"
@@ -208,13 +211,13 @@ msgid "Acide citrique - E330"
 msgstr "Aigéad citreach - E330"
 
 msgid "Tanins"
-msgstr "Taiseachas aeir: fliuch"
+msgstr "Tannainí"
 
 msgid "Ferrocyanure de potassium - E536"
 msgstr "Potaisiam neamhfheiriúil - E536"
 
 msgid "Phytate de calcium"
-msgstr "Cliceáil grianghraf a mhéadú"
+msgstr "Fítáit chailciam"
 
 msgid "Acide métatartrique - E353"
 msgstr "Aigéad meitéarach - E353"
@@ -250,10 +253,10 @@ msgid "Métabisulfite de potassium - E224"
 msgstr "Meitibíáit photaisiam - E224"
 
 msgid "Sorbate de potassium - E202"
-msgstr "Seirbhís do Chustaiméirí"
+msgstr "Sorbáit photaisiam - E202"
 
 msgid "Lysozyme - E1105"
-msgstr "Inis dúinn, le do thoil.."
+msgstr "Lísóisím - E1105"
 
 msgid "Acide L-ascorbique - E300"
 msgstr "L-aigéad ascorbic - E300"
@@ -262,7 +265,7 @@ msgid "Dicarbonate de diméthyle - E242"
 msgstr "Dimethyl dicarbonate - E242"
 
 msgid "Argon - E938"
-msgstr "Inis dúinn, le do thoil.."
+msgstr "Argón - E938"
 
 msgid "Azote - E941"
 msgstr "Uisce - E941"
@@ -274,7 +277,7 @@ msgid "Oxygène gazeux - E948"
 msgstr "Ocsaigin gasta - E948"
 
 msgid "Sulfites"
-msgstr "Uisce agus Séarachas"
+msgstr "Sulfítí"
 
 msgid "Anhydride sulfureux"
 msgstr "Dé-ocsaíd sulfair"
@@ -310,7 +313,7 @@ msgid "Lies fraîches"
 msgstr "Seirbhís do Chustaiméirí"
 
 msgid "Caramel - E150"
-msgstr "Seirbhís do Chustaiméirí"
+msgstr "Caramal - E150"
 
 msgid "Isothiocyanate d'allyle"
 msgstr "Cliceáil grianghraf a mhéadú"
@@ -370,7 +373,7 @@ msgid "Ovalbumine"
 msgstr "Iasachtaí"
 
 msgid "Bentonite - E558"
-msgstr "Inis dúinn, le do thoil.."
+msgstr "Bentonită - E558"
 
 msgid "Dioxyde de silicium - E551"
 msgstr "Dé-ocsaíd sileacain - E551"
@@ -409,13 +412,13 @@ msgid "Hémicellulase"
 msgstr "Riachtanais uisce: measartha"
 
 msgid "Cellulase"
-msgstr "Taiseachas aeir: fliuch"
+msgstr "Ceallalas"
 
 msgid "Bétaglucanase"
 msgstr "An bhfuil a fhios agat.."
 
 msgid "Glycosidase"
-msgstr "Cliceáil grianghraf a mhéadú"
+msgstr "Glicóisídáis"
 
 msgid "Levures de vinification"
 msgstr "Giostaí Vinification"
@@ -502,7 +505,7 @@ msgid "E202"
 msgstr "AMHARC AR GACH EOLAS"
 
 msgid "Lysozyme"
-msgstr "Cliceáil grianghraf a mhéadú"
+msgstr "Lísóisím"
 
 msgid "E1105"
 msgstr "AMHARC AR GACH EOLAS"
@@ -520,13 +523,13 @@ msgid "E242"
 msgstr "E242"
 
 msgid "Argon"
-msgstr "Riachtanais uisce: measartha"
+msgstr "Argón"
 
 msgid "E938"
 msgstr "AN TSRAITH SHINSEARACH"
 
 msgid "Azote"
-msgstr "Taiseachas aeir: fliuch"
+msgstr "Nítrigin"
 
 msgid "E941"
 msgstr "AMHARC AR GACH EOLAS"
@@ -568,7 +571,7 @@ msgid "Bentonite"
 msgstr "Bentonite"
 
 msgid "E558"
-msgstr "SEIRBHÍS DO CHUSTAIMÉIRÍ"
+msgstr "E558"
 
 msgid "Dioxyde de silicium"
 msgstr "Dé-ocsaíd shilice"
@@ -634,7 +637,7 @@ msgid "Sulfate de calcium"
 msgstr "Sulfáit amóiniam"
 
 msgid "E516"
-msgstr "SEIRBHÍS DO CHUSTAIMÉIRÍ"
+msgstr "E516"
 
 msgid "Carbonate de potassium"
 msgstr "Carbónáit photaisiam"

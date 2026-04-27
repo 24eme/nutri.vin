@@ -8,14 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-05 09:27+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-04-24 21:09+0000\n"
+"Last-Translator: NutriVin <nutrivin@24eme.fr>\n"
+"Language-Team: Slovak <https://hosted.weblate.org/projects/nutrivin/"
+"interface/sk/>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
+"X-Generator: Weblate 5.17.1-dev\n"
 
 msgid "Informations complémentaires"
 msgstr "Ďalšie informácie"
@@ -34,7 +36,7 @@ msgstr "Zložky"
 
 #, php-format
 msgid "Ingrédients allergènes indiqués en %sgras%s."
-msgstr "Alergénne zložky sú vyznačené %stučným písmom%s"
+msgstr "Alergénne zložky sú vyznačené %stučným písmom%s."
 
 #, php-format
 msgid "Ingrédients issus de l'agriculture biologique indiqué avec une %s*%s."
@@ -111,13 +113,13 @@ msgstr ""
 "verejne vyhľadávateľné"
 
 msgid "Créé le "
-msgstr "Vytvorené"
+msgstr "Vytvorené "
 
 msgid "Modifié le "
-msgstr "Zmenené"
+msgstr "Zmenené "
 
 msgid "Voir la version du "
-msgstr "Pozri verziu"
+msgstr "Pozri verziu "
 
 msgid ""
 "Seules l'heure de la première visite de la session et une évaluation "
