@@ -17,7 +17,7 @@ class Exporter
         }
 
         if(!rsvgconvert::commandExists()) {
-            throw new Exception('rsvgconvert missing');
+            throw new \LogicException('rsvgconvert missing');
         }
         self::$instance = new ExporterRSVG();
 

@@ -39,7 +39,7 @@ class DBManager {
             self::$mapper = "DB\\SQL\\Mapper";
             break;
             default:
-            throw new LogicException('Pas de config pour ce type de connexion');
+            throw new \LogicException('Pas de config pour ce type de connexion');
             break;
         }
     }

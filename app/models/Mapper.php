@@ -54,7 +54,7 @@ abstract class Mapper
 
     public function copyFrom($arg, $func = null) {
         if ($this->authorization_key && $arg == 'POST' && (!isset($_POST['authorization_key'])  || ($_POST['authorization_key'] != $this->authorization_key)) ) {
-            throw new Exception('Not authorized to edit this object');
+            throw new \Exception('Not authorized to edit this object');
         }
         return $this->mapper->copyFrom($arg, get_called_class().'::filterCopyFrom');
     }
@@ -78,7 +78,7 @@ abstract class Mapper
         try {
             $t = get_called_class()::$getFieldsAndType;
             return count($t) && $this->mapper->exists(array_keys($t)[0]);
-        }catch(Exception $e) {
+        }catch(\Exception $e) {
             return false;
         }
     }

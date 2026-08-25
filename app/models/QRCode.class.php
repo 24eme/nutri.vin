@@ -498,7 +498,7 @@ class QRCode extends Mapper
                 return $id;
             }
         }
-        throw new Exception('no free id found');
+        throw new \Exception('no free id found');
     }
 
     public function getQRCodeUrl() {

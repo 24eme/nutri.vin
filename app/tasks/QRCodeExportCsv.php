@@ -5,7 +5,7 @@ use app\models\DBManager;
 use app\config\Config;
 
 if (php_sapi_name() !== 'cli') {
-    throw new Exception('Doit être lancé en shell');
+    throw new \Exception('Doit être lancé en shell');
 }
 
 if (getenv('DEBUG')) {

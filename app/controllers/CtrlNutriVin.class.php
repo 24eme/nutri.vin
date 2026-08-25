@@ -141,7 +141,7 @@ class CtrlNutriVin {
         $this->authenticatedUserOnly($f3);
         $qrcode = QRCode::findById($f3->get('PARAMS.qrcodeid'));
         if ($qrcode->user_id != $f3->get('PARAMS.userid')) {
-            throw new Exception('not allowed');
+            throw new \Exception('not allowed');
         }
         $images = ['image_bouteille', 'image_etiquette', 'image_contreetiquette'];
         $qrcode->{$images[intval($f3->get('PARAMS.index'))]} = null;
@@ -204,7 +204,7 @@ class CtrlNutriVin {
         }
 
         if ($qrcode->user_id != $f3->get('PARAMS.userid')) {
-            throw new Exception('not allowed');
+            throw new \Exception('not allowed');
         }
 
         $this->initDefaultOnQRCode($qrcode, $f3);
@@ -476,7 +476,7 @@ class CtrlNutriVin {
                 exit;
             }
             if ($qr->user_id != $f3->get('PARAMS.userid')) {
-                throw new Exception('not allowed');
+                throw new \Exception('not allowed');
             }
             $userid = $qr->user_id;
             if ($qr->denomination_instance && $f3->get('GET.logo')) {
