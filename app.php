@@ -21,7 +21,7 @@ if (is_dir($f3->get('THEME')) === false) {
     $f3->set('THEME', implode(DIRECTORY_SEPARATOR, [$f3->get('ROOT'), "themes", 'nutrivin', '']));
 }
 
-setlocale(LC_ALL, '');
+setlocale(LC_ALL, 'fr_FR');
 $f3->language(isset($f3->get('HEADERS')['Accept-Language']) ? $f3->get('HEADERS')['Accept-Language'] : '');
 
 $f3->set('SUPPORTED_LANGUAGES',
